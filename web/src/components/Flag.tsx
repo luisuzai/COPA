@@ -8,16 +8,28 @@ type FlagTeam = {
 };
 
 const SIZES = {
-  sm: "h-4",
-  md: "h-5",
-  lg: "h-9",
+  sm: "h-4 w-[21.333px]",
+  md: "h-5 w-[26.667px]",
+  lg: "h-9 w-12",
 } as const;
 
+function withBasePath(src: string) {
+  if (!src.startsWith("/")) return src;
+  return `${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}${src}`;
+}
+
+function getLocalFlagSrc(src: string) {
+  if (!src.startsWith("https://flagcdn.com/")) return withBasePath(src);
+
+  const file = src.split("/").at(-1);
+  const slug = file?.replace(/\.[^.]+$/, "");
+  return slug ? withBasePath(`/flags/4x3/${slug}.png`) : src;
+}
+
 /**
- * Bandeira da seleção como IMAGEM (SVG), não emoji.
- * Emojis de bandeira são inconsistentes entre SO/navegadores (no Windows
- * viram duas letras, e a Inglaterra nem renderiza). A imagem funciona em
- * todo lugar. Fallback: emoji e, por fim, o código de 3 letras.
+ * Bandeira da selecao como imagem local, nao emoji.
+ * Emojis de bandeira sao inconsistentes entre SO/navegadores. As imagens
+ * locais evitam falhas por rede e respeitam o basePath do export estatico.
  */
 export function Flag({
   team,
@@ -32,20 +44,23 @@ export function Flag({
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img
-        src={team.crest}
+        src={getLocalFlagSrc(team.crest)}
         alt={`Bandeira ${team.name}`}
+        decoding="async"
         loading="lazy"
         className={cn(
-          "w-auto rounded-[3px] object-cover ring-1 ring-border/80",
+          "inline-block shrink-0 rounded-[3px] bg-surface-2 object-cover ring-1 ring-border/80",
           SIZES[size],
           className,
         )}
       />
     );
   }
+
   if (team.flag) {
     return <span className={cn("leading-none", className)}>{team.flag}</span>;
   }
+
   return (
     <span className={cn("font-mono text-xs text-muted", className)}>{team.code}</span>
   );

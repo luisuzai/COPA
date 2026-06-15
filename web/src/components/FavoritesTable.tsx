@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { Delta } from "@/components/Delta";
+import { Flag } from "@/components/Flag";
 import { ProbabilityBar } from "@/components/charts/ProbabilityBar";
 import type { FavoriteRow } from "@/lib/types";
 import { cn, pct } from "@/lib/utils";
@@ -34,7 +35,7 @@ export function FavoritesTable({ rows }: { rows: FavoriteRow[] }) {
 
           <div className="flex min-w-0 flex-1 flex-col gap-2">
             <div className="flex items-center gap-2.5">
-              <span className="text-lg leading-none">{row.team.flag}</span>
+              <Flag team={row.team} />
               <span className="truncate font-medium text-foreground transition-colors group-hover:text-accent">
                 {row.team.name}
               </span>

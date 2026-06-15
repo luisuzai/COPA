@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { FavoritesTable } from "@/components/FavoritesTable";
 import { Prose } from "@/components/Prose";
 import { Delta } from "@/components/Delta";
+import { Flag } from "@/components/Flag";
 import { getArticle, getFavorites, getMovers, getProbabilities } from "@/lib/data";
 import { pct } from "@/lib/utils";
 
@@ -59,7 +60,7 @@ export default function HomePage() {
                 className="rounded-xl border border-border bg-surface p-5 transition-all hover:-translate-y-0.5 hover:border-accent/40"
               >
                 <div className="flex items-center gap-2.5">
-                  <span className="text-xl leading-none">{m.team.flag}</span>
+                  <Flag team={m.team} />
                   <span className="font-medium">{m.team.name}</span>
                 </div>
                 <div className="mt-3 flex items-baseline gap-2">
