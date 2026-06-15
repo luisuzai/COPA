@@ -73,7 +73,7 @@ export default async function MatchPage({
         }}
       />
 
-      <section className="container-content pb-6 pt-12 sm:pt-16">
+      <section className="container-content animate-fade-up pb-6 pt-12 sm:pt-16">
         <p className="text-center text-xs uppercase tracking-eyebrow text-muted">
           {stageLabel(match.stage)}
           {match.group ? ` · Grupo ${match.group.toUpperCase()}` : ""} ·{" "}

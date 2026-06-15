@@ -1,86 +1,486 @@
 {
-  "generatedAt": "2026-06-15T20:22:54Z",
-  "simulations": 50000,
+  "generatedAt": "2026-06-15T22:30:21Z",
+  "simulations": 100000,
   "teams": [
     {
-      "teamId": "t-bra",
-      "advanceGroup": 0.9399,
-      "roundOf16": 0.9399,
-      "quarter": 0.9399,
-      "semi": 0.9399,
-      "final": 0.5254,
-      "champion": 0.3188,
-      "championChange": 0.0988
-    },
-    {
       "teamId": "t-esp",
-      "advanceGroup": 0.7332,
-      "roundOf16": 0.7332,
-      "quarter": 0.7332,
-      "semi": 0.7332,
-      "final": 0.4452,
-      "champion": 0.2218,
-      "championChange": 0.0718
+      "advanceGroup": 0.9276,
+      "roundOf16": 0.6742,
+      "quarter": 0.4557,
+      "semi": 0.3089,
+      "final": 0.1944,
+      "champion": 0.1244,
+      "championChange": 0.0018
     },
     {
       "teamId": "t-arg",
-      "advanceGroup": 0.5535,
-      "roundOf16": 0.5535,
-      "quarter": 0.5535,
-      "semi": 0.5535,
-      "final": 0.3376,
-      "champion": 0.1847,
-      "championChange": -0.0153
+      "advanceGroup": 0.9685,
+      "roundOf16": 0.6071,
+      "quarter": 0.3911,
+      "semi": 0.2784,
+      "final": 0.1801,
+      "champion": 0.1149,
+      "championChange": 0.0006
     },
     {
       "teamId": "t-fra",
-      "advanceGroup": 0.5209,
-      "roundOf16": 0.5209,
-      "quarter": 0.5209,
-      "semi": 0.5209,
-      "final": 0.3029,
-      "champion": 0.1534,
-      "championChange": -0.0066
+      "advanceGroup": 0.9574,
+      "roundOf16": 0.5861,
+      "quarter": 0.3716,
+      "semi": 0.2595,
+      "final": 0.1649,
+      "champion": 0.1023,
+      "championChange": -0.0002
     },
     {
-      "teamId": "t-ger",
-      "advanceGroup": 0.4711,
-      "roundOf16": 0.4711,
-      "quarter": 0.4711,
-      "semi": 0.4711,
-      "final": 0.1691,
-      "champion": 0.0561,
-      "championChange": -0.0139
+      "teamId": "t-bra",
+      "advanceGroup": 0.9523,
+      "roundOf16": 0.6565,
+      "quarter": 0.4639,
+      "semi": 0.2729,
+      "final": 0.1596,
+      "champion": 0.0942,
+      "championChange": 0.0018
     },
     {
       "teamId": "t-eng",
-      "advanceGroup": 0.1924,
-      "roundOf16": 0.1924,
-      "quarter": 0.1924,
-      "semi": 0.1924,
-      "final": 0.0884,
-      "champion": 0.0365,
-      "championChange": -0.0435
+      "advanceGroup": 0.9382,
+      "roundOf16": 0.5816,
+      "quarter": 0.3249,
+      "semi": 0.2106,
+      "final": 0.1234,
+      "champion": 0.0697,
+      "championChange": -0.001
     },
     {
-      "teamId": "t-jpn",
-      "advanceGroup": 0.512,
-      "roundOf16": 0.512,
-      "quarter": 0.512,
-      "semi": 0.512,
-      "final": 0.1174,
-      "champion": 0.0262,
-      "championChange": -0.0438
+      "teamId": "t-por",
+      "advanceGroup": 0.9303,
+      "roundOf16": 0.5457,
+      "quarter": 0.2972,
+      "semi": 0.1867,
+      "final": 0.1073,
+      "champion": 0.0577,
+      "championChange": -0.0006
+    },
+    {
+      "teamId": "t-ned",
+      "advanceGroup": 0.8814,
+      "roundOf16": 0.5383,
+      "quarter": 0.3141,
+      "semi": 0.1833,
+      "final": 0.1005,
+      "champion": 0.0523,
+      "championChange": -0.0003
+    },
+    {
+      "teamId": "t-ger",
+      "advanceGroup": 0.9966,
+      "roundOf16": 0.5823,
+      "quarter": 0.3174,
+      "semi": 0.1842,
+      "final": 0.0949,
+      "champion": 0.0495,
+      "championChange": -0.0013
+    },
+    {
+      "teamId": "t-bel",
+      "advanceGroup": 0.8885,
+      "roundOf16": 0.469,
+      "quarter": 0.2611,
+      "semi": 0.1436,
+      "final": 0.0714,
+      "champion": 0.0344,
+      "championChange": -0.0001
+    },
+    {
+      "teamId": "t-ury",
+      "advanceGroup": 0.8397,
+      "roundOf16": 0.4845,
+      "quarter": 0.256,
+      "semi": 0.1312,
+      "final": 0.0623,
+      "champion": 0.0275,
+      "championChange": 0.0004
+    },
+    {
+      "teamId": "t-cro",
+      "advanceGroup": 0.8322,
+      "roundOf16": 0.4475,
+      "quarter": 0.2232,
+      "semi": 0.1206,
+      "final": 0.0583,
+      "champion": 0.0257,
+      "championChange": -0.0013
     },
     {
       "teamId": "t-mar",
-      "advanceGroup": 0.0769,
-      "roundOf16": 0.0769,
-      "quarter": 0.0769,
-      "semi": 0.0769,
-      "final": 0.0139,
-      "champion": 0.0026,
-      "championChange": -0.0474
+      "advanceGroup": 0.8746,
+      "roundOf16": 0.4973,
+      "quarter": 0.2903,
+      "semi": 0.1324,
+      "final": 0.0621,
+      "champion": 0.0256,
+      "championChange": -0.0022
+    },
+    {
+      "teamId": "t-usa",
+      "advanceGroup": 0.985,
+      "roundOf16": 0.4661,
+      "quarter": 0.2689,
+      "semi": 0.1231,
+      "final": 0.0546,
+      "champion": 0.0237,
+      "championChange": 0.0003
+    },
+    {
+      "teamId": "t-col",
+      "advanceGroup": 0.8114,
+      "roundOf16": 0.4083,
+      "quarter": 0.1953,
+      "semi": 0.1019,
+      "final": 0.0491,
+      "champion": 0.0205,
+      "championChange": 0.0003
+    },
+    {
+      "teamId": "t-mex",
+      "advanceGroup": 0.9629,
+      "roundOf16": 0.5586,
+      "quarter": 0.2623,
+      "semi": 0.1099,
+      "final": 0.0465,
+      "champion": 0.0186,
+      "championChange": -0.001
+    },
+    {
+      "teamId": "t-jpn",
+      "advanceGroup": 0.7801,
+      "roundOf16": 0.397,
+      "quarter": 0.1914,
+      "semi": 0.0865,
+      "final": 0.0371,
+      "champion": 0.015,
+      "championChange": 0.0
+    },
+    {
+      "teamId": "t-kor",
+      "advanceGroup": 0.9455,
+      "roundOf16": 0.5207,
+      "quarter": 0.2327,
+      "semi": 0.0939,
+      "final": 0.038,
+      "champion": 0.014,
+      "championChange": 0.0001
+    },
+    {
+      "teamId": "t-sui",
+      "advanceGroup": 0.7787,
+      "roundOf16": 0.4127,
+      "quarter": 0.1932,
+      "semi": 0.0816,
+      "final": 0.0345,
+      "champion": 0.0138,
+      "championChange": 0.0003
+    },
+    {
+      "teamId": "t-swe",
+      "advanceGroup": 0.9594,
+      "roundOf16": 0.4492,
+      "quarter": 0.2037,
+      "semi": 0.0859,
+      "final": 0.0342,
+      "champion": 0.0124,
+      "championChange": 0.0004
+    },
+    {
+      "teamId": "t-sen",
+      "advanceGroup": 0.6816,
+      "roundOf16": 0.3217,
+      "quarter": 0.1471,
+      "semi": 0.0672,
+      "final": 0.0288,
+      "champion": 0.0103,
+      "championChange": 0.0002
+    },
+    {
+      "teamId": "t-aut",
+      "advanceGroup": 0.6841,
+      "roundOf16": 0.3186,
+      "quarter": 0.1424,
+      "semi": 0.065,
+      "final": 0.0271,
+      "champion": 0.0098,
+      "championChange": 0.0006
+    },
+    {
+      "teamId": "t-civ",
+      "advanceGroup": 0.9446,
+      "roundOf16": 0.4084,
+      "quarter": 0.1724,
+      "semi": 0.0743,
+      "final": 0.0291,
+      "champion": 0.0097,
+      "championChange": -0.0005
+    },
+    {
+      "teamId": "t-aus",
+      "advanceGroup": 0.9402,
+      "roundOf16": 0.3727,
+      "quarter": 0.1834,
+      "semi": 0.0686,
+      "final": 0.0267,
+      "champion": 0.0088,
+      "championChange": 0.0003
+    },
+    {
+      "teamId": "t-nor",
+      "advanceGroup": 0.6422,
+      "roundOf16": 0.2916,
+      "quarter": 0.1287,
+      "semi": 0.0549,
+      "final": 0.0217,
+      "champion": 0.0076,
+      "championChange": 0.0001
+    },
+    {
+      "teamId": "t-sco",
+      "advanceGroup": 0.8053,
+      "roundOf16": 0.3795,
+      "quarter": 0.1791,
+      "semi": 0.0636,
+      "final": 0.0225,
+      "champion": 0.0073,
+      "championChange": 0.0007
+    },
+    {
+      "teamId": "t-egy",
+      "advanceGroup": 0.7517,
+      "roundOf16": 0.3088,
+      "quarter": 0.1283,
+      "semi": 0.0499,
+      "final": 0.0181,
+      "champion": 0.006,
+      "championChange": -0.0002
+    },
+    {
+      "teamId": "t-ecu",
+      "advanceGroup": 0.5489,
+      "roundOf16": 0.2562,
+      "quarter": 0.1155,
+      "semi": 0.0435,
+      "final": 0.0167,
+      "champion": 0.0055,
+      "championChange": 0.0
+    },
+    {
+      "teamId": "t-irn",
+      "advanceGroup": 0.6808,
+      "roundOf16": 0.2776,
+      "quarter": 0.115,
+      "semi": 0.0445,
+      "final": 0.016,
+      "champion": 0.0054,
+      "championChange": 0.0001
+    },
+    {
+      "teamId": "t-alg",
+      "advanceGroup": 0.599,
+      "roundOf16": 0.2593,
+      "quarter": 0.108,
+      "semi": 0.0442,
+      "final": 0.0169,
+      "champion": 0.0053,
+      "championChange": -0.0
+    },
+    {
+      "teamId": "t-can",
+      "advanceGroup": 0.6565,
+      "roundOf16": 0.2913,
+      "quarter": 0.1123,
+      "semi": 0.0377,
+      "final": 0.0129,
+      "champion": 0.0042,
+      "championChange": 0.0005
+    },
+    {
+      "teamId": "t-cze",
+      "advanceGroup": 0.509,
+      "roundOf16": 0.2424,
+      "quarter": 0.0995,
+      "semi": 0.0337,
+      "final": 0.0116,
+      "champion": 0.0034,
+      "championChange": -0.0002
+    },
+    {
+      "teamId": "t-tur",
+      "advanceGroup": 0.3973,
+      "roundOf16": 0.1756,
+      "quarter": 0.0826,
+      "semi": 0.0287,
+      "final": 0.0102,
+      "champion": 0.0032,
+      "championChange": -0.0004
+    },
+    {
+      "teamId": "t-bih",
+      "advanceGroup": 0.6228,
+      "roundOf16": 0.2599,
+      "quarter": 0.096,
+      "semi": 0.0288,
+      "final": 0.0093,
+      "champion": 0.0028,
+      "championChange": -0.0
+    },
+    {
+      "teamId": "t-gha",
+      "advanceGroup": 0.4873,
+      "roundOf16": 0.1941,
+      "quarter": 0.0724,
+      "semi": 0.0241,
+      "final": 0.0078,
+      "champion": 0.0022,
+      "championChange": -0.0
+    },
+    {
+      "teamId": "t-cod",
+      "advanceGroup": 0.4809,
+      "roundOf16": 0.1826,
+      "quarter": 0.0669,
+      "semi": 0.0223,
+      "final": 0.0075,
+      "champion": 0.0022,
+      "championChange": 0.0004
+    },
+    {
+      "teamId": "t-par",
+      "advanceGroup": 0.339,
+      "roundOf16": 0.1363,
+      "quarter": 0.0582,
+      "semi": 0.0178,
+      "final": 0.0058,
+      "champion": 0.0016,
+      "championChange": -0.0001
+    },
+    {
+      "teamId": "t-qat",
+      "advanceGroup": 0.5832,
+      "roundOf16": 0.2194,
+      "quarter": 0.0715,
+      "semi": 0.0204,
+      "final": 0.0056,
+      "champion": 0.0014,
+      "championChange": 0.0002
+    },
+    {
+      "teamId": "t-uzb",
+      "advanceGroup": 0.4254,
+      "roundOf16": 0.1529,
+      "quarter": 0.053,
+      "semi": 0.0164,
+      "final": 0.0049,
+      "champion": 0.0012,
+      "championChange": 0.0001
+    },
+    {
+      "teamId": "t-pan",
+      "advanceGroup": 0.3752,
+      "roundOf16": 0.1355,
+      "quarter": 0.046,
+      "semi": 0.0136,
+      "final": 0.004,
+      "champion": 0.001,
+      "championChange": 0.0001
+    },
+    {
+      "teamId": "t-cpv",
+      "advanceGroup": 0.5132,
+      "roundOf16": 0.1865,
+      "quarter": 0.0607,
+      "semi": 0.0167,
+      "final": 0.0047,
+      "champion": 0.001,
+      "championChange": 0.0001
+    },
+    {
+      "teamId": "t-irq",
+      "advanceGroup": 0.3468,
+      "roundOf16": 0.1241,
+      "quarter": 0.0418,
+      "semi": 0.0129,
+      "final": 0.0038,
+      "champion": 0.001,
+      "championChange": 0.0002
+    },
+    {
+      "teamId": "t-jor",
+      "advanceGroup": 0.3609,
+      "roundOf16": 0.1265,
+      "quarter": 0.0421,
+      "semi": 0.0125,
+      "final": 0.0035,
+      "champion": 0.0009,
+      "championChange": 0.0001
+    },
+    {
+      "teamId": "t-ksa",
+      "advanceGroup": 0.3822,
+      "roundOf16": 0.1424,
+      "quarter": 0.0473,
+      "semi": 0.0138,
+      "final": 0.0037,
+      "champion": 0.0008,
+      "championChange": -0.0
+    },
+    {
+      "teamId": "t-rsa",
+      "advanceGroup": 0.2779,
+      "roundOf16": 0.1104,
+      "quarter": 0.0377,
+      "semi": 0.0096,
+      "final": 0.0026,
+      "champion": 0.0006,
+      "championChange": -0.0003
+    },
+    {
+      "teamId": "t-nzl",
+      "advanceGroup": 0.382,
+      "roundOf16": 0.117,
+      "quarter": 0.0362,
+      "semi": 0.0092,
+      "final": 0.0022,
+      "champion": 0.0005,
+      "championChange": 0.0
+    },
+    {
+      "teamId": "t-tun",
+      "advanceGroup": 0.1434,
+      "roundOf16": 0.058,
+      "quarter": 0.022,
+      "semi": 0.0066,
+      "final": 0.0021,
+      "champion": 0.0005,
+      "championChange": 0.0
+    },
+    {
+      "teamId": "t-cuw",
+      "advanceGroup": 0.1344,
+      "roundOf16": 0.0384,
+      "quarter": 0.0107,
+      "semi": 0.0025,
+      "final": 0.0005,
+      "champion": 0.0001,
+      "championChange": 0.0001
+    },
+    {
+      "teamId": "t-hai",
+      "advanceGroup": 0.0938,
+      "roundOf16": 0.0299,
+      "quarter": 0.0095,
+      "semi": 0.002,
+      "final": 0.0003,
+      "champion": 0.0,
+      "championChange": -0.0001
     }
   ]
 }

@@ -188,6 +188,14 @@ def simulate(
         )
 
     # ── Mata-mata ─────────────────────────────────────────────
+    # Matriz de avanço: adv[i, j] = P(i passa por j) num jogo único.
+    # Pré-computada (depende só do par de Elos) p/ lookup vetorizado e exato.
+    adv = np.full((n_teams, n_teams), 0.5)
+    for i in range(n_teams):
+        for j in range(n_teams):
+            if i != j:
+                adv[i, j] = elo_model.advance_probability(elo[i], elo[j])
+
     reach: dict[str, np.ndarray] = {}
     opponents: dict[str, np.ndarray] = {}
     champion = np.zeros(n_teams, dtype=np.int64)
@@ -202,7 +210,7 @@ def simulate(
         pairs = current.reshape(n_sims, size // 2, 2)
         a = pairs[:, :, 0]
         b = pairs[:, :, 1]
-        p_a = 1.0 / (1.0 + 10.0 ** ((elo[b] - elo[a]) / 400.0))
+        p_a = adv[a, b]
         a_wins = rng.random((n_sims, size // 2)) < p_a
         win = np.where(a_wins, a, b)
 

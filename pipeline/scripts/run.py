@@ -23,7 +23,9 @@ try:
 except (AttributeError, OSError):
     pass
 
-load_dotenv()  # carrega pipeline/.env (chaves locais) — deve vir antes de copa.*
+# override=True: o .env do projeto é a fonte da verdade (vence variáveis de
+# ambiente do sistema, ex: um OPENAI_MODEL global). Deve vir antes de copa.*
+load_dotenv(override=True)
 
 
 def main() -> None:

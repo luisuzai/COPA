@@ -39,7 +39,7 @@ export default async function GroupPage({
 
   return (
     <>
-      <section className="container-content pb-6 pt-12 sm:pt-16">
+      <section className="container-content animate-fade-up pb-6 pt-12 sm:pt-16">
         <p className="text-xs uppercase tracking-eyebrow text-muted">Copa do Mundo 2026</p>
         <h1 className="mt-3 font-display text-4xl font-bold tracking-tight sm:text-5xl">
           Grupo {groupId.toUpperCase()}

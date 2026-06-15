@@ -30,7 +30,8 @@ def _call_openai(user_prompt: str) -> dict[str, str]:
     client = OpenAI(api_key=config.OPENAI_API_KEY)
     resp = client.chat.completions.create(
         model=config.OPENAI_MODEL,
-        temperature=0.6,
+        # Sem temperature explícito: alguns modelos (gpt-5.x) só aceitam o
+        # default. O default já gera prosa variada o suficiente.
         response_format={"type": "json_object"},
         messages=[
             {"role": "system", "content": prompts.SYSTEM_PROMPT},

@@ -20,8 +20,7 @@ from copa.models.monte_carlo import simulate
 from copa.probabilities import build_predictions, build_probabilities, build_rankings
 from copa.scenarios import build_scenarios
 
-_ELO_STATE = config.DATA_DIR / ".cache" / "elo_applied.json"
-SCENARIO_TOP_N = 8
+SCENARIO_TOP_N = 12
 
 
 # ──────────────────────────────────────────────────────────────
@@ -31,40 +30,32 @@ def _team_by_id(teams: list[dict]) -> dict[str, dict]:
     return {t["id"]: t for t in teams}
 
 
-def _load_applied() -> set[str]:
-    if _ELO_STATE.exists():
-        try:
-            return set(json.loads(_ELO_STATE.read_text(encoding="utf-8")))
-        except (json.JSONDecodeError, OSError):
-            return set()
-    return set()
-
-
-def _save_applied(applied: set[str]) -> None:
-    _ELO_STATE.parent.mkdir(parents=True, exist_ok=True)
-    _ELO_STATE.write_text(json.dumps(sorted(applied)), encoding="utf-8")
-
-
 def _merge_metadata(new_teams: list[dict], prev_teams: list[dict]) -> list[dict]:
-    """Preserva flag/confederation/elo curados de /data ao re-ingerir da API."""
+    """Preserva metadata curada (flag emoji, grupo) ao re-ingerir da API.
+
+    Elo/eloBase NÃO são carregados: o baseline vem sempre do seed (seed_elo)
+    e o Elo atual é recalculado por replay dos resultados (idempotente).
+    """
     prev = _team_by_id(prev_teams)
     for t in new_teams:
         old = prev.get(t["id"])
         if old:
-            t["flag"] = old.get("flag", t["flag"])
-            t["confederation"] = old.get("confederation", t["confederation"])
-            t["elo"] = old.get("elo", t["elo"])
-            # Preserva crest curado; usa o da API só se não houver.
-            t["crest"] = old.get("crest") or t.get("crest")
+            if old.get("flag") and old["flag"] != "🏳️":
+                t["flag"] = old["flag"]
+            t["crest"] = t.get("crest") or old.get("crest")
             if not t.get("group"):
                 t["group"] = old.get("group")
     return new_teams
 
 
 def _update_elo(teams: list[dict], matches: list[dict]) -> list[dict]:
-    """Atualiza Elo a partir de resultados, de forma incremental e idempotente."""
-    elo_of = {t["id"]: float(t["elo"]) for t in teams}
-    applied = _load_applied()
+    """Recalcula o Elo atual por REPLAY dos resultados a partir do baseline.
+
+    Idempotente: cada execução parte do eloBase (pré-Copa) e aplica todos os
+    jogos finalizados em ordem cronológica. Rodar N vezes dá o mesmo resultado.
+    """
+    base = {t["id"]: float(t.get("eloBase", t["elo"])) for t in teams}
+    elo_of = dict(base)
 
     finished = [
         m for m in matches
@@ -72,28 +63,18 @@ def _update_elo(teams: list[dict], matches: list[dict]) -> list[dict]:
     ]
     finished.sort(key=lambda m: m.get("kickoff") or "")
 
-    is_seeded = any(abs(e - config.DEFAULT_ELO) > 1 for e in elo_of.values())
+    for m in finished:
+        if m["homeId"] not in elo_of or m["awayId"] not in elo_of:
+            continue
+        new_h, new_a = elo_model.update_ratings(
+            elo_of[m["homeId"]], elo_of[m["awayId"]],
+            int(m["homeScore"]), int(m["awayScore"]),
+        )
+        elo_of[m["homeId"]] = new_h
+        elo_of[m["awayId"]] = new_a
 
-    if not applied and is_seeded:
-        # 1ª execução com Elo curado: assume que os JSON já refletem os
-        # resultados finalizados. Marca como aplicados sem recalcular.
-        applied.update(m["id"] for m in finished)
-    else:
-        for m in finished:
-            if m["id"] in applied:
-                continue
-            if m["homeId"] not in elo_of or m["awayId"] not in elo_of:
-                continue
-            new_h, new_a = elo_model.update_ratings(
-                elo_of[m["homeId"]], elo_of[m["awayId"]],
-                int(m["homeScore"]), int(m["awayScore"]),
-            )
-            elo_of[m["homeId"]] = new_h
-            elo_of[m["awayId"]] = new_a
-            applied.add(m["id"])
-
-    _save_applied(applied)
     for t in teams:
+        t["eloBase"] = round(base[t["id"]], 1)
         t["elo"] = round(elo_of[t["id"]], 1)
     return teams
 

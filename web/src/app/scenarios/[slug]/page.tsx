@@ -51,7 +51,7 @@ export default async function ScenarioPage({
 
   return (
     <>
-      <section className="container-content pb-6 pt-12 sm:pt-16">
+      <section className="container-content animate-fade-up pb-6 pt-12 sm:pt-16">
         <p className="text-xs uppercase tracking-eyebrow text-muted">Cenários</p>
         <div className="mt-3 flex items-center gap-4">
           <Flag team={team} size="lg" />

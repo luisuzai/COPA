@@ -8,7 +8,11 @@
       "Bash(npm --version)",
       "PowerShell($env:Path = \"C:\\\\Program Files\\\\nodejs;$env:Path\"; Set-Location web; npm run dev 2>&1 | Out-String)",
       "PowerShell($ok=$false; for \\($i=0; $i -lt 30; $i++\\) { try { $r = Invoke-WebRequest -Uri \"http://localhost:3000/\" -UseBasicParsing -TimeoutSec 3; if \\($r.StatusCode -eq 200\\) { \"READY status=$\\($r.StatusCode\\) length=$\\($r.Content.Length\\)\"; $ok=$true; break } } catch { Start-Sleep -Seconds 1 } }; if \\(-not $ok\\) { \"not ready yet\" })",
-      "PowerShell($ok=$false; for \\($i=0; $i -lt 40; $i++\\) { try { $r = Invoke-WebRequest -Uri \"http://localhost:3000/\" -UseBasicParsing -TimeoutSec 3; if \\($r.StatusCode -eq 200\\) { \"dev READY 200\"; $ok=$true; break } } catch { Start-Sleep -Seconds 1 } }; if \\(-not $ok\\) { \"not ready\" })"
+      "PowerShell($ok=$false; for \\($i=0; $i -lt 40; $i++\\) { try { $r = Invoke-WebRequest -Uri \"http://localhost:3000/\" -UseBasicParsing -TimeoutSec 3; if \\($r.StatusCode -eq 200\\) { \"dev READY 200\"; $ok=$true; break } } catch { Start-Sleep -Seconds 1 } }; if \\(-not $ok\\) { \"not ready\" })",
+      "PowerShell($winget = \"$env:LOCALAPPDATA\\\\Microsoft\\\\WindowsApps\\\\winget.exe\"; & $winget install GitHub.cli --accept-source-agreements --accept-package-agreements --silent --disable-interactivity)",
+      "Bash(python -c ' *)",
+      "Bash(python -m scripts.run --no-ai --sims 100000)",
+      "Bash(python -m scripts.run --sims 100000)"
     ]
   }
 }

@@ -117,12 +117,20 @@ def outcome_probabilities(
     }
 
 
-def knockout_win_probability(
+def advance_probability(
     elo_a: float, elo_b: float, home_advantage: float = 0.0
 ) -> float:
-    """Probabilidade de A avançar num mata-mata (sem empate).
+    """Probabilidade de A avançar num mata-mata.
 
-    Reaproveita a expectativa do Elo, que já é uma probabilidade binária
-    natural — adequada para 'alguém precisa passar'.
+    Modela um jogo único de verdade: resultado no tempo normal pelo modelo
+    de gols (Poisson) e, em caso de empate, decisão por pênaltis tratada como
+    moeda ~50/50. Isso adiciona a variância real de jogo único — favoritos
+    não são tão dominantes quanto a expectativa PURA do Elo sugere, o que
+    calibra para baixo a chance de título dos mais fortes.
     """
-    return expected_score(elo_a, elo_b, home_advantage)
+    p = outcome_probabilities(elo_a, elo_b, home_advantage)
+    return p["home_win"] + 0.5 * p["draw"]
+
+
+# Alias de compatibilidade (nome antigo usado em scenarios.py).
+knockout_win_probability = advance_probability

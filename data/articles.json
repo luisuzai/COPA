@@ -1,35 +1,1195 @@
 {
-  "generatedAt": "2026-06-15T20:22:54Z",
+  "generatedAt": "2026-06-15T22:30:21Z",
   "items": [
     {
-      "id": "a-home",
+      "id": "a-home-home",
       "slug": "home",
       "type": "home",
-      "title": "Brasil dispara na ponta com 32% de chance de título",
-      "summary": "Após a 1ª rodada, a Seleção lidera com folga; Espanha surge como vice-favorita à frente da Argentina.",
-      "body": "A primeira rodada reforçou o favoritismo do **Brasil**. Com a vitória sobre a Alemanha, a Seleção abriu vantagem no topo das projeções: **32% de chance de título** segundo as 100.000 simulações do nosso modelo — mais de 10 pontos à frente do segundo colocado.\n\nA surpresa positiva é a **Espanha**, que após bater a Inglaterra saltou para a vice-liderança das probabilidades (**22%**), passando à frente de **Argentina (18%)** e **França (15%)**. Os quatro favoritos concentram quase 90% da chance de campeão.\n\nNo extremo oposto, **Marrocos** (3%) e **Japão** (3%) dependem de resultados nas próximas rodadas para manter vivas as esperanças de uma campanha histórica.",
-      "generatedAt": "2026-06-15T20:22:54Z",
-      "inputHash": "seed-home-0002"
+      "title": "Espanha lidera, Brasil sobe e o topo segue espremido",
+      "summary": "Espanha tem 12,44% de chance de título; Argentina, França e Brasil seguem perto após rodada de ajustes finos.",
+      "body": "**Espanha** continua no topo da Copa, com **12,44%** de chance de título, mesmo após o **0-0** contra Cabo Verde. A liderança, porém, não é folgada: **Argentina** aparece com **11,49%**, **França** com **10,23%** e **Brasil** com **9,42%**.\n\nA última rodada mexeu mais na calibragem do que na hierarquia. Espanha e Brasil tiveram os maiores avanços entre os favoritos listados, ambos com **+0,18 ponto percentual**. A Argentina também subiu, mas em escala menor: **+0,06 p.p.**\n\nDo outro lado, houve desgaste europeu: França cedeu **0,02 p.p.**, Inglaterra caiu **0,10 p.p.** e Portugal perdeu **0,06 p.p.** Nos resultados recentes, Costa do Marfim bateu o Equador por **1-0**, a Suécia goleou a Tunísia por **5-1**, e Bélgica e Egito ficaram no **1-1** — sinais de uma rodada ruidosa abaixo de um topo ainda muito compacto.",
+      "generatedAt": "2026-06-15T22:30:41Z",
+      "inputHash": "6f25a6726102f387"
+    },
+    {
+      "id": "a-team-uruguay",
+      "slug": "uruguay",
+      "type": "team",
+      "title": "Uruguai respira no grupo, mas encara uma rota brutal",
+      "summary": "Com 83,97% de chance de avançar, o Uruguai mira mata-mata duro e título ainda distante.",
+      "body": "O **Uruguai** chega com status sólido: **Elo 1895**, **11º** no ranking e **83,97%** de probabilidade de classificação no grupo **H**. A base estatística diz que avançar é o cenário dominante; transformar isso em campanha profunda é outra história.\n\nO próximo teste é contra a **Arábia Saudita**, com **60,51%** de chance de vitória uruguaia. É o tipo de jogo que sustenta a margem no grupo — e que não permite desperdício se a seleção quiser evitar entrar no mata-mata já sob pressão máxima.\n\nO caminho provável é pesado desde o início: **Bélgica** no round of 32, com **46,55%** de chance de vitória; depois **Alemanha**, com **43,5%**; **Brasil**, com **37,82%**; **Argentina**, com **32,9%**; e uma final contra a **Espanha**, em que teria **33,51%**.\n\nPor isso, o retrato é claro: o Uruguai tem cara de classificado, mas não de favorito. As chances de semifinal são **13,12%**, de final **6,23%** e de título **2,75%** — números de uma seleção perigosa, porém obrigada a derrubar gigantes em sequência.",
+      "generatedAt": "2026-06-15T22:30:57Z",
+      "inputHash": "c2f8e98bc0d87d8f"
+    },
+    {
+      "id": "a-team-germany",
+      "slug": "germany",
+      "type": "team",
+      "title": "Alemanha quase dentro, mas o mata-mata cobra caro",
+      "summary": "Com 99,66% de classificação, a Alemanha mira longe, mas seu caminho provável é brutal.",
+      "body": "A Alemanha chega com **Elo 1965,7** e **8º lugar no ranking**, status de seleção forte o bastante para controlar sua entrada no torneio: a chance de classificação é de **99,66%**. O problema não está na porta de entrada — está no corredor seguinte.\n\nContra a **Costa do Marfim**, o próximo jogo dá à Alemanha **54,07%** de vitória: favoritismo real, mas não esmagador. A partir daí, o desenho provável endurece rápido: **Netherlands** no round of 32, com **49,16%** de chance de vencer, e **Spain** nas oitavas, com **39,74%**.\n\nO teto existe, mas é estreito: **18,42%** de semifinal, **9,49%** de final e **4,95%** de título. O caminho projetado ainda inclui **Brazil** nas quartas (**44,21%**), **Argentina** na semi (**39,11%**) e novamente **Spain** numa eventual final (**39,74%**). É uma campanha em que a Alemanha quase certamente avança — mas, para ganhar, precisará ser underdog várias vezes.",
+      "generatedAt": "2026-06-15T22:31:10Z",
+      "inputHash": "717749e44f59d7d2"
+    },
+    {
+      "id": "a-team-spain",
+      "slug": "spain",
+      "type": "team",
+      "title": "Espanha tem peso de favorita, mas chave cobra caro",
+      "summary": "Com 92,76% de chance de avançar, a Espanha mira o título em um caminho de elite.",
+      "body": "A Espanha chega como força de primeira prateleira: **Elo 2077,9**, **2ª no ranking** e **92,76%** de probabilidade de classificação no Grupo H. O próximo passo é Saudi Arabia, jogo em que a seleção aparece com **76,84%** de chance de vitória.\n\nO teto é real, mas não confortável: **30,89%** de chance de semifinal, **19,44%** de final e **12,44%** de título. É o perfil de uma candidata forte o bastante para ganhar de qualquer um, mas sem margem para tratar o mata-mata como formalidade.\n\nO caminho provável é pesado desde cedo: Belgium no round of 32 (**63,22%**), Germany nas oitavas (**60,26%**) e Brazil nas quartas (**54,53%**). A partir daí, o modelo coloca Argentina como obstáculo na semi e na final, ambas com **49,35%** de vitória espanhola — o ponto em que favoritismo vira moeda lançada para o alto.",
+      "generatedAt": "2026-06-15T22:31:23Z",
+      "inputHash": "4c540c6fd9ebf86f"
+    },
+    {
+      "id": "a-team-paraguay",
+      "slug": "paraguay",
+      "type": "team",
+      "title": "Paraguay vive no fio: avanço é possível, título é remoto",
+      "summary": "Com 33,9% de classificação, Paraguay precisa derrubar Turkey para ganhar oxigênio no Grupo D.",
+      "body": "**Paraguay** chega ao Grupo D como uma seleção de meio de tabela global: **Elo 1713.5** e **33º lugar no ranking**. O quadro é competitivo, mas estreito: a chance de classificação está em **33,9%**, um território em que cada ponto pesa muito.\n\nO próximo jogo contra **Turkey** é o pivô da campanha. A probabilidade de vitória paraguaia é de **33,32%**, o que coloca a partida menos como confirmação e mais como teste de sobrevivência estatística.\n\nMesmo avançando, o teto projetado é baixo: **1,78%** de chance de semifinal, **0,58%** de final e apenas **0,16%** de título. Não há um **caminho provável** definido nos dados — sinal de que, por enquanto, Paraguay ainda precisa primeiro transformar possibilidade em presença na fase seguinte.",
+      "generatedAt": "2026-06-15T22:31:35Z",
+      "inputHash": "e5fa7e4e7edf6c45"
+    },
+    {
+      "id": "a-team-argentina",
+      "slug": "argentina",
+      "type": "team",
+      "title": "Argentina é potência, mas o mata-mata cobra caro",
+      "summary": "Com 96,85% de chance de avançar, a Argentina mira o título com um caminho de elite pela frente.",
+      "body": "A Argentina entra no recorte como a seleção de **maior ranking: 1ª**, sustentada por **Elo 2085,0**. No **Grupo J**, a situação é amplamente favorável: a probabilidade de classificação é de **96,85%**, um patamar de quase obrigação competitiva.\n\nO próximo teste é contra a **Algeria**, e o modelo dá **67,5%** de chance de vitória argentina. É o tipo de jogo em que o favoritismo é claro, mas não absoluto — suficiente para controlar o roteiro, não para relaxar.\n\nO paradoxo está no mata-mata: a Argentina é forte, mas o caminho provável é estreito. A rota projetada traz **France** no round of 32 com **51,38%**, **England** nas oitavas com **56,43%**, novamente **France** nas quartas com **51,38%**, **Spain** na semifinal com **50,65%** e **France** em uma eventual final com **51,38%**.\n\nPor isso, as chances afunilam rápido: **27,84%** de semifinal, **18,01%** de final e **11,49%** de título. A leitura é simples: a Argentina tem perfil de campeã, mas não um corredor livre — cada eliminatória projetada parece mais uma moeda levemente inclinada do que uma passarela.",
+      "generatedAt": "2026-06-15T22:31:49Z",
+      "inputHash": "c482b222b770b575"
+    },
+    {
+      "id": "a-team-ghana",
+      "slug": "ghana",
+      "type": "team",
+      "title": "Ghana vive na fronteira entre ambição e eliminação",
+      "summary": "Com 48,7% de chance de avançar, Ghana encara o Panama em jogo que pode definir seu torneio.",
+      "body": "Ghana chega ao **Grupo L** como uma seleção de peso intermediário: **Elo 1710** e **35º lugar no ranking**. O retrato é de equilíbrio desconfortável: a chance de classificação é de **48,7%**, praticamente uma moeda em pé.\n\nO próximo jogo contra o **Panama** é o ponto de inflexão. Ghana tem **41,8%** de probabilidade de vitória, número que não permite favoritismo pleno, mas mantém a seleção dentro de uma rota realista de avanço.\n\nO teto, por enquanto, é estreito. As chances caem para **2,4%** de semifinal, **0,8%** de final e apenas **0,2%** de título. O caminho provável ainda não está definido, mas a leitura é clara: antes de sonhar alto, Ghana precisa sobreviver ao próprio grupo.",
+      "generatedAt": "2026-06-15T22:31:58Z",
+      "inputHash": "1a4f61039308cd62"
     },
     {
       "id": "a-team-brazil",
       "slug": "brazil",
       "type": "team",
-      "title": "Brasil: o favorito que controla o próprio destino",
-      "summary": "Com o melhor Elo do torneio e 94% de chance de classificação, a Seleção depende de si.",
-      "body": "O **Brasil** chega à segunda rodada como líder absoluto do ranking de Elo (2098) e maior probabilidade de título: **32%**. A vitória por 2 a 1 sobre a **Alemanha** consolidou a campanha e elevou a chance de classificação para **94%**.\n\nO modelo projeta um caminho favorável: a Seleção tem **52%** de chance de alcançar a final. A principal ameaça aparece no mata-mata, num possível duelo decisivo contra a **Espanha**, hoje a segunda força do torneio.\n\nPróximo jogo: **Japão**, onde o Brasil é amplamente favorito (**61%** de vitória), com expectativa de gols de 1,85 a 0,85.",
-      "generatedAt": "2026-06-15T20:22:54Z",
-      "inputHash": "seed-team-brazil-0002"
+      "title": "Brasil é potência, mas o funil cobra caro cedo",
+      "summary": "Com 95,23% de chance de avançar, Brasil mira o mata-mata; título aparece em 9,42%.",
+      "body": "O Brasil chega com **Elo 2028.7** e **ranking 4**, em posição de força no grupo c: a chance de classificação é de **95,23%**. O próximo teste é contra o **Haiti**, jogo em que a seleção tem **79,24%** de probabilidade de vitória.\n\nO desenho do torneio, porém, endurece rápido. As chances caem para **27,29%** de semifinal, **15,96%** de final e **9,42%** de título — números de candidato real, mas não de favorito incontestável.\n\nO caminho provável começa contra os **United States** no round_of_32, com **63,81%** de vitória, e passa pelo **Mexico** no round_of_16, com **66,8%**. A virada de dificuldade vem nas quartas: **Spain**, onde o Brasil aparece abaixo do par, com **45,47%**.\n\nSe sobreviver, o roteiro segue pesado: **Argentina** na semi, com **44,82%**, e uma possível final novamente contra **Spain**, com **45,47%**. A fotografia é clara: a classificação é quase obrigação; o título exige derrubar rivais em território estatisticamente hostil.",
+      "generatedAt": "2026-06-15T22:32:13Z",
+      "inputHash": "21e930a893873c61"
     },
     {
-      "id": "a-match-brazil-vs-japan",
-      "slug": "brazil-vs-japan",
+      "id": "a-team-portugal",
+      "slug": "portugal",
+      "type": "team",
+      "title": "Portugal é elite, mas o mata-mata cobra caro",
+      "summary": "Com 93% de chance de avançar, Portugal mira longe, mas o caminho provável reduz a margem.",
+      "body": "Portugal chega com perfil de candidato real: **Elo 1995**, **6º no ranking** e **93% de chance de classificação** no Grupo K. A base estatística é forte, mas não dominante o bastante para transformar favoritismo em conforto.\n\nO próximo teste é contra o **Congo DR**, jogo em que Portugal tem **65,2% de probabilidade de vitória**. É uma partida que sustenta a rota de classificação, mas também expõe o ponto central da campanha: a seleção é favorita agora, não necessariamente depois.\n\nNo funil do torneio, os números apertam rápido. Portugal tem **18,7%** de chance de semifinal, **10,7%** de final e **5,8%** de título. O caminho provável passa por **England** no round of 32 (**48,2%** de vitória), **Argentina** nas oitavas (**41,8%**), novamente **England** nas quartas (**48,2%**) e **Spain** tanto na semi quanto na final (**42,4%** em cada).\n\nA leitura é simples: Portugal está muito bem posicionado para sobreviver ao grupo, mas seu teto depende de vencer confrontos praticamente de moeda viciada contra gigantes. **É uma seleção de elite com rota de campeão — e probabilidade de campeão ainda contida.**",
+      "generatedAt": "2026-06-15T22:32:25Z",
+      "inputHash": "ba5384bdae320cb2"
+    },
+    {
+      "id": "a-team-japan",
+      "slug": "japan",
+      "type": "team",
+      "title": "Japão tem controle no Grupo F, mas teto ainda é estreito",
+      "summary": "Com 78,01% de chance de avançar, o Japão mira a Tunísia para transformar favoritismo em rota real.",
+      "body": "O Japão chega ao **Grupo F** com perfil de força intermediária-alta: **15º no ranking**, Elo de **1845.2** e **78,01%** de probabilidade de classificação. É uma posição confortável, mas não dominante — o tipo de cenário em que avançar é expectativa, não garantia.\n\nO próximo jogo contra a **Tunísia** é o ponto de pressão imediato. A seleção japonesa tem **52,87%** de chance de vitória, favoritismo claro o bastante para exigir controle, mas apertado o suficiente para punir qualquer margem mal administrada.\n\nO funil depois da fase de grupos é bem mais severo: **8,65%** de chance de semifinal, **3,71%** de final e apenas **1,5%** de título. O caminho provável ainda não está definido, o que reforça a leitura central: o Japão tem base para avançar, mas precisa de um salto competitivo para virar candidato real à taça.",
+      "generatedAt": "2026-06-15T22:32:36Z",
+      "inputHash": "900e1733a5f97898"
+    },
+    {
+      "id": "a-team-mexico",
+      "slug": "mexico",
+      "type": "team",
+      "title": "México quase dentro, mas longe do topo",
+      "summary": "Com 96,29% de chance de avançar, o México mira mata-mata ainda como candidato externo ao título.",
+      "body": "O México chega com perfil claro: força suficiente para sobreviver ao Grupo A, mas sem status de favorito profundo. Com **Elo 1842.2** e **ranking 16**, a seleção tem **96,29%** de chance de classificação — um número de controle, não de domínio.\n\nA queda de probabilidade no funil expõe o tamanho do desafio. As chances são de **10,99%** para semifinal, **4,65%** para final e apenas **1,86%** para título. Em outras palavras: avançar é o cenário-base; transformar isso em campanha de taça exige ruptura.\n\nO próximo teste é contra a **South Korea**, com **39,83%** de probabilidade de vitória mexicana. O caminho provável ainda não está definido, o que deixa a leitura mais aberta: por enquanto, o México joga para confirmar a vaga antes de descobrir o peso real do mata-mata.",
+      "generatedAt": "2026-06-15T22:32:46Z",
+      "inputHash": "60a5d241cc571ffa"
+    },
+    {
+      "id": "a-team-england",
+      "slug": "england",
+      "type": "team",
+      "title": "Inglaterra tem piso alto, mas rota de campeão é brutal",
+      "summary": "Com 93,82% de chance de avançar, Inglaterra mira título em trilha pesada.",
+      "body": "A Inglaterra chega ao Grupo L com **Elo 2015** e **5º lugar no ranking**, um perfil de elite sustentado por uma probabilidade de classificação de **93,82%**. O torneio, por enquanto, parece mais sobre confirmar o avanço do que sobreviver à fase inicial.\n\nO teto, porém, é bem mais estreito: a seleção tem **21,06%** de chance de semifinal, **12,34%** de final e **6,97%** de título. É uma candidatura real, mas não dominante — forte o bastante para assustar qualquer chave, vulnerável o bastante para depender de margens finas.\n\nO próximo teste é contra a Croácia, com **47,99%** de chance de vitória. No caminho provável, a Inglaterra aparece com **51,84%** contra Portugal no round of 32, depois cai para **43,57%** diante da Argentina e **44,94%** contra a França nas quartas.\n\nA reta final projetada mantém o grau de dificuldade: **44,22%** contra a Espanha na semifinal e novamente **44,22%** contra a Espanha na final, conforme a projeção. A leitura é clara: a Inglaterra deve avançar, mas para levantar a taça precisará ganhar uma sequência de duelos praticamente sem folga estatística.",
+      "generatedAt": "2026-06-15T22:32:58Z",
+      "inputHash": "8249098f61f395d3"
+    },
+    {
+      "id": "a-team-united-states",
+      "slug": "united-states",
+      "type": "team",
+      "title": "Estados Unidos quase passam, mas o teto ainda é estreito",
+      "summary": "Com 98,5% de chance de avançar, os EUA miram mata-mata, mas título aparece em só 2,4%.",
+      "body": "Os **United States** chegam com status sólido no Grupo **D**: Elo de **1876,5**, **13º** no ranking e uma probabilidade de classificação de **98,5%**. A fase de grupos, pelos números, parece mais uma formalidade estatística do que uma fronteira real.\n\nO problema começa depois. A chance de semifinal cai para **12,3%**, a de final para **5,5%** e a de título fica em **2,4%**. É o retrato de uma seleção forte o bastante para sobreviver ao grupo, mas ainda tratada pelo modelo como candidata periférica ao troféu.\n\nO próximo teste é contra a **Australia**, com **46,7%** de probabilidade de vitória americana. Não é um favoritismo confortável: é um jogo de margem fina, capaz de ajustar a leitura sobre o real alcance da equipe.\n\nComo o **caminho provável não está definido** nos dados, a projeção mais honesta é esta: classificação muito encaminhada, mata-mata provável, mas uma escalada até o título que exige quebrar expectativas em sequência.",
+      "generatedAt": "2026-06-15T22:33:11Z",
+      "inputHash": "1faa2f7cf8901ec5"
+    },
+    {
+      "id": "a-team-south-korea",
+      "slug": "south-korea",
+      "type": "team",
+      "title": "Coreia do Sul está quase dentro, mas longe do topo",
+      "summary": "Com 94,55% de chance de avançar, a Coreia mira o mata-mata; o título ainda é cenário remoto.",
+      "body": "A **Coreia do Sul** chega ao momento decisivo do **Grupo A** em posição confortável: com **Elo 1812,8** e **19º lugar no ranking**, tem **94,55%** de probabilidade de classificação. É uma campanha com piso alto — avançar é o cenário dominante.\n\nO teto, porém, é mais estreito. As chances caem para **9,39%** de semifinal, **3,8%** de final e apenas **1,4%** de título. O modelo enxerga a Coreia como uma seleção muito provável no mata-mata, mas ainda fora do grupo de favoritas reais ao troféu.\n\nO próximo teste é contra o **México**, jogo em que a Coreia tem **34,41%** de chance de vitória. O caminho provável ainda não está definido, o que torna esse confronto especialmente importante: ele pode ajustar não só a leitura do grupo, mas também o tamanho do desafio na fase seguinte.",
+      "generatedAt": "2026-06-15T22:33:21Z",
+      "inputHash": "1bc2d60c65b29d25"
+    },
+    {
+      "id": "a-team-france",
+      "slug": "france",
+      "type": "team",
+      "title": "França tem status de elite, mas chave cobra caro",
+      "summary": "Com 95,74% de chance de avançar, a França mira o título em uma rota cheia de gigantes.",
+      "body": "A França entra no Grupo I com **Elo 2070** e **ranking 3**, perfil de candidata real, não apenas de potência histórica. A classificação está praticamente encaminhada: **95,74%** de chance de avançar.\n\nO tamanho da ambição, porém, encontra uma chave pesada. As probabilidades caem para **25,95%** de semifinal, **16,49%** de final e **10,23%** de título — números fortes, mas longe de um passeio.\n\nO próximo teste é contra Senegal, com **61,46%** de chance de vitória francesa. A partir daí, o caminho provável é brutal: Argentina no **round of 32** (**48,62%**), England nas oitavas (**55,06%**), Argentina nas quartas (**48,62%**), Spain na semi (**49,27%**) e Argentina na final (**48,62%**).\n\nA leitura é clara: a França tem base estatística de campeã, mas seu funil projetado é de margens finas. Para levantar a taça, precisará sobreviver a uma sequência em que quase todo duelo decisivo aparece perto do **50%**.",
+      "generatedAt": "2026-06-15T22:33:32Z",
+      "inputHash": "4de70bb2610cf24c"
+    },
+    {
+      "id": "a-team-south-africa",
+      "slug": "south-africa",
+      "type": "team",
+      "title": "South Africa vive no fio: avanço é possível, título é remoto",
+      "summary": "Com 27,79% de classificação, South Africa precisa superar Czechia para manter o torneio em alcance.",
+      "body": "South Africa chega ao grupo **a** como seleção de **Elo 1647,8** e **ranking 44**, num ponto de equilíbrio delicado: há competitividade suficiente para brigar pela vaga, mas pouca margem para erro. A chance de classificação é de **27,79%**.\n\nO funil depois disso é severo. A probabilidade de semifinal cai para **0,96%**, a de final para **0,26%** e a de título fica em **0,06%** — números que desenham mais uma campanha de resistência do que uma rota real de conquista.\n\nO próximo jogo, contra **Czechia**, é o centro da equação: South Africa tem **29,13%** de chance de vitória. Como os dados não indicam um **caminho provável** definido, o cenário é simples e duro: pontuar forte agora é o que mantém qualquer projeção viva.",
+      "generatedAt": "2026-06-15T22:33:44Z",
+      "inputHash": "b524c14694b1c1cc"
+    },
+    {
+      "id": "a-team-algeria",
+      "slug": "algeria",
+      "type": "team",
+      "title": "Algeria vive no limite antes do choque com a Argentina",
+      "summary": "Com 59,9% de chance de avançar, Algeria encara a Argentina tendo só 12,36% de vitória.",
+      "body": "Algeria chega ao **Grupo J** como a seleção de **ranking 27** e **Elo 1765.0**, em uma posição competitiva, mas longe de confortável. A chance de classificação é de **59,9%**: favorável, não dominante.\n\nO teto, por enquanto, é estreito. As probabilidades caem para **4,42%** de semifinal, **1,69%** de final e apenas **0,53%** de título — números que desenham uma campanha em que avançar já tem peso relevante.\n\nO próximo jogo é o ponto de pressão: contra a **Argentina**, Algeria tem **12,36%** de chance de vitória. O caminho provável ainda não está definido, o que reforça a leitura central: primeiro, sobreviver ao grupo; depois, recalibrar ambição.",
+      "generatedAt": "2026-06-15T22:33:54Z",
+      "inputHash": "b5f0aaf243705c27"
+    },
+    {
+      "id": "a-team-australia",
+      "slug": "australia",
+      "type": "team",
+      "title": "Austrália tem piso alto, mas teto estreito no Grupo D",
+      "summary": "Com 94,02% de classificação, a Austrália mira avançar; o título aparece distante, em 0,88%.",
+      "body": "A **Austrália** chega ao Grupo D com **Elo 1775,0** e **ranking 24**, um perfil que sustenta uma campanha de sobrevivência muito forte: a chance de classificação é de **94,02%**. O torneio, por enquanto, coloca a equipe mais perto de cumprir obrigação do que de romper a hierarquia.\n\nO funil fica duro rapidamente. A probabilidade de semifinal é de **6,86%**, cai para **2,67%** na final e termina em apenas **0,88%** de título. É uma seleção com alta segurança para avançar, mas com margem curta quando a competição entra em território de elite.\n\nO próximo teste é contra **United States**, e a Austrália tem **28,11%** de chance de vitória. É o tipo de jogo que pode recalibrar a leitura do time: vencer muda o peso da campanha; perder não destrói a rota, mas reforça o limite competitivo indicado pelos números.\n\nO **caminho provável** não está definido nos dados disponíveis. Assim, a leitura mais limpa é esta: classificação muito bem encaminhada, ambição de mata-mata moderada e título ainda como cenário de baixa probabilidade.",
+      "generatedAt": "2026-06-15T22:34:07Z",
+      "inputHash": "3aaac731f40524d6"
+    },
+    {
+      "id": "a-team-new-zealand",
+      "slug": "new-zealand",
+      "type": "team",
+      "title": "New Zealand vive no limite do Grupo G",
+      "summary": "Com 38,2% de chance de avançar, New Zealand precisa surpreender Iran para mudar seu teto.",
+      "body": "New Zealand chega ao Grupo G como uma seleção de **Elo 1620** e **46ª no ranking**, com uma projeção que sugere competitividade, mas pouca margem. A chance de classificação é de **38,2%**: suficiente para manter o torneio aberto, baixa o bastante para transformar cada jogo em ponto de pressão.\n\nO próximo teste é contra **Iran**, e o modelo dá aos neozelandeses **24,93%** de probabilidade de vitória. É o tipo de confronto que define o tom da campanha: ganhar muda a conversa; perder estreita rapidamente o caminho.\n\nO teto, por enquanto, é modesto. New Zealand tem **0,92%** de chance de semifinal, **0,22%** de final e apenas **0,05%** de título. Sem um **caminho provável** indicado nos dados, a leitura é simples: antes de projetar mata-mata, a seleção precisa primeiro quebrar a lógica do próprio grupo.",
+      "generatedAt": "2026-06-15T22:34:17Z",
+      "inputHash": "6607e3bfb4e28fd0"
+    },
+    {
+      "id": "a-team-switzerland",
+      "slug": "switzerland",
+      "type": "team",
+      "title": "Suíça vive zona de avanço, mas título ainda é remoto",
+      "summary": "Com 77,87% de chance de classificação, a Suíça tem base sólida, mas só 1,38% de probabilidade de título.",
+      "body": "A Suíça chega ao Grupo B com **Elo 1837** e **17º lugar no ranking**, um perfil competitivo, mas não dominante. O dado central é claro: a seleção tem **77,87% de chance de classificação**, sinal de controle razoável sobre a primeira fase.\n\nO teto, porém, ainda é estreito. As chances caem para **8,16% de semifinal**, **3,45% de final** e apenas **1,38% de título** — uma curva que descreve uma equipe mais provável de avançar do que de sustentar uma corrida longa.\n\nO próximo teste é contra a **Bosnia-Herzegovina**, com **48,94% de probabilidade de vitória** suíça. É um jogo praticamente no limite: vencer reforça a rota de classificação; tropeçar pode transformar uma posição confortável em pressão imediata.\n\nComo o **caminho provável ainda não está definido**, a leitura é menos sobre adversários futuros e mais sobre sobrevivência estatística: a Suíça está bem colocada para passar, mas precisa elevar o nível para que o torneio deixe de ser apenas avanço e vire ambição real.",
+      "generatedAt": "2026-06-15T22:34:28Z",
+      "inputHash": "28852f1e8b38b20a"
+    },
+    {
+      "id": "a-team-ecuador",
+      "slug": "ecuador",
+      "type": "team",
+      "title": "Equador vive na fronteira entre controle e risco",
+      "summary": "Com 54,89% de avanço, o Equador tem favoritismo imediato, mas teto de título ainda mínimo.",
+      "body": "O Equador chega ao **Grupo E** com perfil de seleção competitiva, mas ainda fora do bloco de elite: **Elo 1772,1** e **25º no ranking**. A projeção central é de passagem de fase, com **54,89% de chance de classificação** — vantagem real, não folga.\n\nO próximo jogo, contra **Curaçao**, é o ponto de inflexão. A vitória equatoriana aparece em **56,96%**, número que coloca o Equador como favorito, mas sem margem para tratar o duelo como formalidade.\n\nO funil pesa rápido depois disso: **4,35%** de chance de semifinal, **1,67%** de final e apenas **0,55%** de título. O caminho provável ainda não está definido, o que reforça a leitura: o torneio do Equador, por enquanto, é menos sobre sonhar alto e mais sobre confirmar o avanço.",
+      "generatedAt": "2026-06-15T22:34:38Z",
+      "inputHash": "030908867eb248fe"
+    },
+    {
+      "id": "a-team-sweden",
+      "slug": "sweden",
+      "type": "team",
+      "title": "Suécia respira classificação, mas encara teto baixo",
+      "summary": "Com 95,94% de chance de avançar, a Suécia mira mata-mata; o título ainda é cenário remoto.",
+      "body": "A Suécia chega com **Elo 1810.2** e **ranking 20**, uma seleção em zona competitiva, mas não no bloco das grandes favoritas. No **Grupo F**, sua situação é forte: **95,94%** de probabilidade de classificação.\n\nO funil, porém, endurece rápido. As chances caem para **8,59%** de semifinal, **3,42%** de final e apenas **1,24%** de título — números que desenham uma campanha provável de sobrevivência antes de ambição máxima.\n\nO próximo teste é contra a **Netherlands**, e o modelo dá à Suécia **22,99%** de chance de vitória. É um jogo que pode calibrar o tamanho real da candidatura sueca: avançar parece muito provável; transformar isso em corrida profunda ainda exige ruptura.\n\nComo o **caminho provável** não está definido nos dados, a leitura é necessariamente aberta: a Suécia tem base estatística para seguir no torneio, mas seu horizonte de taça permanece estreito.",
+      "generatedAt": "2026-06-15T22:34:48Z",
+      "inputHash": "2e2141f9e3aba96c"
+    },
+    {
+      "id": "a-team-czechia",
+      "slug": "czechia",
+      "type": "team",
+      "title": "Czechia vive na linha fina da classificação",
+      "summary": "Com 50,9% de chance de avançar, Czechia encara a South Africa em jogo de peso quase simétrico.",
+      "body": "A Czechia chega ao grupo **a** como a seleção de **ranking 32** e **Elo 1737.2**, em uma zona de tensão competitiva: não está fora do mapa, mas tampouco controla o torneio. A chance de classificação é de **50,9%**, praticamente uma fronteira entre sobrevivência e eliminação.\n\nO teto, por enquanto, é estreito. As probabilidades caem para **3,37%** de semifinal, **1,16%** de final e apenas **0,34%** de título — números que desenham uma campanha possível, mas dependente de ruptura competitiva.\n\nO próximo jogo contra a **South Africa** é o ponto de inflexão. A Czechia tem **45,53%** de vitória, sinal de confronto duro e sem favoritismo confortável. Não há **caminho provável** definido nos dados, o que reforça a leitura: antes de projetar mata-mata, a missão é atravessar o grupo.",
+      "generatedAt": "2026-06-15T22:35:00Z",
+      "inputHash": "efef3b143f67c9c6"
+    },
+    {
+      "id": "a-team-croatia",
+      "slug": "croatia",
+      "type": "team",
+      "title": "Croácia tem lastro de elite, mas rota cobra caro",
+      "summary": "Com 83,22% de chance de avançar, a Croácia mira mata-mata duro e título ainda distante.",
+      "body": "A Croácia chega com **Elo 1900** e **10º lugar no ranking**, uma combinação que sustenta sua posição no grupo l: a chance de classificação é alta, **83,22%**. O torneio, porém, já mostra o teto estatístico: **12,06%** de semifinal, **5,83%** de final e apenas **2,57%** de título.\n\nO próximo teste é pesado. Contra a Inglaterra, a Croácia tem **26,98%** de vitória — um jogo que mede mais do que a fase de grupos: mede se a seleção consegue transformar reputação competitiva em probabilidade real contra elite.\n\nO caminho provável é estreito desde o início do mata-mata: **Portugal** no round of 32, com **41,3%** de vitória; depois **Argentina**, com **33,33%**, cenário que se repete nas quartas (**33,33%**) e até numa eventual final (**33,33%**). Entre esses degraus, a semifinal projetada contra a **Espanha** dá à Croácia **33,94%**.\n\nA leitura é clara: avançar é o cenário-base; disputar o título exige uma sequência de quebras de expectativa. A Croácia está viva não porque o caminho favorece, mas porque seu piso competitivo ainda a mantém dentro da conversa.",
+      "generatedAt": "2026-06-15T22:35:12Z",
+      "inputHash": "c995bd797a07743d"
+    },
+    {
+      "id": "a-team-saudi-arabia",
+      "slug": "saudi-arabia",
+      "type": "team",
+      "title": "Arábia Saudita vive no limite no Grupo H",
+      "summary": "Com 38,22% de chance de avançar, a Arábia Saudita encara o Uruguai como teste decisivo.",
+      "body": "A **Arábia Saudita** chega ao Grupo H como seleção de **Elo 1650,0** e **43ª no ranking**, em uma faixa competitiva, mas sem margem confortável. A chance de classificação é de **38,22%**: suficiente para manter o torneio vivo, baixa demais para sugerir controle.\n\nO próximo jogo contra o **Uruguai** é o ponto de inflexão. A probabilidade saudita de vitória é de apenas **17,11%**, o que coloca a seleção em posição reativa: pontuar contra um adversário mais forte muda o desenho do grupo; perder estreita drasticamente o caminho.\n\nMesmo avançando, o teto projetado é curto. As chances são de **1,38%** para semifinal, **0,37%** para final e **0,08%** para título. O caminho provável ainda não está definido nos dados — sinal de que, para a Arábia Saudita, a primeira disputa é menos sobre sonhar alto e mais sobre sobreviver ao Grupo H.",
+      "generatedAt": "2026-06-15T22:35:22Z",
+      "inputHash": "6739f3308a913c9d"
+    },
+    {
+      "id": "a-team-tunisia",
+      "slug": "tunisia",
+      "type": "team",
+      "title": "Tunísia vive no limite, com margem mínima no Grupo F",
+      "summary": "Com 14,34% de chance de avançar, a Tunísia encara o Japão como jogo de sobrevivência.",
+      "body": "A Tunísia entra no recorte do torneio como uma seleção de **ranking 37** e **Elo 1679.8**, mas os números colocam o time em posição delicada no **Grupo F**. A chance de classificação é de **14,34%** — suficiente para manter a porta aberta, longe de sugerir controle da própria campanha.\n\nO próximo jogo, contra o **Japão**, concentra o peso da sobrevivência: a probabilidade tunisiana de vitória é de **22,92%**. É o tipo de partida em que o cenário estatístico não elimina a ambição, mas deixa claro que qualquer avanço exigirá desempenho acima da linha projetada.\n\nMesmo passando, o teto calculado segue baixo: **0,66%** de chance de semifinal, **0,21%** de final e apenas **0,05%** de título. Sem um **caminho provável** definido nos dados, a leitura é simples: a Tunísia ainda está no torneio, mas sua rota depende primeiro de quebrar a lógica já no próximo jogo.",
+      "generatedAt": "2026-06-15T22:35:32Z",
+      "inputHash": "a5d6b4b31bfbe172"
+    },
+    {
+      "id": "a-team-turkey",
+      "slug": "turkey",
+      "type": "team",
+      "title": "Turquia vive no limite: avanço é possível, título é remoto",
+      "summary": "Com 39,73% de chance de classificação, a Turquia encara o Paraguai em jogo que pesa no Grupo D.",
+      "body": "A Turquia chega ao **Grupo D** como seleção de meio de tabela no cenário geral: **Elo 1755,0** e **30º lugar no ranking**. O retrato é de competitividade real, mas sem margem estatística confortável.\n\nA chance de avançar é de **39,73%** — alta o bastante para manter a campanha viva, baixa o bastante para transformar cada ponto em ativo crítico. Depois disso, o funil aperta: **2,87%** de semifinal, **1,02%** de final e apenas **0,32%** de título.\n\nO próximo jogo é contra o **Paraguai**, com **40,96%** de probabilidade de vitória turca. É o tipo de partida que define o tom do torneio: vencer muda a leitura do grupo; tropeçar empurra a seleção para uma corrida de recuperação.\n\nComo o **caminho provável não está definido**, a análise fica presa ao essencial: a Turquia ainda tem rota de classificação, mas seu teto estatístico é estreito. Para transformar presença em ameaça, precisa primeiro sobreviver ao Grupo D.",
+      "generatedAt": "2026-06-15T22:35:42Z",
+      "inputHash": "891220f6e2a5d41a"
+    },
+    {
+      "id": "a-team-senegal",
+      "slug": "senegal",
+      "type": "team",
+      "title": "Senegal tem margem, mas encara a França no limite",
+      "summary": "Com 68,16% de chance de avançar, Senegal ainda mira longe: título aparece em apenas 1,03%.",
+      "body": "Senegal chega no **Grupo I** com perfil competitivo, mas sem blindagem: **Elo 1815** e **18º no ranking** sustentam uma chance sólida de classificação, em **68,16%**.\n\nO teto, porém, afunila rápido. A seleção tem **6,72%** de probabilidade de semifinal, **2,88%** de final e apenas **1,03%** de título — números de quem pode sobreviver ao grupo, mas ainda precisa romper camadas pesadas do torneio.\n\nO próximo teste é contra a **França**, e a leitura é dura: Senegal tem **16,43%** de chance de vitória. O caminho provável não está definido, o que reforça a dependência do resultado imediato para transformar uma campanha promissora em rota real de mata-mata.",
+      "generatedAt": "2026-06-15T22:35:51Z",
+      "inputHash": "04e81f738d05a53c"
+    },
+    {
+      "id": "a-team-belgium",
+      "slug": "belgium",
+      "type": "team",
+      "title": "Bélgica tem piso alto, mas teto espremido pelo chaveamento",
+      "summary": "Com 88,85% de chance de avançar, Bélgica mira mata-mata duro e título ainda distante: 3,44%.",
+      "body": "A Bélgica chega como seleção de **ranking 9** e **Elo 1932,5**, com uma situação de grupo bastante favorável: **88,85%** de chance de classificação no Grupo G. O dado central, porém, está menos na sobrevivência imediata e mais no limite competitivo: a probabilidade de semifinal é de **14,36%**, cai para **7,14%** na final e termina em **3,44%** para o título.\n\nO próximo jogo contra o Irã coloca a Bélgica em posição de controle, mas não de conforto absoluto: **53,55%** de chance de vitória. É favoritismo, não passeio — e qualquer tropeço mudaria o peso de um caminho que já nasce estreito.\n\nNo roteiro provável, a dureza aparece cedo: **Espanha** no round of 32, com **36,78%** de vitória belga; depois **Alemanha** no round of 16 (**46,94%**), **Brasil** nas quartas (**41,19%**) e **Argentina** na semi (**36,16%**). Se chegar à final, o cenário projetado volta a apontar a **Espanha**, novamente com **36,78%**. A Bélgica tem alta chance de estar no mata-mata — mas, dali em diante, cada degrau parece desenhado para cobrar o preço completo.",
+      "generatedAt": "2026-06-15T22:36:05Z",
+      "inputHash": "c264e078640d2628"
+    },
+    {
+      "id": "a-team-morocco",
+      "slug": "morocco",
+      "type": "team",
+      "title": "Marrocos é favorito para passar, mas o teto aperta",
+      "summary": "Com 87,46% de classificação, Marrocos mira mata-mata duro e vê o título em 2,56%.",
+      "body": "Marrocos chega ao Grupo C com perfil de seleção forte: **Elo 1881,3**, **12º no ranking** e **87,46% de chance de classificação**. A leitura é clara: avançar é o cenário dominante; transformar isso em campanha de título é outra escala.\n\nO próximo teste é contra a **Scotland**, com **48,68% de probabilidade de vitória**. Não é um jogo de controle absoluto — é margem estreita, do tipo que define se o caminho começa administrável ou já exige correções antes do mata-mata.\n\nNo roteiro provável, Marrocos teria **United States** no round of 32, com **50,44%** de vitória, e **Mexico** nas oitavas, com **53,60%**. Até aí, o desenho é competitivo e ligeiramente favorável. O funil começa nas quartas: contra a **Spain**, a chance cai para **32,34%**.\n\nDaí em diante, a candidatura vira sobrevivência de elite: **31,73%** contra a **Argentina** em uma possível semi e **36,61%** contra o **Brazil** na final. Por isso as probabilidades finais são contidas: **13,24%** de semifinal, **6,21%** de final e **2,56%** de título.",
+      "generatedAt": "2026-06-15T22:36:18Z",
+      "inputHash": "2e76e2c755789f0b"
+    },
+    {
+      "id": "a-team-austria",
+      "slug": "austria",
+      "type": "team",
+      "title": "Austria tem margem real, mas teto ainda estreito",
+      "summary": "Com 68,41% de chance de avançar, Austria mira Jordan antes de um mata-mata ainda sem roteiro claro.",
+      "body": "A **Austria** chega ao Grupo **J** com perfil de seleção competitiva, mas não dominante: **Elo 1810** e **21º lugar** no ranking. O dado central é a classificação: **68,41%** de chance de avançar, uma posição confortável o bastante para controlar o próprio caminho, mas longe de blindada.\n\nO próximo teste é contra **Jordan**, com **51,86%** de probabilidade de vitória. É um favoritismo curto — mais sinal de equilíbrio do que de autoridade. Para uma equipe nessa faixa de força, esse jogo funciona como divisor: vencer consolida a rota; tropeçar comprime a margem.\n\nO teto do torneio ainda é modesto. A Austria tem **6,5%** de chance de semifinal, **2,71%** de final e apenas **0,98%** de título. O caminho provável não está definido nos dados, o que reforça a leitura: por enquanto, a missão é avançar; a ambição de título depende de sobreviver a um funil estatístico bem mais duro.",
+      "generatedAt": "2026-06-15T22:36:28Z",
+      "inputHash": "9120970cba2cc625"
+    },
+    {
+      "id": "a-team-colombia",
+      "slug": "colombia",
+      "type": "team",
+      "title": "Colômbia tem piso alto, mas teto ainda em teste",
+      "summary": "Com 81,14% de chance de avançar, a Colômbia mira o mata-mata antes de sonhar alto.",
+      "body": "A Colômbia chega no **Grupo K** com perfil de favorita pragmática: **Elo 1875,0** e **14º lugar no ranking**. O número que define sua situação é a classificação: **81,14%** de chance de avançar, uma posição confortável sem ser blindada.\n\nO salto competitivo, porém, é mais estreito. A seleção tem **10,19%** de chance de semifinal, **4,91%** de final e **2,05%** de título — um retrato de equipe forte o bastante para sobreviver ao grupo, mas ainda distante do bloco mais provável ao troféu.\n\nO próximo jogo é contra o **Uzbekistan**, com **56,21%** de probabilidade de vitória colombiana. É o tipo de partida que pode consolidar a rota: vencer aproxima a Colômbia do mata-mata; tropeçar reabre uma margem de risco que os números hoje mantêm sob controle.\n\nComo o **caminho provável ainda não está definido**, a leitura é simples: primeiro, confirmar a classificação; depois, tentar transformar um bom piso estatístico em campanha de alcance maior.",
+      "generatedAt": "2026-06-15T22:36:40Z",
+      "inputHash": "2fbeca403f49b090"
+    },
+    {
+      "id": "a-team-egypt",
+      "slug": "egypt",
+      "type": "team",
+      "title": "Egito tem porta aberta no grupo, mas teto ainda é baixo",
+      "summary": "Com 75,17% de chance de avançar, Egito mira mata-mata; título aparece como cenário remoto.",
+      "body": "O Egito chega ao **Grupo G** em posição competitiva: **Elo 1767,5**, **26º no ranking** e **75,17% de chance de classificação**. É uma seleção com base suficiente para sobreviver à primeira triagem, mas ainda sem força estatística de candidata central.\n\nO funil pesa rápido: as chances caem para **4,99% de semifinal**, **1,81% de final** e apenas **0,6% de título**. A leitura é clara: avançar é o objetivo provável; transformar isso em campanha profunda exigiria romper um patamar que os números ainda não sustentam.\n\nO próximo jogo contra a **New Zealand** é o ponto de controle imediato. A probabilidade de vitória egípcia é de **51,13%**, margem favorável, mas estreita o bastante para tratar a partida como decisiva na gestão do grupo.\n\nO **caminho provável** ainda não está definido nos dados. Por enquanto, o mapa do Egito é menos sobre projetar adversários e mais sobre confirmar a classificação — porque é daí que qualquer ambição maior precisará nascer.",
+      "generatedAt": "2026-06-15T22:36:51Z",
+      "inputHash": "e817bb37fb00eaf9"
+    },
+    {
+      "id": "a-team-canada",
+      "slug": "canada",
+      "type": "team",
+      "title": "Canadá tem margem no Grupo B, mas teto ainda é estreito",
+      "summary": "Com 65,65% de chance de avançar, Canadá mira o Qatar; título aparece como cenário remoto.",
+      "body": "O Canadá entra no recorte do **Grupo B** com uma posição competitiva: **Elo 1737,8** e **31º no ranking**. O dado central é a classificação: **65,65%** de chance de avançar, suficiente para colocar a seleção em zona favorável, mas sem blindagem.\n\nO funil, porém, é duro. A chance de semifinal cai para **3,77%**, a de final para **1,29%** e a de título fica em **0,42%**. Em outras palavras: o Canadá tem perfil de equipe com caminho real para sobreviver à fase atual, mas ainda distante do bloco de campeões prováveis.\n\nO próximo jogo contra o **Qatar** é o ponto de pressão imediata. A probabilidade de vitória canadense é de **44,13%**, um número que sugere confronto aberto e potencialmente definidor para transformar vantagem estatística em posição concreta.\n\nComo o **caminho provável** não está definido nos dados, a leitura mais prudente é tratar o mata-mata como território ainda nebuloso: primeiro, confirmar a vaga; depois, recalibrar ambição.",
+      "generatedAt": "2026-06-15T22:37:04Z",
+      "inputHash": "ec90d4b282bfe068"
+    },
+    {
+      "id": "a-team-haiti",
+      "slug": "haiti",
+      "type": "team",
+      "title": "Haiti encara a margem mínima contra o Brazil",
+      "summary": "Com 9,38% de chance de avançar, Haiti precisa desafiar um cenário quase fechado.",
+      "body": "O Haiti chega ao Grupo C como seleção de **Elo 1570.8** e **ranking 47**, mas o modelo é duro: a chance de classificação é de apenas **9,38%**. É uma campanha em que sobreviver já seria uma ruptura relevante com a projeção.\n\nO próximo jogo concentra o tamanho do problema. Contra o **Brazil**, o Haiti tem **5,61%** de probabilidade de vitória — um número que define mais do que o favoritismo adversário; define a necessidade de um resultado fora da curva para reabrir o torneio.\n\nO teto projetado é estreito: **0,2%** de chance de semifinal, **0,03%** de final e **0%** de título. Como o **caminho provável** não está definido nos dados, a leitura é simples: antes de desenhar mata-mata, o Haiti precisa primeiro transformar uma classificação improvável em realidade.",
+      "generatedAt": "2026-06-15T22:37:15Z",
+      "inputHash": "d8fec7975987adbf"
+    },
+    {
+      "id": "a-team-iran",
+      "slug": "iran",
+      "type": "team",
+      "title": "Irã tem margem para avançar, mas teto ainda é baixo",
+      "summary": "Com 68,1% de chance de classificação, o Irã mira o mata-mata, mas o título segue distante.",
+      "body": "O Irã chega ao **Grupo G** como a seleção de **ranking 28** e **Elo 1760,0**: competitivo o bastante para tratar a classificação como cenário mais provável, mas ainda fora do bloco de elite. A projeção dá **68,1%** de chance de avançar.\n\nO próximo jogo, contra a **New Zealand**, é o ponto de controle da campanha. A probabilidade de vitória iraniana é de **50,4%**, um favoritismo estreito — mais sinal de equilíbrio do que de domínio.\n\nDepois da fase de grupos, o funil fica duro rapidamente: **4,5%** de chance de semifinal, **1,6%** de final e apenas **0,5%** de título. Os dados não indicam um **caminho provável** específico, o que reforça a leitura central: o Irã tem rota real para sobreviver ao grupo, mas precisará superar o próprio teto para virar candidato.",
+      "generatedAt": "2026-06-15T22:37:25Z",
+      "inputHash": "99f537b096b930d2"
+    },
+    {
+      "id": "a-team-bosnia-herzegovina",
+      "slug": "bosnia-herzegovina",
+      "type": "team",
+      "title": "Bósnia tem margem no grupo, mas teto ainda é baixo",
+      "summary": "Com 62,28% de chance de avançar, a Bósnia mira a Suíça com ambição realista e sonho remoto de título.",
+      "body": "A **Bosnia-Herzegovina** chega no **grupo b** com perfil de seleção intermediária-alta: **Elo 1712.2** e **ranking 34**. O dado central é claro: a campanha tem boa chance de sobreviver à fase inicial, mas ainda não aponta para uma corrida profunda.\n\nA probabilidade de classificação é de **62,28%**, um patamar confortável sem ser dominante. A partir daí, o funil aperta rápido: **2,88%** de chance de semifinal, **0,93%** de final e apenas **0,28%** de título. Em outras palavras, avançar é o objetivo plausível; levantar a taça ainda é uma hipótese extrema.\n\nO próximo teste é contra a **Switzerland**, jogo em que a Bósnia tem **26,17%** de chance de vitória. É uma partida que pode calibrar o torneio: vencer muda o tom da campanha; perder mantém a seleção dependente da matemática do grupo.\n\nO **caminho provável** ainda não está definido nos dados. Por enquanto, a leitura é simples: a Bósnia tem base para passar, mas precisa superar seu próprio teto competitivo para transformar classificação em ameaça real.",
+      "generatedAt": "2026-06-15T22:37:37Z",
+      "inputHash": "4d2c9bd7312943ea"
+    },
+    {
+      "id": "a-team-panama",
+      "slug": "panama",
+      "type": "team",
+      "title": "Panamá vive no limite entre sobrevivência e teto baixo",
+      "summary": "Com 37,52% de chance de avançar, Panamá precisa superar Ghana para manter o torneio vivo.",
+      "body": "O Panamá chega ao **Grupo L** como uma seleção de margem estreita: **Elo 1660, ranking 40** e **37,52%** de chance de classificação. É uma posição competitiva, mas sem conforto — o torneio ainda está ao alcance, não sob controle.\n\nO próximo jogo contra **Ghana** concentra boa parte dessa equação. A probabilidade de vitória panamenha é de **32,56%**, número que traduz o tamanho do desafio: vencer muda o tom da campanha; tropeçar pode transformar a classificação em perseguição.\n\nO teto, por enquanto, é baixo. As chances de semifinal são de **1,36%**, a final aparece em **0,4%** e o título em apenas **0,1%**. O caminho provável não está definido nos dados, o que reforça a leitura: antes de projetar mata-mata, o Panamá precisa primeiro provar que pertence à próxima fase.",
+      "generatedAt": "2026-06-15T22:37:50Z",
+      "inputHash": "8ab3eda12bc7dd3d"
+    },
+    {
+      "id": "a-team-cape-verde-islands",
+      "slug": "cape-verde-islands",
+      "type": "team",
+      "title": "Cabo Verde vive entre corte real e teto estreito",
+      "summary": "Com 51,32% de chance de avançar, Cabo Verde encara o Uruguai com só 16,24% de vitória.",
+      "body": "**Cabo Verde Islands** chega ao Grupo H como seleção de meio de tabela alta no modelo: **Elo 1637.1** e **45º lugar** no ranking. O dado central é a sobrevivência: a probabilidade de classificação é de **51,32%**, praticamente uma fronteira entre seguir vivo e cair cedo.\n\nO teto, porém, é bem mais baixo que a chance de avançar sugere. A seleção tem **1,67%** de probabilidade de semifinal, **0,47%** de final e apenas **0,1%** de título — um perfil de equipe competitiva para escapar do grupo, mas ainda distante do bloco que ameaça levantar a taça.\n\nO próximo jogo explica parte desse limite: contra o **Uruguay**, Cabo Verde tem **16,24%** de chance de vitória. É uma partida de alta alavancagem porque pode redefinir a leitura do grupo, mas o modelo trata o confronto como uma subida íngreme.\n\nSem **caminho provável** definido nos dados, o horizonte ainda é aberto. Por enquanto, a missão é mais matemática do que épica: proteger essa margem de **51,32%** de classificação e tentar transformar uma chance curta contra o Uruguai em ruptura real no torneio.",
+      "generatedAt": "2026-06-15T22:38:02Z",
+      "inputHash": "6409a2d444035298"
+    },
+    {
+      "id": "a-team-congo-dr",
+      "slug": "congo-dr",
+      "type": "team",
+      "title": "Congo DR vive no fio: quase metade de chance, teto baixo",
+      "summary": "Congo DR tem 48,09% de classificação, mas só 0,22% de título antes de encarar Portugal.",
+      "body": "A **Congo DR** chega ao grupo **k** como uma seleção de meio de tabela global: **Elo 1700,0** e **36ª** no ranking. O dado central é a tensão entre sobrevivência e ambição: a chance de avançar é de **48,09%**, praticamente uma disputa aberta.\n\nO problema é o tamanho do salto depois disso. A probabilidade de semifinal cai para **2,23%**, a de final para **0,75%**, e a de título fica em **0,22%**. Ou seja: há caminho para passar de fase, mas o modelo ainda vê uma campanha profunda como cenário raro.\n\nO próximo teste explica parte desse freio: contra **Portugal**, a Congo DR tem apenas **13,86%** de chance de vitória. Sem um **caminho provável** definido nos dados, o retrato é simples: o torneio congolês depende primeiro de resistir ao grupo; qualquer discussão maior exige uma quebra forte já no próximo jogo.",
+      "generatedAt": "2026-06-15T22:38:14Z",
+      "inputHash": "5d4b60af6f25d58d"
+    },
+    {
+      "id": "a-team-ivory-coast",
+      "slug": "ivory-coast",
+      "type": "team",
+      "title": "Costa do Marfim vive segurança no grupo, mas teto curto",
+      "summary": "Com 94,46% de chance de avançar, a Costa do Marfim mira a Alemanha com só 21,97% de vitória.",
+      "body": "A Costa do Marfim chega no **Grupo E** em posição confortável: tem **94,46%** de chance de classificação. O rating de **1787,9 Elo** e o **23º lugar** no ranking sustentam uma campanha com base sólida, mas não a colocam entre as forças mais prováveis ao título.\n\nO funil é duro depois da fase de grupos. As chances caem para **7,43%** de semifinal, **2,91%** de final e apenas **0,97%** de título — um perfil de seleção quase garantida para avançar, mas ainda distante de converter presença em ameaça real de taça.\n\nO próximo teste é contra a **Alemanha**, e o modelo dá à Costa do Marfim **21,97%** de probabilidade de vitória. Não há **caminho provável** definido nos dados, o que reforça a leitura: por enquanto, a missão é confirmar a vaga e tentar transformar um cruzamento pesado em ruptura competitiva.",
+      "generatedAt": "2026-06-15T22:38:27Z",
+      "inputHash": "c55c8ee3b45beed2"
+    },
+    {
+      "id": "a-team-qatar",
+      "slug": "qatar",
+      "type": "team",
+      "title": "Qatar tem margem para avançar, mas teto é estreito",
+      "summary": "Com 58,32% de chance de classificação, Qatar mira o mata-mata; título aparece em só 0,14%.",
+      "body": "O Qatar chega no **Grupo B** com Elo **1663.0** e ranking **39**, em uma zona competitiva: a chance de classificação é de **58,32%**. É uma posição de controle relativo, não de conforto absoluto.\n\nO funil, porém, fica severo rapidamente. A probabilidade de semifinal cai para **2,04%**, a de final para **0,56%** e a de título é de apenas **0,14%** — números que desenham uma seleção com caminho plausível até avançar, mas com teto estatístico baixo.\n\nO próximo jogo contra o **Canada** é o ponto de pressão imediata: o Qatar tem **30,39%** de vitória. Sem um **caminho provável** definido nos dados, a leitura é simples: a seleção precisa transformar a boa chance de classificação em sobrevivência antes de qualquer ambição maior.",
+      "generatedAt": "2026-06-15T22:38:36Z",
+      "inputHash": "796239681c46e066"
+    },
+    {
+      "id": "a-team-jordan",
+      "slug": "jordan",
+      "type": "team",
+      "title": "Jordan mira a vaga, mas o teto ainda é estreito",
+      "summary": "Com 36,09% de chance de avançar, Jordan precisa desafiar a Áustria para mudar seu horizonte.",
+      "body": "Jordan entra no **Grupo J** como uma seleção de força intermediária: **Elo 1655, ranking 42**. O dado central é claro — há uma chance real de sobrevivência, mas não conforto: **36,09% de probabilidade de classificação**.\n\nO próximo teste é contra a **Austria**, e o modelo dá a Jordan **23,74% de chance de vitória**. É o tipo de jogo que separa uma campanha apenas competitiva de uma com tração matemática: vencer não garante o caminho, mas muda o peso da projeção.\n\nO teto, por enquanto, é baixo. Jordan tem **1,25%** de chance de semifinal, **0,35%** de final e apenas **0,09%** de título. O caminho provável ainda não está definido, o que reforça a natureza da missão: primeiro sobreviver ao grupo; depois recalcular o torneio.",
+      "generatedAt": "2026-06-15T22:38:46Z",
+      "inputHash": "0a4520571e1bffa8"
+    },
+    {
+      "id": "a-team-iraq",
+      "slug": "iraq",
+      "type": "team",
+      "title": "Iraque vive entre a brecha real e o teto baixo",
+      "summary": "Com 34,7% de chance de avançar, o Iraque ainda respira, mas o título é uma hipótese mínima.",
+      "body": "O Iraque chega ao **Grupo I** com perfil de seleção intermediária: **Elo 1660, ranking 41**. A situação é competitiva, mas estreita: a chance de classificação é de **34,7%**, um número que mantém a campanha viva sem colocá-la no território do favoritismo.\n\nO gargalo aparece assim que o torneio afunila. A probabilidade de semifinal cai para **1,3%**, a de final para **0,4%**, e a de título fica em **0,1%**. Em outras palavras: avançar é uma meta plausível; transformar isso em corrida profunda exigiria uma quebra forte de expectativa.\n\nO próximo jogo é contra a **Noruega**, e o Iraque tem **25,3%** de chance de vitória. É o tipo de confronto que pode redefinir a leitura do grupo: vencer abre a porta; tropeçar deixa a margem de erro quase inexistente.\n\nComo o **caminho provável ainda não está definido**, a projeção do Iraque depende primeiro de sobreviver ao grupo. Por enquanto, a campanha é menos sobre desenhar mata-mata e mais sobre converter uma chance de **34,7%** em presença na próxima fase.",
+      "generatedAt": "2026-06-15T22:38:57Z",
+      "inputHash": "7c7d8af3e74a69d8"
+    },
+    {
+      "id": "a-team-uzbekistan",
+      "slug": "uzbekistan",
+      "type": "team",
+      "title": "Uzbekistan vive no limite entre corte e sonho distante",
+      "summary": "Com 42,54% de chance de avançar, Uzbekistan encara a Colombia com margem curta e título em 0,12%.",
+      "body": "O Uzbekistan chega no **grupo k** como seleção de **Elo 1675,0** e **38º lugar no ranking**, uma posição que sugere competitividade, mas não controle. A projeção central é clara: há **42,54% de chance de classificação**, um cenário de fronteira — perto o bastante para acreditar, instável demais para administrar.\n\nO teto, por enquanto, é estreito. As chances caem para **1,64% de semifinal**, **0,49% de final** e apenas **0,12% de título**. Em termos práticos, o modelo enxerga o Uzbekistan mais como candidato a sobreviver à fase atual do que como ameaça real ao troféu.\n\nO próximo jogo contra a **Colombia** é o ponto de pressão: a probabilidade de vitória uzbeque é de **20,3%**. Sem um **caminho provável** definido nos dados, a rota permanece aberta — e justamente por isso, o primeiro passo é menos sobre escolher adversário futuro e mais sobre transformar uma chance curta em permanência no torneio.",
+      "generatedAt": "2026-06-15T22:39:08Z",
+      "inputHash": "63e2221c85ae38bb"
+    },
+    {
+      "id": "a-team-netherlands",
+      "slug": "netherlands",
+      "type": "team",
+      "title": "Holanda tem status de elite, mas chave cobra pedágio",
+      "summary": "Com 88,14% de chance de avançar, a Holanda mira longe, mas o caminho provável é pesado desde cedo.",
+      "body": "A **Holanda** chega como seleção de elite: **Elo 1974,8**, **7º lugar no ranking** e **88,14%** de probabilidade de classificação no Grupo F. O piso competitivo é alto; a questão é o teto, porque o modelo vê **18,33%** de semifinal, **10,05%** de final e **5,23%** de título.\n\nO próximo teste é contra a **Suécia**, com **52,79%** de chance de vitória — favoritismo real, mas longe de confortável. É o tipo de jogo que define o tom: vencer sustenta a projeção; tropeçar pode empurrar a Holanda para um mata-mata ainda mais ingrato.\n\nO caminho provável é duro desde o início: **Alemanha** no round of 32, com **50,84%** de chance de vitória, depois **Espanha** nas oitavas, com **40,56%**. Se passar, viria **Brasil** nas quartas (**45,04%**), **Argentina** na semi (**39,92%**) e novamente **Espanha** como final projetada (**40,56%**).\n\nA leitura é clara: a Holanda tem perfil de candidata, mas não de favorita dominante. Sua campanha depende menos de evitar riscos — eles já estão no mapa — e mais de sobreviver a uma sequência em que quase todo duelo relevante parece perto do limite.",
+      "generatedAt": "2026-06-15T22:39:19Z",
+      "inputHash": "43c2e60e04c540b3"
+    },
+    {
+      "id": "a-team-norway",
+      "slug": "norway",
+      "type": "team",
+      "title": "Noruega vive no limite entre avanço real e teto baixo",
+      "summary": "Com 64,22% de classificação, a Noruega mira o mata-mata, mas o título ainda é uma hipótese remota.",
+      "body": "A Noruega chega ao **Grupo I** com perfil de seleção competitiva, mas não dominante: **Elo 1795, ranking 22**. O dado central é claro — a chance de classificação é de **64,22%**, suficiente para colocá-la em posição favorável, ainda que longe de segurança absoluta.\n\nO funil pesa rapidamente. A probabilidade de semifinal cai para **5,49%**, a de final para **2,17%** e a de título fica em **0,76%**. Em outras palavras: avançar é uma meta concreta; transformar essa campanha em corrida por taça exigiria uma quebra relevante de expectativa.\n\nO próximo jogo, contra o **Iraq**, é o ponto de pressão imediata. A Noruega tem **49,92%** de chance de vitória — um cenário praticamente equilibrado, em que o resultado pode redefinir a leitura do grupo.\n\nComo o **caminho provável ainda não está definido**, a rota norueguesa depende primeiro de confirmar presença na fase seguinte. Por enquanto, o torneio da Noruega é menos sobre sonhar alto e mais sobre sobreviver ao primeiro corte.",
+      "generatedAt": "2026-06-15T22:39:30Z",
+      "inputHash": "bf2352f614bce980"
+    },
+    {
+      "id": "a-team-scotland",
+      "slug": "scotland",
+      "type": "team",
+      "title": "Escócia vê mata-mata perto, mas título ainda distante",
+      "summary": "Com 80,53% de chance de avançar, a Escócia mira o mata-mata; contra Marrocos, vitória é só 26,39%.",
+      "body": "A Escócia chega ao **Grupo C** com um perfil claro: forte o bastante para projetar classificação, ainda longe do bloco de favoritos. Seu **Elo de 1759,2** e o **29º lugar no ranking** sustentam uma chance robusta de avançar: **80,53%**.\n\nO salto de ambição, porém, é íngreme. A probabilidade de semifinal cai para **6,36%**, a de final para **2,25%**, e o título aparece como cenário de baixa frequência: **0,73%**. É uma campanha que, pelos números, vale mais pela solidez inicial do que por promessa de ruptura.\n\nO próximo teste é contra **Marrocos**, e a leitura é dura: a Escócia tem **26,39%** de chance de vitória. O caminho provável ainda não está definido, mas a equação do torneio já está posta: confirmar a vaga e tentar transformar um mata-mata improvável em oportunidade real.",
+      "generatedAt": "2026-06-15T22:39:40Z",
+      "inputHash": "f0fa4105ac267677"
+    },
+    {
+      "id": "a-team-curacao",
+      "slug": "curacao",
+      "type": "team",
+      "title": "Curaçao vive no limite: avanço é improvável, título é miragem",
+      "summary": "Com 13,44% de chance de classificação, Curaçao precisa desafiar o Equador para seguir respirando.",
+      "body": "Curaçao chega ao **Grupo E** como uma seleção de margem estreita: **Elo 1564.3**, **48º no ranking** e apenas **13,44%** de probabilidade de avançar. O torneio, por enquanto, exige mais do que resistência — exige ruptura.\n\nO próximo teste é contra o **Ecuador**, e a régua é dura: Curaçao tem **19,73%** de chance de vitória. É o tipo de jogo que define se a campanha ganha corpo ou se fica presa ao papel de azarão competitivo.\n\nMesmo em caso de sobrevida, o teto projetado é baixo: **0,25%** de chance de semifinal, **0,05%** de final e **0,01%** de título. Sem **caminho provável** definido, a leitura é simples: Curaçao ainda não tem rota; tem uma oportunidade.",
+      "generatedAt": "2026-06-15T22:39:50Z",
+      "inputHash": "f561b229a1014201"
+    },
+    {
+      "id": "a-match-saudi-arabia-vs-uruguay",
+      "slug": "saudi-arabia-vs-uruguay",
       "type": "match",
-      "title": "Brasil x Japão: favoritismo claro, mas atenção à organização asiática",
-      "summary": "A Seleção tem 61% de chance de vitória; o Japão chega embalado pela estreia.",
-      "body": "O modelo aponta **61% de chance de vitória do Brasil**, contra 22% de empate e 17% para o **Japão**. A expectativa de gols é de **1,85 a 0,85** a favor da Seleção.\n\nApesar do favoritismo, o Japão chega após vencer Marrocos na estreia. A diferença de Elo (2098 contra 1848) explica a assimetria, mas a disciplina tática japonesa costuma comprimir o placar — uma vitória brasileira por margem curta seria o desfecho menos surpreendente.",
-      "generatedAt": "2026-06-15T20:22:54Z",
-      "inputHash": "seed-match-brazil-vs-japan-0002"
+      "title": "Uruguai chega com favoritismo claro contra a Arábia Saudita",
+      "summary": "Com 60,51% de chance de vitória e vantagem em Elo, o Uruguai entra como força dominante do confronto.",
+      "body": "O mercado estatístico desenha um jogo de hierarquia bem definida: **Uruguay tem 60,51% de chance de vitória**, contra **17,11% de Saudi Arabia**. O empate aparece em **22,38%**, uma faixa relevante, mas insuficiente para sugerir equilíbrio real.\n\nA diferença também aparece no Elo: **1895,0 para Uruguay**, **1650,0 para Saudi Arabia**. Não é apenas favoritismo de momento; é um desnível estrutural na avaliação de força das equipes.\n\nO placar esperado reforça a leitura: **0,86 x 1,84** em gols esperados. Saudi Arabia projeta produção ofensiva abaixo de um gol, enquanto Uruguay quase dobra esse volume — sinal de maior capacidade de criar e sustentar pressão.\n\nA prévia, portanto, é de vantagem visitante sem ser jogo resolvido. O empate ainda pesa no modelo, mas a combinação de **Elo superior, 60,51% de vitória e 1,84 gol esperado** coloca Uruguay no controle probabilístico do confronto.",
+      "generatedAt": "2026-06-15T22:40:02Z",
+      "inputHash": "563e4e086ccb56e5"
+    },
+    {
+      "id": "a-match-iran-vs-new-zealand",
+      "slug": "iran-vs-new-zealand",
+      "type": "match",
+      "title": "Irã tem a dianteira, mas a margem ainda é jogável",
+      "summary": "Com Elo superior e 50,41% de chance de vitória, o Irã chega favorito contra a Nova Zelândia.",
+      "body": "O desenho é claro, mas não esmagador: o **Irã** entra com **Elo 1760,0**, contra **1620,0** da **Nova Zelândia**, e isso se traduz em **50,41%** de probabilidade de vitória mandante. É favoritismo real — acima da soma de empate e derrota isoladamente —, mas longe de um cenário fechado.\n\nO empate aparece com **24,66%**, praticamente no mesmo patamar da vitória neozelandesa, estimada em **24,93%**. Essa simetria na parte de baixo do mercado mostra que a Nova Zelândia não é tratada como figurante: o Irã controla a projeção, mas o jogo ainda carrega risco competitivo relevante.\n\nNos gols esperados, a vantagem também é moderada: **1,63 x 1,07**. A diferença sugere um Irã mais provável de produzir volume ofensivo superior, mas não o bastante para transformar a prévia em desequilíbrio absoluto. É um confronto de favoritismo sustentado por Elo e criação esperada — com espaço estatístico suficiente para resistência visitante.",
+      "generatedAt": "2026-06-15T22:40:12Z",
+      "inputHash": "c0cdad2f8a3eccc3"
+    },
+    {
+      "id": "a-match-france-vs-senegal",
+      "slug": "france-vs-senegal",
+      "type": "match",
+      "title": "França larga com peso de favorita contra Senegal",
+      "summary": "Com 61,46% de chance de vitória e vantagem clara em Elo, a França entra acima do Senegal no duelo.",
+      "body": "A França chega ao confronto com **61,46% de probabilidade de vitória**, contra **16,43%** do Senegal; o empate aparece em **22,11%**. É um favoritismo nítido, mas não absoluto: o empate ainda ocupa uma faixa relevante do cenário.\n\nO desequilíbrio também aparece no Elo: **2070** para a França, **1815** para Senegal — uma diferença de **255 pontos**. Esse corte sugere uma equipe mandante mais forte de forma estrutural, não apenas favorecida pelo contexto do jogo.\n\nNos gols esperados, a projeção reforça a hierarquia: **1,86 x 0,84**. A França tem mais que o dobro da expectativa ofensiva senegalesa, o que transforma o favoritismo em vantagem concreta de produção, não só em reputação.",
+      "generatedAt": "2026-06-15T22:40:22Z",
+      "inputHash": "909d6cce80801b32"
+    },
+    {
+      "id": "a-match-iraq-vs-norway",
+      "slug": "iraq-vs-norway",
+      "type": "match",
+      "title": "Noruega chega com quase metade do favoritismo contra o Iraque",
+      "summary": "Elo superior e gols esperados colocam a Noruega à frente, mas o empate ainda pesa no equilíbrio do duelo.",
+      "body": "A leitura fria do confronto aponta vantagem clara, mas não absoluta, para a Noruega. Com **1795 de Elo** contra **1660 do Iraque**, a visitante entra com **49,92%** de chance de vitória — praticamente o dobro dos **25,34%** atribuídos ao mandante.\n\nO empate, em **24,74%**, impede que o jogo seja tratado como desequilíbrio total. A projeção de gols esperados reforça a diferença: **1.08 x 1.62** para a Noruega, uma margem que sugere maior capacidade ofensiva, não domínio inevitável.\n\nPara o Iraque, o caminho estatístico passa por reduzir o ritmo e transformar a partida em um cenário de baixa margem. Para a Noruega, o favoritismo está nos números: melhor força Elo, maior expectativa de gols e quase **50%** de probabilidade de sair vencedora.",
+      "generatedAt": "2026-06-15T22:40:30Z",
+      "inputHash": "f891ac4ea74adbdf"
+    },
+    {
+      "id": "a-match-argentina-vs-algeria",
+      "slug": "argentina-vs-algeria",
+      "type": "match",
+      "title": "Argentina entra com vantagem clara contra a Algeria",
+      "summary": "Elo, probabilidades e gols esperados apontam favoritismo argentino, mas não eliminam o risco do empate.",
+      "body": "A Argentina chega com **2085 de Elo**, contra **1765 da Algeria** — uma diferença de **320 pontos** que se traduz em favoritismo pesado: **67,5%** de chance de vitória para a mandante.\n\nO equilíbrio aparece mais como resistência do que como paridade. O empate tem **20,15%**, enquanto a vitória da Algeria fica em **12,36%**, um cenário em que o visitante precisa contrariar tanto o modelo de força quanto a expectativa ofensiva.\n\nNos gols esperados, a leitura é direta: **1.99 x 0.71**. A Argentina projeta quase o triplo da produção ofensiva da Algeria, reforçando um confronto em que o controle estatístico está de um lado — e a margem para surpresa, do outro.",
+      "generatedAt": "2026-06-15T22:40:38Z",
+      "inputHash": "76f07d5c8fc6fe99"
+    },
+    {
+      "id": "a-match-austria-vs-jordan",
+      "slug": "austria-vs-jordan",
+      "type": "match",
+      "title": "Áustria tem vantagem clara, mas não controle absoluto",
+      "summary": "Com Elo superior e 51,9% de chance de vitória, a Áustria entra favorita contra uma Jordânia ainda viva no cenário.",
+      "body": "A leitura pré-jogo coloca a **Áustria** em posição de favoritismo consistente: são **1810** pontos de Elo contra **1655** da **Jordânia**, uma diferença que se traduz em **51,9%** de chance de vitória mandante. Não é domínio esmagador, mas é uma vantagem estrutural clara.\n\nO empate aparece com **24,4%**, enquanto a vitória jordaniana fica em **23,7%** — números próximos entre si e importantes para calibrar o risco. A Áustria é favorita, mas o modelo não trata o confronto como resolvido: há quase metade do cenário fora da vitória mandante.\n\nNos gols esperados, o desenho reforça essa distância sem transformar o jogo em massacre: **1,66 x 1,04**. A Áustria projeta mais volume e melhor probabilidade de converter, enquanto a Jordânia precisa transformar uma margem menor de produção em eficiência máxima para equilibrar o duelo.",
+      "generatedAt": "2026-06-15T22:40:48Z",
+      "inputHash": "5348a2a37669528d"
+    },
+    {
+      "id": "a-match-portugal-vs-congo-dr",
+      "slug": "portugal-vs-congo-dr",
+      "type": "match",
+      "title": "Portugal tem favoritismo claro contra Congo DR",
+      "summary": "Elo e gols esperados colocam Portugal em vantagem ampla, com Congo DR dependente de baixa margem.",
+      "body": "Portugal entra com **65,2%** de chance de vitória, contra **13,86%** do Congo DR; o empate aparece em **20,94%**. É um favoritismo robusto, sustentado por uma diferença de Elo de **1995,0 x 1700,0**.\n\nO desenho ofensivo reforça o desequilíbrio: os gols esperados projetam **1,94 x 0,76** para Portugal. Não é um cenário de domínio absoluto, mas indica que o mandante deve produzir mais que o dobro do volume ofensivo do visitante.\n\nPara o Congo DR, a rota competitiva passa por reduzir o jogo a poucas posses decisivas e aproximá-lo do empate — o resultado intermediário ainda tem peso relevante. Para Portugal, a leitura é direta: confirmar a superioridade sem permitir que um confronto estatisticamente favorável vire um jogo de margem curta.",
+      "generatedAt": "2026-06-15T22:41:00Z",
+      "inputHash": "9078a03805d037ba"
+    },
+    {
+      "id": "a-match-england-vs-croatia",
+      "slug": "england-vs-croatia",
+      "type": "match",
+      "title": "England tem vantagem, mas Croatia mantém o jogo vivo",
+      "summary": "Com Elo superior e 48% de chance de vitória, England entra à frente; Croatia ainda tem 27% e um empate relevante no cenário.",
+      "body": "A leitura pré-jogo coloca **England** em posição de favoritismo moderado: são **47,99%** de chance de vitória contra **26,98%** da **Croatia**, com o empate em **25,03%**. Não é um abismo, mas é uma margem clara — especialmente quando combinada ao Elo: **2015,0** para os ingleses, **1900,0** para os croatas.\n\nO placar esperado também sustenta essa vantagem: **1,58 x 1,12** em gols esperados. England projeta mais volume ofensivo e maior probabilidade de transformar controle em resultado, mas a diferença não elimina volatilidade. Com mais de um quarto de chance de vitória visitante e um empate praticamente no mesmo patamar, Croatia chega como ameaça real, não como coadjuvante.\n\nO equilíbrio está no limite entre superioridade estatística e jogo competitivo: **England é favorita**, mas o modelo não descreve domínio absoluto. A vantagem existe — e é consistente —, só que ainda deixa espaço suficiente para um confronto decidido por eficiência nas áreas.",
+      "generatedAt": "2026-06-15T22:41:12Z",
+      "inputHash": "2afdeac5514f6c39"
+    },
+    {
+      "id": "a-match-ghana-vs-panama",
+      "slug": "ghana-vs-panama",
+      "type": "match",
+      "title": "Ghana tem vantagem, mas Panamá mantém a disputa aberta",
+      "summary": "Com Elo superior e 41,77% de vitória, Ghana entra à frente, mas o Panamá tem caminho real no confronto.",
+      "body": "A prévia coloca **Ghana em vantagem**, mas sem margem para conforto: são **41,77%** de chance de vitória do mandante, contra **32,56%** do **Panama**. O empate aparece com **25,67%**, um peso relevante o bastante para reforçar o equilíbrio competitivo.\n\nO diferencial de Elo ajuda a explicar a inclinação do modelo: **1710,0 para Ghana** contra **1660,0 para Panama**. É uma distância clara, mas não esmagadora — suficiente para colocar o mandante como favorito, não para transformar o jogo em assimetria.\n\nNos gols esperados, a leitura é parecida: **1,45 x 1,25**. Ghana projeta ligeira superioridade ofensiva, mas o Panamá permanece perto o bastante para que eficiência e detalhe pesem mais do que domínio amplo.",
+      "generatedAt": "2026-06-15T22:41:22Z",
+      "inputHash": "59e0d5a2c14e082a"
+    },
+    {
+      "id": "a-match-uzbekistan-vs-colombia",
+      "slug": "uzbekistan-vs-colombia",
+      "type": "match",
+      "title": "Colômbia chega com vantagem clara sobre o Uzbequistão",
+      "summary": "Com Elo superior e 56,21% de chance de vitória, a Colômbia entra como favorita diante do Uzbequistão.",
+      "body": "A leitura do confronto é direta: a **Colômbia** chega em patamar superior. Seu Elo de **1875** contra **1675** do **Uzbequistão** abre uma diferença de **200 pontos**, refletida em uma probabilidade de vitória visitante de **56,21%**.\n\nO Uzbequistão tem **20,3%** de chance de vencer, enquanto o empate aparece em **23,49%** — um número relevante, mas insuficiente para sugerir equilíbrio pleno. O mercado probabilístico desenha um jogo em que a resistência uzbeque existe, mas parte de uma posição claramente inferior.\n\nOs gols esperados reforçam a hierarquia: **0.95 x 1.75** para a Colômbia. Não é um abismo ofensivo, mas é vantagem consistente — mais volume projetado, maior expectativa de controle e uma margem estatística que coloca os colombianos como favoritos legítimos.",
+      "generatedAt": "2026-06-15T22:41:31Z",
+      "inputHash": "5e30c7f32e44cdb7"
+    },
+    {
+      "id": "a-match-czechia-vs-south-africa",
+      "slug": "czechia-vs-south-africa",
+      "type": "match",
+      "title": "Czechia tem vantagem real, mas South Africa está viva",
+      "summary": "Com 45,53% de chance de vitória, Czechia chega favorita em um duelo menos desigual do que o Elo sugere.",
+      "body": "Czechia entra como favorita: **45,53%** de probabilidade de vitória, contra **29,13%** de South Africa e **25,34%** de empate. É uma vantagem clara, mas não dominante — o empate ainda pesa bastante no desenho do confronto.\n\nO Elo ajuda a explicar o favoritismo: **1737.2** para Czechia, **1647.8** para South Africa. A distância coloca o mandante em posição superior, mas a projeção de gols esperados — **1,53 x 1,17** — aponta para um jogo competitivo, com margem ofensiva relativamente curta.\n\nA leitura central é simples: Czechia tem o controle estatístico do pré-jogo, mas South Africa não aparece como zebra extrema. Se o mandante não converter sua superioridade em volume, o cenário de empate — ou de uma vitória visitante — permanece bem dentro do mapa.",
+      "generatedAt": "2026-06-15T22:41:42Z",
+      "inputHash": "73452bbc485e0286"
+    },
+    {
+      "id": "a-match-switzerland-vs-bosnia-herzegovina",
+      "slug": "switzerland-vs-bosnia-herzegovina",
+      "type": "match",
+      "title": "Suíça chega na frente, mas Bósnia mantém ameaça real",
+      "summary": "Com Elo superior e 48,94% de vitória, a Suíça é favorita, mas o empate e a Bósnia somam peso relevante.",
+      "body": "A Suíça entra como favorita pelo modelo: **48,94%** de chance de vitória, sustentada por um Elo de **1837.0** contra **1712.2** da Bosnia-Herzegovina. É uma vantagem mensurável, não um abismo.\n\nO equilíbrio aparece no restante da distribuição: o empate está em **24,89%**, enquanto a vitória visitante chega a **26,17%**. Ou seja, a Bosnia-Herzegovina não é tratada como azarão decorativo; há quase uma em quatro chances de o jogo terminar sem vencedor e uma fatia parecida para uma ruptura fora de casa.\n\nNos gols esperados, o cenário reforça a leitura: **1.6 x 1.1** para a Suíça. O mando e a força relativa inclinam o confronto, mas a margem ofensiva projetada sugere um jogo competitivo, em que a favorita precisa transformar superioridade em controle real.",
+      "generatedAt": "2026-06-15T22:41:52Z",
+      "inputHash": "27b9b3152ecd140b"
+    },
+    {
+      "id": "a-match-canada-vs-qatar",
+      "slug": "canada-vs-qatar",
+      "type": "match",
+      "title": "Canadá tem vantagem real, mas Qatar mantém o jogo vivo",
+      "summary": "Com Elo superior e 44,13% de vitória, o Canadá larga à frente, mas o Qatar está longe de ser figurante.",
+      "body": "O Canadá entra como favorito, mas não como dono do confronto: tem **44,13%** de chance de vitória, contra **30,39%** do Qatar e **25,48%** de empate. É uma vantagem clara, sustentada também pelo Elo — **1737.8** contra **1663.0** —, mas não grande o bastante para transformar o jogo em desequilíbrio estrutural.\n\nA projeção de gols esperados, **1.5 x 1.2**, reforça essa leitura: o Canadá deve produzir mais, porém a margem ofensiva é curta. O Qatar aparece com volume suficiente para manter pressão no placar e punir qualquer queda de eficiência do mandante.\n\nEm termos probabilísticos, o cenário é de favoritismo moderado: o Canadá combina melhor avaliação de força e maior expectativa de gols, enquanto o Qatar carrega uma chance de vitória acima de um terço do caminho entre zebra e equilíbrio. O empate, em **25,48%**, é parte importante da história — sinal de um jogo que tende a ser decidido por detalhes, não por domínio amplo.",
+      "generatedAt": "2026-06-15T22:42:06Z",
+      "inputHash": "c985d57df8c67a2c"
+    },
+    {
+      "id": "a-match-mexico-vs-south-korea",
+      "slug": "mexico-vs-south-korea",
+      "type": "match",
+      "title": "México tem margem mínima em duelo de alta tensão",
+      "summary": "Com Elo próximo e gols esperados quase iguais, México x Coreia do Sul nasce como confronto de detalhe.",
+      "body": "O México chega com vantagem, mas ela é estreita: **39,83%** de chance de vitória contra **34,41%** da Coreia do Sul. O empate, em **25,77%**, não é cenário periférico — é parte central do desenho do jogo.\n\nO Elo reforça esse equilíbrio. O mandante aparece à frente, **1842,2 a 1812,8**, diferença suficiente para inclinar a projeção, mas não para criar separação clara. É favoritismo, não controle.\n\nNos gols esperados, o retrato é ainda mais apertado: **1,41 x 1,29** para o México. A distância ofensiva projetada é pequena, sugerindo um confronto em que eficiência nas áreas pesa mais do que volume absoluto.",
+      "generatedAt": "2026-06-15T22:42:15Z",
+      "inputHash": "b08dde0749bb84fd"
+    },
+    {
+      "id": "a-match-united-states-vs-australia",
+      "slug": "united-states-vs-australia",
+      "type": "match",
+      "title": "Estados Unidos têm vantagem, mas Austrália segue viva",
+      "summary": "Com Elo superior e 46,69% de chance de vitória, os EUA entram à frente em um confronto ainda competitivo.",
+      "body": "O favoritismo é dos **United States**, sustentado por um Elo de **1876.5** contra **1775.0** da **Australia**. A projeção dá aos mandantes **46,69%** de chance de vitória — uma vantagem clara, mas longe de transformar o jogo em formalidade.\n\nA Austrália aparece com **28,11%** de probabilidade de vencer, enquanto o empate pesa **25,2%**. Esse desenho sugere um confronto inclinado para os EUA, mas com margem real para ruptura: a soma entre empate e vitória visitante mantém o risco competitivo bem presente.\n\nNos gols esperados, o placar projetado de **1.55 x 1.15** reforça a leitura: os Estados Unidos devem produzir mais, mas a diferença ofensiva não é larga. É um jogo em que o mandante controla a expectativa — não necessariamente o caos.",
+      "generatedAt": "2026-06-15T22:42:25Z",
+      "inputHash": "c3b5393b5e97c0ec"
+    },
+    {
+      "id": "a-match-scotland-vs-morocco",
+      "slug": "scotland-vs-morocco",
+      "type": "match",
+      "title": "Morocco chega com vantagem clara sobre Scotland",
+      "summary": "Com Elo superior e 48,68% de vitória, Morocco entra como favorito fora de casa contra Scotland.",
+      "body": "O confronto nasce inclinado para Morocco. Mesmo como visitante, a equipe aparece com **48,68% de chance de vitória**, contra **26,39%** de Scotland e **24,93%** de empate — uma distribuição que aponta favoritismo real, não marginal.\n\nA diferença de força também aparece no Elo: **1881.3** para Morocco contra **1759.2** de Scotland. É um intervalo relevante e coerente com o modelo de gols esperados, que projeta **1.11 x 1.59** a favor dos marroquinos.\n\nScotland não está fora do jogo, mas precisa empurrar a partida para a zona de variância: placar curto, baixa margem e peso do mando. Morocco, por outro lado, tem o cenário mais confortável: maior probabilidade de vitória, melhor Elo e vantagem ofensiva esperada.",
+      "generatedAt": "2026-06-15T22:42:35Z",
+      "inputHash": "bb9cc196e1b054ef"
+    },
+    {
+      "id": "a-match-brazil-vs-haiti",
+      "slug": "brazil-vs-haiti",
+      "type": "match",
+      "title": "Brasil entra com favoritismo pesado contra o Haiti",
+      "summary": "Com Elo muito superior e 79,24% de vitória, o Brasil chega como força dominante no confronto.",
+      "body": "O modelo desenha um confronto de claro desequilíbrio: o Brasil aparece com **79,24% de chance de vitória**, contra **15,15% de empate** e apenas **5,61% para o Haiti**. A distância no Elo — **2028.7 contra 1570.8** — traduz uma diferença estrutural, não apenas circunstancial.\n\nA projeção de gols esperados reforça a hierarquia: **2.27 x 0.43** para o Brasil. Isso sugere uma partida em que o mandante tende a controlar volume e qualidade das chances, enquanto o Haiti precisaria maximizar um cenário de baixa produção ofensiva.\n\nO ponto central da prévia é menos “quem é favorito” e mais o tamanho da margem: o Brasil não só lidera as probabilidades, como concentra quase todo o peso do jogo. Para o Haiti, o empate já aparece como resultado significativamente mais plausível do que a vitória.",
+      "generatedAt": "2026-06-15T22:42:44Z",
+      "inputHash": "538df4e7c07d7c07"
+    },
+    {
+      "id": "a-match-turkey-vs-paraguay",
+      "slug": "turkey-vs-paraguay",
+      "type": "match",
+      "title": "Turquia tem margem curta em duelo de baixa separação",
+      "summary": "Com 40,96% de chance de vitória, a Turquia é favorita, mas o Paraguai mantém o confronto bem aberto.",
+      "body": "A Turquia entra como favorita, mas não por muito: tem **40,96%** de chance de vitória contra **33,32%** do Paraguai, com o empate em **25,71%**. É uma vantagem real, sustentada também pelo Elo superior — **1755.0** contra **1713.5** —, mas longe de configurar domínio.\n\nA projeção de gols esperados reforça esse equilíbrio: **1.43 x 1.27**. A Turquia aparece com ligeira superioridade ofensiva, porém a distância é pequena o bastante para manter o Paraguai dentro do jogo em quase todos os cenários.\n\nO retrato estatístico é de favoritismo moderado: a Turquia tem o melhor ponto de partida, mas a soma entre chance de empate e vitória paraguaia supera a probabilidade turca isolada. Em outras palavras, o mandante lidera a previsão; o confronto, não.",
+      "generatedAt": "2026-06-15T22:42:54Z",
+      "inputHash": "6c9a7c2f06a280ab"
+    },
+    {
+      "id": "a-match-netherlands-vs-sweden",
+      "slug": "netherlands-vs-sweden",
+      "type": "match",
+      "title": "Holanda tem favoritismo claro, mas não absoluto",
+      "summary": "Com Elo superior e 52,79% de vitória, a Holanda entra à frente contra uma Suécia ainda competitiva.",
+      "body": "A Holanda chega com vantagem estrutural: **1974,8 de Elo** contra **1810,2** da Suécia. Essa diferença se traduz em **52,79% de probabilidade de vitória** para o mandante — favoritismo relevante, mas longe de transformar o confronto em formalidade.\n\nO empate aparece com **24,23%**, enquanto a vitória sueca fica em **22,99%**. Em outras palavras: a Holanda é o lado mais provável, mas a soma dos cenários em que não vence ainda mantém o jogo em zona de tensão competitiva.\n\nOs gols esperados reforçam a leitura: **1,68 x 1,02** para a Holanda. É uma projeção de superioridade ofensiva moderada, não de avalanche — suficiente para colocar o mandante no controle estatístico, mas com margem para a Suécia sobreviver no detalhe.",
+      "generatedAt": "2026-06-15T22:43:04Z",
+      "inputHash": "10274cf86ecbe295"
+    },
+    {
+      "id": "a-match-germany-vs-ivory-coast",
+      "slug": "germany-vs-ivory-coast",
+      "type": "match",
+      "title": "Alemanha larga na frente, mas sem margem de conforto",
+      "summary": "Com 54,07% de vitória e xG de 1,71 x 0,99, Alemanha é favorita diante da Costa do Marfim.",
+      "body": "A Alemanha entra como favorita clara, sustentada por um Elo de **1965,7** contra **1787,9** da Costa do Marfim. A projeção dá **54,07%** de vitória ao mandante, um favoritismo relevante, mas longe de transformar o jogo em formalidade.\n\nO empate aparece com **23,97%**, enquanto a vitória marfinense fica em **21,97%**. Ou seja: a Alemanha tem mais probabilidade de vencer do que qualquer outro resultado isolado, mas a soma dos cenários em que não vence ainda é expressiva.\n\nA leitura dos gols esperados reforça esse desenho: **1,71 x 0,99**. A Alemanha projeta volume ofensivo superior, mas a Costa do Marfim não está zerada no modelo — há ataque suficiente para manter o confronto competitivo se o jogo escapar do controle alemão.",
+      "generatedAt": "2026-06-15T22:43:13Z",
+      "inputHash": "d320a3d75197e624"
+    },
+    {
+      "id": "a-match-ecuador-vs-curacao",
+      "slug": "ecuador-vs-curacao",
+      "type": "match",
+      "title": "Equador tem vantagem clara, mas não controle absoluto",
+      "summary": "Com Elo superior e 57% de chance de vitória, o Equador entra como favorito diante de Curaçao.",
+      "body": "O modelo coloca o **Equador** em posição de favoritismo: **56,96%** de chance de vitória, contra **19,73%** de Curaçao. O empate, em **23,31%**, é o lembrete de que a distância existe, mas não transforma o jogo em formalidade.\n\nA diferença de força aparece também no Elo: **1772,1** para o Equador, **1564,3** para Curaçao. É uma margem relevante, suficiente para desenhar um confronto inclinado ao mandante, mas ainda com espaço para volatilidade — sobretudo porque a probabilidade combinada de empate ou vitória visitante chega a **43,04%**.\n\nNos gols esperados, o retrato é parecido: **1,77 x 0,93**. O Equador projeta quase o dobro da produção ofensiva de Curaçao, o que sustenta o favoritismo. A leitura central: vantagem equatoriana consistente, não esmagadora.",
+      "generatedAt": "2026-06-15T22:43:23Z",
+      "inputHash": "01e6caa4b50faaf2"
+    },
+    {
+      "id": "a-match-tunisia-vs-japan",
+      "slug": "tunisia-vs-japan",
+      "type": "match",
+      "title": "Japão entra com vantagem clara contra a Tunísia",
+      "summary": "Com Elo superior e 52,87% de chance de vitória, o Japão controla a projeção do confronto.",
+      "body": "O mercado probabilístico desenha um favoritismo consistente: o Japão aparece com **52,87%** de chance de vitória, contra **22,92%** da Tunísia. O empate, em **24,21%**, é relevante, mas não suficiente para transformar o jogo em equilíbrio pleno.\n\nA diferença de força também aparece no Elo: **1845.2** para o Japão, **1679.8** para a Tunísia. Não é uma margem marginal — é o tipo de distância que sustenta uma projeção em que o visitante vence mais vezes do que todos os outros cenários isolados.\n\nNos gols esperados, a leitura é parecida: **1.02 x 1.68**. A Tunísia tem caminho real para competir, mas a projeção ofensiva japonesa é mais robusta. O jogo não está decidido no modelo; está, porém, inclinado com clareza para o Japão.",
+      "generatedAt": "2026-06-15T22:43:33Z",
+      "inputHash": "159680b38cfc99a6"
+    },
+    {
+      "id": "a-match-spain-vs-saudi-arabia",
+      "slug": "spain-vs-saudi-arabia",
+      "type": "match",
+      "title": "Espanha entra com favoritismo esmagador",
+      "summary": "Com 76,84% de chance de vitória, Espanha tem ampla vantagem sobre a Arábia Saudita.",
+      "body": "A prévia é clara: a **Espanha** chega como força dominante, com **76,84%** de probabilidade de vitória contra apenas **6,85%** da **Arábia Saudita**. O empate aparece em **16,3%**, mais como rota de resistência do que como ponto de equilíbrio real.\n\nA distância no Elo ajuda a explicar o desenho do confronto: **2077,9** para a Espanha, **1650,0** para a Arábia Saudita. É uma diferença que se reflete também nos gols esperados: **2.21 x 0.49**, projeção de um jogo em que a Espanha deve produzir volume e limitar bastante o ataque adversário.\n\nO desequilíbrio, portanto, não está só na chance de vencer, mas na forma esperada da partida. A Espanha combina favoritismo alto com superioridade ofensiva projetada; a Arábia Saudita depende de reduzir ritmo, alongar o jogo e transformar os **16,3%** de empate em sobrevivência competitiva.",
+      "generatedAt": "2026-06-15T22:43:43Z",
+      "inputHash": "c0ae4370d034ad77"
+    },
+    {
+      "id": "a-match-belgium-vs-iran",
+      "slug": "belgium-vs-iran",
+      "type": "match",
+      "title": "Bélgica tem margem clara, mas Irã mantém o jogo vivo",
+      "summary": "Com 53,55% de chance de vitória, a Bélgica chega à frente, mas o empate pesa no equilíbrio do confronto.",
+      "body": "A leitura pré-jogo coloca a **Bélgica** em vantagem real: são **53,55%** de probabilidade de vitória, sustentados por um Elo de **1932.5** contra **1760.0** do **Irã**. Não é domínio absoluto, mas é uma superioridade consistente.\n\nO ponto que impede a projeção de virar sentença é o peso do **empate: 24,07%**. A vitória iraniana aparece em **22,37%**, uma fatia suficiente para tratar o visitante como ameaça competitiva, não como azarão decorativo.\n\nNos gols esperados, o desenho reforça a mesma hierarquia: **1.7 x 1.01** para a Bélgica. A diferença sugere maior volume e qualidade ofensiva do mandante, mas também indica que o Irã tem caminho para marcar — e, se reduzir o ritmo do jogo, pode aproximar o confronto da zona de instabilidade.",
+      "generatedAt": "2026-06-15T22:43:55Z",
+      "inputHash": "34c3f1babfa70a71"
+    },
+    {
+      "id": "a-match-uruguay-vs-cape-verde-islands",
+      "slug": "uruguay-vs-cape-verde-islands",
+      "type": "match",
+      "title": "Uruguai entra com margem clara sobre Cabo Verde",
+      "summary": "Com 61,74% de chance de vitória, o Uruguai combina vantagem de Elo e gols esperados superiores.",
+      "body": "O modelo coloca o **Uruguai** em posição de controle: são **61,74%** de chance de vitória, contra **22,03%** de empate e **16,24%** para Cabo Verde. Não é um favoritismo simbólico — é uma vantagem estrutural refletida também no Elo: **1895,0 x 1637,1**.\n\nA projeção de gols esperados reforça o desenho do jogo: **1,87 x 0,83** para o mandante. Isso sugere um confronto em que o Uruguai tende a produzir quase o dobro em volume ofensivo esperado, enquanto Cabo Verde parte de uma faixa mais estreita de caminhos para vencer.\n\nO equilíbrio, portanto, é limitado: o empate ainda tem peso relevante, acima de um quinto do cenário, mas a distância entre as probabilidades de vitória mostra um duelo inclinado. Para Cabo Verde, a disputa passa por reduzir o ritmo e transformar baixa expectativa ofensiva em eficiência; para o Uruguai, a obrigação é converter superioridade em placar.",
+      "generatedAt": "2026-06-15T22:44:07Z",
+      "inputHash": "4ee38c11285ad1aa"
+    },
+    {
+      "id": "a-match-new-zealand-vs-egypt",
+      "slug": "new-zealand-vs-egypt",
+      "type": "match",
+      "title": "Egito chega com vantagem clara, mas não blindada",
+      "summary": "Com 51,13% de chance de vitória, o Egito enfrenta uma Nova Zelândia competitiva, mas em desvantagem no modelo.",
+      "body": "O confronto nasce inclinado para o lado egípcio: o Egito tem **51,13%** de probabilidade de vitória, contra **24,33%** da Nova Zelândia e **24,53%** de empate. Não é domínio absoluto, mas é uma vantagem estrutural clara.\n\nO Elo reforça essa leitura. A Nova Zelândia aparece com **1620,0**, enquanto o Egito chega a **1767,5** — uma diferença de **147,5 pontos** que ajuda a explicar por que o visitante concentra mais da metade das chances de vencer.\n\nA projeção ofensiva também pesa: **1,06 x 1,65** em gols esperados. A Nova Zelândia tem caminho para competir, especialmente porque empate e vitória mandante juntos somam quase metade do cenário, mas o desenho do jogo coloca o Egito como favorito legítimo.",
+      "generatedAt": "2026-06-15T22:44:17Z",
+      "inputHash": "dd3631f134c7d5b2"
+    },
+    {
+      "id": "a-match-argentina-vs-austria",
+      "slug": "argentina-vs-austria",
+      "type": "match",
+      "title": "Argentina entra com margem clara contra a Áustria",
+      "summary": "Elo, gols esperados e probabilidades colocam a Argentina em posição dominante, mas não blindada contra o empate.",
+      "body": "A leitura pré-jogo é direta: a Argentina chega com **Elo 2085**, contra **1810** da Áustria, uma diferença que se traduz em favoritismo robusto. O modelo dá **63,34%** de vitória ao mandante, contra **15,12%** para o visitante.\n\nO empate, em **21,54%**, é a principal zona de resistência austríaca. Não é um confronto nivelado: é um jogo em que a Argentina tem controle probabilístico, mas ainda convive com um bloco relevante de incerteza.\n\nOs **gols esperados de 1,9 x 0,8** reforçam o desequilíbrio: a projeção argentina mais que dobra a austríaca. A vantagem não está só no resultado provável, mas na qualidade esperada das chances.",
+      "generatedAt": "2026-06-15T22:44:25Z",
+      "inputHash": "ca6798cdaf3e150f"
+    },
+    {
+      "id": "a-match-france-vs-iraq",
+      "slug": "france-vs-iraq",
+      "type": "match",
+      "title": "França entra com controle quase total contra o Iraque",
+      "summary": "Com 75,37% de chance de vitória, a França tem vantagem ampla em Elo, projeção de gols e resultado.",
+      "body": "A leitura do confronto é direta: a **França** aparece em outro patamar competitivo. O Elo de **2070,0** contra **1660,0** do **Iraque** traduz uma diferença estrutural relevante, refletida na probabilidade de vitória francesa: **75,37%**.\n\nO empate tem **16,98%**, enquanto a vitória iraquiana fica em apenas **7,66%**. Não é um jogo desenhado como equilíbrio fino; é uma partida em que o favorito concentra a maior parte dos cenários plausíveis.\n\nA projeção de gols reforça o mesmo diagnóstico: **2,17 x 0,53** em gols esperados para a França. O placar médio esperado sugere domínio territorial e ofensivo do mandante, com o Iraque precisando transformar baixa produção em máxima eficiência para deslocar a previsão.",
+      "generatedAt": "2026-06-15T22:44:34Z",
+      "inputHash": "93d7b1e96de6b155"
+    },
+    {
+      "id": "a-match-norway-vs-senegal",
+      "slug": "norway-vs-senegal",
+      "type": "match",
+      "title": "Senegal leva vantagem mínima em duelo de margens estreitas",
+      "summary": "Com Elo superior e maior chance de vitória, Senegal entra levemente à frente contra a Norway.",
+      "body": "A leitura pré-jogo aponta para um confronto de **equilíbrio real**, mas não simétrico. O Senegal chega com **1815 de Elo**, acima dos **1795** da Norway, e essa diferença aparece nas probabilidades: **38.95%** de vitória visitante contra **35.26%** do mandante.\n\nO empate, em **25.79%**, é alto o bastante para reforçar a natureza comprimida do duelo. Não há favorito dominante: há uma vantagem visitante, mas ela vive em uma faixa curta, onde pequenos detalhes tendem a pesar mais do que qualquer hierarquia ampla.\n\nOs gols esperados seguem a mesma lógica: **1.31 x 1.39**. O Senegal projeta ligeiro ganho ofensivo, mas a distância é mínima. A prévia, portanto, não vende ruptura — vende **um jogo decidido nas bordas**, com o visitante um passo à frente no modelo.",
+      "generatedAt": "2026-06-15T22:44:44Z",
+      "inputHash": "d09c248c76ba5a30"
+    },
+    {
+      "id": "a-match-jordan-vs-algeria",
+      "slug": "jordan-vs-algeria",
+      "type": "match",
+      "title": "Argélia chega com vantagem clara contra a Jordânia",
+      "summary": "Elo superior e maior volume esperado dão à Argélia 47,51% de chance de vitória fora de casa.",
+      "body": "A leitura do confronto é direta: a **Argélia** parte em vantagem, com **47,51%** de probabilidade de vitória, contra **27,39%** da **Jordânia**. O empate aparece em **25,1%**, suficiente para manter o jogo competitivo, mas não para apagar o desequilíbrio inicial.\n\nO Elo ajuda a explicar essa distância: **1765** para a Argélia, **1655** para a Jordânia. São **110 pontos** de diferença, uma margem relevante mesmo com a Jordânia como mandante.\n\nNos gols esperados, a projeção também favorece os visitantes: **1,13 x 1,57**. Não é um cenário de domínio absoluto, mas indica uma Argélia com mais capacidade de transformar superioridade em placar.",
+      "generatedAt": "2026-06-15T22:44:54Z",
+      "inputHash": "3fc23c696251a2a0"
+    },
+    {
+      "id": "a-match-portugal-vs-uzbekistan",
+      "slug": "portugal-vs-uzbekistan",
+      "type": "match",
+      "title": "Portugal entra com vantagem clara contra o Uzbekistan",
+      "summary": "Elo superior e gols esperados colocam Portugal como favorito, mas o empate ainda pesa no cenário.",
+      "body": "**Portugal é o favorito estrutural do confronto.** O Elo de **1995** contra **1675** do Uzbekistan se traduz em uma probabilidade de vitória de **67,5%** para o mandante — um favoritismo robusto, mas não absoluto.\n\nO empate aparece com **20,15%**, uma fatia relevante o bastante para impedir leitura de passeio anunciado. Já a vitória do Uzbekistan fica em **12,36%**, cenário de menor probabilidade e dependente de forte eficiência.\n\nA projeção de gols esperados reforça o desequilíbrio: **1.99 x 0.71** para Portugal. O modelo sugere um jogo em que o mandante tende a produzir mais e controlar melhor as chances, enquanto o Uzbekistan precisa transformar volume limitado em impacto real.",
+      "generatedAt": "2026-06-15T22:45:06Z",
+      "inputHash": "431915e07906004d"
+    },
+    {
+      "id": "a-match-england-vs-ghana",
+      "slug": "england-vs-ghana",
+      "type": "match",
+      "title": "Inglaterra entra com vantagem estrutural sobre Gana",
+      "summary": "Com 66,13% de chance de vitória, England sustenta favoritismo claro diante de Ghana.",
+      "body": "O modelo coloca **England** em posição de controle: são **66,13%** de probabilidade de vitória, contra **13,25%** de **Ghana**. O empate aparece em **20,63%**, um caminho relevante, mas secundário diante da diferença projetada.\n\nA distância de força também aparece no Elo: **2015,0** para England, **1710,0** para Ghana. É um intervalo grande o bastante para transformar o mando em mais do que contexto — aqui, ele reforça uma vantagem já clara.\n\nNos gols esperados, o retrato é direto: **1,96 x 0,74**. England projeta volume ofensivo para quase dois gols, enquanto Ghana fica abaixo de um. O equilíbrio existe apenas se o jogo escapar da média; pelos números, o confronto nasce inclinado.",
+      "generatedAt": "2026-06-15T22:45:16Z",
+      "inputHash": "1102c948bb9fda53"
+    },
+    {
+      "id": "a-match-panama-vs-croatia",
+      "slug": "panama-vs-croatia",
+      "type": "match",
+      "title": "Croácia chega com vantagem clara sobre o Panamá",
+      "summary": "Com Elo superior e 60,04% de vitória, a Croácia entra como favorita em um duelo de baixa margem para o Panamá.",
+      "body": "A leitura pré-jogo é direta: a **Croácia** combina Elo de **1900.0** com **60,04%** de probabilidade de vitória, enquanto o **Panamá**, com Elo de **1660.0**, aparece em **17,45%**. A diferença entre as equipes não é marginal; ela estrutura o confronto.\n\nO empate, em **22,51%**, é o principal ponto de resistência ao favoritismo croata. Ainda assim, o modelo projeta um jogo mais inclinado ao visitante do que propriamente aberto: os gols esperados estão em **0.87 x 1.83**, quase o dobro para a Croácia.\n\nPara o Panamá, o caminho passa por reduzir volume e transformar um jogo de menor pontuação em disputa de detalhe. Para a Croácia, a vantagem está em sustentar a superioridade projetada sem permitir que o empate — estatisticamente mais provável que uma vitória panamenha — vire o centro da noite.",
+      "generatedAt": "2026-06-15T22:45:26Z",
+      "inputHash": "36ec17724ef0564d"
+    },
+    {
+      "id": "a-match-colombia-vs-congo-dr",
+      "slug": "colombia-vs-congo-dr",
+      "type": "match",
+      "title": "Colômbia tem favoritismo claro, mas não absoluto",
+      "summary": "Com Elo superior e 53,79% de chance de vitória, a Colômbia entra à frente contra a RD Congo.",
+      "body": "A leitura pré-jogo coloca a **Colômbia** em vantagem consistente: Elo de **1875.0** contra **1700.0** da **RD Congo**, um sinal de força estrutural antes mesmo de olhar para o mercado probabilístico.\n\nAs chances reforçam esse desenho: vitória colombiana em **53,79%**, empate em **24,02%** e triunfo congolês em **22,18%**. É favoritismo real, mas não esmagador — quase metade do cenário ainda escapa da vitória mandante.\n\nO placar esperado, **1.7 x 1.0**, traduz bem o equilíbrio relativo: a Colômbia projeta mais volume ofensivo, mas a RD Congo não aparece como figurante. O jogo nasce com inclinação clara para o mandante, porém com margem suficiente para tensão.",
+      "generatedAt": "2026-06-15T22:45:36Z",
+      "inputHash": "56854c754f1958a5"
+    },
+    {
+      "id": "a-match-switzerland-vs-canada",
+      "slug": "switzerland-vs-canada",
+      "type": "match",
+      "title": "Suíça entra com margem clara, mas não confortável",
+      "summary": "Com Elo superior e 46,47% de vitória, a Suíça é favorita diante de um Canadá competitivo.",
+      "body": "A leitura pré-jogo coloca a **Switzerland** à frente, mas não em território de domínio absoluto. O Elo de **1837.0** contra **1737.8** sustenta o favoritismo mandante, traduzido em **46,47%** de chance de vitória.\n\nO **Canada** aparece com **28,3%**, uma fatia relevante o bastante para impedir qualquer narrativa de confronto desigual. O empate, em **25,23%**, também pesa: quase um quarto do cenário projetado aponta para um jogo travado no placar.\n\nNos gols esperados, a vantagem suíça é objetiva: **1.55 x 1.15**. É uma diferença que sugere maior volume ou qualidade nas chances da Switzerland, mas não um abismo. O jogo nasce inclinado para o mandante — e ainda aberto o suficiente para punir qualquer queda de eficiência.",
+      "generatedAt": "2026-06-15T22:45:46Z",
+      "inputHash": "e1087b4e8a6d405f"
+    },
+    {
+      "id": "a-match-bosnia-herzegovina-vs-qatar",
+      "slug": "bosnia-herzegovina-vs-qatar",
+      "type": "match",
+      "title": "Bósnia tem margem estreita contra um Catar vivo",
+      "summary": "Com 41,69% de vitória, a Bósnia-Herzegovina é favorita, mas o Catar mantém ameaça real fora de casa.",
+      "body": "A Bósnia-Herzegovina entra como favorita, mas não como dona do jogo. O modelo dá **41,69%** de vitória ao mandante, contra **32,64%** do Catar e **25,67%** de empate — uma distribuição que aponta vantagem, não domínio.\n\nO Elo reforça essa leitura: **1712,2** para a Bósnia-Herzegovina, **1663,0** para o Catar. A diferença existe, mas é curta o bastante para manter o visitante dentro da partida desde o ponto de partida estatístico.\n\nNos gols esperados, o placar projetado de **1.45 x 1.25** traduz o equilíbrio: a Bósnia produz um pouco mais, mas a distância ofensiva é pequena. É um confronto em que o mandante carrega a maior probabilidade, enquanto o Catar tem volume suficiente para transformar a noite em disputa de detalhe.",
+      "generatedAt": "2026-06-15T22:45:56Z",
+      "inputHash": "92ce18a0f46fdcff"
+    },
+    {
+      "id": "a-match-morocco-vs-haiti",
+      "slug": "morocco-vs-haiti",
+      "type": "match",
+      "title": "Marrocos entra com vantagem estrutural sobre o Haiti",
+      "summary": "Elo, probabilidades e gols esperados apontam favoritismo claro de Marrocos, mas não absoluto.",
+      "body": "O modelo coloca **Marrocos** em posição de controle: **66,63%** de chance de vitória, contra **20,45%** de empate e **12,92%** para o **Haiti**. Não é um confronto nivelado — é um jogo em que o favoritismo do mandante aparece em todas as camadas dos dados.\n\nA diferença de força também é nítida no Elo: **1881,3** para Marrocos, **1570,8** para o Haiti. Esse intervalo ajuda a explicar por que o empate pesa mais do que a vitória visitante como alternativa ao cenário principal.\n\nNos gols esperados, a projeção reforça o desequilíbrio: **1.97 x 0.73**. Marrocos não apenas tem maior probabilidade de vencer; também projeta volume ofensivo bem superior. Para o Haiti, o caminho estatístico passa por reduzir o ritmo do jogo e transformar uma margem estreita em sobrevivência competitiva.",
+      "generatedAt": "2026-06-15T22:46:05Z",
+      "inputHash": "05e15eb5cbcebfcf"
+    },
+    {
+      "id": "a-match-scotland-vs-brazil",
+      "slug": "scotland-vs-brazil",
+      "type": "match",
+      "title": "Brasil chega à Escócia com favoritismo de elite",
+      "summary": "Com 62,83% de chance de vitória, Brasil impõe distância clara em Elo e gols esperados.",
+      "body": "A leitura pré-jogo é direta: o **Brasil é favorito pesado**, com **62,83%** de chance de vitória contra **15,47%** da Escócia. O empate aparece em **21,7%**, uma faixa relevante, mas insuficiente para suavizar o desnível projetado.\n\nO Elo explica boa parte da distância: **2028.7** para o Brasil, **1759.2** para a Escócia. Não é apenas vantagem nominal; é um diferencial que se traduz em controle esperado do jogo e maior probabilidade de transformar superioridade em resultado.\n\nNos gols esperados, o desenho fica ainda mais claro: **0.81 x 1.89**. A Escócia projeta uma produção ofensiva curta, enquanto o Brasil quase dobra esse volume. O confronto, portanto, nasce menos como duelo parelho e mais como teste de resistência escocesa contra uma seleção com margem estatística ampla.",
+      "generatedAt": "2026-06-15T22:46:14Z",
+      "inputHash": "4fcc1938af67b6c6"
+    },
+    {
+      "id": "a-match-czechia-vs-mexico",
+      "slug": "czechia-vs-mexico",
+      "type": "match",
+      "title": "México chega à frente, mas não em terreno seguro",
+      "summary": "Com Elo superior e 47,03% de vitória, o México é favorito diante da Czechia, mas o empate ainda pesa.",
+      "body": "O modelo coloca o **México** em vantagem clara, sustentado por um Elo de **1842.2** contra **1737.2** da **Czechia**. Essa diferença se traduz em **47,03%** de chance de vitória visitante, acima dos **27,81%** dos mandantes.\n\nO ponto de equilíbrio está no meio: o empate aparece com **25,16%**, uma fatia grande o bastante para impedir a leitura de domínio absoluto. O placar esperado também reforça a inclinação mexicana, com **1.14 x 1.56** em gols esperados.\n\nA prévia, portanto, não desenha um confronto simétrico: o México tem a melhor base numérica e maior teto ofensivo projetado. Mas a Czechia ainda ocupa espaço competitivo relevante — menos favorita, não descartável.",
+      "generatedAt": "2026-06-15T22:46:24Z",
+      "inputHash": "668c11fd756e0ed4"
+    },
+    {
+      "id": "a-match-south-africa-vs-south-korea",
+      "slug": "south-africa-vs-south-korea",
+      "type": "match",
+      "title": "Coreia do Sul chega com vantagem clara sobre a África do Sul",
+      "summary": "Elo, probabilidades e gols esperados apontam favoritismo visitante, mas com empate ainda relevante.",
+      "body": "A leitura pré-jogo é direta: a **South Korea** entra como favorita, com **52,83%** de chance de vitória, contra **22,95%** da **South Africa**. O empate aparece em **24,22%**, alto o bastante para impedir que o confronto seja tratado como desequilíbrio absoluto.\n\nO diferencial também aparece no Elo: **1812.8** para os visitantes, contra **1647.8** dos mandantes. É uma distância que sustenta o favoritismo sul-coreano sem transformar a partida em formalidade.\n\nNos gols esperados, o cenário reforça a mesma hierarquia: **1.02 x 1.68**. A South Africa tende a precisar de eficiência acima do volume previsto; a South Korea, por outro lado, tem margem estatística para controlar melhor o placar.",
+      "generatedAt": "2026-06-15T22:46:33Z",
+      "inputHash": "d7c50bdebc8b56c1"
+    },
+    {
+      "id": "a-match-ecuador-vs-germany",
+      "slug": "ecuador-vs-germany",
+      "type": "match",
+      "title": "Alemanha entra com vantagem clara sobre o Equador",
+      "summary": "Elo, probabilidades e gols esperados colocam a Alemanha como favorita, mas não invulnerável.",
+      "body": "A leitura do confronto é direta: a **Alemanha** chega com vantagem estrutural. Seu Elo de **1965,7** supera o do **Equador**, em **1772,1**, e isso aparece no mercado probabilístico: vitória alemã em **55,59%**, contra **20,78%** dos equatorianos.\n\nO empate, em **23,63%**, é a zona que impede a projeção de virar sentença. Ainda assim, o desenho ofensivo reforça a hierarquia: os gols esperados apontam **0,96 x 1,74**, sugerindo uma Alemanha mais capaz de transformar posse e volume em chances reais.\n\nPara o Equador, o jogo parece exigir eficiência acima da média: marcar com pouco e reduzir o ritmo alemão. Para a Alemanha, a missão é confirmar a superioridade sem permitir que um confronto estatisticamente inclinado se transforme em jogo de margem curta.",
+      "generatedAt": "2026-06-15T22:46:45Z",
+      "inputHash": "2c9711cfa060f468"
+    },
+    {
+      "id": "a-match-curacao-vs-ivory-coast",
+      "slug": "curacao-vs-ivory-coast",
+      "type": "match",
+      "title": "Ivory Coast entra com vantagem clara sobre Curaçao",
+      "summary": "Com Elo superior e 58,47% de chance de vitória, Ivory Coast chega como favorito em um duelo assimétrico.",
+      "body": "O mercado probabilístico desenha um confronto de vantagem visitante: **Ivory Coast tem 58,47% de chance de vitória**, contra **18,6% de Curaçao** e **22,93% de empate**. Não é um cenário de domínio absoluto, mas a inclinação é nítida.\n\nA diferença aparece também no Elo: **1787.9 para Ivory Coast**, **1564.3 para Curaçao**. Esse desnível ajuda a explicar por que o empate ainda tem peso relevante, mas não o bastante para neutralizar o favoritismo visitante.\n\nNos gols esperados, o recorte reforça a hierarquia: **0.9 x 1.8**. Curaçao projeta um jogo de margem estreita para sobreviver; Ivory Coast, com produção ofensiva esperada superior, entra com o caminho mais claro para controlar o placar.",
+      "generatedAt": "2026-06-15T22:46:57Z",
+      "inputHash": "6bf7c1948033c137"
+    },
+    {
+      "id": "a-match-tunisia-vs-netherlands",
+      "slug": "tunisia-vs-netherlands",
+      "type": "match",
+      "title": "Holanda entra com vantagem estrutural sobre a Tunísia",
+      "summary": "Com 65,2% de chance de vitória e Elo bem superior, a Holanda concentra o favoritismo contra a Tunísia.",
+      "body": "A projeção é clara: **Netherlands tem 65,2% de chance de vitória**, contra **13,86% de Tunisia** e **20,94% de empate**. Não é um confronto desenhado no detalhe; é um jogo em que o visitante carrega a maior parte do peso probabilístico.\n\nO Elo ajuda a explicar o desequilíbrio: **1974.8 para Netherlands**, **1679.8 para Tunisia**. Essa distância aparece também nos gols esperados, com **0.76 x 1.94** — um retrato de superioridade tanto em volume projetado quanto em controle ofensivo.\n\nPara a Tunísia, o caminho passa por reduzir o jogo a margens estreitas: quanto mais o placar permanecer baixo, mais relevante fica a fatia de **20,94%** do empate. Para a Holanda, a leitura é inversa: confirmar a vantagem significa transformar a diferença de qualidade projetada em presença constante no terço final.",
+      "generatedAt": "2026-06-15T22:47:10Z",
+      "inputHash": "0ebf659884f77b77"
+    },
+    {
+      "id": "a-match-japan-vs-sweden",
+      "slug": "japan-vs-sweden",
+      "type": "match",
+      "title": "Japão tem vantagem estreita em duelo de margens finas",
+      "summary": "Com Elo superior e xG quase espelhado, Japão aparece à frente, mas Suécia segue muito viva.",
+      "body": "O modelo coloca o **Japão com 40,35%** de chance de vitória, contra **33,9%** da **Suécia**. A diferença existe, mas não abre um abismo: o empate, em **25,74%**, mantém o confronto dentro de uma faixa real de alta incerteza.\n\nO Elo ajuda a explicar a inclinação: **1845,2** para o Japão, **1810,2** para a Suécia — uma vantagem de **35 pontos** para o mandante. É o suficiente para empurrar o favoritismo, não para transformar a partida em domínio projetado.\n\nA leitura dos gols esperados reforça o equilíbrio: **1,42 x 1,28**. O Japão chega com leve superioridade ofensiva estimada, mas a margem é curta demais para sugerir controle confortável. É um jogo em que o favoritismo japonês cabe mais na precisão do que na força bruta.",
+      "generatedAt": "2026-06-15T22:47:21Z",
+      "inputHash": "cde0afd33252477b"
+    },
+    {
+      "id": "a-match-turkey-vs-united-states",
+      "slug": "turkey-vs-united-states",
+      "type": "match",
+      "title": "Estados Unidos chegam com favoritismo claro contra a Turquia",
+      "summary": "Com Elo superior e 48,62% de chance de vitória, os EUA entram acima da Turquia no desenho do confronto.",
+      "body": "O mercado do modelo é direto: **United States têm 48,62% de chance de vitória**, contra **26,44% da Turkey** e **24,94% de empate**. Não é um abismo, mas é um favoritismo consistente — quase metade dos cenários termina com triunfo visitante.\n\nA diferença também aparece no Elo: **1876,5 para os Estados Unidos**, **1755,0 para a Turquia**. Esse é o retrato de um confronto em que o visitante carrega mais força estrutural, enquanto o mandante depende de reduzir variância e transformar o jogo em margem curta.\n\nOs gols esperados reforçam essa leitura: **1,11 x 1,59**. A projeção não aponta para domínio esmagador, mas sugere que os EUA devem produzir mais volume e melhores condições de marcar. A Turquia ainda está viva no equilíbrio do empate, mas começa atrás na hierarquia estatística.",
+      "generatedAt": "2026-06-15T22:47:34Z",
+      "inputHash": "b1d38c7ae9f197c1"
+    },
+    {
+      "id": "a-match-paraguay-vs-australia",
+      "slug": "paraguay-vs-australia",
+      "type": "match",
+      "title": "Austrália leva vantagem, mas Paraguai mantém o jogo aberto",
+      "summary": "Com Elo superior e 42,86% de chance de vitória, a Austrália entra à frente, mas sem domínio absoluto.",
+      "body": "A projeção coloca a **Austrália como favorita moderada**: são **42,86%** de vitória visitante, contra **31,55%** do Paraguai e **25,59%** de empate. Não é um abismo — é uma vantagem clara, mas ainda dentro de um confronto competitivo.\n\nO Elo ajuda a explicar essa inclinação: a Austrália aparece com **1775,0**, acima dos **1713,5** do Paraguai. Essa diferença de **61,5 pontos** sustenta o favoritismo visitante, especialmente em um cenário em que o empate ainda ocupa uma fatia relevante da distribuição.\n\nNos gols esperados, o desenho é parecido: **1,23 x 1,47**. A Austrália projeta mais volume ofensivo, mas por margem curta. A leitura central é simples: **leve superioridade australiana**, com o Paraguai suficientemente próximo para transformar eficiência em ruptura.",
+      "generatedAt": "2026-06-15T22:47:45Z",
+      "inputHash": "905dd84a917b9c13"
+    },
+    {
+      "id": "a-match-norway-vs-france",
+      "slug": "norway-vs-france",
+      "type": "match",
+      "title": "França chega à Noruega com favoritismo pesado",
+      "summary": "Com 63,34% de chance de vitória e vantagem clara em Elo, a França entra como força dominante contra a Noruega.",
+      "body": "A prévia é assimétrica: a **França** aparece com **63,34%** de chance de vitória, contra **15,12%** da **Noruega**. O empate, em **21,54%**, é o principal caminho para frear o favoritismo visitante — mais provável que uma vitória norueguesa, mas ainda distante do cenário francês.\n\nO Elo reforça a leitura: **2070** para a França, **1795** para a Noruega. Não é apenas vantagem de mando neutralizada; é um confronto em que a equipe visitante chega com peso competitivo superior e maior probabilidade de controlar o placar.\n\nOs gols esperados completam o quadro: **0.8 x 1.9**. A projeção dá à França mais que o dobro da produção ofensiva norueguesa, sugerindo um jogo em que a Noruega precisa ser eficiente em poucas chances, enquanto a França tem margem maior para transformar volume em resultado.",
+      "generatedAt": "2026-06-15T22:47:56Z",
+      "inputHash": "0aa822ecd11603a7"
+    },
+    {
+      "id": "a-match-senegal-vs-iraq",
+      "slug": "senegal-vs-iraq",
+      "type": "match",
+      "title": "Senegal entra acima, mas o empate mantém o jogo vivo",
+      "summary": "Com 51,86% de vitória, Senegal é favorito diante do Iraq, mas o risco de empate pesa no equilíbrio.",
+      "body": "Senegal chega com vantagem clara no modelo: **1815 de Elo** contra **1660** do Iraq. Essa diferença se traduz em **51,86%** de chance de vitória para o mandante — favoritismo real, mas longe de um cenário dominante.\n\nO ponto que mantém a prévia aberta é a soma das resistências do visitante: o **empate aparece em 24,4%**, enquanto a vitória do Iraq fica em **23,74%**. Ou seja, há quase o mesmo peso entre um jogo travado e uma surpresa fora de casa.\n\nNos gols esperados, a inclinação também favorece Senegal: **1.66 x 1.04**. É uma margem suficiente para explicar o favoritismo, mas não ampla a ponto de transformar o confronto em desnível absoluto. Senegal é o lado mais forte; o Iraq ainda tem espaço estatístico para reduzir o jogo a detalhes.",
+      "generatedAt": "2026-06-15T22:48:08Z",
+      "inputHash": "9b5e7eb314c7c088"
+    },
+    {
+      "id": "a-match-uruguay-vs-spain",
+      "slug": "uruguay-vs-spain",
+      "type": "match",
+      "title": "Espanha chega com vantagem clara contra o Uruguai",
+      "summary": "Com Elo superior e 54,56% de vitória, a Espanha aparece como favorita em um duelo ainda competitivo.",
+      "body": "A prévia coloca a **Espanha em posição de controle**: são **54,56%** de chance de vitória fora de casa, contra **21,58%** do Uruguai e **23,86%** de empate. A diferença de Elo — **2077,9 x 1895,0** — traduz um favoritismo relevante, não apenas marginal.\n\nO placar esperado reforça o mesmo desenho: **0,98 x 1,72** em gols esperados. A Espanha projeta volume ofensivo superior, enquanto o Uruguai aparece abaixo de um gol esperado, sinal de que precisará maximizar eficiência para transformar um jogo de baixa probabilidade em surpresa.\n\nAinda assim, o confronto não é uma ruptura total de equilíbrio. A soma de empate e vitória uruguaia chega a **45,44%**, o bastante para manter o jogo aberto — mas o centro estatístico da partida aponta para uma Espanha mais forte, mais produtiva e mais provável vencedora.",
+      "generatedAt": "2026-06-15T22:48:20Z",
+      "inputHash": "22a3c007abf0091c"
+    },
+    {
+      "id": "a-match-cape-verde-islands-vs-saudi-arabia",
+      "slug": "cape-verde-islands-vs-saudi-arabia",
+      "type": "match",
+      "title": "Arábia Saudita tem margem mínima sobre Cabo Verde",
+      "summary": "Com Elo quase nivelado e gols esperados próximos, Arábia Saudita entra com favoritismo estreito.",
+      "body": "O mercado probabilístico trata **Cape Verde Islands x Saudi Arabia** como um confronto de borda fina: **35,9%** para o mandante, **25,8%** para o empate e **38,3%** para o visitante. A Arábia Saudita é favorita, mas por uma diferença curta demais para sugerir controle claro.\n\nO Elo reforça essa leitura. A Saudi Arabia aparece com **1650,0**, contra **1637,1** de Cape Verde Islands — uma vantagem de **12,9 pontos**, mais sinal de leve superioridade do que de desequilíbrio estrutural.\n\nA projeção ofensiva também comprime o jogo: **1,32 x 1,38** em gols esperados. É uma prévia de margens pequenas, em que o visitante tem a dianteira estatística, mas o empate permanece uma peça relevante no desenho do confronto.",
+      "generatedAt": "2026-06-15T22:48:30Z",
+      "inputHash": "03eff68b8fd41958"
+    },
+    {
+      "id": "a-match-new-zealand-vs-belgium",
+      "slug": "new-zealand-vs-belgium",
+      "type": "match",
+      "title": "Bélgica entra com peso de favorita contra a Nova Zelândia",
+      "summary": "Com Elo superior e 66,81% de chance de vitória, Bélgica larga em clara vantagem sobre a Nova Zelândia.",
+      "body": "A leitura do confronto é direta: a **Bélgica** chega com **Elo 1932,5**, bem acima dos **1620,0** da **Nova Zelândia**, e isso aparece de forma contundente nas probabilidades. A vitória visitante está em **66,81%**, contra apenas **12,8%** para os mandantes.\n\nO empate, em **20,39%**, é o caminho intermediário que mantém alguma tensão no jogo, mas não muda a hierarquia projetada. A Nova Zelândia precisa transformar um cenário de baixa expectativa ofensiva — **0,73 gol esperado** — em eficiência quase máxima.\n\nA projeção de gols, **0,73 x 1,98**, reforça o desequilíbrio: a Bélgica não é só mais provável vencedora, é também a equipe com maior volume esperado. Em termos analíticos, este é um confronto em que a surpresa existe, mas o centro de gravidade está claramente do lado belga.",
+      "generatedAt": "2026-06-15T22:48:41Z",
+      "inputHash": "aecf5dc8e73d7371"
+    },
+    {
+      "id": "a-match-egypt-vs-iran",
+      "slug": "egypt-vs-iran",
+      "type": "match",
+      "title": "Egypt x Iran: favoritismo no fio da navalha",
+      "summary": "Com Elos quase idênticos e xG espelhado, Egypt tem vantagem mínima sobre Iran.",
+      "body": "**Egypt entra com 37,78% de chance de vitória**, contra **36,4% de Iran**. A leitura é de equilíbrio real: o mercado do modelo não enxerga um favorito claro, apenas uma inclinação leve para o mandante.\n\nO Elo reforça essa simetria: **1767.5 para Egypt** e **1760.0 para Iran**. É uma diferença pequena demais para sustentar qualquer narrativa de superioridade estrutural; aqui, o mando pesa, mas não rompe o confronto.\n\nOs gols esperados também contam a mesma história: **1.36 x 1.34**. Com **25,81% de empate**, o jogo se projeta como uma disputa de margens estreitas, em que eficiência nas poucas vantagens criadas tende a definir o resultado.",
+      "generatedAt": "2026-06-15T22:48:59Z",
+      "inputHash": "c86d0c544cbc62b7"
+    },
+    {
+      "id": "a-match-panama-vs-england",
+      "slug": "panama-vs-england",
+      "type": "match",
+      "title": "Inglaterra chega com vantagem estrutural sobre o Panamá",
+      "summary": "Com 70,6% de chance de vitória, a Inglaterra combina força Elo e volume esperado muito superiores.",
+      "body": "A prévia é clara: a Inglaterra entra como favorita pesada, com **70,6%** de probabilidade de vitória, contra **10,4%** do Panamá e **19,0%** de empate. A diferença no Elo — **2015** contra **1660** — traduz um desequilíbrio competitivo relevante, não apenas uma vantagem marginal.\n\nO modelo de gols esperados reforça a mesma leitura: **0.64 x 2.06**. Isso sugere uma partida em que o Panamá tende a produzir pouco, enquanto a Inglaterra projeta mais que o triplo em volume ofensivo esperado.\n\nO empate ainda tem peso estatístico maior que a vitória panamenha, mas o centro de gravidade do confronto está do lado inglês. Para o Panamá, o cenário passa por reduzir o jogo; para a Inglaterra, por transformar superioridade projetada em controle real.",
+      "generatedAt": "2026-06-15T22:49:09Z",
+      "inputHash": "a807ee10a0d68eaa"
+    },
+    {
+      "id": "a-match-croatia-vs-ghana",
+      "slug": "croatia-vs-ghana",
+      "type": "match",
+      "title": "Croácia larga na frente, mas Gana ainda respira",
+      "summary": "Com 55,24% de chance de vitória, a Croácia tem vantagem clara, mas o empate mantém o jogo aberto.",
+      "body": "A Croácia entra como favorita: **55,24%** de probabilidade de vitória, contra **21,05%** de Gana. O empate, em **23,71%**, é alto o bastante para impedir uma leitura de domínio absoluto.\n\nO diferencial de força aparece no Elo: **1900,0** para a Croácia, **1710,0** para Gana. É uma margem relevante, e o modelo traduz isso em controle esperado, não em passeio.\n\nA projeção de gols reforça o mesmo desenho: **1,73 x 0,97**. A Croácia deve produzir mais e sofrer menos, mas Gana tem volume esperado suficiente para tornar qualquer vantagem croata vulnerável.",
+      "generatedAt": "2026-06-15T22:49:17Z",
+      "inputHash": "192b4eebbde67f34"
+    },
+    {
+      "id": "a-match-colombia-vs-portugal",
+      "slug": "colombia-vs-portugal",
+      "type": "match",
+      "title": "Portugal chega com vantagem clara contra a Colômbia",
+      "summary": "Elo superior e gols esperados colocam Portugal perto de 48,47% de vitória, contra 26,56% da Colômbia.",
+      "body": "Portugal entra no confronto como favorito mensurável: tem **1995 de Elo**, contra **1875 da Colômbia**, e uma probabilidade de vitória de **48,47%**. A Colômbia, mesmo como mandante, aparece com **26,56%**, enquanto o empate fica em **24,96%**.\n\nA distância não é esmagadora, mas é estrutural. O modelo projeta **1,11 x 1,59** em gols esperados, uma diferença que reforça a superioridade portuguesa tanto no volume ofensivo previsto quanto na chance de transformar controle em placar.\n\nO ponto central é o equilíbrio relativo: há espaço real para resistência colombiana, mas a partida não é precificada como coin flip. Portugal concentra quase metade dos cenários de vitória; a Colômbia depende de reduzir ritmo, encurtar margens e puxar o jogo para a zona em que o empate — **24,96%** — vira ameaça concreta ao favoritismo.",
+      "generatedAt": "2026-06-15T22:49:29Z",
+      "inputHash": "7ef4d966d128fb78"
+    },
+    {
+      "id": "a-match-congo-dr-vs-uzbekistan",
+      "slug": "congo-dr-vs-uzbekistan",
+      "type": "match",
+      "title": "Congo DR tem margem curta em duelo de alta tensão",
+      "summary": "Com 39,41% contra 34,81%, Congo DR entra à frente, mas o Uzbekistan está perto o bastante para comprimir o favoritismo.",
+      "body": "O modelo coloca o **Congo DR** como favorito, mas por uma margem estreita: **39,41%** de vitória contra **34,81%** do **Uzbekistan**. O empate, em **25,78%**, não é ruído — é parte central do desenho do confronto.\n\nA leitura do Elo reforça esse equilíbrio. O mandante aparece com **1700,0**, apenas **25,0** pontos acima dos **1675,0** do visitante. É vantagem, não domínio: o tipo de diferença que inclina o jogo sem fechá-lo.\n\nNos gols esperados, a projeção também é comprimida: **1.4 x 1.3**. O Congo DR tem uma ponta ofensiva mínima, mas o Uzbekistan está dentro da mesma faixa competitiva. A prévia, portanto, não aponta um abismo; aponta um jogo decidido por detalhes.",
+      "generatedAt": "2026-06-15T22:49:39Z",
+      "inputHash": "10deb2195c30ee74"
+    },
+    {
+      "id": "a-match-jordan-vs-argentina",
+      "slug": "jordan-vs-argentina",
+      "type": "match",
+      "title": "Argentina entra com favoritismo de peso contra Jordan",
+      "summary": "Com 77,02% de chance de vitória, Argentina tem vantagem clara sobre Jordan no modelo.",
+      "body": "A leitura do confronto é direta: **Argentina** chega com Elo de **2085,0**, bem acima dos **1655,0** de **Jordan**, e isso aparece com força nas probabilidades. O visitante tem **77,02%** de chance de vitória, contra apenas **6,76%** do mandante.\n\nO empate, em **16,22%**, é o caminho intermediário — mais provável que uma vitória de Jordan, mas ainda distante de alterar a hierarquia do duelo. O modelo não vê equilíbrio competitivo: vê uma Argentina claramente superior antes da bola rolar.\n\nA projeção de gols reforça essa assimetria: **0,49 x 2,21** em gols esperados. Em termos práticos, Jordan parte de um cenário de baixa produção ofensiva, enquanto Argentina aparece com volume suficiente para controlar o placar e o ritmo do jogo.",
+      "generatedAt": "2026-06-15T22:49:49Z",
+      "inputHash": "4d9f00e1173fb164"
+    },
+    {
+      "id": "a-match-algeria-vs-austria",
+      "slug": "algeria-vs-austria",
+      "type": "match",
+      "title": "Áustria tem margem real, mas Argélia mantém o jogo vivo",
+      "summary": "Com Elo superior e 41,29% de vitória, a Áustria chega à frente; o empate ainda pesa 25,7%.",
+      "body": "A leitura fria coloca a **Áustria** em vantagem: Elo de **1810** contra **1765** da **Argélia**, uma diferença que se traduz em **41,29%** de chance de vitória visitante. Não é domínio absoluto, mas é uma margem clara.\n\nA Argélia aparece com **33,01%** de probabilidade de vencer, sustentada por um cenário ofensivo competitivo: os gols esperados estão em **1.26 x 1.44**. A distância é pequena o bastante para sugerir um jogo de detalhes, não uma assimetria estrutural.\n\nO ponto de equilíbrio está no empate, com **25,7%**. Em termos práticos, a Áustria é favorita, mas não a ponto de reduzir o confronto a uma previsão linear: há favoritismo visitante, com resistência estatística suficiente para manter a Argélia dentro da disputa.",
+      "generatedAt": "2026-06-15T22:49:58Z",
+      "inputHash": "10d15be14be8849e"
+    },
+    {
+      "id": "a-scenario-spain",
+      "slug": "spain",
+      "type": "scenario",
+      "title": "Espanha encara uma rota de peso até a final",
+      "summary": "Bélgica, Alemanha, Brasil e Argentina desenham um caminho duro para a Espanha.",
+      "body": "A Espanha não tem um corredor limpo no mata-mata. O adversário mais provável já no **round of 32** é a **Bélgica**, com **35,67%** — um primeiro corte que eleva o custo da campanha desde cedo.\n\nA rota fica mais densa na sequência: **Alemanha** no **round of 16** (**27,31%**) e **Brasil** nas **quartas** (**18,36%**). Não é um caminho de desgaste gradual; é uma sucessão de choques contra seleções de topo no imaginário competitivo.\n\nNa reta final, o cenário mais provável aponta **Argentina** tanto na **semi** (**13,8%**) quanto na **final** (**9,15%**), em leituras independentes por fase. Com **dificuldade de caminho: 2019**, o diagnóstico é claro: para a Espanha, a estrada até a final é **difícil** — e fica pesada antes mesmo da decisão.",
+      "generatedAt": "2026-06-15T22:50:10Z",
+      "inputHash": "60b2addd7fce6ca9"
+    },
+    {
+      "id": "a-scenario-argentina",
+      "slug": "argentina",
+      "type": "scenario",
+      "title": "Argentina encara uma rota de elite até a final",
+      "summary": "França, Inglaterra e Espanha aparecem no radar argentino; o índice de dificuldade é 2061.",
+      "body": "O caminho projetado da **Argentina** começa com peso máximo: a **França** é o adversário mais provável no **round of 32**, com **53,42%**. É um sinal claro de rota difícil desde a primeira fase eliminatória, sem margem para aquecimento.\n\nNas oitavas, o nome dominante é a **Inglaterra**, com **27,59%**. Nas quartas, a **França** volta a aparecer, mas com apenas **4,25%** — mais um reflexo do mapa de probabilidades por fase do que um roteiro linear único.\n\nA semifinal mais provável coloca a Argentina contra a **Espanha**, com **15,31%**. Na final, novamente a **França** lidera o cenário, com **10,16%**. Com **dificuldade de caminho em 2061**, a leitura é direta: não é uma chave confortável; é uma travessia de elite até a decisão.",
+      "generatedAt": "2026-06-15T22:50:27Z",
+      "inputHash": "065b51ca10f6287b"
+    },
+    {
+      "id": "a-scenario-france",
+      "slug": "france",
+      "type": "scenario",
+      "title": "França encara um corredor de elite até a final",
+      "summary": "Argentina, Inglaterra e Espanha desenham um caminho de alta exigência para a França.",
+      "body": "O primeiro obstáculo provável já muda o tom do torneio: **Argentina no round of 32, com 54,04%**. Não é uma entrada gradual no mata-mata — é uma rota que começa no limite alto de pressão competitiva.\n\nNas oitavas, o adversário mais provável é **England, com 26,7%**. Depois, o cenário aponta novamente para **Argentina nas quartas, com 4,48%**, uma probabilidade menor, mas simbólica do tipo de caminho: pouco espaço para atalhos.\n\nA reta final também é pesada. A semi mais provável contra **Spain, com 15,03%**, e uma possível final contra **Argentina, com 11,11%**, colocam a França num percurso claramente **difícil**. O índice de dificuldade do caminho é **2070** — e a sequência de nomes explica por quê.",
+      "generatedAt": "2026-06-15T22:50:41Z",
+      "inputHash": "4b213809d285c611"
+    },
+    {
+      "id": "a-scenario-brazil",
+      "slug": "brazil",
+      "type": "scenario",
+      "title": "Brasil vê rota dura, com Espanha e Argentina no radar",
+      "summary": "O caminho brasileiro combina favoritismo inicial com um funil pesado a partir das quartas.",
+      "body": "O cenário mais provável começa com **United States** no round of 32, aparecendo em **42,78%** das simulações. Nas oitavas, o nome mais frequente é **Mexico**, com **22,35%** — um início administrável, mas longe de ser trivial.\n\nA virada de chave vem nas quartas: **Spain** surge como adversária mais provável, com **18,04%**. Se o Brasil passar, a semifinal mais provável aponta para **Argentina**, em **13,03%** — exatamente o tipo de cruzamento que transforma uma campanha forte em teste de elite.\n\nNa final, o adversário mais provável volta a ser **Spain**, com **10,98%**, sinal de um bracket aberto o bastante para repetir potências em diferentes caminhos projetados. Com **dificuldade de caminho em 1992**, a leitura é clara: o Brasil não tem uma rota leve até a decisão; tem uma escada que começa controlável e fica agressiva no trecho decisivo.",
+      "generatedAt": "2026-06-15T22:50:55Z",
+      "inputHash": "4eaf2068efb613d4"
+    },
+    {
+      "id": "a-scenario-england",
+      "slug": "england",
+      "type": "scenario",
+      "title": "Inglaterra encara rota pesada, com Portugal logo de saída",
+      "summary": "Portugal, Argentina, França e Espanha desenham um caminho de alta exigência para a Inglaterra.",
+      "body": "O cenário mais provável coloca a **Inglaterra** contra **Portugal** na fase de 32, com **41,89%** de probabilidade. É um início de mata-mata sem zona de conforto: antes de pensar em final, o primeiro corte já vem contra um adversário de primeira prateleira.\n\nSe avançar, o cruzamento mais provável nas oitavas é a **Argentina**, com **28,79%**. Nas quartas, aparece a **França**, embora com probabilidade bem menor: **4,55%**. A leitura é clara: o caminho não ganha respiro; ele troca dificuldade por incerteza.\n\nNa semifinal, o adversário mais provável é a **Espanha**, com **14,24%**. Curiosamente, a própria Espanha também surge como rival mais provável numa eventual final, com **9,77%** — sinal de que o sorteio simulado concentra nela parte relevante do risco inglês nas fases mais altas.\n\nCom **dificuldade de caminho: 2061**, a rota da Inglaterra deve ser tratada como **difícil**. Não há atalho evidente: Portugal, Argentina, França e Espanha formam uma sequência que exige pico competitivo cedo e sustentação até o último jogo.",
+      "generatedAt": "2026-06-15T22:51:10Z",
+      "inputHash": "767a998472df725b"
+    },
+    {
+      "id": "a-scenario-portugal",
+      "slug": "portugal",
+      "type": "scenario",
+      "title": "Portugal encara uma rota de elite até a final",
+      "summary": "Inglaterra, Argentina e Espanha desenham um caminho pesado para Portugal no mata-mata.",
+      "body": "O cenário mais provável já começa no limite: Portugal tem a **Inglaterra** como adversária mais provável no **round of 32**, com **42,24%**. Se avançar, o funil não alivia: a **Argentina** aparece no **round of 16** com **28,28%**.\n\nNas quartas, o nome mais provável volta a ser a **Inglaterra**, mas com apenas **4,94%**, sinal de dispersão maior no chaveamento. A semifinal projeta a **Espanha** como principal obstáculo, com **14,27%** — e a própria Espanha também é o adversário mais provável em uma eventual final, com **10,26%**.\n\nPelo conjunto, é um caminho **difícil**. O índice de dificuldade é **2054**, mas o que realmente define a dureza da rota é a sequência de potências prováveis: **Inglaterra, Argentina e Espanha** antes ou no jogo decisivo.",
+      "generatedAt": "2026-06-15T22:51:22Z",
+      "inputHash": "109808d6a9d0b2d9"
+    },
+    {
+      "id": "a-scenario-netherlands",
+      "slug": "netherlands",
+      "type": "scenario",
+      "title": "Holanda encara uma rota de elite até a final",
+      "summary": "Germany, Spain, Brazil e Argentina formam o eixo mais provável de uma campanha de alta dificuldade.",
+      "body": "O caminho mais provável da **Netherlands** começa sem margem para aquecimento: **Germany** aparece como adversária mais provável no **round_of_32**, com **39,33%**. Para uma primeira eliminatória, é um sorteio com peso de fase avançada.\n\nSe avançar, a rota mantém o teto alto: **Spain** surge no **round_of_16** com **24,38%**, seguida de **Brazil** nas quartas, com **15,46%**. Não há trecho claramente respirável nesse miolo; a sequência concentra seleções de primeira linha antes mesmo da semifinal.\n\nNa **semi**, o adversário mais provável é **Argentina**, com **10,88%**. E, caso chegue à decisão, o cenário mais provável de final volta a ser **Spain**, com **11,49%**. O índice de **dificuldade do caminho é 2047** — e o desenho confirma: é uma rota difícil, construída mais para sobrevivência do que para controle.",
+      "generatedAt": "2026-06-15T22:51:34Z",
+      "inputHash": "d83b14fbc5e0996f"
+    },
+    {
+      "id": "a-scenario-germany",
+      "slug": "germany",
+      "type": "scenario",
+      "title": "Alemanha encara um corredor de gigantes até a final",
+      "summary": "Holanda, Espanha, Brasil e Argentina desenham um caminho duro para a Alemanha.",
+      "body": "O cenário mais provável já começa em alta voltagem: **Holanda no round of 32**, com **34,78%** de probabilidade. Para uma seleção como a Alemanha, isso reduz a margem de erro cedo — não há fase de aclimatação no desenho projetado.\n\nDepois, o funil aperta: **Espanha nas oitavas** aparece com **31,62%**, seguida por **Brasil nas quartas** com **20,3%** e **Argentina na semifinal** com **15,13%**. É uma sequência de adversários de elite, mais parecida com rota de campeão do que com caminho administrável.\n\nA final mais provável, caso a Alemanha chegue lá, também aponta para a **Espanha**, com **10,51%**. Com **dificuldade de caminho em 2049**, o mapa alemão é claramente **difícil**: para levantar a taça, a seleção provavelmente precisará sobreviver a uma cadeia de confrontos grandes desde o primeiro mata-mata.",
+      "generatedAt": "2026-06-15T22:51:47Z",
+      "inputHash": "b42ba235bf89ccfa"
+    },
+    {
+      "id": "a-scenario-belgium",
+      "slug": "belgium",
+      "type": "scenario",
+      "title": "Bélgica encara uma rota de elite até a final",
+      "summary": "Espanha, Alemanha, Brasil e Argentina compõem o caminho mais provável da Bélgica.",
+      "body": "A projeção coloca a Bélgica diante de um mata-mata pesado desde o início: o adversário mais provável no **round of 32** é a **Espanha**, com **37,24%**. Não há aquecimento gradual — o funil já começa em temperatura de decisão.\n\nSe avançar, o cenário segue sem alívio. Nas oitavas, a rota mais provável aponta para a **Alemanha** (**23,81%**); nas quartas, para o **Brasil** (**16,39%**). É um caminho de alta densidade técnica, em que cada fase tende a exigir performance de pico.\n\nA semifinal mais provável contra a **Argentina** (**11,78%**) completa o desenho de uma travessia duríssima. E, caso chegue à final, a Bélgica tem novamente a **Espanha** como adversária mais provável (**11,45%**).\n\nO índice de **dificuldade do caminho é 2047**, e o roteiro explica o número: a Bélgica não projeta uma escalada progressiva, mas uma sequência de confrontos contra potências. É um caminho **difícil**, com pouca margem para jogos de controle e muita demanda por eficiência em noites grandes.",
+      "generatedAt": "2026-06-15T22:52:03Z",
+      "inputHash": "a699654e966347b0"
+    },
+    {
+      "id": "a-scenario-uruguay",
+      "slug": "uruguay",
+      "type": "scenario",
+      "title": "Uruguai encara um corredor de gigantes",
+      "summary": "Bélgica, Alemanha, Brasil e Argentina aparecem no caminho mais provável do Uruguai até a final.",
+      "body": "O sorteio de cenários desenha um caminho **difícil** para o Uruguai: o adversário mais provável já no **round of 32** é a **Bélgica**, com **31,1%**. Não há rampa de entrada — há pressão imediata.\n\nSe avançar, o funil segue pesado. Nas oitavas, o nome mais provável é a **Alemanha** (**22,0%**); nas quartas, o **Brasil** (**15,9%**); na semifinal, a **Argentina** (**10,7%**). É uma sequência que transforma cada fase em teste de elite, sem trecho claramente confortável.\n\nNa final, o adversário mais provável é a **Espanha**, com **16,6%**. O índice de dificuldade do caminho é **2018**, e o perfil confirma a leitura: para chegar ao título, o Uruguai teria de atravessar uma rota de alta densidade competitiva, com rivais históricos e potências em praticamente todos os degraus.",
+      "generatedAt": "2026-06-15T22:52:13Z",
+      "inputHash": "95389c39d9cc1f13"
+    },
+    {
+      "id": "a-scenario-croatia",
+      "slug": "croatia",
+      "type": "scenario",
+      "title": "Croácia encara rota pesada, com Argentina no radar",
+      "summary": "Portugal abre o caminho mais provável; Argentina aparece como ameaça recorrente até a final.",
+      "body": "O sorteio projetado para a **Croácia** começa sem aquecimento: o adversário mais provável no **round_of_32** é **Portugal**, com **33,08%**. É um primeiro corte duro, daqueles que já comprimem a margem de erro.\n\nA partir daí, o mapa fica ainda mais carregado. No **round_of_16**, a maior probabilidade é de **Argentina** (**20,42%**). Nas **quartas**, a Argentina volta a aparecer como rival mais provável, ainda que com chance menor (**5,89%**), sinal de um caminho bastante espalhado, mas com um nome pesado se repetindo.\n\nNa **semi**, o adversário mais provável é **Spain**, com **13,15%**. E, se a Croácia chegar à decisão, o cenário mais provável de final volta a apontar para **Argentina**, com **10,36%**.\n\nCom **dificuldade de caminho de 2066**, a leitura é direta: **não é uma rota fácil**. Portugal na largada, Argentina rondando três fases e Spain antes da final desenham um percurso de alta exigência até o jogo decisivo.",
+      "generatedAt": "2026-06-15T22:52:30Z",
+      "inputHash": "65179cf3cd60fddc"
+    },
+    {
+      "id": "a-scenario-morocco",
+      "slug": "morocco",
+      "type": "scenario",
+      "title": "Marrocos encara uma rota de elite até a decisão",
+      "summary": "Estados Unidos abrem o caminho mais provável; Espanha e Argentina tornam a rota pesada.",
+      "body": "O cenário mais provável coloca **Marrocos** contra os **Estados Unidos** na fase de 32, com **32,68%** de probabilidade. É um início de mata-mata já exigente, sem margem para uma entrada gradual na competição.\n\nNas oitavas, o adversário mais provável passa a ser o **México**, com **18,13%**. A partir daí, o caminho endurece de vez: **Espanha** nas quartas (**14,77%**) e **Argentina** na semifinal (**9,51%**) formam uma sequência de alto risco competitivo.\n\nSe chegar à final, o rival mais provável é o **Brasil**, com **12,78%**. Com **dificuldade de caminho em 1982**, a rota marroquina é claramente **difícil**: não é apenas uma questão de sobreviver às primeiras fases, mas de atravessar uma sucessão de potências até o jogo decisivo.",
+      "generatedAt": "2026-06-15T22:52:42Z",
+      "inputHash": "686342d7027ec0c1"
     }
   ]
 }

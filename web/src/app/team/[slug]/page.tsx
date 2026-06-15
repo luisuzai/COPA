@@ -77,7 +77,7 @@ export default async function TeamPage({
       />
 
       {/* ── Cabeçalho da seleção ───────────────────────────── */}
-      <section className="container-content pb-8 pt-12 sm:pt-16">
+      <section className="container-content animate-fade-up pb-8 pt-12 sm:pt-16">
         <Link
           href={`/group/${team.group}/`}
           className="text-xs uppercase tracking-eyebrow text-muted transition-colors hover:text-foreground"

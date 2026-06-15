@@ -13,6 +13,7 @@ import unicodedata
 from typing import Any
 
 from copa import config
+from copa.seed_elo import SEED_CONF, SEED_ELO
 
 # Mapeamento das fases da football-data.org → nosso schema.
 _STAGE_MAP = {
@@ -55,6 +56,7 @@ def map_team(raw: dict[str, Any]) -> dict[str, Any]:
     """Mapeia um time da API para um Team parcial (sem flag/conf/elo curados)."""
     name = raw.get("name") or raw.get("shortName") or "Desconhecido"
     code = (raw.get("tla") or slugify(name)[:3]).upper()
+    elo = SEED_ELO.get(code, config.DEFAULT_ELO)
     return {
         "id": f"t-{code.lower()}",
         "slug": slugify(name),
@@ -62,11 +64,12 @@ def map_team(raw: dict[str, Any]) -> dict[str, Any]:
         "code": code,
         # A API entrega a URL do escudo/bandeira — renderização robusta na web.
         "crest": raw.get("crest"),
-        # Defaults — sobrescritos pela metadata existente em pipeline.py:
         "flag": "🏳️",
-        "confederation": "UEFA",
+        "confederation": SEED_CONF.get(code, "UEFA"),
         "group": None,
-        "elo": config.DEFAULT_ELO,
+        # Elo atual (será recalculado pelos resultados) e baseline pré-Copa.
+        "elo": elo,
+        "eloBase": elo,
     }
 
 

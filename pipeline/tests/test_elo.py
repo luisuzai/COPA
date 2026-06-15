@@ -53,3 +53,19 @@ def test_favorite_has_higher_win_probability():
     p = elo.outcome_probabilities(2100, 1600)
     assert p["home_win"] > p["away_win"]
     assert p["xg_home"] > p["xg_away"]
+
+
+def test_advance_probability_equal_teams_is_fifty_fifty():
+    assert math.isclose(elo.advance_probability(1700, 1700), 0.5, abs_tol=1e-9)
+
+
+def test_advance_probability_complementary():
+    a = elo.advance_probability(2000, 1700)
+    b = elo.advance_probability(1700, 2000)
+    assert math.isclose(a + b, 1.0, abs_tol=1e-9)
+
+
+def test_advance_probability_less_extreme_than_pure_elo():
+    # A variância de jogo único (empate→pênaltis) deixa o favorito MENOS
+    # dominante do que a expectativa pura do Elo — o cerne da calibração.
+    assert elo.advance_probability(2100, 1600) < elo.expected_score(2100, 1600)
