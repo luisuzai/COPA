@@ -1,0 +1,90 @@
+[
+  {
+    "id": "t-bra",
+    "slug": "brazil",
+    "name": "Brasil",
+    "code": "BRA",
+    "flag": "🇧🇷",
+    "crest": "https://flagcdn.com/br.svg",
+    "confederation": "CONMEBOL",
+    "group": "a",
+    "elo": 2098.0
+  },
+  {
+    "id": "t-ger",
+    "slug": "germany",
+    "name": "Alemanha",
+    "code": "GER",
+    "flag": "🇩🇪",
+    "crest": "https://flagcdn.com/de.svg",
+    "confederation": "UEFA",
+    "group": "a",
+    "elo": 1957.0
+  },
+  {
+    "id": "t-jpn",
+    "slug": "japan",
+    "name": "Japão",
+    "code": "JPN",
+    "flag": "🇯🇵",
+    "crest": "https://flagcdn.com/jp.svg",
+    "confederation": "AFC",
+    "group": "a",
+    "elo": 1848.0
+  },
+  {
+    "id": "t-mar",
+    "slug": "morocco",
+    "name": "Marrocos",
+    "code": "MAR",
+    "flag": "🇲🇦",
+    "crest": "https://flagcdn.com/ma.svg",
+    "confederation": "CAF",
+    "group": "a",
+    "elo": 1782.0
+  },
+  {
+    "id": "t-arg",
+    "slug": "argentina",
+    "name": "Argentina",
+    "code": "ARG",
+    "flag": "🇦🇷",
+    "crest": "https://flagcdn.com/ar.svg",
+    "confederation": "CONMEBOL",
+    "group": "b",
+    "elo": 2083.0
+  },
+  {
+    "id": "t-fra",
+    "slug": "france",
+    "name": "França",
+    "code": "FRA",
+    "flag": "🇫🇷",
+    "crest": "https://flagcdn.com/fr.svg",
+    "confederation": "UEFA",
+    "group": "b",
+    "elo": 2062.0
+  },
+  {
+    "id": "t-esp",
+    "slug": "spain",
+    "name": "Espanha",
+    "code": "ESP",
+    "flag": "🇪🇸",
+    "crest": "https://flagcdn.com/es.svg",
+    "confederation": "UEFA",
+    "group": "b",
+    "elo": 2057.0
+  },
+  {
+    "id": "t-eng",
+    "slug": "england",
+    "name": "Inglaterra",
+    "code": "ENG",
+    "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
+    "crest": "https://flagcdn.com/gb-eng.svg",
+    "confederation": "UEFA",
+    "group": "b",
+    "elo": 1983.0
+  }
+]

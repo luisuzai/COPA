@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m pytest -q)",
+      "Bash(python -m pip install -q pytest)",
+      "Bash(python -m pip install -q python-dotenv requests)",
+      "Bash(python -m scripts.run --offline --no-ai --sims 50000)",
+      "Bash(npm --version)",
+      "PowerShell($env:Path = \"C:\\\\Program Files\\\\nodejs;$env:Path\"; Set-Location web; npm run dev 2>&1 | Out-String)",
+      "PowerShell($ok=$false; for \\($i=0; $i -lt 30; $i++\\) { try { $r = Invoke-WebRequest -Uri \"http://localhost:3000/\" -UseBasicParsing -TimeoutSec 3; if \\($r.StatusCode -eq 200\\) { \"READY status=$\\($r.StatusCode\\) length=$\\($r.Content.Length\\)\"; $ok=$true; break } } catch { Start-Sleep -Seconds 1 } }; if \\(-not $ok\\) { \"not ready yet\" })",
+      "PowerShell($ok=$false; for \\($i=0; $i -lt 40; $i++\\) { try { $r = Invoke-WebRequest -Uri \"http://localhost:3000/\" -UseBasicParsing -TimeoutSec 3; if \\($r.StatusCode -eq 200\\) { \"dev READY 200\"; $ok=$true; break } } catch { Start-Sleep -Seconds 1 } }; if \\(-not $ok\\) { \"not ready\" })"
+    ]
+  }
+}

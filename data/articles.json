@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-06-15T20:22:54Z",
+  "items": [
+    {
+      "id": "a-home",
+      "slug": "home",
+      "type": "home",
+      "title": "Brasil dispara na ponta com 32% de chance de título",
+      "summary": "Após a 1ª rodada, a Seleção lidera com folga; Espanha surge como vice-favorita à frente da Argentina.",
+      "body": "A primeira rodada reforçou o favoritismo do **Brasil**. Com a vitória sobre a Alemanha, a Seleção abriu vantagem no topo das projeções: **32% de chance de título** segundo as 100.000 simulações do nosso modelo — mais de 10 pontos à frente do segundo colocado.\n\nA surpresa positiva é a **Espanha**, que após bater a Inglaterra saltou para a vice-liderança das probabilidades (**22%**), passando à frente de **Argentina (18%)** e **França (15%)**. Os quatro favoritos concentram quase 90% da chance de campeão.\n\nNo extremo oposto, **Marrocos** (3%) e **Japão** (3%) dependem de resultados nas próximas rodadas para manter vivas as esperanças de uma campanha histórica.",
+      "generatedAt": "2026-06-15T20:22:54Z",
+      "inputHash": "seed-home-0002"
+    },
+    {
+      "id": "a-team-brazil",
+      "slug": "brazil",
+      "type": "team",
+      "title": "Brasil: o favorito que controla o próprio destino",
+      "summary": "Com o melhor Elo do torneio e 94% de chance de classificação, a Seleção depende de si.",
+      "body": "O **Brasil** chega à segunda rodada como líder absoluto do ranking de Elo (2098) e maior probabilidade de título: **32%**. A vitória por 2 a 1 sobre a **Alemanha** consolidou a campanha e elevou a chance de classificação para **94%**.\n\nO modelo projeta um caminho favorável: a Seleção tem **52%** de chance de alcançar a final. A principal ameaça aparece no mata-mata, num possível duelo decisivo contra a **Espanha**, hoje a segunda força do torneio.\n\nPróximo jogo: **Japão**, onde o Brasil é amplamente favorito (**61%** de vitória), com expectativa de gols de 1,85 a 0,85.",
+      "generatedAt": "2026-06-15T20:22:54Z",
+      "inputHash": "seed-team-brazil-0002"
+    },
+    {
+      "id": "a-match-brazil-vs-japan",
+      "slug": "brazil-vs-japan",
+      "type": "match",
+      "title": "Brasil x Japão: favoritismo claro, mas atenção à organização asiática",
+      "summary": "A Seleção tem 61% de chance de vitória; o Japão chega embalado pela estreia.",
+      "body": "O modelo aponta **61% de chance de vitória do Brasil**, contra 22% de empate e 17% para o **Japão**. A expectativa de gols é de **1,85 a 0,85** a favor da Seleção.\n\nApesar do favoritismo, o Japão chega após vencer Marrocos na estreia. A diferença de Elo (2098 contra 1848) explica a assimetria, mas a disciplina tática japonesa costuma comprimir o placar — uma vitória brasileira por margem curta seria o desfecho menos surpreendente.",
+      "generatedAt": "2026-06-15T20:22:54Z",
+      "inputHash": "seed-match-brazil-vs-japan-0002"
+    }
+  ]
+}

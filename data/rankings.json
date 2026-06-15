@@ -1,0 +1,61 @@
+{
+  "generatedAt": "2026-06-15T20:22:54Z",
+  "entries": [
+    {
+      "teamId": "t-bra",
+      "rank": 1,
+      "elo": 2098,
+      "eloChange": 0,
+      "rankChange": 0
+    },
+    {
+      "teamId": "t-arg",
+      "rank": 2,
+      "elo": 2083,
+      "eloChange": 0,
+      "rankChange": 0
+    },
+    {
+      "teamId": "t-fra",
+      "rank": 3,
+      "elo": 2062,
+      "eloChange": 0,
+      "rankChange": 0
+    },
+    {
+      "teamId": "t-esp",
+      "rank": 4,
+      "elo": 2057,
+      "eloChange": 0,
+      "rankChange": 0
+    },
+    {
+      "teamId": "t-eng",
+      "rank": 5,
+      "elo": 1983,
+      "eloChange": 0,
+      "rankChange": 0
+    },
+    {
+      "teamId": "t-ger",
+      "rank": 6,
+      "elo": 1957,
+      "eloChange": 0,
+      "rankChange": 0
+    },
+    {
+      "teamId": "t-jpn",
+      "rank": 7,
+      "elo": 1848,
+      "eloChange": 0,
+      "rankChange": 0
+    },
+    {
+      "teamId": "t-mar",
+      "rank": 8,
+      "elo": 1782,
+      "eloChange": 0,
+      "rankChange": 0
+    }
+  ]
+}

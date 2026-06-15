@@ -1,0 +1,142 @@
+[
+  {
+    "id": "m-001",
+    "slug": "brazil-vs-germany",
+    "stage": "group",
+    "group": "a",
+    "homeId": "t-bra",
+    "awayId": "t-ger",
+    "homeScore": 2,
+    "awayScore": 1,
+    "status": "finished",
+    "kickoff": "2026-06-12T22:00:00Z",
+    "venue": "MetLife Stadium, Nova York"
+  },
+  {
+    "id": "m-002",
+    "slug": "japan-vs-morocco",
+    "stage": "group",
+    "group": "a",
+    "homeId": "t-jpn",
+    "awayId": "t-mar",
+    "homeScore": 1,
+    "awayScore": 0,
+    "status": "finished",
+    "kickoff": "2026-06-13T19:00:00Z",
+    "venue": "SoFi Stadium, Los Angeles"
+  },
+  {
+    "id": "m-003",
+    "slug": "brazil-vs-japan",
+    "stage": "group",
+    "group": "a",
+    "homeId": "t-bra",
+    "awayId": "t-jpn",
+    "status": "scheduled",
+    "kickoff": "2026-06-17T22:00:00Z",
+    "venue": "AT&T Stadium, Dallas"
+  },
+  {
+    "id": "m-004",
+    "slug": "germany-vs-morocco",
+    "stage": "group",
+    "group": "a",
+    "homeId": "t-ger",
+    "awayId": "t-mar",
+    "status": "scheduled",
+    "kickoff": "2026-06-18T19:00:00Z",
+    "venue": "Estádio Akron, Guadalajara"
+  },
+  {
+    "id": "m-005",
+    "slug": "brazil-vs-morocco",
+    "stage": "group",
+    "group": "a",
+    "homeId": "t-bra",
+    "awayId": "t-mar",
+    "status": "scheduled",
+    "kickoff": "2026-06-22T22:00:00Z",
+    "venue": "Hard Rock Stadium, Miami"
+  },
+  {
+    "id": "m-006",
+    "slug": "germany-vs-japan",
+    "stage": "group",
+    "group": "a",
+    "homeId": "t-ger",
+    "awayId": "t-jpn",
+    "status": "scheduled",
+    "kickoff": "2026-06-22T22:00:00Z",
+    "venue": "BMO Field, Toronto"
+  },
+  {
+    "id": "m-007",
+    "slug": "argentina-vs-france",
+    "stage": "group",
+    "group": "b",
+    "homeId": "t-arg",
+    "awayId": "t-fra",
+    "homeScore": 1,
+    "awayScore": 1,
+    "status": "finished",
+    "kickoff": "2026-06-13T22:00:00Z",
+    "venue": "Estadio Azteca, Cidade do México"
+  },
+  {
+    "id": "m-008",
+    "slug": "spain-vs-england",
+    "stage": "group",
+    "group": "b",
+    "homeId": "t-esp",
+    "awayId": "t-eng",
+    "homeScore": 2,
+    "awayScore": 1,
+    "status": "finished",
+    "kickoff": "2026-06-14T19:00:00Z",
+    "venue": "Lincoln Financial Field, Filadélfia"
+  },
+  {
+    "id": "m-009",
+    "slug": "argentina-vs-spain",
+    "stage": "group",
+    "group": "b",
+    "homeId": "t-arg",
+    "awayId": "t-esp",
+    "status": "scheduled",
+    "kickoff": "2026-06-18T22:00:00Z",
+    "venue": "Levi's Stadium, São Francisco"
+  },
+  {
+    "id": "m-010",
+    "slug": "france-vs-england",
+    "stage": "group",
+    "group": "b",
+    "homeId": "t-fra",
+    "awayId": "t-eng",
+    "status": "scheduled",
+    "kickoff": "2026-06-19T19:00:00Z",
+    "venue": "Mercedes-Benz Stadium, Atlanta"
+  },
+  {
+    "id": "m-011",
+    "slug": "argentina-vs-england",
+    "stage": "group",
+    "group": "b",
+    "homeId": "t-arg",
+    "awayId": "t-eng",
+    "status": "scheduled",
+    "kickoff": "2026-06-23T22:00:00Z",
+    "venue": "NRG Stadium, Houston"
+  },
+  {
+    "id": "m-012",
+    "slug": "france-vs-spain",
+    "stage": "group",
+    "group": "b",
+    "homeId": "t-fra",
+    "awayId": "t-esp",
+    "status": "scheduled",
+    "kickoff": "2026-06-23T22:00:00Z",
+    "venue": "Arrowhead Stadium, Kansas City"
+  }
+]

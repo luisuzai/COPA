@@ -1,0 +1,85 @@
+{
+  "generatedAt": "2026-06-15T20:22:54Z",
+  "matches": [
+    {
+      "matchSlug": "brazil-vs-japan",
+      "homeId": "t-bra",
+      "awayId": "t-jpn",
+      "homeWin": 0.6099,
+      "draw": 0.2225,
+      "awayWin": 0.1677,
+      "expectedHomeGoals": 1.85,
+      "expectedAwayGoals": 0.85
+    },
+    {
+      "matchSlug": "germany-vs-morocco",
+      "homeId": "t-ger",
+      "awayId": "t-mar",
+      "homeWin": 0.5379,
+      "draw": 0.2402,
+      "awayWin": 0.2218,
+      "expectedHomeGoals": 1.7,
+      "expectedAwayGoals": 1.0
+    },
+    {
+      "matchSlug": "brazil-vs-morocco",
+      "homeId": "t-bra",
+      "awayId": "t-mar",
+      "homeWin": 0.6713,
+      "draw": 0.2028,
+      "awayWin": 0.1259,
+      "expectedHomeGoals": 1.98,
+      "expectedAwayGoals": 0.72
+    },
+    {
+      "matchSlug": "germany-vs-japan",
+      "homeId": "t-ger",
+      "awayId": "t-jpn",
+      "homeWin": 0.4741,
+      "draw": 0.2511,
+      "awayWin": 0.2748,
+      "expectedHomeGoals": 1.57,
+      "expectedAwayGoals": 1.13
+    },
+    {
+      "matchSlug": "argentina-vs-spain",
+      "homeId": "t-arg",
+      "awayId": "t-esp",
+      "homeWin": 0.3951,
+      "draw": 0.2578,
+      "awayWin": 0.3472,
+      "expectedHomeGoals": 1.4,
+      "expectedAwayGoals": 1.3
+    },
+    {
+      "matchSlug": "france-vs-england",
+      "homeId": "t-fra",
+      "awayId": "t-eng",
+      "homeWin": 0.4453,
+      "draw": 0.2545,
+      "awayWin": 0.3003,
+      "expectedHomeGoals": 1.51,
+      "expectedAwayGoals": 1.19
+    },
+    {
+      "matchSlug": "argentina-vs-england",
+      "homeId": "t-arg",
+      "awayId": "t-eng",
+      "homeWin": 0.4655,
+      "draw": 0.2522,
+      "awayWin": 0.2823,
+      "expectedHomeGoals": 1.55,
+      "expectedAwayGoals": 1.15
+    },
+    {
+      "matchSlug": "france-vs-spain",
+      "homeId": "t-fra",
+      "awayId": "t-esp",
+      "homeWin": 0.3755,
+      "draw": 0.2582,
+      "awayWin": 0.3663,
+      "expectedHomeGoals": 1.36,
+      "expectedAwayGoals": 1.34
+    }
+  ]
+}

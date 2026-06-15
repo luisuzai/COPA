@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ──────────────────────────────────────────────────────────────
+   Tokens do tema (escuro por padrão). Uma cor de destaque: azul.
+   ────────────────────────────────────────────────────────────── */
+:root {
+  --bg: #08090a;
+  --surface: #101113;
+  --surface-2: #16181c;
+  --border: #222428;
+  --text: #ecedee;
+  --muted: #9ba1a6;
+  --accent: #3b82f6;
+  --accent-strong: #2563eb;
+  --up: #34d399;
+  --down: #f87171;
+  color-scheme: dark;
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    @apply bg-bg text-foreground font-sans antialiased;
+  }
+  ::selection {
+    background: var(--accent-strong);
+    color: #fff;
+  }
+  /* Foco visível e elegante p/ acessibilidade. */
+  :focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    border-radius: 4px;
+  }
+}
+
+@layer utilities {
+  /* Largura editorial padrão com gutters responsivos. */
+  .container-content {
+    @apply mx-auto w-full max-w-content px-5 sm:px-6;
+  }
+  /* Atraso escalonado p/ a animação de entrada das seções. */
+  .delay-1 {
+    animation-delay: 0.06s;
+  }
+  .delay-2 {
+    animation-delay: 0.12s;
+  }
+  .delay-3 {
+    animation-delay: 0.18s;
+  }
+}

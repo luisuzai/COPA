@@ -1,0 +1,85 @@
+# ============================================================
+#  COPA — .gitignore
+#  Monorepo: /pipeline (Python) + /web (Next.js) + /data (JSON)
+# ============================================================
+
+# ------------------------------------------------------------
+#  SEGREDOS — NUNCA commitar (chaves de API: OpenAI, football-data)
+#  A 1ª linha de defesa. O .env real fica só na sua máquina.
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+pipeline/.env
+web/.env
+web/.env.local
+*.key
+*.pem
+secrets.json
+
+# ------------------------------------------------------------
+#  Node / Next.js  (web/)
+# ------------------------------------------------------------
+node_modules/
+.next/
+out/
+build/
+dist/
+.turbo/
+*.tsbuildinfo
+next-env.d.ts
+
+# Logs e caches de package managers
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+.npm/
+.eslintcache
+
+# ------------------------------------------------------------
+#  Python  (pipeline/)
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.Python
+
+# Ambientes virtuais
+.venv/
+venv/
+env/
+ENV/
+
+# Ferramentas de teste / lint / type-check
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+
+# ------------------------------------------------------------
+#  Dados — política
+#  Os JSON gerados em /data SÃO commitados (são o "backend" do SSG).
+#  Mas o cache da OpenAI é local e não precisa subir.
+# ------------------------------------------------------------
+data/.cache/
+data/*.tmp.json
+
+# ------------------------------------------------------------
+#  Sistema operacional / Editor
+# ------------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+*.swp
+*~
