@@ -3,7 +3,7 @@ import Link from "next/link";
 import { Delta } from "@/components/Delta";
 import { ProbabilityBar } from "@/components/charts/ProbabilityBar";
 import type { FavoriteRow } from "@/lib/types";
-import { pct } from "@/lib/utils";
+import { cn, pct } from "@/lib/utils";
 
 /**
  * Tabela de favoritos — o herói funcional da Home.
@@ -44,7 +44,12 @@ export function FavoritesTable({ rows }: { rows: FavoriteRow[] }) {
 
           <ProbabilityBar value={row.champion} className="hidden w-40 shrink-0 sm:block" />
 
-          <span className="w-14 shrink-0 text-right font-mono text-sm font-semibold tabular-nums text-foreground sm:text-base">
+          <span
+            className={cn(
+              "w-14 shrink-0 text-right font-mono text-sm font-semibold tabular-nums sm:text-base",
+              row.rank === 1 ? "text-accent" : "text-foreground",
+            )}
+          >
             {pct(row.champion, 1)}
           </span>
 

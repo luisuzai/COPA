@@ -23,11 +23,11 @@ export function withBasePath(path: string): string {
 export function stageLabel(stage: string): string {
   const labels: Record<string, string> = {
     group: "Fase de grupos",
-    round_of_32: "32 avos",
-    round_of_16: "Oitavas",
-    quarter: "Quartas",
+    round_of_32: "16-avos de final", // 32 seleções = 16-avos (não "32 avos")
+    round_of_16: "Oitavas de final",
+    quarter: "Quartas de final",
     semi: "Semifinal",
-    third_place: "Disputa de 3º",
+    third_place: "Disputa de 3º lugar",
     final: "Final",
   };
   return labels[stage] ?? stage;

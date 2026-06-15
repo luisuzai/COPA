@@ -105,8 +105,9 @@ export default function SimulatorPage() {
         E se o resultado fosse outro?
       </h1>
       <p className="mt-4 max-w-xl text-muted">
-        Altere os resultados dos jogos e veja a classificação dos grupos mudar.
-        Tudo é recalculado no seu navegador — nada é enviado a servidor algum.
+        Clique na bandeira de quem vence (ou em <span className="text-foreground">Empate</span>)
+        e veja a classificação dos grupos mudar na hora. Tudo é recalculado no seu
+        navegador — nada é enviado a servidor algum.
       </p>
       <button
         onClick={() => setPicks(defaults)}
@@ -139,20 +140,16 @@ export default function SimulatorPage() {
                     return (
                       <div
                         key={m.id}
-                        className="flex items-center justify-between gap-2 rounded-xl border border-border bg-surface px-3 py-2.5"
+                        className="flex items-center gap-3 rounded-xl border border-border bg-surface px-3 py-2.5"
                       >
-                        <span className="flex flex-1 items-center justify-end gap-2 truncate text-sm">
-                          <span className="truncate">{home.name}</span>
-                          <Flag team={home} size="sm" />
-                        </span>
+                        <span className="flex-1 truncate text-right text-sm">{home.name}</span>
                         <Picker
                           value={picks[m.slug]}
+                          home={home}
+                          away={away}
                           onChange={(o) => setPicks((prev) => ({ ...prev, [m.slug]: o }))}
                         />
-                        <span className="flex flex-1 items-center gap-2 truncate text-sm">
-                          <Flag team={away} size="sm" />
-                          <span className="truncate">{away.name}</span>
-                        </span>
+                        <span className="flex-1 truncate text-sm">{away.name}</span>
                       </div>
                     );
                   })}
@@ -205,32 +202,59 @@ export default function SimulatorPage() {
 
 function Picker({
   value,
+  home,
+  away,
   onChange,
 }: {
   value: Outcome | undefined;
+  home: Team;
+  away: Team;
   onChange: (o: Outcome) => void;
 }) {
-  const opts: { key: Outcome; label: string }[] = [
-    { key: "home", label: "1" },
-    { key: "draw", label: "X" },
-    { key: "away", label: "2" },
-  ];
+  const base =
+    "flex h-8 items-center justify-center rounded-md border transition-colors";
   return (
-    <div className="flex shrink-0 overflow-hidden rounded-lg border border-border">
-      {opts.map((o) => (
-        <button
-          key={o.key}
-          onClick={() => onChange(o.key)}
-          className={cn(
-            "px-2.5 py-1 font-mono text-xs transition-colors",
-            value === o.key
-              ? "bg-accent text-white"
-              : "text-muted hover:bg-surface-2",
-          )}
-        >
-          {o.label}
-        </button>
-      ))}
+    <div className="flex shrink-0 items-center gap-1">
+      <button
+        type="button"
+        title={`${home.name} vence`}
+        aria-label={`${home.name} vence`}
+        onClick={() => onChange("home")}
+        className={cn(
+          base,
+          "w-9",
+          value === "home" ? "border-accent bg-accent/15" : "border-border hover:bg-surface-2",
+        )}
+      >
+        <Flag team={home} size="sm" />
+      </button>
+      <button
+        type="button"
+        title="Empate"
+        onClick={() => onChange("draw")}
+        className={cn(
+          base,
+          "px-2 text-xs font-medium",
+          value === "draw"
+            ? "border-accent bg-accent/15 text-accent"
+            : "border-border text-muted hover:bg-surface-2",
+        )}
+      >
+        Empate
+      </button>
+      <button
+        type="button"
+        title={`${away.name} vence`}
+        aria-label={`${away.name} vence`}
+        onClick={() => onChange("away")}
+        className={cn(
+          base,
+          "w-9",
+          value === "away" ? "border-accent bg-accent/15" : "border-border hover:bg-surface-2",
+        )}
+      >
+        <Flag team={away} size="sm" />
+      </button>
     </div>
   );
 }

@@ -17,7 +17,7 @@ export function StatCard({
   accent?: boolean;
 }) {
   return (
-    <div className="rounded-xl border border-border bg-surface p-4">
+    <div className="rounded-xl border border-border bg-surface p-4 transition-colors hover:border-accent/40">
       <p className="text-xs uppercase tracking-wider text-muted">{label}</p>
       <p
         className={cn(

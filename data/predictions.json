@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-06-15T22:30:21Z",
+  "generatedAt": "2026-06-15T23:05:17Z",
   "matches": [
     {
       "matchSlug": "saudi-arabia-vs-uruguay",
       "homeId": "t-ksa",
-      "awayId": "t-ury",
+      "awayId": "t-uru",
       "homeWin": 0.1711,
       "draw": 0.2238,
       "awayWin": 0.6051,
@@ -243,7 +243,7 @@
     },
     {
       "matchSlug": "uruguay-vs-cape-verde-islands",
-      "homeId": "t-ury",
+      "homeId": "t-uru",
       "awayId": "t-cpv",
       "homeWin": 0.6174,
       "draw": 0.2203,
@@ -483,7 +483,7 @@
     },
     {
       "matchSlug": "uruguay-vs-spain",
-      "homeId": "t-ury",
+      "homeId": "t-uru",
       "awayId": "t-esp",
       "homeWin": 0.2158,
       "draw": 0.2386,

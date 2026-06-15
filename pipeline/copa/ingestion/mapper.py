@@ -13,7 +13,7 @@ import unicodedata
 from typing import Any
 
 from copa import config
-from copa.seed_elo import SEED_CONF, SEED_ELO
+from copa.seed_elo import SEED_CONF, SEED_ELO, SEED_FLAG, SEED_NAMES
 
 # Mapeamento das fases da football-data.org → nosso schema.
 _STAGE_MAP = {
@@ -54,16 +54,20 @@ def _group_code(raw: str | None) -> str | None:
 
 def map_team(raw: dict[str, Any]) -> dict[str, Any]:
     """Mapeia um time da API para um Team parcial (sem flag/conf/elo curados)."""
-    name = raw.get("name") or raw.get("shortName") or "Desconhecido"
-    code = (raw.get("tla") or slugify(name)[:3]).upper()
+    api_name = raw.get("name") or raw.get("shortName") or "Desconhecido"
+    code = (raw.get("tla") or slugify(api_name)[:3]).upper()
     elo = SEED_ELO.get(code, config.DEFAULT_ELO)
+    # Bandeira uniforme via flagcdn (sempre renderiza); fallback ao escudo da API.
+    flag_code = SEED_FLAG.get(code)
+    crest = f"https://flagcdn.com/{flag_code}.svg" if flag_code else raw.get("crest")
     return {
         "id": f"t-{code.lower()}",
-        "slug": slugify(name),
-        "name": name,
+        # Slug a partir do nome em inglês → URL estável e ASCII (ex: /team/spain).
+        "slug": slugify(api_name),
+        # Nome de exibição em português.
+        "name": SEED_NAMES.get(code, api_name),
         "code": code,
-        # A API entrega a URL do escudo/bandeira — renderização robusta na web.
-        "crest": raw.get("crest"),
+        "crest": crest,
         "flag": "🏳️",
         "confederation": SEED_CONF.get(code, "UEFA"),
         "group": None,

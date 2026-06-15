@@ -56,7 +56,7 @@ export default function HomePage() {
             {movers.map((m) => (
               <div
                 key={m.team.id}
-                className="rounded-xl border border-border bg-surface p-5"
+                className="rounded-xl border border-border bg-surface p-5 transition-all hover:-translate-y-0.5 hover:border-accent/40"
               >
                 <div className="flex items-center gap-2.5">
                   <span className="text-xl leading-none">{m.team.flag}</span>
