@@ -5,17 +5,19 @@
 /* ──────────────────────────────────────────────────────────────
    Tokens do tema (escuro por padrão). Uma cor de destaque: azul.
    ────────────────────────────────────────────────────────────── */
+/* Cores em canais RGB (espaço-separados) p/ os modificadores de opacidade
+   do Tailwind funcionarem: bg-accent/80, border-border/60, bg-bg/70, etc. */
 :root {
-  --bg: #08090a;
-  --surface: #101113;
-  --surface-2: #16181c;
-  --border: #222428;
-  --text: #ecedee;
-  --muted: #9ba1a6;
-  --accent: #3b82f6;
-  --accent-strong: #2563eb;
-  --up: #34d399;
-  --down: #f87171;
+  --bg: 8 9 10;
+  --surface: 16 17 19;
+  --surface-2: 22 24 28;
+  --border: 34 36 40;
+  --text: 236 237 238;
+  --muted: 155 161 166;
+  --accent: 59 130 246;
+  --accent-strong: 37 99 235;
+  --up: 52 211 153;
+  --down: 248 113 113;
   color-scheme: dark;
 }
 
@@ -29,12 +31,12 @@
     @apply bg-bg text-foreground font-sans antialiased;
   }
   ::selection {
-    background: var(--accent-strong);
+    background: rgb(var(--accent-strong));
     color: #fff;
   }
   /* Foco visível e elegante p/ acessibilidade. */
   :focus-visible {
-    outline: 2px solid var(--accent);
+    outline: 2px solid rgb(var(--accent));
     outline-offset: 2px;
     border-radius: 4px;
   }
