@@ -49,12 +49,27 @@ function computeStandings(
   return [...rows.values()].sort((a, b) => b.points - a.points || b.gd - a.gd);
 }
 
-const mostLikely = (p: MatchPrediction): Outcome =>
-  p.homeWin >= p.draw && p.homeWin >= p.awayWin
-    ? "home"
-    : p.draw >= p.awayWin
-      ? "draw"
-      : "away";
+/** Hash determinístico de string → [0,1). Mesmo jogo, mesmo número sempre. */
+function hash01(s: string): number {
+  let h = 2166136261;
+  for (let i = 0; i < s.length; i++) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 16777619);
+  }
+  return ((h >>> 0) % 100000) / 100000;
+}
+
+/**
+ * Resultado-base de um jogo: SORTEADO pela distribuição do modelo
+ * (vitória/empate/derrota), não o argmax. Assim o cenário inicial tem empates
+ * e zebras na proporção real — e é determinístico (estável a cada carregamento).
+ */
+function sampledOutcome(p: MatchPrediction): Outcome {
+  const r = hash01(p.matchSlug);
+  if (r < p.homeWin) return "home";
+  if (r < p.homeWin + p.draw) return "draw";
+  return "away";
+}
 
 export default function SimulatorPage() {
   const [teams, setTeams] = useState<Team[]>([]);
@@ -75,7 +90,7 @@ export default function SimulatorPage() {
         for (const mm of m) {
           if (mm.stage === "group" && mm.status !== "finished") {
             const pr = predBySlug.get(mm.slug);
-            def[mm.slug] = pr ? mostLikely(pr) : "draw";
+            def[mm.slug] = pr ? sampledOutcome(pr) : "draw";
           }
         }
         setTeams(t); setMatches(m); setDefaults(def); setPicks(def);
@@ -89,6 +104,15 @@ export default function SimulatorPage() {
     () => [...new Set(teams.map((t) => t.group))].sort(),
     [teams],
   );
+  const counts = useMemo(() => {
+    let home = 0, draw = 0, away = 0;
+    for (const v of Object.values(picks)) {
+      if (v === "home") home++;
+      else if (v === "draw") draw++;
+      else if (v === "away") away++;
+    }
+    return { home, draw, away, total: home + draw + away };
+  }, [picks]);
 
   if (loading) {
     return (
@@ -105,16 +129,28 @@ export default function SimulatorPage() {
         E se o resultado fosse outro?
       </h1>
       <p className="mt-4 max-w-xl text-muted">
-        Clique na bandeira de quem vence (ou em <span className="text-foreground">Empate</span>)
-        e veja a classificação dos grupos mudar na hora. Tudo é recalculado no seu
-        navegador — nada é enviado a servidor algum.
+        O cenário inicial é sorteado pelas probabilidades do modelo — por isso há{" "}
+        <span className="text-foreground">empates</span> e zebras, como numa Copa de
+        verdade. Clique na bandeira de quem vence (ou em{" "}
+        <span className="text-foreground">Empate</span>) para mudar e ver a
+        classificação reagir. Tudo recalculado no seu navegador.
       </p>
-      <button
-        onClick={() => setPicks(defaults)}
-        className="mt-5 rounded-lg border border-border px-3 py-1.5 text-sm text-muted transition-colors hover:bg-surface-2 hover:text-foreground"
-      >
-        Restaurar previsão do modelo
-      </button>
+
+      <div className="mt-5 flex flex-wrap items-center gap-4">
+        <button
+          onClick={() => setPicks(defaults)}
+          className="rounded-lg border border-border px-3 py-1.5 text-sm text-muted transition-colors hover:bg-surface-2 hover:text-foreground"
+        >
+          Restaurar cenário do modelo
+        </button>
+        {counts.total > 0 && (
+          <p className="font-mono text-xs tabular-nums text-muted">
+            {counts.total} jogos restantes · {counts.home} mandante ·{" "}
+            <span className="text-foreground">{counts.draw} empates</span> ·{" "}
+            {counts.away} visitante
+          </p>
+        )}
+      </div>
 
       <div className="mt-10 space-y-12">
         {groups.map((g) => {
