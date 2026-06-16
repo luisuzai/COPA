@@ -65,7 +65,7 @@ export function formatDay(iso: string): string {
   }
 }
 
-/** Formata uma data ISO p/ pt-BR curto (ex: "15 jun, 12:00"). */
+/** Formata uma data ISO p/ pt-BR curto no horário de Brasília (ex: "15 jun, 16:00"). */
 export function formatDate(iso: string): string {
   try {
     return new Intl.DateTimeFormat("pt-BR", {
@@ -73,7 +73,7 @@ export function formatDate(iso: string): string {
       month: "short",
       hour: "2-digit",
       minute: "2-digit",
-      timeZone: "UTC",
+      timeZone: "America/Sao_Paulo",
     }).format(new Date(iso));
   } catch {
     return iso;
