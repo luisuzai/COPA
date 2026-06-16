@@ -1,20 +1,18 @@
 import type { Metadata } from "next";
 
 import { FavoritesTable } from "@/components/FavoritesTable";
-import { getFavorites, getLeader, getProbabilities } from "@/lib/data";
+import { getFavorites, getLeader } from "@/lib/data";
 import { oneInPhrase } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Ranking de título",
   description:
-    "As 48 seleções da Copa do Mundo 2026 ordenadas por chance de título, " +
-    "segundo 100.000 simulações Monte Carlo.",
+    "As 48 seleções da Copa do Mundo 2026 ordenadas por chance de conquistar o título.",
 };
 
 export default function TitleRankingPage() {
   const favorites = getFavorites();
   const leader = getLeader();
-  const { simulations } = getProbabilities();
 
   return (
     <div className="container-content py-12 sm:py-16">
@@ -23,12 +21,10 @@ export default function TitleRankingPage() {
         Quem vai ser campeão?
       </h1>
       <p className="mt-5 max-w-2xl text-lg text-muted">
-        As 48 seleções por chance de título, segundo{" "}
-        {simulations.toLocaleString("pt-BR")} simulações.{" "}
+        As 48 seleções ordenadas por chance de levantar a taça.{" "}
         {leader && (
           <>
-            {leader.team.name} lidera — campeã em {oneInPhrase(leader.champion)} Copas
-            simuladas.
+            {leader.team.name} lidera — campeã em {oneInPhrase(leader.champion)} Copas.
           </>
         )}
       </p>

@@ -128,6 +128,34 @@ export function getNextMatchForTeam(teamId: string): Match | undefined {
     .sort((a, b) => a.kickoff.localeCompare(b.kickoff))[0];
 }
 
+export interface UpcomingMatch {
+  match: Match;
+  home: Team;
+  away: Team;
+  prediction?: MatchPrediction;
+}
+
+/** Próximos jogos (não finalizados), com a previsão — para o dashboard da Home. */
+export function getUpcomingMatches(limit = 6): UpcomingMatch[] {
+  const teamById = getTeamById();
+  const predBySlug = new Map<string, MatchPrediction>(
+    getPredictions().matches.map((p) => [p.matchSlug, p] as [string, MatchPrediction]),
+  );
+  const scheduled = getMatches()
+    .filter((m) => m.status !== "finished")
+    .sort((a, b) => a.kickoff.localeCompare(b.kickoff));
+
+  const out: UpcomingMatch[] = [];
+  for (const m of scheduled) {
+    const home = teamById.get(m.homeId);
+    const away = teamById.get(m.awayId);
+    if (!home || !away) continue;
+    out.push({ match: m, home, away, prediction: predBySlug.get(m.slug) });
+    if (out.length >= limit) break;
+  }
+  return out;
+}
+
 // ── Grupos ────────────────────────────────────────────────────
 export function getGroups(): GroupId[] {
   return [...new Set(getTeams().map((t) => t.group))].sort();

@@ -5,12 +5,14 @@ import { FavoritesTable } from "@/components/FavoritesTable";
 import { Flag } from "@/components/Flag";
 import { Prose } from "@/components/Prose";
 import { RoundInsights } from "@/components/RoundInsights";
+import { UpcomingMatches } from "@/components/UpcomingMatches";
 import {
   getArticle,
   getFavorites,
   getLeader,
   getProbabilities,
   getRoundInsights,
+  getUpcomingMatches,
 } from "@/lib/data";
 import { formatDay, oneInPhrase, pct } from "@/lib/utils";
 
@@ -26,8 +28,9 @@ export default function HomePage() {
   const leader = getLeader();
   const favorites = getFavorites();
   const insights = getRoundInsights();
+  const upcoming = getUpcomingMatches(6);
   const article = getArticle("home", "home");
-  const { simulations, generatedAt } = getProbabilities();
+  const { generatedAt } = getProbabilities();
 
   return (
     <>
@@ -75,8 +78,7 @@ export default function HomePage() {
                   <span className="text-foreground">
                     {oneInPhrase(leader.champion)}
                   </span>{" "}
-                  Copas simuladas · líder após {simulations.toLocaleString("pt-BR")}{" "}
-                  simulações.
+                  Copas — o atual favorito ao caneco.
                 </p>
               </div>
               <span className="inline-flex shrink-0 items-center gap-2 self-start rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-white transition-colors group-hover:bg-accent-strong sm:self-auto">
@@ -85,6 +87,17 @@ export default function HomePage() {
               </span>
             </div>
           </Link>
+        </section>
+      )}
+
+      {/* ── Próximos jogos (dashboard) ─────────────────────── */}
+      {upcoming.length > 0 && (
+        <section className="container-content py-10">
+          <SectionHeading
+            title="Próximos jogos"
+            subtitle="A expectativa de resultado de cada partida"
+          />
+          <UpcomingMatches matches={upcoming} />
         </section>
       )}
 
@@ -103,7 +116,7 @@ export default function HomePage() {
       <section id="favoritos" className="container-content py-10">
         <SectionHeading
           title="Favoritos ao título"
-          subtitle={`Chance de ser campeão · ${simulations.toLocaleString("pt-BR")} simulações`}
+          subtitle="Probabilidade de cada seleção levantar a taça"
         />
         <FavoritesTable rows={favorites.slice(0, 12)} />
         <Link

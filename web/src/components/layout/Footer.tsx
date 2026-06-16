@@ -1,56 +1,137 @@
+import Link from "next/link";
+
 import { getProbabilities } from "@/lib/data";
+import { SITE_TAGLINE } from "@/lib/site";
 import { formatDate } from "@/lib/utils";
 
-/** Footer sóbrio com metadados do modelo e a fronteira IA × estatística. */
+const NAV = [
+  { href: "/#favoritos", label: "Favoritos" },
+  { href: "/rankings/title/", label: "Ranking de título" },
+  { href: "/simulator/", label: "Simulador" },
+];
+
+const ABOUT = [
+  { href: "/methodology/", label: "Metodologia", external: false },
+  {
+    href: "https://github.com/luisuzai/COPA",
+    label: "Código no GitHub",
+    external: true,
+  },
+  {
+    href: "https://www.linkedin.com/in/luisuzai/",
+    label: "LinkedIn",
+    external: true,
+  },
+];
+
+/** Footer premium: marca, navegação, autoria e disclaimer responsável. */
 export function Footer() {
-  const { generatedAt, simulations } = getProbabilities();
+  const { generatedAt } = getProbabilities();
   const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
   const linkedinUrl = "https://www.linkedin.com/in/luisuzai/";
 
   return (
     <footer className="mt-24 border-t border-border/60">
-      <div className="container-content flex flex-col gap-5 py-10 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
-        <div className="flex items-center gap-3">
-          <a
-            href={linkedinUrl}
-            target="_blank"
-            rel="noreferrer"
-            aria-label="LinkedIn de Luis Uzai"
-            className="group rounded-full"
-          >
-            <img
-              src={`${basePath}/uzai-tinta-a-oleo.png`}
-              alt="Luis Uzai"
-              width={48}
-              height={48}
-              className="size-12 rounded-full border border-border object-cover transition group-hover:border-accent"
-            />
-          </a>
+      <div className="container-content py-14">
+        <div className="grid gap-10 md:grid-cols-[1.4fr_1fr_1fr]">
+          {/* Marca + autoria */}
           <div>
-            <p className="font-display text-sm font-semibold text-foreground">
+            <p className="font-display text-lg font-bold tracking-tight text-foreground">
               PULSE<span className="text-accent">.</span>
             </p>
-            <p className="mt-1">
-              {simulations.toLocaleString("pt-BR")} simulações Monte Carlo · atualizado em{" "}
-              {formatDate(generatedAt)}
+            <p className="mt-1 text-sm text-muted">{SITE_TAGLINE}</p>
+            <p className="mt-1 font-mono text-xs tabular-nums text-muted">
+              Atualizado em {formatDate(generatedAt)}
             </p>
+
+            <a
+              href={linkedinUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="group mt-6 inline-flex items-center gap-3"
+            >
+              <img
+                src={`${basePath}/uzai-tinta-a-oleo.png`}
+                alt="Luis Uzai"
+                width={40}
+                height={40}
+                className="size-10 rounded-full border border-border object-cover transition group-hover:border-accent"
+              />
+              <span className="text-xs leading-tight">
+                <span className="block text-muted">Criado por</span>
+                <span className="font-medium text-foreground transition-colors group-hover:text-accent">
+                  Luis Uzai
+                </span>
+              </span>
+            </a>
           </div>
+
+          {/* Navegar */}
+          <FooterColumn title="Navegar">
+            {NAV.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="text-muted transition-colors hover:text-foreground"
+              >
+                {item.label}
+              </Link>
+            ))}
+          </FooterColumn>
+
+          {/* Sobre */}
+          <FooterColumn title="Sobre">
+            {ABOUT.map((item) =>
+              item.external ? (
+                <a
+                  key={item.href}
+                  href={item.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-muted transition-colors hover:text-foreground"
+                >
+                  {item.label} <span aria-hidden>↗</span>
+                </a>
+              ) : (
+                <Link
+                  key={item.href}
+                  href={item.href}
+                  className="text-muted transition-colors hover:text-foreground"
+                >
+                  {item.label}
+                </Link>
+              ),
+            )}
+          </FooterColumn>
         </div>
-        <div className="flex flex-col gap-2 sm:items-end">
-          <p className="max-w-sm sm:text-right">
-            Probabilidades calculadas por modelo estatístico (Elo + Monte Carlo). As
-            análises em texto são geradas por IA apenas para explicar os números.
+
+        {/* Barra inferior */}
+        <div className="mt-12 flex flex-col gap-3 border-t border-border/60 pt-6 text-xs text-muted sm:flex-row sm:items-center sm:justify-between">
+          <p>© 2026 PULSE · {SITE_TAGLINE}</p>
+          <p className="max-w-md sm:text-right">
+            Probabilidades por modelo estatístico —{" "}
+            <Link href="/methodology/" className="text-foreground hover:text-accent">
+              entenda a metodologia
+            </Link>
+            . Não é aconselhamento de apostas.
           </p>
-          <a
-            href={linkedinUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="font-medium text-foreground transition hover:text-accent"
-          >
-            LinkedIn de Luis Uzai
-          </a>
         </div>
       </div>
     </footer>
+  );
+}
+
+function FooterColumn({
+  title,
+  children,
+}: {
+  title: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div>
+      <p className="text-[11px] uppercase tracking-wider text-muted/70">{title}</p>
+      <nav className="mt-3 flex flex-col gap-2 text-sm">{children}</nav>
+    </div>
   );
 }
