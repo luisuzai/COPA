@@ -9,5 +9,5 @@ export const SITE_URL = "https://luisuzai.github.io/COPA";
 export const SITE_NAME = "PULSE";
 export const SITE_TAGLINE = "The pulse of the World Cup.";
 export const SITE_DESCRIPTION =
-  "Inteligência da Copa do Mundo 2026: probabilidades, simulações Monte Carlo e " +
-  "análises que transformam números em histórias. Quem vai ser campeão e por quê.";
+  "Inteligência da Copa do Mundo 2026: probabilidades, projeções e análises que " +
+  "transformam números em histórias. Quem vai ser campeão e por quê.";
