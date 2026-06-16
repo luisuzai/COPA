@@ -122,9 +122,9 @@ export default async function MatchPage({
           />
           {pred && (
             <CompareRow
-              label="Gols esperados"
-              home={pred.expectedHomeGoals.toFixed(1)}
-              away={pred.expectedAwayGoals.toFixed(1)}
+              label="Placar provável"
+              home={String(Math.round(pred.expectedHomeGoals))}
+              away={String(Math.round(pred.expectedAwayGoals))}
             />
           )}
         </div>

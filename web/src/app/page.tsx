@@ -95,7 +95,7 @@ export default function HomePage() {
         <section className="container-content py-10">
           <SectionHeading
             title="Próximos jogos"
-            subtitle="A expectativa de resultado de cada partida"
+            subtitle="A expectativa de resultado de cada partida · horário de Brasília"
           />
           <UpcomingMatches matches={upcoming} />
         </section>
