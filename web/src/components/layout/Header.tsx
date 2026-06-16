@@ -2,11 +2,12 @@ import Link from "next/link";
 
 const NAV = [
   { href: "/#favoritos", label: "Favoritos" },
-  { href: "/scenarios/brazil/", label: "Cenários" },
+  { href: "/rankings/title/", label: "Ranking" },
   { href: "/simulator/", label: "Simulador" },
+  { href: "/methodology/", label: "Metodologia" },
 ];
 
-/** Header editorial: minimalista, fixo no topo, com blur sutil. */
+/** Header editorial PULSE: minimalista, fixo no topo, com blur sutil. */
 export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-bg/70 backdrop-blur-xl">
@@ -15,9 +16,9 @@ export function Header() {
           href="/"
           className="font-display text-sm font-bold tracking-tight text-foreground"
         >
-          COPA<span className="text-accent">.</span>
+          PULSE<span className="text-accent">.</span>
         </Link>
-        <nav className="flex items-center gap-6 text-sm">
+        <nav className="flex items-center gap-5 text-sm sm:gap-6">
           {NAV.map((item) => (
             <Link
               key={item.href}

@@ -6,25 +6,22 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { JsonLd } from "@/components/JsonLd";
-import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "COPA — Análises da Copa do Mundo 2026",
-    template: "%s · COPA",
+    default: `PULSE — ${SITE_TAGLINE}`,
+    template: "%s · PULSE",
   },
-  description:
-    "Probabilidades, simulações Monte Carlo e análises da Copa do Mundo 2026. " +
-    "Quem tem mais chance de ser campeão, o caminho até a final e os cenários mais prováveis.",
-  applicationName: "COPA",
+  description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    siteName: "COPA",
-    title: "COPA — Análises da Copa do Mundo 2026",
-    description:
-      "Probabilidades e simulações da Copa do Mundo 2026, com análises em linguagem natural.",
+    siteName: SITE_NAME,
+    title: `PULSE — Inteligência da Copa do Mundo 2026`,
+    description: SITE_DESCRIPTION,
   },
 };
 

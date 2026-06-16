@@ -9,11 +9,14 @@ export function StatCard({
   label,
   value,
   bar,
+  note,
   accent = false,
 }: {
   label: string;
   value: string;
   bar?: number;
+  /** Linha de narrativa opcional (ex: "1 a cada 8 Copas"). */
+  note?: string;
   accent?: boolean;
 }) {
   return (
@@ -28,6 +31,7 @@ export function StatCard({
         {value}
       </p>
       {bar !== undefined && <ProbabilityBar value={bar} className="mt-3" />}
+      {note && <p className="mt-2 text-[11px] leading-tight text-muted">{note}</p>}
     </div>
   );
 }

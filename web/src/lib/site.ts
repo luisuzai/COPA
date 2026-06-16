@@ -6,6 +6,8 @@
  *   - Domínio próprio:     https://copa.seudominio.com (e zere o basePath)
  */
 export const SITE_URL = "https://luisuzai.github.io/COPA";
-export const SITE_NAME = "COPA";
+export const SITE_NAME = "PULSE";
+export const SITE_TAGLINE = "The pulse of the World Cup.";
 export const SITE_DESCRIPTION =
-  "Probabilidades, simulações Monte Carlo e análises da Copa do Mundo 2026.";
+  "Inteligência da Copa do Mundo 2026: probabilidades, simulações Monte Carlo e " +
+  "análises que transformam números em histórias. Quem vai ser campeão e por quê.";

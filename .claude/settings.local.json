@@ -12,7 +12,15 @@
       "PowerShell($winget = \"$env:LOCALAPPDATA\\\\Microsoft\\\\WindowsApps\\\\winget.exe\"; & $winget install GitHub.cli --accept-source-agreements --accept-package-agreements --silent --disable-interactivity)",
       "Bash(python -c ' *)",
       "Bash(python -m scripts.run --no-ai --sims 100000)",
-      "Bash(python -m scripts.run --sims 100000)"
+      "Bash(python -m scripts.run --sims 100000)",
+      "Bash(git -c core.quotepath=false status --short)",
+      "Bash(git -c core.quotepath=false log --oneline -3)",
+      "Bash(git rev-list *)",
+      "mcp__Claude_in_Chrome__list_connected_browsers",
+      "PowerShell(Get-Process node -ErrorAction SilentlyContinue)",
+      "PowerShell(Stop-Process -Force -ErrorAction SilentlyContinue)",
+      "PowerShell(\"node parado\")",
+      "mcp__Claude_Preview__preview_start"
     ]
   }
 }

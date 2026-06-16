@@ -64,6 +64,8 @@ export interface Team {
   group: GroupId;
   /** Rating Elo atual. */
   elo: number;
+  /** Rating Elo pré-Copa (baseline). Usado p/ medir overperformance. */
+  eloBase?: number;
 }
 
 export interface Match {
@@ -202,6 +204,27 @@ export interface Article {
 export interface Articles {
   generatedAt: string;
   items: Article[];
+}
+
+// ──────────────────────────────────────────────────────────────
+//  Histórico de probabilidades (evolução diária)
+// ──────────────────────────────────────────────────────────────
+
+export interface ChampionSnapshot {
+  /** Data do snapshot (YYYY-MM-DD, UTC). */
+  date: string;
+  /** teamId → chance de título naquele dia (0..1). */
+  champions: Record<string, number>;
+}
+
+export interface History {
+  snapshots: ChampionSnapshot[];
+}
+
+/** Ponto pronto p/ sparkline de uma seleção. */
+export interface HistoryPoint {
+  date: string;
+  value: number;
 }
 
 // ──────────────────────────────────────────────────────────────

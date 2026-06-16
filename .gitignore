@@ -81,5 +81,7 @@ desktop.ini
 .vscode/*
 !.vscode/extensions.json
 !.vscode/settings.json
+# Config local do preview (caminho absoluto específico da máquina)
+.claude/launch.json
 *.swp
 *~

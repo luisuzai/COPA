@@ -28,7 +28,7 @@ export function Footer() {
           </a>
           <div>
             <p className="font-display text-sm font-semibold text-foreground">
-              COPA<span className="text-accent">.</span>
+              PULSE<span className="text-accent">.</span>
             </p>
             <p className="mt-1">
               {simulations.toLocaleString("pt-BR")} simulações Monte Carlo · atualizado em{" "}

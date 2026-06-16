@@ -1,42 +1,103 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 
 import { FavoritesTable } from "@/components/FavoritesTable";
-import { Prose } from "@/components/Prose";
-import { Delta } from "@/components/Delta";
 import { Flag } from "@/components/Flag";
-import { getArticle, getFavorites, getMovers, getProbabilities } from "@/lib/data";
-import { pct } from "@/lib/utils";
+import { Prose } from "@/components/Prose";
+import { RoundInsights } from "@/components/RoundInsights";
+import {
+  getArticle,
+  getFavorites,
+  getLeader,
+  getProbabilities,
+  getRoundInsights,
+} from "@/lib/data";
+import { formatDay, oneInPhrase, pct } from "@/lib/utils";
 
 export function generateMetadata(): Metadata {
   const article = getArticle("home", "home");
   return {
-    title: article?.title ?? "Análises da Copa do Mundo 2026",
+    title: article?.title ?? "A história da Copa do Mundo 2026",
     description: article?.summary,
   };
 }
 
 export default function HomePage() {
+  const leader = getLeader();
   const favorites = getFavorites();
-  const movers = getMovers(3);
+  const insights = getRoundInsights();
   const article = getArticle("home", "home");
-  const { simulations } = getProbabilities();
+  const { simulations, generatedAt } = getProbabilities();
 
   return (
     <>
-      {/* ── Hero editorial ─────────────────────────────────── */}
-      <section className="container-content pb-12 pt-16 sm:pt-24">
+      {/* ── Hero editorial: a história da rodada ────────────── */}
+      <section className="container-content pb-8 pt-14 sm:pt-20">
         <p className="animate-fade-up text-xs uppercase tracking-eyebrow text-muted">
-          Copa do Mundo 2026
+          Inteligência da Copa · atualizado em {formatDay(generatedAt)}
         </p>
-        <h1 className="animate-fade-up delay-1 mt-4 max-w-3xl font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-6xl">
-          {article?.title ?? "As probabilidades da Copa, em tempo real"}
+        <h1 className="animate-fade-up delay-1 mt-4 max-w-4xl font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-6xl">
+          {article?.title ?? "Quem vai levantar a taça?"}
         </h1>
         {article?.summary && (
-          <p className="animate-fade-up delay-2 mt-5 max-w-xl text-lg text-muted">
+          <p className="animate-fade-up delay-2 mt-5 max-w-2xl text-lg text-muted">
             {article.summary}
           </p>
         )}
       </section>
+
+      {/* ── História principal: o líder ────────────────────── */}
+      {leader && (
+        <section className="container-content pb-12">
+          <Link
+            href={`/team/${leader.team.slug}/`}
+            className="animate-fade-up group block overflow-hidden rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-accent/40 sm:p-8"
+          >
+            <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
+              <div>
+                <div className="flex items-center gap-3">
+                  <Flag team={leader.team} size="lg" />
+                  <span className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
+                    {leader.team.name}
+                  </span>
+                  <span className="rounded-full border border-accent/30 bg-accent/10 px-2 py-0.5 text-[11px] font-medium uppercase tracking-wide text-accent">
+                    Líder
+                  </span>
+                </div>
+                <p className="mt-6 text-xs uppercase tracking-wider text-muted">
+                  Chance de conquistar a Copa
+                </p>
+                <p className="font-mono text-6xl font-bold leading-none tabular-nums text-accent sm:text-7xl">
+                  {pct(leader.champion, 1)}
+                </p>
+                <p className="mt-3 max-w-md text-muted">
+                  Conquista o título em aproximadamente{" "}
+                  <span className="text-foreground">
+                    {oneInPhrase(leader.champion)}
+                  </span>{" "}
+                  Copas simuladas · líder após {simulations.toLocaleString("pt-BR")}{" "}
+                  simulações.
+                </p>
+              </div>
+              <span className="inline-flex shrink-0 items-center gap-2 self-start rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-white transition-colors group-hover:bg-accent-strong sm:self-auto">
+                Ver análise completa
+                <span aria-hidden>→</span>
+              </span>
+            </div>
+          </Link>
+        </section>
+      )}
+
+      {/* ── Insights da Rodada ─────────────────────────────── */}
+      {insights.length > 0 && (
+        <section className="container-content py-10">
+          <SectionHeading
+            title="Insights da Rodada"
+            subtitle="O que mudou e por quê, gerado automaticamente"
+          />
+          <RoundInsights insights={insights} />
+        </section>
+      )}
 
       {/* ── Favoritos ──────────────────────────────────────── */}
       <section id="favoritos" className="container-content py-10">
@@ -44,39 +105,16 @@ export default function HomePage() {
           title="Favoritos ao título"
           subtitle={`Chance de ser campeão · ${simulations.toLocaleString("pt-BR")} simulações`}
         />
-        <div className="animate-fade-up">
-          <FavoritesTable rows={favorites} />
-        </div>
+        <FavoritesTable rows={favorites.slice(0, 12)} />
+        <Link
+          href="/rankings/title/"
+          className="mt-4 inline-block text-sm text-accent transition-colors hover:text-accent-strong"
+        >
+          Ver ranking completo das 48 seleções →
+        </Link>
       </section>
 
-      {/* ── O que mudou ────────────────────────────────────── */}
-      {movers.length > 0 && (
-        <section className="container-content py-10">
-          <SectionHeading title="O que mudou na última rodada" />
-          <div className="grid gap-4 sm:grid-cols-3">
-            {movers.map((m) => (
-              <div
-                key={m.team.id}
-                className="rounded-xl border border-border bg-surface p-5 transition-all hover:-translate-y-0.5 hover:border-accent/40"
-              >
-                <div className="flex items-center gap-2.5">
-                  <Flag team={m.team} />
-                  <span className="font-medium">{m.team.name}</span>
-                </div>
-                <div className="mt-3 flex items-baseline gap-2">
-                  <span className="font-mono text-2xl font-semibold tabular-nums">
-                    {pct(m.champion)}
-                  </span>
-                  <Delta value={m.championChange} />
-                </div>
-                <p className="mt-1 text-xs text-muted">chance de título</p>
-              </div>
-            ))}
-          </div>
-        </section>
-      )}
-
-      {/* ── Análise (texto da IA, renderizado no HTML p/ SEO) ─ */}
+      {/* ── Análise (texto da IA, no HTML p/ SEO) ──────────── */}
       {article?.body && (
         <section className="container-content border-t border-border/50 py-12">
           <SectionHeading title="Análise" />

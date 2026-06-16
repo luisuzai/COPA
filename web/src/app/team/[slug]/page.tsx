@@ -4,19 +4,23 @@ import { notFound } from "next/navigation";
 
 import { Flag } from "@/components/Flag";
 import { JsonLd } from "@/components/JsonLd";
+import { PathToFinal } from "@/components/PathToFinal";
 import { Prose } from "@/components/Prose";
+import { Sparkline } from "@/components/charts/Sparkline";
 import { StatCard } from "@/components/StatCard";
 import {
   getArticle,
+  getHistory,
   getNextMatchForTeam,
   getPredictionForMatch,
   getProbabilitiesFor,
   getRankFor,
+  getScenarioFor,
   getTeamById,
   getTeamBySlug,
   getTeams,
 } from "@/lib/data";
-import { formatDate, pct } from "@/lib/utils";
+import { formatDate, formatDay, oneInPhrase, pct, sharePhrase } from "@/lib/utils";
 
 export function generateStaticParams() {
   return getTeams().map((t) => ({ slug: t.slug }));
@@ -35,7 +39,7 @@ export async function generateMetadata({
     title: article?.title ?? team.name,
     description:
       article?.summary ??
-      `Probabilidades, ranking de Elo e análise da seleção ${team.name} na Copa 2026.`,
+      `Probabilidades, ranking de Elo e caminho até a final da seleção ${team.name} na Copa 2026.`,
   };
 }
 
@@ -51,6 +55,8 @@ export default async function TeamPage({
   const prob = getProbabilitiesFor(team.id);
   const rank = getRankFor(team.id);
   const article = getArticle("team", slug);
+  const scenario = getScenarioFor(team.id);
+  const history = getHistory(team.id);
   const teamById = getTeamById();
 
   const nextMatch = getNextMatchForTeam(team.id);
@@ -76,7 +82,7 @@ export default async function TeamPage({
         }}
       />
 
-      {/* ── Cabeçalho da seleção ───────────────────────────── */}
+      {/* ── Cabeçalho ──────────────────────────────────────── */}
       <section className="container-content animate-fade-up pb-8 pt-12 sm:pt-16">
         <Link
           href={`/group/${team.group}/`}
@@ -95,15 +101,70 @@ export default async function TeamPage({
         </p>
       </section>
 
-      {/* ── Probabilidades ─────────────────────────────────── */}
+      {/* ── Probabilidades com narrativa ───────────────────── */}
       {prob && (
         <section className="container-content py-6">
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
-            <StatCard label="Classificação" value={pct(prob.advanceGroup)} bar={prob.advanceGroup} />
-            <StatCard label="Semifinal" value={pct(prob.semi)} bar={prob.semi} />
-            <StatCard label="Final" value={pct(prob.final)} bar={prob.final} />
-            <StatCard label="Título" value={pct(prob.champion)} bar={prob.champion} accent />
+            <StatCard
+              label="Classificação"
+              value={pct(prob.advanceGroup)}
+              bar={prob.advanceGroup}
+              note={`avança em ${sharePhrase(prob.advanceGroup)}`}
+            />
+            <StatCard
+              label="Semifinal"
+              value={pct(prob.semi)}
+              bar={prob.semi}
+              note={`chega em ${sharePhrase(prob.semi)}`}
+            />
+            <StatCard
+              label="Final"
+              value={pct(prob.final)}
+              bar={prob.final}
+              note={`chega em ${sharePhrase(prob.final)}`}
+            />
+            <StatCard
+              label="Título"
+              value={pct(prob.champion)}
+              bar={prob.champion}
+              note={`campeão em ${oneInPhrase(prob.champion)} Copas`}
+              accent
+            />
           </div>
+        </section>
+      )}
+
+      {/* ── Evolução (histórico) ───────────────────────────── */}
+      {history.length >= 2 && (
+        <section className="container-content py-6">
+          <h2 className="mb-3 font-display text-lg font-semibold tracking-tight">
+            Evolução da chance de título
+          </h2>
+          <div className="rounded-xl border border-border bg-surface p-5">
+            <Sparkline points={history} />
+            <div className="mt-2 flex justify-between font-mono text-xs tabular-nums text-muted">
+              <span>
+                {formatDay(history[0].date)} · {pct(history[0].value, 1)}
+              </span>
+              <span className="text-accent">
+                {formatDay(history[history.length - 1].date)} ·{" "}
+                {pct(history[history.length - 1].value, 1)}
+              </span>
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* ── Caminho até a final ────────────────────────────── */}
+      {scenario && scenario.likeliestPath.length > 0 && (
+        <section className="container-content py-6">
+          <h2 className="mb-1 font-display text-lg font-semibold tracking-tight">
+            Caminho até a final
+          </h2>
+          <p className="mb-4 text-sm text-muted">
+            Adversário mais provável e chance de avançar em cada fase.
+          </p>
+          <PathToFinal steps={scenario.likeliestPath} teamById={teamById} />
         </section>
       )}
 
@@ -145,7 +206,7 @@ export default async function TeamPage({
             href={`/scenarios/${team.slug}/`}
             className="mt-6 inline-block text-sm text-accent transition-colors hover:text-accent-strong"
           >
-            Ver cenários e caminho até a final →
+            Ver todos os cenários e adversários prováveis →
           </Link>
         </section>
       )}

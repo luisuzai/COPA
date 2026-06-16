@@ -11,6 +11,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const paths = [
     "/",
     "/simulator/",
+    "/methodology/",
+    "/rankings/title/",
     ...getTeams().map((t) => `/team/${t.slug}/`),
     ...getMatches().map((m) => `/match/${m.slug}/`),
     ...getGroups().map((g) => `/group/${g}/`),

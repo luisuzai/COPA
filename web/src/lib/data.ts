@@ -15,6 +15,8 @@ import type {
   Articles,
   FavoriteRow,
   GroupId,
+  History,
+  HistoryPoint,
   Match,
   MatchPrediction,
   Predictions,
@@ -210,4 +212,109 @@ export function getScenarioSlugs(): string[] {
   return getScenarios()
     .teams.map((s) => teamById.get(s.teamId)?.slug)
     .filter((slug): slug is string => Boolean(slug));
+}
+
+// ── Líder & histórico ─────────────────────────────────────────
+function readJSONOptional<T>(name: string): T | null {
+  for (const dir of DATA_DIRS) {
+    const file = path.join(dir, name);
+    if (fs.existsSync(file)) return JSON.parse(fs.readFileSync(file, "utf-8")) as T;
+  }
+  return null;
+}
+
+/** A seleção líder em chance de título (a "história principal"). */
+export function getLeader(): FavoriteRow {
+  return getFavorites()[0];
+}
+
+/** Série histórica da chance de título de uma seleção (p/ sparkline). */
+export function getHistory(teamId: string): HistoryPoint[] {
+  const hist = readJSONOptional<History>("history.json");
+  if (!hist) return [];
+  return hist.snapshots
+    .filter((s) => s.champions[teamId] != null)
+    .map((s) => ({ date: s.date, value: s.champions[teamId] }));
+}
+
+// ── Insights da Rodada ────────────────────────────────────────
+export interface RoundInsight {
+  label: string;
+  team: Team;
+  valueText: string;
+  sublabel: string;
+  kind: "up" | "down" | "neutral";
+}
+
+/** Insights automáticos da rodada, derivados dos dados existentes. */
+export function getRoundInsights(): RoundInsight[] {
+  const favs = getFavorites(); // ordenado por título (desc); rank = posição
+  const teams = getTeams();
+  const eloRank = new Map(getRankings().entries.map((e) => [e.teamId, e.rank]));
+  const champPos = new Map(favs.map((f) => [f.team.id, f.rank]));
+  const insights: RoundInsight[] = [];
+
+  // 1. Maior alta na chance de título
+  const up = [...favs].sort((a, b) => b.championChange - a.championChange)[0];
+  if (up && up.championChange > 0) {
+    insights.push({
+      label: "Maior alta",
+      team: up.team,
+      valueText: `+${(up.championChange * 100).toFixed(1)} pp`,
+      sublabel: "chance de título",
+      kind: "up",
+    });
+  }
+
+  // 2. Maior queda
+  const down = [...favs].sort((a, b) => a.championChange - b.championChange)[0];
+  if (down && down.championChange < 0) {
+    insights.push({
+      label: "Maior queda",
+      team: down.team,
+      valueText: `${(down.championChange * 100).toFixed(1)} pp`,
+      sublabel: "chance de título",
+      kind: "down",
+    });
+  }
+
+  // 3. Surpresa: maior ganho de Elo vs. baseline pré-Copa (rendendo acima)
+  const surprise = [...teams]
+    .filter((t) => t.eloBase != null)
+    .sort(
+      (a, b) =>
+        b.elo - (b.eloBase ?? b.elo) - (a.elo - (a.eloBase ?? a.elo)),
+    )[0];
+  if (surprise && surprise.elo - (surprise.eloBase ?? surprise.elo) > 0.5) {
+    const gain = Math.round(surprise.elo - (surprise.eloBase ?? surprise.elo));
+    insights.push({
+      label: "Surpresa da Copa",
+      team: surprise,
+      valueText: `+${gain} Elo`,
+      sublabel: "acima do esperado",
+      kind: "up",
+    });
+  }
+
+  // 4. Subestimada: seleção FORTE (Elo top 16) cujo título está bem abaixo
+  //    da sua posição no Elo (caminho difícil / grupo pesado).
+  let best: { team: Team; gap: number } | null = null;
+  for (const t of teams) {
+    const er = eloRank.get(t.id);
+    const cr = champPos.get(t.id);
+    if (er == null || cr == null || er > 16) continue;
+    const gap = cr - er; // título pior que Elo → subestimada
+    if (!best || gap > best.gap) best = { team: t, gap };
+  }
+  if (best && best.gap >= 3) {
+    insights.push({
+      label: "Subestimada",
+      team: best.team,
+      valueText: `#${eloRank.get(best.team.id)} no Elo`,
+      sublabel: `${champPos.get(best.team.id)}ª no título`,
+      kind: "neutral",
+    });
+  }
+
+  return insights.slice(0, 4);
 }

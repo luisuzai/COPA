@@ -276,6 +276,22 @@ def run(offline: bool = False, no_ai: bool = False, n_sims: int = config.SIMULAT
     serializers.write_json("predictions.json", predictions)
     serializers.write_json("scenarios.json", scenarios)
     serializers.write_json("articles.json", articles)
+    serializers.write_json("history.json", _update_history(probabilities))
     serializers.copy_client_data()
 
     print("✅ Pipeline concluído.")
+
+
+def _update_history(probabilities: dict) -> dict:
+    """Acumula um snapshot diário da chance de título (evolução ao longo da Copa).
+
+    Idempotente por data: re-rodar no mesmo dia sobrescreve o snapshot do dia.
+    Mantém os últimos 90 dias. Sem infra — apenas um JSON versionado.
+    """
+    date = probabilities["generatedAt"][:10]
+    champions = {t["teamId"]: t["champion"] for t in probabilities["teams"]}
+    hist = serializers.read_json("history.json") or {"snapshots": []}
+    snaps = [s for s in hist["snapshots"] if s["date"] != date]
+    snaps.append({"date": date, "champions": champions})
+    snaps.sort(key=lambda s: s["date"])
+    return {"snapshots": snaps[-90:]}

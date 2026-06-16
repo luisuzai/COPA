@@ -33,6 +33,38 @@ export function stageLabel(stage: string): string {
   return labels[stage] ?? stage;
 }
 
+/**
+ * Narrativa em vez de número cru. Ex: 0.124 → "1 a cada 8".
+ * O coração do PULSE: transformar probabilidade em história.
+ */
+export function oneInPhrase(p: number): string {
+  if (p <= 0) return "praticamente impossível";
+  if (p >= 0.95) return "quase certo";
+  const n = Math.round(1 / p);
+  return `1 a cada ${n}`;
+}
+
+/** Ex: 0.4 → "4 em cada 10"; 0.03 → "3 em cada 100". Bom p/ "chega à semi em...". */
+export function sharePhrase(p: number): string {
+  if (p <= 0) return "0 em cada 10";
+  if (p >= 0.1) return `${Math.round(p * 10)} em cada 10`;
+  if (p >= 0.01) return `${Math.round(p * 100)} em cada 100`;
+  return "menos de 1 em cada 100";
+}
+
+/** Data ISO → "15 jun" (curto, sem hora). */
+export function formatDay(iso: string): string {
+  try {
+    return new Intl.DateTimeFormat("pt-BR", {
+      day: "2-digit",
+      month: "short",
+      timeZone: "UTC",
+    }).format(new Date(iso));
+  } catch {
+    return iso;
+  }
+}
+
 /** Formata uma data ISO p/ pt-BR curto (ex: "15 jun, 12:00"). */
 export function formatDate(iso: string): string {
   try {
