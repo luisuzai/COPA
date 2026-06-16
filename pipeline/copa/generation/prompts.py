@@ -19,7 +19,11 @@ SYSTEM_PROMPT = (
     "placares, datas ou probabilidades.\n"
     "2. Probabilidades vêm como frações (0.22) — converta para porcentagem (22%).\n"
     "3. Seja conciso: 2 a 4 parágrafos curtos. Sem clichês esvaziados.\n"
-    "4. Responda SOMENTE com um objeto JSON válido com as chaves: "
+    "4. Nomes de seleções SEMPRE em português do Brasil. Use exatamente o nome "
+    "fornecido nos dados (ex: 'Inglaterra', nunca 'England'; 'Holanda', nunca "
+    "'Netherlands'; 'Coreia do Sul', nunca 'South Korea'). Jamais escreva o nome "
+    "do país em inglês.\n"
+    "5. Responda SOMENTE com um objeto JSON válido com as chaves: "
     '"title", "summary", "body".\n'
     "   - title: manchete forte (até ~70 caracteres).\n"
     "   - summary: 1 frase (até ~140 caracteres) p/ meta description.\n"

@@ -173,11 +173,11 @@
     "stage": "group",
     "homeId": "t-ksa",
     "awayId": "t-uru",
-    "status": "live",
+    "status": "finished",
     "kickoff": "2026-06-15T22:00:00Z",
     "group": "h",
     "homeScore": 1,
-    "awayScore": 0
+    "awayScore": 1
   },
   {
     "id": "m-537364",
@@ -185,9 +185,11 @@
     "stage": "group",
     "homeId": "t-irn",
     "awayId": "t-nzl",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-16T01:00:00Z",
-    "group": "g"
+    "group": "g",
+    "homeScore": 2,
+    "awayScore": 2
   },
   {
     "id": "m-537391",

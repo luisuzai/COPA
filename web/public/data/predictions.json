@@ -1,26 +1,6 @@
 {
-  "generatedAt": "2026-06-15T23:05:17Z",
+  "generatedAt": "2026-06-16T12:33:11Z",
   "matches": [
-    {
-      "matchSlug": "saudi-arabia-vs-uruguay",
-      "homeId": "t-ksa",
-      "awayId": "t-uru",
-      "homeWin": 0.1711,
-      "draw": 0.2238,
-      "awayWin": 0.6051,
-      "expectedHomeGoals": 0.86,
-      "expectedAwayGoals": 1.84
-    },
-    {
-      "matchSlug": "iran-vs-new-zealand",
-      "homeId": "t-irn",
-      "awayId": "t-nzl",
-      "homeWin": 0.5041,
-      "draw": 0.2466,
-      "awayWin": 0.2493,
-      "expectedHomeGoals": 1.63,
-      "expectedAwayGoals": 1.07
-    },
     {
       "matchSlug": "france-vs-senegal",
       "homeId": "t-fra",
@@ -225,41 +205,41 @@
       "matchSlug": "spain-vs-saudi-arabia",
       "homeId": "t-esp",
       "awayId": "t-ksa",
-      "homeWin": 0.7684,
-      "draw": 0.163,
-      "awayWin": 0.0685,
-      "expectedHomeGoals": 2.21,
-      "expectedAwayGoals": 0.49
+      "homeWin": 0.7559,
+      "draw": 0.1688,
+      "awayWin": 0.0753,
+      "expectedHomeGoals": 2.18,
+      "expectedAwayGoals": 0.52
     },
     {
       "matchSlug": "belgium-vs-iran",
       "homeId": "t-bel",
       "awayId": "t-irn",
-      "homeWin": 0.5355,
-      "draw": 0.2407,
-      "awayWin": 0.2237,
-      "expectedHomeGoals": 1.7,
-      "expectedAwayGoals": 1.01
+      "homeWin": 0.5448,
+      "draw": 0.2388,
+      "awayWin": 0.2164,
+      "expectedHomeGoals": 1.71,
+      "expectedAwayGoals": 0.99
     },
     {
       "matchSlug": "uruguay-vs-cape-verde-islands",
       "homeId": "t-uru",
       "awayId": "t-cpv",
-      "homeWin": 0.6174,
-      "draw": 0.2203,
-      "awayWin": 0.1624,
-      "expectedHomeGoals": 1.87,
-      "expectedAwayGoals": 0.83
+      "homeWin": 0.6029,
+      "draw": 0.2244,
+      "awayWin": 0.1726,
+      "expectedHomeGoals": 1.84,
+      "expectedAwayGoals": 0.86
     },
     {
       "matchSlug": "new-zealand-vs-egypt",
       "homeId": "t-nzl",
       "awayId": "t-egy",
-      "homeWin": 0.2433,
-      "draw": 0.2453,
-      "awayWin": 0.5113,
-      "expectedHomeGoals": 1.06,
-      "expectedAwayGoals": 1.65
+      "homeWin": 0.251,
+      "draw": 0.2469,
+      "awayWin": 0.502,
+      "expectedHomeGoals": 1.07,
+      "expectedAwayGoals": 1.63
     },
     {
       "matchSlug": "argentina-vs-austria",
@@ -485,41 +465,41 @@
       "matchSlug": "uruguay-vs-spain",
       "homeId": "t-uru",
       "awayId": "t-esp",
-      "homeWin": 0.2158,
-      "draw": 0.2386,
-      "awayWin": 0.5456,
-      "expectedHomeGoals": 0.98,
-      "expectedAwayGoals": 1.72
+      "homeWin": 0.2044,
+      "draw": 0.2353,
+      "awayWin": 0.5602,
+      "expectedHomeGoals": 0.95,
+      "expectedAwayGoals": 1.75
     },
     {
       "matchSlug": "cape-verde-islands-vs-saudi-arabia",
       "homeId": "t-cpv",
       "awayId": "t-ksa",
-      "homeWin": 0.3591,
-      "draw": 0.2581,
-      "awayWin": 0.3828,
-      "expectedHomeGoals": 1.32,
-      "expectedAwayGoals": 1.38
+      "homeWin": 0.3453,
+      "draw": 0.2577,
+      "awayWin": 0.397,
+      "expectedHomeGoals": 1.29,
+      "expectedAwayGoals": 1.41
     },
     {
       "matchSlug": "new-zealand-vs-belgium",
       "homeId": "t-nzl",
       "awayId": "t-bel",
-      "homeWin": 0.128,
-      "draw": 0.2039,
-      "awayWin": 0.6681,
-      "expectedHomeGoals": 0.73,
-      "expectedAwayGoals": 1.98
+      "homeWin": 0.1337,
+      "draw": 0.2069,
+      "awayWin": 0.6593,
+      "expectedHomeGoals": 0.74,
+      "expectedAwayGoals": 1.96
     },
     {
       "matchSlug": "egypt-vs-iran",
       "homeId": "t-egy",
       "awayId": "t-irn",
-      "homeWin": 0.3778,
-      "draw": 0.2581,
-      "awayWin": 0.364,
-      "expectedHomeGoals": 1.36,
-      "expectedAwayGoals": 1.34
+      "homeWin": 0.3868,
+      "draw": 0.258,
+      "awayWin": 0.3552,
+      "expectedHomeGoals": 1.38,
+      "expectedAwayGoals": 1.32
     },
     {
       "matchSlug": "panama-vs-england",
