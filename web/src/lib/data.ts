@@ -81,22 +81,25 @@ export function getRankFor(teamId: string): number | undefined {
 /** Linhas da tabela de favoritos, já ordenadas por chance de título. */
 export function getFavorites(): FavoriteRow[] {
   const teamById = getTeamById();
-  const rankById = new Map(getRankings().entries.map((e) => [e.teamId, e.rank]));
 
-  return getProbabilities()
+  // probabilities já vem ordenado por chance de título (desc).
+  const rows = getProbabilities()
     .teams.map((p) => {
       const team = teamById.get(p.teamId);
-      if (!team) return null;
-      return {
-        team,
-        rank: rankById.get(p.teamId) ?? 0,
-        champion: p.champion,
-        championChange: p.championChange,
-        final: p.final,
-        semi: p.semi,
-      } satisfies FavoriteRow;
+      return team
+        ? {
+            team,
+            champion: p.champion,
+            championChange: p.championChange,
+            final: p.final,
+            semi: p.semi,
+          }
+        : null;
     })
-    .filter((row): row is FavoriteRow => row !== null);
+    .filter((r): r is Omit<FavoriteRow, "rank"> => r !== null);
+
+  // rank = POSIÇÃO no favoritismo (1, 2, 3…), não o ranking de Elo.
+  return rows.map((r, i) => ({ rank: i + 1, ...r }));
 }
 
 /** Seleções que mais mudaram de chance de título (|delta| desc). */

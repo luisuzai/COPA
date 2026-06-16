@@ -12,6 +12,10 @@ import { cn, pct } from "@/lib/utils";
  * no celular a barra vai sob o nome; no desktop vira coluna própria.
  */
 export function FavoritesTable({ rows }: { rows: FavoriteRow[] }) {
+  // Barra relativa ao líder (líder = cheia). Com 48 times, o máximo de chance
+  // de título é ~12%; numa escala 0–100% as barras ficariam quase invisíveis.
+  const maxChampion = Math.max(...rows.map((r) => r.champion), 0.0001);
+
   return (
     <div className="overflow-hidden rounded-2xl border border-border bg-surface">
       {/* Cabeçalho (só desktop) */}
@@ -40,10 +44,13 @@ export function FavoritesTable({ rows }: { rows: FavoriteRow[] }) {
                 {row.team.name}
               </span>
             </div>
-            <ProbabilityBar value={row.champion} className="sm:hidden" />
+            <ProbabilityBar value={row.champion / maxChampion} className="sm:hidden" />
           </div>
 
-          <ProbabilityBar value={row.champion} className="hidden w-40 shrink-0 sm:block" />
+          <ProbabilityBar
+            value={row.champion / maxChampion}
+            className="hidden w-40 shrink-0 sm:block"
+          />
 
           <span
             className={cn(
