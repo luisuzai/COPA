@@ -182,6 +182,7 @@ export type ArticleType =
   | "home"
   | "team"
   | "match"
+  | "recap"
   | "scenario"
   | "group";
 

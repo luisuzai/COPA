@@ -162,6 +162,36 @@ def _match_stats(pred, teams) -> dict:
     }
 
 
+def _recap_stats(match, teams, probabilities) -> dict:
+    by_id = _team_by_id(teams)
+    prob = {p["teamId"]: p for p in probabilities["teams"]}
+    home, away = by_id[match["homeId"]], by_id[match["awayId"]]
+    hs, as_ = int(match["homeScore"]), int(match["awayScore"])
+    if hs > as_:
+        resultado = f"vitória de {home['name']}"
+    elif hs < as_:
+        resultado = f"vitória de {away['name']}"
+    else:
+        resultado = "empate"
+
+    def team_info(t):
+        p = prob.get(t["id"], {})
+        return {
+            "seleção": t["name"],
+            "prob_título": p.get("champion"),
+            "prob_classificação": p.get("advanceGroup"),
+            "variação_título": p.get("championChange"),
+        }
+
+    return {
+        "placar": f"{home['name']} {hs} x {as_} {away['name']}",
+        "resultado": resultado,
+        "fase": f"Grupo {match['group'].upper()}" if match.get("group") else match["stage"],
+        "mandante": team_info(home),
+        "visitante": team_info(away),
+    }
+
+
 def _scenario_stats(scen, teams, by_id) -> dict:
     return {
         "seleção": by_id[scen["teamId"]]["name"],
@@ -211,6 +241,10 @@ def _build_articles(
             team, teams, probabilities, predictions, scenarios, rank_of))
     for pred in predictions["matches"]:
         add("match", pred["matchSlug"], _match_stats(pred, teams))
+    # Pós-jogo (recap) para partidas já finalizadas.
+    for m in matches:
+        if m["status"] == "finished" and m.get("homeScore") is not None:
+            add("recap", m["slug"], _recap_stats(m, teams, probabilities))
     for scen in scenarios["teams"]:
         add("scenario", by_id[scen["teamId"]]["slug"],
             _scenario_stats(scen, teams, by_id))

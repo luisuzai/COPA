@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FavoritesTable } from "@/components/FavoritesTable";
 import { Flag } from "@/components/Flag";
 import { Prose } from "@/components/Prose";
+import { ResultsFeed } from "@/components/ResultsFeed";
 import { RoundInsights } from "@/components/RoundInsights";
 import { UpcomingMatches } from "@/components/UpcomingMatches";
 import {
@@ -11,6 +12,7 @@ import {
   getFavorites,
   getLeader,
   getProbabilities,
+  getRecentResults,
   getRoundInsights,
   getUpcomingMatches,
 } from "@/lib/data";
@@ -28,6 +30,7 @@ export default function HomePage() {
   const leader = getLeader();
   const favorites = getFavorites();
   const insights = getRoundInsights();
+  const results = getRecentResults(4);
   const upcoming = getUpcomingMatches(6);
   const article = getArticle("home", "home");
   const { generatedAt } = getProbabilities();
@@ -87,6 +90,17 @@ export default function HomePage() {
               </span>
             </div>
           </Link>
+        </section>
+      )}
+
+      {/* ── Últimos resultados (o que aconteceu) ───────────── */}
+      {results.length > 0 && (
+        <section className="container-content py-10">
+          <SectionHeading
+            title="Últimos resultados"
+            subtitle="O que aconteceu na rodada e o que mudou"
+          />
+          <ResultsFeed results={results} />
         </section>
       )}
 

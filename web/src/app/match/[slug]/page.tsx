@@ -6,7 +6,7 @@ import { JsonLd } from "@/components/JsonLd";
 import { Prose } from "@/components/Prose";
 import { VersusBar } from "@/components/charts/VersusBar";
 import {
-  getArticle,
+  getMatchArticle,
   getMatchBySlug,
   getMatches,
   getPredictionForMatch,
@@ -27,7 +27,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const match = getMatchBySlug(slug);
-  const article = getArticle("match", slug);
+  const article = getMatchArticle(slug);
   if (!match) return {};
   const teamById = getTeamById();
   const home = teamById.get(match.homeId)?.name ?? "";
@@ -53,7 +53,7 @@ export default async function MatchPage({
   if (!home || !away) notFound();
 
   const pred = getPredictionForMatch(slug);
-  const article = getArticle("match", slug);
+  const article = getMatchArticle(slug);
   const finished = match.status === "finished";
 
   return (
@@ -132,7 +132,9 @@ export default async function MatchPage({
 
       {article?.body && (
         <section className="container-content border-t border-border/50 py-10">
-          <h2 className="mb-4 font-display text-lg font-semibold tracking-tight">Análise</h2>
+          <h2 className="mb-4 font-display text-lg font-semibold tracking-tight">
+            {finished ? "Pós-jogo" : "Análise"}
+          </h2>
           <Prose markdown={article.body} className="mx-auto max-w-2xl text-base" />
         </section>
       )}

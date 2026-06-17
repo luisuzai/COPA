@@ -121,6 +121,40 @@ export function getPredictionForMatch(slug: string): MatchPrediction | undefined
   return getPredictions().matches.find((m) => m.matchSlug === slug);
 }
 
+/** Artigo do confronto: pós-jogo (recap) se finalizado, senão a prévia. */
+export function getMatchArticle(slug: string): Article | undefined {
+  const items = getArticles().items;
+  return (
+    items.find((a) => a.slug === slug && a.type === "recap") ??
+    items.find((a) => a.slug === slug && a.type === "match")
+  );
+}
+
+export interface RecentResult {
+  match: Match;
+  home: Team;
+  away: Team;
+  recap?: Article;
+}
+
+/** Últimos resultados (jogos finalizados, mais recentes primeiro) + pós-jogo. */
+export function getRecentResults(limit = 6): RecentResult[] {
+  const teamById = getTeamById();
+  const finished = getMatches()
+    .filter((m) => m.status === "finished" && m.homeScore != null && m.awayScore != null)
+    .sort((a, b) => b.kickoff.localeCompare(a.kickoff));
+
+  const out: RecentResult[] = [];
+  for (const m of finished) {
+    const home = teamById.get(m.homeId);
+    const away = teamById.get(m.awayId);
+    if (!home || !away) continue;
+    out.push({ match: m, home, away, recap: getMatchArticle(m.slug) });
+    if (out.length >= limit) break;
+  }
+  return out;
+}
+
 /** Próximo jogo agendado de uma seleção (mais cedo por kickoff). */
 export function getNextMatchForTeam(teamId: string): Match | undefined {
   return getMatches()
