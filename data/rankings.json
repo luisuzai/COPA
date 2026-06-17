@@ -1,26 +1,26 @@
 {
-  "generatedAt": "2026-06-17T00:02:05Z",
+  "generatedAt": "2026-06-17T13:30:54Z",
   "entries": [
     {
       "teamId": "t-arg",
       "rank": 1,
-      "elo": 2085,
-      "eloChange": 0,
+      "elo": 2097,
+      "eloChange": 12,
       "rankChange": 0
     },
     {
       "teamId": "t-fra",
       "rank": 2,
       "elo": 2084,
-      "eloChange": 14,
-      "rankChange": 1
+      "eloChange": 0,
+      "rankChange": 0
     },
     {
       "teamId": "t-esp",
       "rank": 3,
       "elo": 2078,
       "eloChange": 0,
-      "rankChange": -1
+      "rankChange": 0
     },
     {
       "teamId": "t-bra",
@@ -121,39 +121,39 @@
       "rankChange": 0
     },
     {
-      "teamId": "t-kor",
-      "rank": 18,
-      "elo": 1813,
-      "eloChange": 0,
-      "rankChange": 1
-    },
-    {
-      "teamId": "t-swe",
-      "rank": 19,
-      "elo": 1810,
-      "eloChange": 0,
-      "rankChange": 1
-    },
-    {
       "teamId": "t-aut",
-      "rank": 20,
-      "elo": 1810,
-      "eloChange": 0,
-      "rankChange": 1
-    },
-    {
-      "teamId": "t-sen",
-      "rank": 21,
-      "elo": 1801,
-      "eloChange": -14,
-      "rankChange": -3
+      "rank": 18,
+      "elo": 1832,
+      "eloChange": 22,
+      "rankChange": 2
     },
     {
       "teamId": "t-nor",
-      "rank": 22,
-      "elo": 1795,
+      "rank": 19,
+      "elo": 1823,
+      "eloChange": 28,
+      "rankChange": 3
+    },
+    {
+      "teamId": "t-kor",
+      "rank": 20,
+      "elo": 1813,
       "eloChange": 0,
-      "rankChange": 0
+      "rankChange": -2
+    },
+    {
+      "teamId": "t-swe",
+      "rank": 21,
+      "elo": 1810,
+      "eloChange": 0,
+      "rankChange": -2
+    },
+    {
+      "teamId": "t-sen",
+      "rank": 22,
+      "elo": 1801,
+      "eloChange": 0,
+      "rankChange": -1
     },
     {
       "teamId": "t-civ",
@@ -184,25 +184,25 @@
       "rankChange": 0
     },
     {
-      "teamId": "t-alg",
-      "rank": 27,
-      "elo": 1765,
-      "eloChange": 0,
-      "rankChange": 0
-    },
-    {
       "teamId": "t-sco",
-      "rank": 28,
+      "rank": 27,
       "elo": 1759,
       "eloChange": 0,
-      "rankChange": 0
+      "rankChange": 1
     },
     {
       "teamId": "t-tur",
-      "rank": 29,
+      "rank": 28,
       "elo": 1755,
       "eloChange": 0,
-      "rankChange": 0
+      "rankChange": 1
+    },
+    {
+      "teamId": "t-alg",
+      "rank": 29,
+      "elo": 1753,
+      "eloChange": -12,
+      "rankChange": -2
     },
     {
       "teamId": "t-irn",
@@ -289,32 +289,32 @@
       "rankChange": 0
     },
     {
-      "teamId": "t-irq",
-      "rank": 42,
-      "elo": 1660,
-      "eloChange": 0,
-      "rankChange": 0
-    },
-    {
-      "teamId": "t-jor",
-      "rank": 43,
-      "elo": 1655,
-      "eloChange": 0,
-      "rankChange": 0
-    },
-    {
       "teamId": "t-rsa",
-      "rank": 44,
+      "rank": 42,
       "elo": 1648,
       "eloChange": 0,
-      "rankChange": 0
+      "rankChange": 2
     },
     {
       "teamId": "t-cpv",
-      "rank": 45,
+      "rank": 43,
       "elo": 1637,
       "eloChange": 0,
-      "rankChange": 0
+      "rankChange": 2
+    },
+    {
+      "teamId": "t-jor",
+      "rank": 44,
+      "elo": 1633,
+      "eloChange": -22,
+      "rankChange": -1
+    },
+    {
+      "teamId": "t-irq",
+      "rank": 45,
+      "elo": 1632,
+      "eloChange": -28,
+      "rankChange": -3
     },
     {
       "teamId": "t-nzl",
