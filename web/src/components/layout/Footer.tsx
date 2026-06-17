@@ -53,10 +53,12 @@ export function Footer() {
               className="group mt-6 inline-flex items-center gap-3"
             >
               <img
-                src={`${basePath}/uzai-tinta-a-oleo.png`}
+                src={`${basePath}/uzai-tinta-a-oleo.webp`}
                 alt="Luis Uzai"
                 width={40}
                 height={40}
+                loading="lazy"
+                decoding="async"
                 className="size-10 rounded-full border border-border object-cover transition group-hover:border-accent"
               />
               <span className="text-xs leading-tight">
