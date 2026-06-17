@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 import { getProbabilities } from "@/lib/data";
+import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Metodologia",
@@ -78,7 +79,22 @@ export default function MethodologyPage() {
             o mesmo sistema usado no xadrez. Quanto maior o Elo, mais forte o time. A
             diferença de Elo entre dois times define a probabilidade de cada resultado:
           </p>
-          <Formula>P(A vence) = 1 / (1 + 10^((Elo_B − Elo_A) / 400))</Formula>
+          <MathBlock legend="Elo = força da seleção; só importa a diferença entre dois times.">
+            <V>P</V>
+            <span>(A&nbsp;vence)</span>
+            <Op>=</Op>
+            <Frac
+              num={<span>1</span>}
+              den={
+                <span className="inline-flex items-center">
+                  1&nbsp;+&nbsp;10
+                  <Sup>
+                    (Elo<Sub>B</Sub>&nbsp;−&nbsp;Elo<Sub>A</Sub>)&nbsp;/&nbsp;400
+                  </Sup>
+                </span>
+              }
+            />
+          </MathBlock>
           <p>
             Os ratings partem de um valor pré-Copa (baseado na força histórica) e são
             atualizados após cada jogo: quem vence ganha pontos do adversário e{" "}
@@ -97,7 +113,21 @@ export default function MethodologyPage() {
             <strong className="text-foreground">Poisson</strong> — a distribuição
             clássica para contagem de eventos raros como gols.
           </p>
-          <Formula>λ_time = 1,35 ± (diferença de Elo / 250) ÷ 2</Formula>
+          <MathBlock legend="Cada time calcula seu próprio λ; ~250 pontos de Elo ≈ 1 gol de diferença.">
+            <V>λ</V>
+            <Sub>time</Sub>
+            <Op>=</Op>
+            <span>1,35</span>
+            <Op>+</Op>
+            <Frac
+              num={
+                <span>
+                  Elo<Sub>time</Sub>&nbsp;−&nbsp;Elo<Sub>adv</Sub>
+                </span>
+              }
+              den={<span>500</span>}
+            />
+          </MathBlock>
           <p>
             Em números: um time parte de ~1,35 gol esperado num jogo equilibrado, e
             cada <strong className="text-foreground">250 pontos de Elo</strong> de
@@ -136,7 +166,18 @@ export default function MethodologyPage() {
             gols e tratamos o <strong className="text-foreground">empate como
             decisão por pênaltis</strong> (~moeda, 50/50).
           </p>
-          <Formula>P(A avança) = P(A vence) + 0,5 × P(empate)</Formula>
+          <MathBlock>
+            <V>P</V>
+            <span>(avança)</span>
+            <Op>=</Op>
+            <V>P</V>
+            <span>(vence)</span>
+            <Op>+</Op>
+            <Frac num={<span>1</span>} den={<span>2</span>} className="text-[0.8em]" />
+            <Op className="mx-1">·</Op>
+            <V>P</V>
+            <span>(empate)</span>
+          </MathBlock>
           <p>
             Isso injeta a incerteza real de uma Copa e calibra para baixo o
             favoritismo dos mais fortes — favoritos vencem, mas não são imbatíveis.
@@ -246,12 +287,77 @@ function Section({ title, children }: { title: string; children: React.ReactNode
   );
 }
 
-function Formula({ children }: { children: React.ReactNode }) {
+/** Bloco de fórmula matemática: centralizado, com legenda opcional. */
+function MathBlock({
+  children,
+  legend,
+}: {
+  children: React.ReactNode;
+  legend?: string;
+}) {
   return (
-    <p className="my-4 overflow-x-auto rounded-lg border border-border bg-surface px-4 py-3 font-mono text-sm text-foreground">
-      {children}
-    </p>
+    <div className="my-5 flex flex-col items-center gap-2.5 rounded-lg border border-border bg-surface px-4 py-6">
+      <div className="max-w-full overflow-x-auto">
+        <div className="flex items-center justify-center whitespace-nowrap text-lg text-foreground sm:text-xl">
+          {children}
+        </div>
+      </div>
+      {legend && <p className="text-center text-xs text-muted">{legend}</p>}
+    </div>
   );
+}
+
+/** Fração empilhada com barra (numerador sobre denominador). */
+function Frac({
+  num,
+  den,
+  className,
+}: {
+  num: React.ReactNode;
+  den: React.ReactNode;
+  className?: string;
+}) {
+  return (
+    <span
+      className={cn(
+        "inline-flex flex-col items-center align-middle leading-none",
+        className,
+      )}
+    >
+      <span className="px-2 pb-1">{num}</span>
+      <span className="w-full border-t border-current px-2 pt-1">{den}</span>
+    </span>
+  );
+}
+
+/** Expoente (sobrescrito). */
+function Sup({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="relative -top-[0.5em] ml-0.5 text-[0.7em]">{children}</span>
+  );
+}
+
+/** Índice (subscrito). */
+function Sub({ children }: { children: React.ReactNode }) {
+  return (
+    <span className="relative top-[0.35em] text-[0.62em] text-muted">{children}</span>
+  );
+}
+
+/** Variável (itálico, como na notação matemática). */
+function V({ children }: { children: React.ReactNode }) {
+  return <span className="italic">{children}</span>;
+}
+
+/** Operador com respiro lateral. */
+function Op({
+  children,
+  className,
+}: {
+  children: React.ReactNode;
+  className?: string;
+}) {
+  return <span className={cn("mx-2 text-muted", className)}>{children}</span>;
 }
 
 function Term({ name, children }: { name: string; children: React.ReactNode }) {
