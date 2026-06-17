@@ -299,6 +299,43 @@ export function getHistory(teamId: string): HistoryPoint[] {
     .map((s) => ({ date: s.date, value: s.champions[teamId] }));
 }
 
+// ── Último resultado de uma seleção (para insights causais) ───
+export interface LastResult {
+  match: Match;
+  opponent: Team;
+  gf: number;
+  ga: number;
+  outcome: "win" | "draw" | "loss";
+}
+
+export function getLastResultForTeam(teamId: string): LastResult | undefined {
+  const teamById = getTeamById();
+  const m = getMatches()
+    .filter(
+      (x) =>
+        x.status === "finished" &&
+        x.homeScore != null &&
+        x.awayScore != null &&
+        (x.homeId === teamId || x.awayId === teamId),
+    )
+    .sort((a, b) => b.kickoff.localeCompare(a.kickoff))[0];
+  if (!m) return undefined;
+  const isHome = m.homeId === teamId;
+  const opponent = teamById.get(isHome ? m.awayId : m.homeId);
+  if (!opponent) return undefined;
+  const gf = (isHome ? m.homeScore : m.awayScore) as number;
+  const ga = (isHome ? m.awayScore : m.homeScore) as number;
+  const outcome = gf > ga ? "win" : gf < ga ? "loss" : "draw";
+  return { match: m, opponent, gf, ga, outcome };
+}
+
+/** Frase curta do último resultado, ex: "venceu Gana (2 a 0)". */
+export function resultReason(r: LastResult): string {
+  const verb =
+    r.outcome === "win" ? "venceu" : r.outcome === "loss" ? "perdeu para" : "empatou com";
+  return `${verb} ${r.opponent.name} (${r.gf} a ${r.ga})`;
+}
+
 // ── Insights da Rodada ────────────────────────────────────────
 export interface RoundInsight {
   label: string;
@@ -306,6 +343,8 @@ export interface RoundInsight {
   valueText: string;
   sublabel: string;
   kind: "up" | "down" | "neutral";
+  /** Causa: o último resultado da seleção (ex: "empatou com Cabo Verde (0 a 0)"). */
+  reason?: string;
 }
 
 /** Insights automáticos da rodada, derivados dos dados existentes. */
@@ -376,6 +415,12 @@ export function getRoundInsights(): RoundInsight[] {
       sublabel: `${champPos.get(best.team.id)}ª no título`,
       kind: "neutral",
     });
+  }
+
+  // Causa de cada insight: o último resultado da seleção (em números).
+  for (const ins of insights) {
+    const lr = getLastResultForTeam(ins.team.id);
+    if (lr) ins.reason = resultReason(lr);
   }
 
   return insights.slice(0, 4);

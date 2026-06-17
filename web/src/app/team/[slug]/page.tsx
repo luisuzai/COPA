@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { Delta } from "@/components/Delta";
 import { Flag } from "@/components/Flag";
 import { JsonLd } from "@/components/JsonLd";
 import { PathToFinal } from "@/components/PathToFinal";
@@ -11,6 +12,7 @@ import { StatCard } from "@/components/StatCard";
 import {
   getArticle,
   getHistory,
+  getLastResultForTeam,
   getNextMatchForTeam,
   getPredictionForMatch,
   getProbabilitiesFor,
@@ -19,6 +21,7 @@ import {
   getTeamById,
   getTeamBySlug,
   getTeams,
+  resultReason,
 } from "@/lib/data";
 import { formatDate, formatDay, oneInPhrase, pct, sharePhrase } from "@/lib/utils";
 
@@ -57,6 +60,7 @@ export default async function TeamPage({
   const article = getArticle("team", slug);
   const scenario = getScenarioFor(team.id);
   const history = getHistory(team.id);
+  const lastResult = getLastResultForTeam(team.id);
   const teamById = getTeamById();
 
   const nextMatch = getNextMatchForTeam(team.id);
@@ -131,6 +135,31 @@ export default async function TeamPage({
               accent
             />
           </div>
+        </section>
+      )}
+
+      {/* ── O que mudou (causa, em números) ────────────────── */}
+      {lastResult && prob && (
+        <section className="container-content py-6">
+          <h2 className="mb-3 font-display text-lg font-semibold tracking-tight">
+            O que mudou
+          </h2>
+          <Link
+            href={`/match/${lastResult.match.slug}/`}
+            className="flex items-center justify-between gap-4 rounded-xl border border-border bg-surface p-4 transition-colors hover:border-accent/40"
+          >
+            <div className="min-w-0">
+              <p className="text-xs uppercase tracking-wider text-muted">Última partida</p>
+              <p className="mt-1 flex items-center gap-2 font-medium">
+                <span className="capitalize">{resultReason(lastResult)}</span>
+                <Flag team={lastResult.opponent} size="sm" />
+              </p>
+            </div>
+            <div className="shrink-0 text-right">
+              <Delta value={prob.championChange} />
+              <p className="text-xs text-muted">chance de título</p>
+            </div>
+          </Link>
         </section>
       )}
 

@@ -34,6 +34,11 @@ export function RoundInsights({ insights }: { insights: RoundInsight[] }) {
             {ins.valueText}
           </p>
           <p className="text-xs text-muted">{ins.sublabel}</p>
+          {ins.reason && (
+            <p className="mt-2 border-t border-border/50 pt-2 text-xs text-muted">
+              {ins.reason}
+            </p>
+          )}
         </Link>
       ))}
     </div>
