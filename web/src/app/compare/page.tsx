@@ -19,6 +19,7 @@ export default function ComparePage() {
   const [aId, setAId] = useState("");
   const [bId, setBId] = useState("");
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     Promise.all([
@@ -35,15 +36,37 @@ export default function ComparePage() {
         setBId(byTitle[1]?.teamId ?? t[1]?.id ?? "");
         setLoading(false);
       })
-      .catch(() => setLoading(false));
+      .catch(() => { setError(true); setLoading(false); });
   }, []);
 
   const teamById = useMemo(() => new Map(teams.map((t) => [t.id, t])), [teams]);
 
+  if (error) {
+    return (
+      <div className="container-content py-24 text-center">
+        <p className="text-muted">Não foi possível carregar os dados do comparador.</p>
+        <button
+          onClick={() => window.location.reload()}
+          className="mt-4 rounded-lg border border-border px-4 py-2 text-sm text-foreground transition-colors hover:bg-surface-2"
+        >
+          Tentar de novo
+        </button>
+      </div>
+    );
+  }
+
   if (loading) {
     return (
-      <div className="container-content py-24 text-center text-muted">
-        Carregando comparador…
+      <div className="container-content py-12 sm:py-16" aria-busy="true">
+        <div className="h-3 w-28 animate-pulse rounded bg-surface-2" />
+        <div className="mt-4 h-12 w-2/3 max-w-md animate-pulse rounded bg-surface-2" />
+        <div className="mt-5 h-5 w-full max-w-lg animate-pulse rounded bg-surface-2" />
+        <div className="mt-10 grid grid-cols-2 gap-4">
+          <div className="h-20 animate-pulse rounded-lg bg-surface" />
+          <div className="h-20 animate-pulse rounded-lg bg-surface" />
+        </div>
+        <div className="mt-8 h-64 animate-pulse rounded-2xl bg-surface" />
+        <span className="sr-only">Carregando comparador…</span>
       </div>
     );
   }

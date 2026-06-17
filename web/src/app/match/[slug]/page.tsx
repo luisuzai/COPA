@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { Breadcrumb } from "@/components/Breadcrumb";
 import { Flag } from "@/components/Flag";
 import { JsonLd } from "@/components/JsonLd";
 import { Prose } from "@/components/Prose";
@@ -74,7 +75,21 @@ export default async function MatchPage({
       />
 
       <section className="container-content animate-fade-up pb-6 pt-12 sm:pt-16">
-        <p className="text-center text-xs uppercase tracking-eyebrow text-muted">
+        <Breadcrumb
+          items={[
+            { label: "Início", href: "/" },
+            ...(match.group
+              ? [
+                  {
+                    label: `Grupo ${match.group.toUpperCase()}`,
+                    href: `/group/${match.group}/`,
+                  },
+                ]
+              : []),
+            { label: `${home.name} × ${away.name}` },
+          ]}
+        />
+        <p className="mt-6 text-center text-xs uppercase tracking-eyebrow text-muted">
           {stageLabel(match.stage)}
           {match.group ? ` · Grupo ${match.group.toUpperCase()}` : ""} ·{" "}
           {formatDate(match.kickoff)}

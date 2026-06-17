@@ -77,6 +77,7 @@ export default function SimulatorPage() {
   const [picks, setPicks] = useState<Record<string, Outcome>>({});
   const [defaults, setDefaults] = useState<Record<string, Outcome>>({});
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(false);
 
   useEffect(() => {
     Promise.all([
@@ -96,7 +97,7 @@ export default function SimulatorPage() {
         setTeams(t); setMatches(m); setDefaults(def); setPicks(def);
         setLoading(false);
       })
-      .catch(() => setLoading(false));
+      .catch(() => { setError(true); setLoading(false); });
   }, []);
 
   const teamById = useMemo(() => new Map(teams.map((t) => [t.id, t])), [teams]);
@@ -114,10 +115,32 @@ export default function SimulatorPage() {
     return { home, draw, away, total: home + draw + away };
   }, [picks]);
 
+  if (error) {
+    return (
+      <div className="container-content py-24 text-center">
+        <p className="text-muted">Não foi possível carregar os dados do simulador.</p>
+        <button
+          onClick={() => window.location.reload()}
+          className="mt-4 rounded-lg border border-border px-4 py-2 text-sm text-foreground transition-colors hover:bg-surface-2"
+        >
+          Tentar de novo
+        </button>
+      </div>
+    );
+  }
+
   if (loading) {
     return (
-      <div className="container-content py-24 text-center text-muted">
-        Carregando simulador…
+      <div className="container-content py-12" aria-busy="true">
+        <div className="h-3 w-24 animate-pulse rounded bg-surface-2" />
+        <div className="mt-4 h-10 w-2/3 max-w-lg animate-pulse rounded bg-surface-2" />
+        <div className="mt-4 h-4 w-full max-w-xl animate-pulse rounded bg-surface-2" />
+        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+          {Array.from({ length: 4 }).map((_, i) => (
+            <div key={i} className="h-48 animate-pulse rounded-xl bg-surface" />
+          ))}
+        </div>
+        <span className="sr-only">Carregando simulador…</span>
       </div>
     );
   }

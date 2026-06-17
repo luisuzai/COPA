@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+import { Breadcrumb } from "@/components/Breadcrumb";
 import { Flag } from "@/components/Flag";
 import { Prose } from "@/components/Prose";
 import { ProbabilityBar } from "@/components/charts/ProbabilityBar";
@@ -52,8 +53,14 @@ export default async function ScenarioPage({
   return (
     <>
       <section className="container-content animate-fade-up pb-6 pt-12 sm:pt-16">
-        <p className="text-xs uppercase tracking-eyebrow text-muted">Cenários</p>
-        <div className="mt-3 flex items-center gap-4">
+        <Breadcrumb
+          items={[
+            { label: "Início", href: "/" },
+            { label: team.name, href: `/team/${team.slug}/` },
+            { label: "Cenários" },
+          ]}
+        />
+        <div className="mt-4 flex items-center gap-4">
           <Flag team={team} size="lg" />
           <h1 className="font-display text-3xl font-bold tracking-tight sm:text-5xl">
             {team.name}
