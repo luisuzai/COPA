@@ -158,7 +158,9 @@ def _match_stats(pred, teams) -> dict:
         "prob_vitória_mandante": pred["homeWin"],
         "prob_empate": pred["draw"],
         "prob_vitória_visitante": pred["awayWin"],
-        "gols_esperados": f'{pred["expectedHomeGoals"]} x {pred["expectedAwayGoals"]}',
+        # Placar já ARREDONDADO (inteiros) — não damos decimais ao modelo,
+        # que (sendo nano) não arredonda de forma confiável.
+        "placar_provável": f'{round(pred["expectedHomeGoals"])} a {round(pred["expectedAwayGoals"])}',
     }
 
 
