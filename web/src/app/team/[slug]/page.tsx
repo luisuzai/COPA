@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { Breadcrumb } from "@/components/Breadcrumb";
 import { Delta } from "@/components/Delta";
 import { Flag } from "@/components/Flag";
 import { JsonLd } from "@/components/JsonLd";
 import { PathToFinal } from "@/components/PathToFinal";
 import { Prose } from "@/components/Prose";
-import { Sparkline } from "@/components/charts/Sparkline";
+import { TitleEvolutionChart } from "@/components/charts/TitleEvolutionChart";
 import { StatCard } from "@/components/StatCard";
 import {
   getArticle,
@@ -23,7 +24,7 @@ import {
   getTeams,
   resultReason,
 } from "@/lib/data";
-import { formatDate, formatDay, oneInPhrase, pct, sharePhrase } from "@/lib/utils";
+import { formatDate, oneInPhrase, pct, sharePhrase } from "@/lib/utils";
 
 export function generateStaticParams() {
   return getTeams().map((t) => ({ slug: t.slug }));
@@ -88,12 +89,13 @@ export default async function TeamPage({
 
       {/* ── Cabeçalho ──────────────────────────────────────── */}
       <section className="container-content animate-fade-up pb-8 pt-12 sm:pt-16">
-        <Link
-          href={`/group/${team.group}/`}
-          className="text-xs uppercase tracking-eyebrow text-muted transition-colors hover:text-foreground"
-        >
-          Grupo {team.group.toUpperCase()}
-        </Link>
+        <Breadcrumb
+          items={[
+            { label: "Início", href: "/" },
+            { label: `Grupo ${team.group.toUpperCase()}`, href: `/group/${team.group}/` },
+            { label: team.name },
+          ]}
+        />
         <div className="mt-4 flex items-center gap-4">
           <Flag team={team} size="lg" />
           <h1 className="font-display text-4xl font-bold tracking-tight sm:text-5xl">
@@ -170,16 +172,7 @@ export default async function TeamPage({
             Evolução da chance de título
           </h2>
           <div className="rounded-xl border border-border bg-surface p-5">
-            <Sparkline points={history} />
-            <div className="mt-2 flex justify-between font-mono text-xs tabular-nums text-muted">
-              <span>
-                {formatDay(history[0].date)} · {pct(history[0].value, 1)}
-              </span>
-              <span className="text-accent">
-                {formatDay(history[history.length - 1].date)} ·{" "}
-                {pct(history[history.length - 1].value, 1)}
-              </span>
-            </div>
+            <TitleEvolutionChart points={history} />
           </div>
         </section>
       )}
