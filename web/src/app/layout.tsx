@@ -6,7 +6,16 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { JsonLd } from "@/components/JsonLd";
+import { getProbabilities } from "@/lib/data";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
+import { formatDay } from "@/lib/utils";
+
+const OG_IMAGE = {
+  url: `${SITE_URL}/og.png`,
+  width: 1200,
+  height: 630,
+  alt: "PULSE — The pulse of the World Cup.",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -22,10 +31,18 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: `PULSE — Inteligência da Copa do Mundo 2026`,
     description: SITE_DESCRIPTION,
+    images: [OG_IMAGE],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `PULSE — Inteligência da Copa do Mundo 2026`,
+    description: SITE_DESCRIPTION,
+    images: [OG_IMAGE.url],
   },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const updatedLabel = formatDay(getProbabilities().generatedAt);
   return (
     <html lang="pt-BR" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="min-h-dvh">
@@ -39,7 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             inLanguage: "pt-BR",
           }}
         />
-        <Header />
+        <Header updatedLabel={updatedLabel} />
         <main>{children}</main>
         <Footer />
       </body>

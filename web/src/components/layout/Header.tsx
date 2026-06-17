@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+import { TeamSearch } from "@/components/TeamSearch";
 import { cn } from "@/lib/utils";
 
 const NAV = [
@@ -19,49 +20,63 @@ const NAV = [
 const norm = (s: string) => "/" + s.replace(/^\/+|\/+$/g, "");
 
 /** Header editorial PULSE: nav completa no desktop, drawer no mobile. */
-export function Header() {
+export function Header({ updatedLabel }: { updatedLabel?: string }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const isActive = (href: string) => norm(pathname) === norm(href);
 
   return (
     <header className="sticky top-0 z-50 border-b border-border/60 bg-bg/70 backdrop-blur-xl">
-      <div className="container-content flex h-14 items-center justify-between">
-        <Link
-          href="/"
-          onClick={() => setOpen(false)}
-          className="font-display text-sm font-bold tracking-tight text-foreground"
-        >
-          PULSE<span className="text-accent">.</span>
-        </Link>
-
-        {/* Desktop */}
-        <nav className="hidden items-center gap-5 text-sm md:flex lg:gap-6">
-          {NAV.map((item) => (
-            <Link
-              key={item.href}
-              href={item.href}
-              className={cn(
-                "transition-colors hover:text-foreground",
-                isActive(item.href)
-                  ? "font-medium text-foreground"
-                  : "text-muted",
-              )}
+      <div className="container-content flex h-14 items-center justify-between gap-3">
+        <div className="flex items-center gap-3">
+          <Link
+            href="/"
+            onClick={() => setOpen(false)}
+            className="font-display text-sm font-bold tracking-tight text-foreground"
+          >
+            PULSE<span className="text-accent">.</span>
+          </Link>
+          {updatedLabel && (
+            <span
+              title={`Dados atualizados em ${updatedLabel}`}
+              className="hidden items-center gap-1.5 rounded-full border border-border/60 px-2 py-0.5 text-[11px] text-muted sm:inline-flex"
             >
-              {item.label}
-            </Link>
-          ))}
-        </nav>
+              <span className="size-1.5 rounded-full bg-up" aria-hidden />
+              Atualizado {updatedLabel}
+            </span>
+          )}
+        </div>
 
-        {/* Mobile: botão hambúrguer */}
-        <button
-          type="button"
-          onClick={() => setOpen((o) => !o)}
-          aria-expanded={open}
-          aria-controls="mobile-nav"
-          aria-label={open ? "Fechar menu" : "Abrir menu"}
-          className="-mr-2 inline-flex size-9 items-center justify-center rounded-md text-muted transition-colors hover:text-foreground md:hidden"
-        >
+        <div className="flex items-center gap-2 sm:gap-3">
+          <TeamSearch />
+
+          {/* Desktop */}
+          <nav className="hidden items-center gap-5 text-sm md:flex lg:gap-6">
+            {NAV.map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className={cn(
+                  "transition-colors hover:text-foreground",
+                  isActive(item.href)
+                    ? "font-medium text-foreground"
+                    : "text-muted",
+                )}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+
+          {/* Mobile: botão hambúrguer */}
+          <button
+            type="button"
+            onClick={() => setOpen((o) => !o)}
+            aria-expanded={open}
+            aria-controls="mobile-nav"
+            aria-label={open ? "Fechar menu" : "Abrir menu"}
+            className="-mr-1.5 inline-flex size-9 items-center justify-center rounded-md text-muted transition-colors hover:text-foreground md:hidden"
+          >
           <svg
             width="20"
             height="20"
@@ -85,7 +100,8 @@ export function Header() {
               </>
             )}
           </svg>
-        </button>
+          </button>
+        </div>
       </div>
 
       {/* Mobile: painel */}
