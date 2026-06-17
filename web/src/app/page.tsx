@@ -112,6 +112,12 @@ export default function HomePage() {
             subtitle="A expectativa de resultado de cada partida · horário de Brasília"
           />
           <UpcomingMatches matches={upcoming} />
+          <Link
+            href="/calendar/"
+            className="mt-4 inline-block text-sm text-accent transition-colors hover:text-accent-strong"
+          >
+            Ver calendário completo →
+          </Link>
         </section>
       )}
 

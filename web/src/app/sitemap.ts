@@ -15,6 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/rankings/title/",
     "/groups/",
     "/compare/",
+    "/calendar/",
     ...getTeams().map((t) => `/team/${t.slug}/`),
     ...getMatches().map((m) => `/match/${m.slug}/`),
     ...getGroups().map((g) => `/group/${g}/`),

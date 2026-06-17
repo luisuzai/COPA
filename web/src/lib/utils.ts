@@ -65,6 +65,47 @@ export function formatDay(iso: string): string {
   }
 }
 
+/** Chave de dia (YYYY-MM-DD) no fuso de Brasília — p/ agrupar jogos por dia. */
+export function matchDayKey(iso: string): string {
+  try {
+    return new Intl.DateTimeFormat("en-CA", {
+      timeZone: "America/Sao_Paulo",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+    }).format(new Date(iso));
+  } catch {
+    return iso.slice(0, 10);
+  }
+}
+
+/** Cabeçalho de dia, ex: "terça-feira, 17 de junho" (horário de Brasília). */
+export function formatDayHeading(iso: string): string {
+  try {
+    return new Intl.DateTimeFormat("pt-BR", {
+      timeZone: "America/Sao_Paulo",
+      weekday: "long",
+      day: "numeric",
+      month: "long",
+    }).format(new Date(iso));
+  } catch {
+    return iso;
+  }
+}
+
+/** Apenas a hora no fuso de Brasília, ex: "16:00". */
+export function formatTime(iso: string): string {
+  try {
+    return new Intl.DateTimeFormat("pt-BR", {
+      timeZone: "America/Sao_Paulo",
+      hour: "2-digit",
+      minute: "2-digit",
+    }).format(new Date(iso));
+  } catch {
+    return iso;
+  }
+}
+
 /** Formata uma data ISO p/ pt-BR curto no horário de Brasília (ex: "15 jun, 16:00"). */
 export function formatDate(iso: string): string {
   try {
