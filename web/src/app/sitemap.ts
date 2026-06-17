@@ -14,6 +14,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/methodology/",
     "/rankings/title/",
     "/groups/",
+    "/compare/",
     ...getTeams().map((t) => `/team/${t.slug}/`),
     ...getMatches().map((m) => `/match/${m.slug}/`),
     ...getGroups().map((g) => `/group/${g}/`),

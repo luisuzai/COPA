@@ -5,8 +5,9 @@ import { SITE_TAGLINE } from "@/lib/site";
 import { formatDate } from "@/lib/utils";
 
 const NAV = [
-  { href: "/#favoritos", label: "Favoritos" },
+  { href: "/groups/", label: "Grupos" },
   { href: "/rankings/title/", label: "Ranking de título" },
+  { href: "/compare/", label: "Comparador" },
   { href: "/simulator/", label: "Simulador" },
 ];
 

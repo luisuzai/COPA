@@ -231,12 +231,20 @@ export default async function TeamPage({
         <section className="container-content border-t border-border/50 py-10">
           <h2 className="mb-4 font-display text-lg font-semibold tracking-tight">Análise</h2>
           <Prose markdown={article.body} className="max-w-2xl text-base" />
-          <Link
-            href={`/scenarios/${team.slug}/`}
-            className="mt-6 inline-block text-sm text-accent transition-colors hover:text-accent-strong"
-          >
-            Ver todos os cenários e adversários prováveis →
-          </Link>
+          <div className="mt-6 flex flex-col gap-2 text-sm">
+            <Link
+              href={`/scenarios/${team.slug}/`}
+              className="text-accent transition-colors hover:text-accent-strong"
+            >
+              Ver todos os cenários e adversários prováveis →
+            </Link>
+            <Link
+              href="/compare/"
+              className="text-accent transition-colors hover:text-accent-strong"
+            >
+              Comparar com outra seleção →
+            </Link>
+          </div>
         </section>
       )}
     </>
