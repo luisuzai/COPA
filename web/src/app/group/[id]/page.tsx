@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 
+import { Breadcrumb } from "@/components/Breadcrumb";
 import { Flag } from "@/components/Flag";
 import { ProbabilityBar } from "@/components/charts/ProbabilityBar";
 import { getGroupMatches, getGroups, getStandings, getTeamById } from "@/lib/data";
@@ -40,8 +41,14 @@ export default async function GroupPage({
   return (
     <>
       <section className="container-content animate-fade-up pb-6 pt-12 sm:pt-16">
-        <p className="text-xs uppercase tracking-eyebrow text-muted">Copa do Mundo 2026</p>
-        <h1 className="mt-3 font-display text-4xl font-bold tracking-tight sm:text-5xl">
+        <Breadcrumb
+          items={[
+            { label: "Início", href: "/" },
+            { label: "Grupos", href: "/groups/" },
+            { label: `Grupo ${groupId.toUpperCase()}` },
+          ]}
+        />
+        <h1 className="mt-4 font-display text-4xl font-bold tracking-tight sm:text-5xl">
           Grupo {groupId.toUpperCase()}
         </h1>
       </section>
@@ -92,7 +99,16 @@ export default async function GroupPage({
             </Link>
           ))}
         </div>
-        <p className="mt-2 text-xs text-muted">Os 2 primeiros avançam diretamente (azul).</p>
+        <p className="mt-2 text-xs leading-relaxed text-muted">
+          Os 2 primeiros (em azul) avançam direto ao mata-mata. Os{" "}
+          <span className="text-foreground">8 melhores terceiros</span> entre os
+          12 grupos completam as 32 vagas — por isso a chance de{" "}
+          <span className="text-foreground">avançar</span> inclui esse caminho, e
+          um 3º colocado forte pode passar de 50%.{" "}
+          <Link href="/methodology/" className="text-accent hover:text-accent-strong">
+            Como funciona →
+          </Link>
+        </p>
       </section>
 
       {/* Jogos */}
