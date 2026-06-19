@@ -1,46 +1,6 @@
 {
-  "generatedAt": "2026-06-18T12:20:07Z",
+  "generatedAt": "2026-06-19T18:36:28Z",
   "matches": [
-    {
-      "matchSlug": "czechia-vs-south-africa",
-      "homeId": "t-cze",
-      "awayId": "t-rsa",
-      "homeWin": 0.4553,
-      "draw": 0.2534,
-      "awayWin": 0.2913,
-      "expectedHomeGoals": 1.53,
-      "expectedAwayGoals": 1.17
-    },
-    {
-      "matchSlug": "switzerland-vs-bosnia-herzegovina",
-      "homeId": "t-sui",
-      "awayId": "t-bih",
-      "homeWin": 0.4894,
-      "draw": 0.2489,
-      "awayWin": 0.2617,
-      "expectedHomeGoals": 1.6,
-      "expectedAwayGoals": 1.1
-    },
-    {
-      "matchSlug": "canada-vs-qatar",
-      "homeId": "t-can",
-      "awayId": "t-qat",
-      "homeWin": 0.4413,
-      "draw": 0.2548,
-      "awayWin": 0.3039,
-      "expectedHomeGoals": 1.5,
-      "expectedAwayGoals": 1.2
-    },
-    {
-      "matchSlug": "mexico-vs-south-korea",
-      "homeId": "t-mex",
-      "awayId": "t-kor",
-      "homeWin": 0.3983,
-      "draw": 0.2577,
-      "awayWin": 0.3441,
-      "expectedHomeGoals": 1.41,
-      "expectedAwayGoals": 1.29
-    },
     {
       "matchSlug": "united-states-vs-australia",
       "homeId": "t-usa",
@@ -245,21 +205,21 @@
       "matchSlug": "switzerland-vs-canada",
       "homeId": "t-sui",
       "awayId": "t-can",
-      "homeWin": 0.4647,
-      "draw": 0.2523,
-      "awayWin": 0.283,
-      "expectedHomeGoals": 1.55,
-      "expectedAwayGoals": 1.15
+      "homeWin": 0.452,
+      "draw": 0.2538,
+      "awayWin": 0.2942,
+      "expectedHomeGoals": 1.52,
+      "expectedAwayGoals": 1.18
     },
     {
       "matchSlug": "bosnia-herzegovina-vs-qatar",
       "homeId": "t-bih",
       "awayId": "t-qat",
-      "homeWin": 0.4169,
-      "draw": 0.2567,
-      "awayWin": 0.3264,
-      "expectedHomeGoals": 1.45,
-      "expectedAwayGoals": 1.25
+      "homeWin": 0.4294,
+      "draw": 0.2558,
+      "awayWin": 0.3147,
+      "expectedHomeGoals": 1.47,
+      "expectedAwayGoals": 1.23
     },
     {
       "matchSlug": "morocco-vs-haiti",
@@ -285,21 +245,21 @@
       "matchSlug": "czechia-vs-mexico",
       "homeId": "t-cze",
       "awayId": "t-mex",
-      "homeWin": 0.2781,
-      "draw": 0.2516,
-      "awayWin": 0.4703,
-      "expectedHomeGoals": 1.14,
-      "expectedAwayGoals": 1.56
+      "homeWin": 0.254,
+      "draw": 0.2475,
+      "awayWin": 0.4985,
+      "expectedHomeGoals": 1.08,
+      "expectedAwayGoals": 1.62
     },
     {
       "matchSlug": "south-africa-vs-south-korea",
       "homeId": "t-rsa",
       "awayId": "t-kor",
-      "homeWin": 0.2295,
-      "draw": 0.2422,
-      "awayWin": 0.5283,
-      "expectedHomeGoals": 1.02,
-      "expectedAwayGoals": 1.68
+      "homeWin": 0.2526,
+      "draw": 0.2472,
+      "awayWin": 0.5002,
+      "expectedHomeGoals": 1.08,
+      "expectedAwayGoals": 1.62
     },
     {
       "matchSlug": "ecuador-vs-germany",
