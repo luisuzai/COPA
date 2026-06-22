@@ -461,7 +461,7 @@
     "stage": "group",
     "homeId": "t-uru",
     "awayId": "t-cpv",
-    "status": "live",
+    "status": "finished",
     "kickoff": "2026-06-21T22:00:00Z",
     "group": "h",
     "homeScore": 2,
@@ -473,9 +473,11 @@
     "stage": "group",
     "homeId": "t-nzl",
     "awayId": "t-egy",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-22T01:00:00Z",
-    "group": "g"
+    "group": "g",
+    "homeScore": 1,
+    "awayScore": 3
   },
   {
     "id": "m-537399",
@@ -483,9 +485,11 @@
     "stage": "group",
     "homeId": "t-arg",
     "awayId": "t-aut",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-22T17:00:00Z",
-    "group": "j"
+    "group": "j",
+    "homeScore": 2,
+    "awayScore": 0
   },
   {
     "id": "m-537393",
