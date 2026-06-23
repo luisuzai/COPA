@@ -102,6 +102,7 @@ export default function ComparePage() {
           onChange={setAId}
           team={ta}
           align="left"
+          label="Selecionar a primeira seleção"
         />
         <TeamPicker
           teams={teams}
@@ -109,6 +110,7 @@ export default function ComparePage() {
           onChange={setBId}
           team={tb}
           align="right"
+          label="Selecionar a segunda seleção"
         />
       </div>
 
@@ -167,12 +169,14 @@ function TeamPicker({
   onChange,
   team,
   align,
+  label,
 }: {
   teams: Team[];
   value: string;
   onChange: (id: string) => void;
   team?: Team;
   align: "left" | "right";
+  label: string;
 }) {
   return (
     <div
@@ -190,6 +194,7 @@ function TeamPicker({
       <select
         value={value}
         onChange={(e) => onChange(e.target.value)}
+        aria-label={label}
         className="w-full max-w-[14rem] rounded-lg border border-border bg-surface px-3 py-2 text-sm text-foreground outline-none transition-colors hover:border-accent/40"
       >
         {teams.map((t) => (

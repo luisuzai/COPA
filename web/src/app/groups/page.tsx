@@ -74,8 +74,14 @@ export default function GroupsPage() {
         })}
       </div>
 
-      <p className="mt-6 text-xs text-muted">
-        Os 2 primeiros de cada grupo avançam diretamente (destacados em azul).
+      <p className="mt-6 max-w-2xl text-xs leading-relaxed text-muted">
+        Os 2 primeiros de cada grupo (em azul) avançam direto ao mata-mata. Os{" "}
+        <span className="text-foreground">8 melhores terceiros</span> entre os 12
+        grupos completam as 32 vagas — por isso a chance de avançar inclui esse
+        caminho, e um 3º colocado forte pode passar de 50%.{" "}
+        <Link href="/methodology/" className="text-accent transition-colors hover:text-accent-strong">
+          Como funciona →
+        </Link>
       </p>
     </div>
   );

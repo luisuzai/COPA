@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Flag } from "@/components/Flag";
 import { getMatches, getPredictionForMatch, getTeamById } from "@/lib/data";
 import type { Match } from "@/lib/types";
-import { formatDayHeading, formatTime, matchDayKey } from "@/lib/utils";
+import { cn, formatDayHeading, formatTime, matchDayKey } from "@/lib/utils";
 
 export const metadata: Metadata = {
   title: "Calendário",
@@ -26,6 +26,11 @@ export default function CalendarPage() {
     else days.push({ key, iso: m.kickoff, matches: [m] });
   }
 
+  // Primeiro dia com jogo ainda não realizado = "a seguir" (âncora p/ pular o passado).
+  const nextDayIndex = days.findIndex((d) =>
+    d.matches.some((m) => m.status !== "finished"),
+  );
+
   return (
     <div className="container-content py-12 sm:py-16">
       <p className="text-xs uppercase tracking-eyebrow text-muted">Calendário</p>
@@ -35,11 +40,40 @@ export default function CalendarPage() {
       <p className="mt-5 max-w-2xl text-lg text-muted">
         Resultados e próximas partidas em ordem cronológica · horário de Brasília.
       </p>
+      <p className="mt-2 text-xs text-muted">
+        A coluna <span className="font-mono text-foreground">%</span> indica a chance
+        do resultado mais provável.
+      </p>
+
+      {nextDayIndex > 0 && (
+        <a
+          href="#a-seguir"
+          className="mt-5 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors hover:text-accent-strong"
+        >
+          Pular para os próximos jogos <span aria-hidden>↓</span>
+        </a>
+      )}
 
       <div className="mt-10 space-y-8">
-        {days.map((day) => (
-          <section key={day.key}>
-            <h2 className="mb-3 font-display text-sm font-semibold tracking-tight text-muted first-letter:uppercase">
+        {days.map((day, di) => {
+          const isNext = di === nextDayIndex;
+          return (
+          <section
+            key={day.key}
+            id={isNext ? "a-seguir" : undefined}
+            className={isNext ? "scroll-mt-24" : undefined}
+          >
+            {isNext && (
+              <p className="mb-1 text-[11px] font-medium uppercase tracking-eyebrow text-accent">
+                A seguir
+              </p>
+            )}
+            <h2
+              className={cn(
+                "mb-3 font-display text-sm font-semibold tracking-tight first-letter:uppercase",
+                isNext ? "text-foreground" : "text-muted",
+              )}
+            >
               {formatDayHeading(day.iso)}
             </h2>
             <div className="divide-y divide-border/60 overflow-hidden rounded-2xl border border-border bg-surface">
@@ -83,7 +117,8 @@ export default function CalendarPage() {
               })}
             </div>
           </section>
-        ))}
+          );
+        })}
       </div>
     </div>
   );

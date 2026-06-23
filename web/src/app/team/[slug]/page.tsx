@@ -8,6 +8,7 @@ import { Flag } from "@/components/Flag";
 import { JsonLd } from "@/components/JsonLd";
 import { PathToFinal } from "@/components/PathToFinal";
 import { Prose } from "@/components/Prose";
+import { SectionHeading } from "@/components/SectionHeading";
 import { TitleEvolutionChart } from "@/components/charts/TitleEvolutionChart";
 import { StatCard } from "@/components/StatCard";
 import {
@@ -143,9 +144,7 @@ export default async function TeamPage({
       {/* ── O que mudou (causa, em números) ────────────────── */}
       {lastResult && prob && (
         <section className="container-content py-6">
-          <h2 className="mb-3 font-display text-lg font-semibold tracking-tight">
-            O que mudou
-          </h2>
+          <SectionHeading eyebrow="Causa e efeito" title="O que mudou" />
           <Link
             href={`/match/${lastResult.match.slug}/`}
             className="flex items-center justify-between gap-4 rounded-xl border border-border bg-surface p-4 transition-colors hover:border-accent/40"
@@ -153,7 +152,7 @@ export default async function TeamPage({
             <div className="min-w-0">
               <p className="text-xs uppercase tracking-wider text-muted">Última partida</p>
               <p className="mt-1 flex items-center gap-2 font-medium">
-                <span className="capitalize">{resultReason(lastResult)}</span>
+                <span className="first-letter:uppercase">{resultReason(lastResult)}</span>
                 <Flag team={lastResult.opponent} size="sm" />
               </p>
             </div>
@@ -168,9 +167,7 @@ export default async function TeamPage({
       {/* ── Evolução (histórico) ───────────────────────────── */}
       {history.length >= 2 && (
         <section className="container-content py-6">
-          <h2 className="mb-3 font-display text-lg font-semibold tracking-tight">
-            Evolução da chance de título
-          </h2>
+          <SectionHeading eyebrow="Histórico" title="Evolução da chance de título" />
           <div className="rounded-xl border border-border bg-surface p-5">
             <TitleEvolutionChart points={history} />
           </div>
@@ -180,12 +177,11 @@ export default async function TeamPage({
       {/* ── Caminho até a final ────────────────────────────── */}
       {scenario && scenario.likeliestPath.length > 0 && (
         <section className="container-content py-6">
-          <h2 className="mb-1 font-display text-lg font-semibold tracking-tight">
-            Caminho até a final
-          </h2>
-          <p className="mb-4 text-sm text-muted">
-            Adversário mais provável e chance de avançar em cada fase.
-          </p>
+          <SectionHeading
+            eyebrow="Cenário"
+            title="Caminho até a final"
+            subtitle="Adversário mais provável e chance de avançar em cada fase."
+          />
           <PathToFinal steps={scenario.likeliestPath} teamById={teamById} />
         </section>
       )}
@@ -193,9 +189,7 @@ export default async function TeamPage({
       {/* ── Próximo jogo ───────────────────────────────────── */}
       {nextMatch && opponent && (
         <section className="container-content py-6">
-          <h2 className="mb-3 font-display text-lg font-semibold tracking-tight">
-            Próximo jogo
-          </h2>
+          <SectionHeading eyebrow="A seguir" title="Próximo jogo" />
           <Link
             href={`/match/${nextMatch.slug}/`}
             className="flex items-center justify-between rounded-xl border border-border bg-surface p-4 transition-colors hover:bg-surface-2"
@@ -221,8 +215,8 @@ export default async function TeamPage({
 
       {/* ── Análise da IA ──────────────────────────────────── */}
       {article?.body && (
-        <section className="container-content border-t border-border/50 py-10">
-          <h2 className="mb-4 font-display text-lg font-semibold tracking-tight">Análise</h2>
+        <section className="container-content border-t border-border/60 py-12">
+          <SectionHeading variant="featured" eyebrow="A leitura" title="Análise" />
           <Prose markdown={article.body} className="max-w-2xl text-base" />
           <div className="mt-6 flex flex-col gap-2 text-sm">
             <Link

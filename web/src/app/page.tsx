@@ -6,6 +6,7 @@ import { Flag } from "@/components/Flag";
 import { Prose } from "@/components/Prose";
 import { ResultsFeed } from "@/components/ResultsFeed";
 import { RoundInsights } from "@/components/RoundInsights";
+import { HeadingLink, SectionHeading } from "@/components/SectionHeading";
 import { UpcomingMatches } from "@/components/UpcomingMatches";
 import {
   getArticle,
@@ -37,68 +38,99 @@ export default function HomePage() {
 
   return (
     <>
-      {/* ── Hero editorial: a história da rodada ────────────── */}
-      <section className="container-content pb-8 pt-14 sm:pt-20">
-        <p className="animate-fade-up text-xs uppercase tracking-eyebrow text-muted">
-          Inteligência da Copa · atualizado em {formatDay(generatedAt)}
-        </p>
-        <h1 className="animate-fade-up delay-1 mt-4 max-w-4xl font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-6xl">
-          {article?.title ?? "Quem vai levantar a taça?"}
-        </h1>
-        {article?.summary && (
-          <p className="animate-fade-up delay-2 mt-5 max-w-2xl text-lg text-muted">
-            {article.summary}
-          </p>
-        )}
+      {/* ── Matéria principal: manchete + líder como "stat" ──
+          Uma única unidade editorial. A manchete é o herói; o líder é o
+          número que a sustenta — não um segundo herói competindo. */}
+      <section className="container-content pb-12 pt-14 sm:pt-20">
+        <div className="grid gap-10 lg:grid-cols-[1.6fr_1fr] lg:items-center lg:gap-14">
+          <div>
+            <p className="animate-fade-up text-xs uppercase tracking-eyebrow text-muted">
+              Inteligência da Copa · atualizado em {formatDay(generatedAt)}
+            </p>
+            <h1 className="animate-fade-up delay-1 mt-4 max-w-3xl font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl">
+              {article?.title ?? "Quem vai levantar a taça?"}
+            </h1>
+            {article?.summary && (
+              <p className="animate-fade-up delay-2 mt-5 max-w-xl text-lg text-muted">
+                {article.summary}
+              </p>
+            )}
+          </div>
+
+          {/* Líder: o número que sustenta a manchete */}
+          {leader && (
+            <Link
+              href={`/team/${leader.team.slug}/`}
+              className="animate-fade-up delay-2 group block overflow-hidden rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-accent/40 sm:p-7"
+            >
+              <div className="flex items-center gap-2.5">
+                <Flag team={leader.team} size="lg" />
+                <div className="min-w-0">
+                  <p className="text-[11px] font-medium uppercase tracking-wider text-accent">
+                    Favorito ao título
+                  </p>
+                  <p className="truncate font-display text-lg font-bold tracking-tight">
+                    {leader.team.name}
+                  </p>
+                </div>
+              </div>
+              <p className="mt-6 text-xs uppercase tracking-wider text-muted">
+                Chance de conquistar a Copa
+              </p>
+              <p className="font-mono text-6xl font-bold leading-none tracking-tighter tabular-nums text-accent">
+                {pct(leader.champion, 1)}
+              </p>
+              <p className="mt-3 text-sm text-muted">
+                Campeão em{" "}
+                <span className="text-foreground">{oneInPhrase(leader.champion)}</span>{" "}
+                Copas
+              </p>
+              <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors group-hover:text-accent-strong">
+                Ver análise da seleção <span aria-hidden>→</span>
+              </span>
+            </Link>
+          )}
+        </div>
       </section>
 
-      {/* ── História principal: o líder ────────────────────── */}
-      {leader && (
-        <section className="container-content pb-12">
-          <Link
-            href={`/team/${leader.team.slug}/`}
-            className="animate-fade-up group block overflow-hidden rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-accent/40 sm:p-8"
-          >
-            <div className="flex flex-col gap-8 sm:flex-row sm:items-end sm:justify-between">
-              <div>
-                <div className="flex items-center gap-3">
-                  <Flag team={leader.team} size="lg" />
-                  <span className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                    {leader.team.name}
-                  </span>
-                  <span className="rounded-full border border-accent/30 bg-accent/10 px-2 py-0.5 text-[11px] font-medium uppercase tracking-wide text-accent">
-                    Líder
-                  </span>
-                </div>
-                <p className="mt-6 text-xs uppercase tracking-wider text-muted">
-                  Chance de conquistar a Copa
-                </p>
-                <p className="font-mono text-6xl font-bold leading-none tabular-nums text-accent sm:text-7xl">
-                  {pct(leader.champion, 1)}
-                </p>
-                <p className="mt-3 max-w-md text-muted">
-                  Conquista o título em aproximadamente{" "}
-                  <span className="text-foreground">
-                    {oneInPhrase(leader.champion)}
-                  </span>{" "}
-                  Copas — o atual favorito ao caneco.
-                </p>
-              </div>
-              <span className="inline-flex shrink-0 items-center gap-2 self-start rounded-lg bg-accent px-4 py-2.5 text-sm font-medium text-white transition-colors group-hover:bg-accent-strong sm:self-auto">
-                Ver análise completa
-                <span aria-hidden>→</span>
-              </span>
-            </div>
-          </Link>
+      {/* ── A leitura da rodada (texto da IA, no HTML p/ SEO) ──
+          Editorial-first: a história vem logo após a manchete; os dados
+          (favoritos, resultados…) a sustentam abaixo. */}
+      {article?.body && (
+        <section
+          id="analise"
+          className="container-content scroll-mt-20 border-t border-border/60 py-14"
+        >
+          <SectionHeading
+            variant="featured"
+            eyebrow="Análise"
+            title="A leitura da rodada"
+          />
+          <Prose markdown={article.body} className="max-w-2xl text-base" />
         </section>
       )}
 
+      {/* ── Favoritos (herói funcional, em destaque) ───────── */}
+      <section id="favoritos" className="container-content border-t border-border/60 py-14">
+        <SectionHeading
+          variant="featured"
+          eyebrow="Quem vai ganhar"
+          title="Favoritos ao título"
+          subtitle="Probabilidade de cada seleção levantar a taça"
+          action={
+            <HeadingLink href="/rankings/title/">Ranking das 48 →</HeadingLink>
+          }
+        />
+        <FavoritesTable rows={favorites.slice(0, 12)} />
+      </section>
+
       {/* ── Últimos resultados (o que aconteceu) ───────────── */}
       {results.length > 0 && (
-        <section className="container-content py-10">
+        <section className="container-content py-12">
           <SectionHeading
+            eyebrow="O que aconteceu"
             title="Últimos resultados"
-            subtitle="O que aconteceu na rodada e o que mudou"
+            subtitle="Placar e o impacto de cada jogo nas chances"
           />
           <ResultsFeed results={results} />
         </section>
@@ -106,63 +138,28 @@ export default function HomePage() {
 
       {/* ── Próximos jogos (dashboard) ─────────────────────── */}
       {upcoming.length > 0 && (
-        <section className="container-content py-10">
+        <section className="container-content py-12">
           <SectionHeading
+            eyebrow="O que vem aí"
             title="Próximos jogos"
-            subtitle="A expectativa de resultado de cada partida · horário de Brasília"
+            subtitle="A expectativa de cada partida · horário de Brasília"
+            action={<HeadingLink href="/calendar/">Calendário completo →</HeadingLink>}
           />
           <UpcomingMatches matches={upcoming} />
-          <Link
-            href="/calendar/"
-            className="mt-4 inline-block text-sm text-accent transition-colors hover:text-accent-strong"
-          >
-            Ver calendário completo →
-          </Link>
         </section>
       )}
 
       {/* ── Insights da Rodada ─────────────────────────────── */}
       {insights.length > 0 && (
-        <section className="container-content py-10">
+        <section className="container-content py-12">
           <SectionHeading
+            eyebrow="Por trás dos números"
             title="Insights da Rodada"
             subtitle="O que mudou e por quê, gerado automaticamente"
           />
           <RoundInsights insights={insights} />
         </section>
       )}
-
-      {/* ── Favoritos ──────────────────────────────────────── */}
-      <section id="favoritos" className="container-content py-10">
-        <SectionHeading
-          title="Favoritos ao título"
-          subtitle="Probabilidade de cada seleção levantar a taça"
-        />
-        <FavoritesTable rows={favorites.slice(0, 12)} />
-        <Link
-          href="/rankings/title/"
-          className="mt-4 inline-block text-sm text-accent transition-colors hover:text-accent-strong"
-        >
-          Ver ranking completo das 48 seleções →
-        </Link>
-      </section>
-
-      {/* ── Análise (texto da IA, no HTML p/ SEO) ──────────── */}
-      {article?.body && (
-        <section className="container-content border-t border-border/50 py-12">
-          <SectionHeading title="Análise" />
-          <Prose markdown={article.body} className="max-w-2xl text-base" />
-        </section>
-      )}
     </>
-  );
-}
-
-function SectionHeading({ title, subtitle }: { title: string; subtitle?: string }) {
-  return (
-    <div className="mb-5">
-      <h2 className="font-display text-lg font-semibold tracking-tight">{title}</h2>
-      {subtitle && <p className="mt-1 text-sm text-muted">{subtitle}</p>}
-    </div>
   );
 }
