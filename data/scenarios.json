@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-22T20:10:52Z",
+  "generatedAt": "2026-06-23T12:47:46Z",
   "teams": [
     {
       "teamId": "t-esp",
@@ -7,27 +7,27 @@
         {
           "stage": "round_of_32",
           "teamId": "t-egy",
-          "probability": 0.5071
+          "probability": 0.5097
         },
         {
           "stage": "round_of_16",
           "teamId": "t-ger",
-          "probability": 0.431
+          "probability": 0.4331
         },
         {
           "stage": "quarter",
           "teamId": "t-bra",
-          "probability": 0.2333
+          "probability": 0.2294
         },
         {
           "stage": "semi",
           "teamId": "t-arg",
-          "probability": 0.2108
+          "probability": 0.2092
         },
         {
           "stage": "final",
           "teamId": "t-bel",
-          "probability": 0.0743
+          "probability": 0.0726
         }
       ],
       "likeliestPath": [
@@ -65,34 +65,34 @@
         {
           "stage": "round_of_32",
           "teamId": "t-fra",
-          "probability": 0.7638
+          "probability": 0.827
         },
         {
           "stage": "round_of_16",
           "teamId": "t-eng",
-          "probability": 0.5401
+          "probability": 0.5412
         },
         {
           "stage": "quarter",
           "teamId": "t-jpn",
-          "probability": 0.0914
+          "probability": 0.0923
         },
         {
           "stage": "semi",
           "teamId": "t-esp",
-          "probability": 0.2391
+          "probability": 0.241
         },
         {
           "stage": "final",
-          "teamId": "t-fra",
-          "probability": 0.0806
+          "teamId": "t-bel",
+          "probability": 0.0797
         }
       ],
       "likeliestPath": [
         {
           "stage": "round_of_32",
           "opponentId": "t-fra",
-          "winProbability": 0.5243
+          "winProbability": 0.5187
         },
         {
           "stage": "round_of_16",
@@ -111,11 +111,11 @@
         },
         {
           "stage": "final",
-          "opponentId": "t-fra",
-          "winProbability": 0.5243
+          "opponentId": "t-bel",
+          "winProbability": 0.6709
         }
       ],
-      "pathDifficulty": 2033
+      "pathDifficulty": 2002
     },
     {
       "teamId": "t-fra",
@@ -123,57 +123,57 @@
         {
           "stage": "round_of_32",
           "teamId": "t-arg",
-          "probability": 0.7652
+          "probability": 0.827
         },
         {
           "stage": "round_of_16",
           "teamId": "t-eng",
-          "probability": 0.3911
+          "probability": 0.4235
         },
         {
           "stage": "quarter",
           "teamId": "t-swe",
-          "probability": 0.0773
+          "probability": 0.0832
         },
         {
           "stage": "semi",
           "teamId": "t-esp",
-          "probability": 0.1774
+          "probability": 0.1833
         },
         {
           "stage": "final",
-          "teamId": "t-arg",
-          "probability": 0.0849
+          "teamId": "t-esp",
+          "probability": 0.071
         }
       ],
       "likeliestPath": [
         {
           "stage": "round_of_32",
           "opponentId": "t-arg",
-          "winProbability": 0.4757
+          "winProbability": 0.4813
         },
         {
           "stage": "round_of_16",
           "opponentId": "t-eng",
-          "winProbability": 0.54
+          "winProbability": 0.5456
         },
         {
           "stage": "quarter",
           "opponentId": "t-swe",
-          "winProbability": 0.7606
+          "winProbability": 0.7652
         },
         {
           "stage": "semi",
           "opponentId": "t-esp",
-          "winProbability": 0.4982
+          "winProbability": 0.5039
         },
         {
           "stage": "final",
-          "opponentId": "t-arg",
-          "winProbability": 0.4757
+          "opponentId": "t-esp",
+          "winProbability": 0.5039
         }
       ],
-      "pathDifficulty": 2026
+      "pathDifficulty": 2021
     },
     {
       "teamId": "t-bra",
@@ -181,27 +181,27 @@
         {
           "stage": "round_of_32",
           "teamId": "t-usa",
-          "probability": 0.6614
+          "probability": 0.6599
         },
         {
           "stage": "round_of_16",
           "teamId": "t-mex",
-          "probability": 0.3244
+          "probability": 0.323
         },
         {
           "stage": "quarter",
           "teamId": "t-esp",
-          "probability": 0.2394
+          "probability": 0.2361
         },
         {
           "stage": "semi",
           "teamId": "t-arg",
-          "probability": 0.1588
+          "probability": 0.1536
         },
         {
           "stage": "final",
-          "teamId": "t-fra",
-          "probability": 0.0783
+          "teamId": "t-esp",
+          "probability": 0.0778
         }
       ],
       "likeliestPath": [
@@ -227,8 +227,8 @@
         },
         {
           "stage": "final",
-          "opponentId": "t-fra",
-          "winProbability": 0.4544
+          "opponentId": "t-esp",
+          "winProbability": 0.4527
         }
       ],
       "pathDifficulty": 2010
@@ -239,27 +239,27 @@
         {
           "stage": "round_of_32",
           "teamId": "t-col",
-          "probability": 0.4836
+          "probability": 0.4841
         },
         {
           "stage": "round_of_16",
           "teamId": "t-arg",
-          "probability": 0.4916
+          "probability": 0.481
         },
         {
           "stage": "quarter",
           "teamId": "t-swe",
-          "probability": 0.0824
+          "probability": 0.0829
         },
         {
           "stage": "semi",
           "teamId": "t-esp",
-          "probability": 0.2035
+          "probability": 0.1983
         },
         {
           "stage": "final",
-          "teamId": "t-fra",
-          "probability": 0.0781
+          "teamId": "t-por",
+          "probability": 0.0676
         }
       ],
       "likeliestPath": [
@@ -285,11 +285,11 @@
         },
         {
           "stage": "final",
-          "opponentId": "t-fra",
-          "winProbability": 0.46
+          "opponentId": "t-por",
+          "winProbability": 0.5577
         }
       ],
-      "pathDifficulty": 1991
+      "pathDifficulty": 1970
     },
     {
       "teamId": "t-ned",
@@ -297,27 +297,27 @@
         {
           "stage": "round_of_32",
           "teamId": "t-ger",
-          "probability": 0.6325
+          "probability": 0.6357
         },
         {
           "stage": "round_of_16",
           "teamId": "t-esp",
-          "probability": 0.3678
+          "probability": 0.3698
         },
         {
           "stage": "quarter",
           "teamId": "t-bra",
-          "probability": 0.1919
+          "probability": 0.1921
         },
         {
           "stage": "semi",
           "teamId": "t-arg",
-          "probability": 0.1246
+          "probability": 0.1221
         },
         {
           "stage": "final",
           "teamId": "t-esp",
-          "probability": 0.1127
+          "probability": 0.1085
         }
       ],
       "likeliestPath": [
@@ -355,27 +355,27 @@
         {
           "stage": "round_of_32",
           "teamId": "t-eng",
-          "probability": 0.3992
+          "probability": 0.4003
         },
         {
           "stage": "round_of_16",
-          "teamId": "t-fra",
-          "probability": 0.1962
+          "teamId": "t-nor",
+          "probability": 0.2245
         },
         {
           "stage": "quarter",
-          "teamId": "t-arg",
-          "probability": 0.0631
+          "teamId": "t-sco",
+          "probability": 0.0666
         },
         {
           "stage": "semi",
           "teamId": "t-esp",
-          "probability": 0.1205
+          "probability": 0.1157
         },
         {
           "stage": "final",
-          "teamId": "t-arg",
-          "probability": 0.1167
+          "teamId": "t-esp",
+          "probability": 0.1113
         }
       ],
       "likeliestPath": [
@@ -386,13 +386,13 @@
         },
         {
           "stage": "round_of_16",
-          "opponentId": "t-fra",
-          "winProbability": 0.4028
+          "opponentId": "t-nor",
+          "winProbability": 0.62
         },
         {
           "stage": "quarter",
-          "opponentId": "t-arg",
-          "winProbability": 0.3791
+          "opponentId": "t-sco",
+          "winProbability": 0.7088
         },
         {
           "stage": "semi",
@@ -401,11 +401,11 @@
         },
         {
           "stage": "final",
-          "opponentId": "t-arg",
-          "winProbability": 0.3791
+          "opponentId": "t-esp",
+          "winProbability": 0.401
         }
       ],
-      "pathDifficulty": 2086
+      "pathDifficulty": 1960
     },
     {
       "teamId": "t-ger",
@@ -413,27 +413,27 @@
         {
           "stage": "round_of_32",
           "teamId": "t-ned",
-          "probability": 0.6325
+          "probability": 0.6357
         },
         {
           "stage": "round_of_16",
           "teamId": "t-esp",
-          "probability": 0.5994
+          "probability": 0.6024
         },
         {
           "stage": "quarter",
           "teamId": "t-bra",
-          "probability": 0.2728
+          "probability": 0.2779
         },
         {
           "stage": "semi",
           "teamId": "t-arg",
-          "probability": 0.2662
+          "probability": 0.2529
         },
         {
           "stage": "final",
           "teamId": "t-ned",
-          "probability": 0.076
+          "probability": 0.0817
         }
       ],
       "likeliestPath": [
@@ -471,27 +471,27 @@
         {
           "stage": "round_of_32",
           "teamId": "t-cpv",
-          "probability": 0.3441
+          "probability": 0.3463
         },
         {
           "stage": "round_of_16",
           "teamId": "t-ned",
-          "probability": 0.2361
+          "probability": 0.2331
         },
         {
           "stage": "quarter",
           "teamId": "t-mar",
-          "probability": 0.1922
+          "probability": 0.1979
         },
         {
           "stage": "semi",
-          "teamId": "t-por",
-          "probability": 0.0877
+          "teamId": "t-nor",
+          "probability": 0.097
         },
         {
           "stage": "final",
           "teamId": "t-esp",
-          "probability": 0.1532
+          "probability": 0.1485
         }
       ],
       "likeliestPath": [
@@ -512,8 +512,8 @@
         },
         {
           "stage": "semi",
-          "opponentId": "t-por",
-          "winProbability": 0.4474
+          "opponentId": "t-nor",
+          "winProbability": 0.5684
         },
         {
           "stage": "final",
@@ -521,7 +521,7 @@
           "winProbability": 0.3503
         }
       ],
-      "pathDifficulty": 1923
+      "pathDifficulty": 1897
     },
     {
       "teamId": "t-mar",
@@ -529,27 +529,27 @@
         {
           "stage": "round_of_32",
           "teamId": "t-aus",
-          "probability": 0.428
+          "probability": 0.4296
         },
         {
           "stage": "round_of_16",
           "teamId": "t-sui",
-          "probability": 0.2885
+          "probability": 0.2864
         },
         {
           "stage": "quarter",
           "teamId": "t-bel",
-          "probability": 0.1679
+          "probability": 0.1705
         },
         {
           "stage": "semi",
-          "teamId": "t-fra",
-          "probability": 0.096
+          "teamId": "t-por",
+          "probability": 0.0988
         },
         {
           "stage": "final",
           "teamId": "t-arg",
-          "probability": 0.1354
+          "probability": 0.132
         }
       ],
       "likeliestPath": [
@@ -570,8 +570,8 @@
         },
         {
           "stage": "semi",
-          "opponentId": "t-fra",
-          "winProbability": 0.3324
+          "opponentId": "t-por",
+          "winProbability": 0.4268
         },
         {
           "stage": "final",
@@ -579,7 +579,7 @@
           "winProbability": 0.3099
         }
       ],
-      "pathDifficulty": 1946
+      "pathDifficulty": 1924
     },
     {
       "teamId": "t-jpn",
@@ -587,27 +587,27 @@
         {
           "stage": "round_of_32",
           "teamId": "t-civ",
-          "probability": 0.342
+          "probability": 0.3423
         },
         {
           "stage": "round_of_16",
           "teamId": "t-bel",
-          "probability": 0.2167
+          "probability": 0.2155
         },
         {
           "stage": "quarter",
           "teamId": "t-mar",
-          "probability": 0.1446
+          "probability": 0.1386
         },
         {
           "stage": "semi",
-          "teamId": "t-por",
-          "probability": 0.0762
+          "teamId": "t-nor",
+          "probability": 0.0749
         },
         {
           "stage": "final",
           "teamId": "t-esp",
-          "probability": 0.1166
+          "probability": 0.1116
         }
       ],
       "likeliestPath": [
@@ -628,8 +628,8 @@
         },
         {
           "stage": "semi",
-          "opponentId": "t-por",
-          "winProbability": 0.4027
+          "opponentId": "t-nor",
+          "winProbability": 0.5233
         },
         {
           "stage": "final",
@@ -637,7 +637,7 @@
           "winProbability": 0.3081
         }
       ],
-      "pathDifficulty": 1931
+      "pathDifficulty": 1905
     },
     {
       "teamId": "t-col",
@@ -645,27 +645,27 @@
         {
           "stage": "round_of_32",
           "teamId": "t-eng",
-          "probability": 0.4971
+          "probability": 0.4969
         },
         {
           "stage": "round_of_16",
           "teamId": "t-arg",
-          "probability": 0.254
+          "probability": 0.2456
         },
         {
           "stage": "quarter",
           "teamId": "t-swe",
-          "probability": 0.0646
+          "probability": 0.0605
         },
         {
           "stage": "semi",
           "teamId": "t-esp",
-          "probability": 0.1279
+          "probability": 0.1255
         },
         {
           "stage": "final",
-          "teamId": "t-esp",
-          "probability": 0.1138
+          "teamId": "t-arg",
+          "probability": 0.1033
         }
       ],
       "likeliestPath": [
@@ -691,11 +691,11 @@
         },
         {
           "stage": "final",
-          "opponentId": "t-esp",
-          "winProbability": 0.3265
+          "opponentId": "t-arg",
+          "winProbability": 0.3058
         }
       ],
-      "pathDifficulty": 2021
+      "pathDifficulty": 2026
     }
   ]
 }

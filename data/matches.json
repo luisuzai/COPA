@@ -497,9 +497,11 @@
     "stage": "group",
     "homeId": "t-fra",
     "awayId": "t-irq",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-22T21:00:00Z",
-    "group": "i"
+    "group": "i",
+    "homeScore": 3,
+    "awayScore": 0
   },
   {
     "id": "m-537394",
@@ -507,9 +509,11 @@
     "stage": "group",
     "homeId": "t-nor",
     "awayId": "t-sen",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-23T00:00:00Z",
-    "group": "i"
+    "group": "i",
+    "homeScore": 3,
+    "awayScore": 2
   },
   {
     "id": "m-537400",
@@ -517,9 +521,11 @@
     "stage": "group",
     "homeId": "t-jor",
     "awayId": "t-alg",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-23T03:00:00Z",
-    "group": "j"
+    "group": "j",
+    "homeScore": 1,
+    "awayScore": 2
   },
   {
     "id": "m-537405",

@@ -32,7 +32,9 @@
       "Bash(git commit -q -m 'feat: busca de selecao \\(Cmd+K\\), selo de atualizacao e OG de compartilhamento *)",
       "Bash(git commit -q -m 'feat: breadcrumbs, skeletons/erro e prefers-reduced-motion *)",
       "Bash(git commit -q -m 'feat: grafico de evolucao do titulo \\(substitui o sparkline\\) *)",
-      "Bash(git commit -q -m 'fix: esclarece '\\\\''chance de avancar'\\\\'' \\(formato 32 vagas\\) e detalha a metodologia *)"
+      "Bash(git commit -q -m 'fix: esclarece '\\\\''chance de avancar'\\\\'' \\(formato 32 vagas\\) e detalha a metodologia *)",
+      "Bash(PATH='/c/Program Files/nodejs:__TRACKED_VAR__' npx tsc --noEmit)",
+      "Bash(echo \"EXIT $?\")"
     ]
   }
 }

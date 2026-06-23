@@ -1,36 +1,6 @@
 {
-  "generatedAt": "2026-06-22T20:10:52Z",
+  "generatedAt": "2026-06-23T12:47:46Z",
   "matches": [
-    {
-      "matchSlug": "france-vs-iraq",
-      "homeId": "t-fra",
-      "awayId": "t-irq",
-      "homeWin": 0.7875,
-      "draw": 0.1539,
-      "awayWin": 0.0586,
-      "expectedHomeGoals": 2.25,
-      "expectedAwayGoals": 0.45
-    },
-    {
-      "matchSlug": "norway-vs-senegal",
-      "homeId": "t-nor",
-      "awayId": "t-sen",
-      "homeWin": 0.391,
-      "draw": 0.2579,
-      "awayWin": 0.3511,
-      "expectedHomeGoals": 1.39,
-      "expectedAwayGoals": 1.31
-    },
-    {
-      "matchSlug": "jordan-vs-algeria",
-      "homeId": "t-jor",
-      "awayId": "t-alg",
-      "homeWin": 0.2658,
-      "draw": 0.2497,
-      "awayWin": 0.4845,
-      "expectedHomeGoals": 1.11,
-      "expectedAwayGoals": 1.59
-    },
     {
       "matchSlug": "portugal-vs-uzbekistan",
       "homeId": "t-por",
@@ -195,21 +165,21 @@
       "matchSlug": "norway-vs-france",
       "homeId": "t-nor",
       "awayId": "t-fra",
-      "homeWin": 0.16,
-      "draw": 0.2193,
-      "awayWin": 0.6207,
-      "expectedHomeGoals": 0.83,
-      "expectedAwayGoals": 1.87
+      "homeWin": 0.1717,
+      "draw": 0.224,
+      "awayWin": 0.6043,
+      "expectedHomeGoals": 0.86,
+      "expectedAwayGoals": 1.84
     },
     {
       "matchSlug": "senegal-vs-iraq",
       "homeId": "t-sen",
       "awayId": "t-irq",
-      "homeWin": 0.5318,
-      "draw": 0.2415,
-      "awayWin": 0.2268,
-      "expectedHomeGoals": 1.69,
-      "expectedAwayGoals": 1.01
+      "homeWin": 0.5148,
+      "draw": 0.2447,
+      "awayWin": 0.2405,
+      "expectedHomeGoals": 1.65,
+      "expectedAwayGoals": 1.05
     },
     {
       "matchSlug": "uruguay-vs-spain",
@@ -295,21 +265,21 @@
       "matchSlug": "jordan-vs-argentina",
       "homeId": "t-jor",
       "awayId": "t-arg",
-      "homeWin": 0.0487,
-      "draw": 0.1439,
-      "awayWin": 0.8074,
-      "expectedHomeGoals": 0.4,
-      "expectedAwayGoals": 2.3
+      "homeWin": 0.0427,
+      "draw": 0.1374,
+      "awayWin": 0.8199,
+      "expectedHomeGoals": 0.36,
+      "expectedAwayGoals": 2.34
     },
     {
       "matchSlug": "algeria-vs-austria",
       "homeId": "t-alg",
       "awayId": "t-aut",
-      "homeWin": 0.3121,
-      "draw": 0.2556,
-      "awayWin": 0.4323,
-      "expectedHomeGoals": 1.22,
-      "expectedAwayGoals": 1.48
+      "homeWin": 0.3268,
+      "draw": 0.2568,
+      "awayWin": 0.4164,
+      "expectedHomeGoals": 1.25,
+      "expectedAwayGoals": 1.45
     }
   ]
 }
