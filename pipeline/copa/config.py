@@ -69,5 +69,9 @@ FOOTBALL_DATA_TOKEN: str | None = os.getenv("FOOTBALL_DATA_TOKEN")
 # ──────────────────────────────────────────────────────────────
 OPENAI_API_KEY: str | None = os.getenv("OPENAI_API_KEY")
 OPENAI_MODEL: str = os.getenv("OPENAI_MODEL", "gpt-4o-mini")
-# Se False, o pipeline pula a geração de texto (útil p/ rodar sem custo).
-OPENAI_ENABLED: bool = bool(OPENAI_API_KEY)
+# Endpoint OpenAI-compatível. Vazio = OpenAI oficial. Aponte para um servidor
+# local (Ollama: http://localhost:11434/v1, LM Studio, vLLM) p/ rodar um modelo
+# aberto como o Qwen3 — custo zero. O código não muda: só estas duas variáveis.
+OPENAI_BASE_URL: str | None = os.getenv("OPENAI_BASE_URL")
+# Liga a IA se houver chave OU um endpoint local (Ollama não exige chave).
+OPENAI_ENABLED: bool = bool(OPENAI_API_KEY or OPENAI_BASE_URL)

@@ -1,26 +1,6 @@
 {
-  "generatedAt": "2026-06-23T12:47:46Z",
+  "generatedAt": "2026-06-23T23:34:00Z",
   "matches": [
-    {
-      "matchSlug": "portugal-vs-uzbekistan",
-      "homeId": "t-por",
-      "awayId": "t-uzb",
-      "homeWin": 0.6756,
-      "draw": 0.2012,
-      "awayWin": 0.1231,
-      "expectedHomeGoals": 1.99,
-      "expectedAwayGoals": 0.71
-    },
-    {
-      "matchSlug": "england-vs-ghana",
-      "homeId": "t-eng",
-      "awayId": "t-gha",
-      "homeWin": 0.665,
-      "draw": 0.205,
-      "awayWin": 0.13,
-      "expectedHomeGoals": 1.97,
-      "expectedAwayGoals": 0.73
-    },
     {
       "matchSlug": "panama-vs-croatia",
       "homeId": "t-pan",
@@ -225,41 +205,41 @@
       "matchSlug": "panama-vs-england",
       "homeId": "t-pan",
       "awayId": "t-eng",
-      "homeWin": 0.0803,
-      "draw": 0.1728,
-      "awayWin": 0.7469,
-      "expectedHomeGoals": 0.55,
-      "expectedAwayGoals": 2.15
+      "homeWin": 0.0889,
+      "draw": 0.1793,
+      "awayWin": 0.7317,
+      "expectedHomeGoals": 0.58,
+      "expectedAwayGoals": 2.12
     },
     {
       "matchSlug": "croatia-vs-ghana",
       "homeId": "t-cro",
       "awayId": "t-gha",
-      "homeWin": 0.5071,
-      "draw": 0.2461,
-      "awayWin": 0.2468,
-      "expectedHomeGoals": 1.64,
-      "expectedAwayGoals": 1.06
+      "homeWin": 0.4899,
+      "draw": 0.2489,
+      "awayWin": 0.2613,
+      "expectedHomeGoals": 1.6,
+      "expectedAwayGoals": 1.1
     },
     {
       "matchSlug": "colombia-vs-portugal",
       "homeId": "t-col",
       "awayId": "t-por",
-      "homeWin": 0.2954,
-      "draw": 0.2539,
-      "awayWin": 0.4508,
-      "expectedHomeGoals": 1.18,
-      "expectedAwayGoals": 1.52
+      "homeWin": 0.2837,
+      "draw": 0.2524,
+      "awayWin": 0.4639,
+      "expectedHomeGoals": 1.15,
+      "expectedAwayGoals": 1.55
     },
     {
       "matchSlug": "congo-dr-vs-uzbekistan",
       "homeId": "t-cod",
       "awayId": "t-uzb",
-      "homeWin": 0.4274,
-      "draw": 0.256,
-      "awayWin": 0.3166,
-      "expectedHomeGoals": 1.47,
-      "expectedAwayGoals": 1.23
+      "homeWin": 0.4404,
+      "draw": 0.2549,
+      "awayWin": 0.3047,
+      "expectedHomeGoals": 1.5,
+      "expectedAwayGoals": 1.2
     },
     {
       "matchSlug": "jordan-vs-argentina",

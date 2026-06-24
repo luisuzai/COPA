@@ -533,9 +533,11 @@
     "stage": "group",
     "homeId": "t-por",
     "awayId": "t-uzb",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-23T17:00:00Z",
-    "group": "k"
+    "group": "k",
+    "homeScore": 5,
+    "awayScore": 0
   },
   {
     "id": "m-537411",
@@ -543,9 +545,11 @@
     "stage": "group",
     "homeId": "t-eng",
     "awayId": "t-gha",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-23T20:00:00Z",
-    "group": "l"
+    "group": "l",
+    "homeScore": 0,
+    "awayScore": 0
   },
   {
     "id": "m-537412",
