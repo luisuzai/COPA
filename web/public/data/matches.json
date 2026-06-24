@@ -557,9 +557,11 @@
     "stage": "group",
     "homeId": "t-pan",
     "awayId": "t-cro",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-23T23:00:00Z",
-    "group": "l"
+    "group": "l",
+    "homeScore": 0,
+    "awayScore": 1
   },
   {
     "id": "m-537406",
@@ -567,9 +569,11 @@
     "stage": "group",
     "homeId": "t-col",
     "awayId": "t-cod",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-24T02:00:00Z",
-    "group": "k"
+    "group": "k",
+    "homeScore": 1,
+    "awayScore": 0
   },
   {
     "id": "m-537337",
@@ -577,9 +581,11 @@
     "stage": "group",
     "homeId": "t-sui",
     "awayId": "t-can",
-    "status": "scheduled",
+    "status": "live",
     "kickoff": "2026-06-24T19:00:00Z",
-    "group": "b"
+    "group": "b",
+    "homeScore": 0,
+    "awayScore": 0
   },
   {
     "id": "m-537338",
@@ -587,9 +593,11 @@
     "stage": "group",
     "homeId": "t-bih",
     "awayId": "t-qat",
-    "status": "scheduled",
+    "status": "live",
     "kickoff": "2026-06-24T19:00:00Z",
-    "group": "b"
+    "group": "b",
+    "homeScore": 0,
+    "awayScore": 0
   },
   {
     "id": "m-537344",

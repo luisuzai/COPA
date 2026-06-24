@@ -492,6 +492,26 @@
       "inputHash": "307ff91b17aff238"
     },
     {
+      "id": "a-match-panama-vs-croatia",
+      "slug": "panama-vs-croatia",
+      "type": "match",
+      "title": "Panamá x Croácia: duelo de pressionados no Grupo L",
+      "summary": "Os dois perderam a estreia e chegam sem pontos; a Croácia é favorita (59,7%), com placar provável de 2 a 1.",
+      "body": "Confronto de necessitados no **Grupo L**: **Panamá** e **Croácia** perderam a estreia e ainda não pontuaram. A diferença está no favoritismo — a **Croácia** aparece com **59,7%** de vitória, contra **17,7%** do Panamá e **22,6%** de empate.\n\nPela qualidade do elenco, a Croácia deveria resolver, mas o **4 a 2 sofrido para a Inglaterra** expôs fragilidades defensivas que o Panamá pode explorar. O placar provável é de **2 a 1** para os croatas — um jogo em que tropeçar significa, para ambos, complicar de vez a classificação.",
+      "generatedAt": "2026-06-24T15:01:55Z",
+      "inputHash": "7df767efa092b595"
+    },
+    {
+      "id": "a-match-colombia-vs-congo-dr",
+      "slug": "colombia-vs-congo-dr",
+      "type": "match",
+      "title": "Colômbia x Congo (RD): vaga em jogo no Grupo K",
+      "summary": "Vinda de vitória, a Colômbia é favorita (53,9%) sobre o Congo (RD), que surpreendeu Portugal; placar provável de 2 a 1.",
+      "body": "A **Colômbia** chega embalada pelo **3 a 1 no Uzbequistão** e parte favorita (**53,9%**) diante do **Congo (RD)**, que somou um ponto valioso no **1 a 1 com Portugal**. O empate aparece com **24%** e a vitória congolesa com **22,1%**.\n\nÉ um confronto que vale muito na corrida por vaga: a Colômbia quer confirmar a boa fase, enquanto o Congo precisa repetir a solidez mostrada contra os portugueses. O placar provável é de **2 a 1** para os colombianos, em jogo de favoritismo moderado, longe de estar decidido.",
+      "generatedAt": "2026-06-24T15:01:55Z",
+      "inputHash": "bbfd88165bb63988"
+    },
+    {
       "id": "a-match-switzerland-vs-canada",
       "slug": "switzerland-vs-canada",
       "type": "match",
