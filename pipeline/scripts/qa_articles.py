@@ -21,7 +21,9 @@ ARTICLES = ROOT / "data" / "articles.json"
 
 # Cada checagem: (rótulo, regex). Casa = problema.
 CHECKS = [
-    ("fase em código", re.compile(r"round_of_32|round_of_16|\bquarter\b|\bsemi\b|third_place")),
+    # Só os códigos crus inequívocos (com underscore). "semi"/"quarter" soltos
+    # são linguagem natural ("a semi", "a final") — não falso-positivar.
+    ("fase em código", re.compile(r"round_of_\d+|third_place|group_stage")),
     ("jargão de modelo", re.compile(r"Monte Carlo|simula[çc]", re.IGNORECASE)),
     ("Elo cru", re.compile(r"\bELO\b|\bElo\b")),
     ("fração decimal", re.compile(r"\b0[.,]\d{2,}\b")),

@@ -76,14 +76,67 @@ def _normalize_names(text: str) -> str:
 
 
 def _valid_output(result: dict) -> bool:
-    """Reprova textos com termos proibidos (liga/aposta/jargão de modelo)."""
+    """Reprova textos com termos proibidos (liga/aposta/jargão) ou inglês vazado."""
     blob = f"{result.get('title', '')} {result.get('summary', '')} {result.get('body', '')}"
-    return not _FORBIDDEN.search(blob)
+    return not _FORBIDDEN.search(blob) and not _ENGLISH.search(blob)
 
 # Limite de tokens da resposta e temperatura (modelo local). Folga suficiente
-# para os textos mais longos (cenário/home) sem desperdício.
+# para os textos mais longos (cenário/home) sem desperdício. Temperatura um
+# pouco mais alta dá variedade lexical (menos repetição de muletas).
 _NUM_PREDICT = 1200
-_TEMPERATURE = 0.45
+_TEMPERATURE = 0.5
+
+# Limites editoriais (premium): título de manchete e resumo de meta description.
+_TITLE_MAX = 70
+_SUMMARY_MAX = 155
+
+
+def _trim_summary(text: str, limit: int = _SUMMARY_MAX) -> str:
+    """Garante um resumo dentro do limite de meta description, cortando no fim
+    de frase mais próximo; se não houver, na última palavra, com reticências."""
+    text = text.strip()
+    if len(text) <= limit:
+        return text
+    cut = text[:limit]
+    end = max(cut.rfind(". "), cut.rfind("! "), cut.rfind("? "))
+    if end >= limit * 0.55:
+        return cut[: end + 1].strip()
+    sp = cut.rfind(" ")
+    return (cut[:sp].rstrip(" ,;:–-") + "…") if sp > 0 else cut.strip()
+
+
+# Conectores soltos que não podem terminar um título cortado ("...mínima de").
+_TRAIL_WORD = re.compile(
+    r"[\s,;:–-]+(?:de|da|do|das|dos|e|a|o|as|os|um|uma|no|na|nos|nas|em|com|"
+    r"para|por|que|ao|aos|à|às|sobre|entre|sem|até|contra|rumo|após|diante|"
+    r"frente|perante|sob|desde|numa?|nuns?|seu|sua|seus|suas)$",
+    re.IGNORECASE,
+)
+
+# Palavras em inglês que vazam no texto (deveria ser tudo pt-BR). Conjunto
+# pequeno e seguro: termos que não aparecem em português legítimo.
+_ENGLISH = re.compile(
+    r"\b(the|with|and|against|hopes|title hopes|draw|wins|"
+    r"group stage|knockout|round of)\b",
+    re.IGNORECASE,
+)
+
+
+def _trim_title(text: str, limit: int = _TITLE_MAX) -> str:
+    """Garante um título de manchete dentro do limite, cortando na última
+    palavra. SEMPRE remove conector solto no fim (um título nunca deve terminar
+    em 'de/a/com…'), mesmo que já esteja curto — sem reticências."""
+    text = text.strip().rstrip(".")
+    if len(text) > limit:
+        cut = text[:limit]
+        sp = cut.rfind(" ")
+        text = cut[:sp] if sp > 0 else cut
+    text = text.rstrip(" ,;:–-")
+    prev = None
+    while prev != text:  # remove conectores soltos encadeados no fim
+        prev = text
+        text = _TRAIL_WORD.sub("", text).rstrip(" ,;:–-")
+    return text
 
 # Parsing da resposta em Markdown.
 _RE_TITLE = re.compile(r"^\s{0,3}#\s+(.+?)\s*$", re.MULTILINE)
@@ -127,6 +180,10 @@ def _valid_recap(stats: dict, result: dict) -> bool:
         if (a, b) != real and (b, a) != real:
             return False
     if (stats.get("fase") or "").lower().startswith("grupo") and _KNOCKOUT.search(head):
+        return False
+    # Variedade: pós-jogo não pode abrir sempre por "O placar/resultado…".
+    if re.match(r"^\s*(?:o|um)\s+(?:placar|resultado)\b",
+                result.get("body", ""), re.IGNORECASE):
         return False
     return True
 
@@ -205,9 +262,10 @@ def generate_article(
         return None
 
     user_prompt = prompts.PROMPT_BUILDERS[kind](stats)
-    # Geração local é grátis, então re-tentamos em qualquer falha transitória
-    # (parsing incompleto, resposta vazia). O recap ainda valida o placar/fase.
-    attempts = 4 if kind == "recap" else 3
+    # Geração local é grátis, então re-tentamos com folga (só os textos teimosos
+    # — termo proibido insistente — usam todas as tentativas). O recap valida
+    # também o placar/fase, por isso ganha uma a mais.
+    attempts = 6 if kind == "recap" else 5
     result, title, body = {}, "", ""
     for i in range(attempts):
         last = i == attempts - 1
@@ -226,6 +284,8 @@ def generate_article(
         body = (result.get("body") or "").strip()
         if not title or not body:
             continue
+        # Tamanho NÃO entra no retry: o corte determinístico (_trim_*) já garante
+        # os limites. Só regeramos por conteúdo (placar/fase do recap, proibidos).
         recap_ok = kind != "recap" or _valid_recap(stats, result)
         if recap_ok and _valid_output(result):
             break
@@ -240,8 +300,8 @@ def generate_article(
         "id": f"a-{kind}-{slug}",
         "slug": slug,
         "type": kind,
-        "title": title,
-        "summary": (result.get("summary") or "").strip(),
+        "title": _trim_title(title),
+        "summary": _trim_summary((result.get("summary") or "").strip()),
         "body": body,
         "generatedAt": _now(),
         "inputHash": key,
