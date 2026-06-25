@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import { notFound } from "next/navigation";
 
 import { Breadcrumb } from "@/components/Breadcrumb";
 import { Flag } from "@/components/Flag";
+import { LikelyPath } from "@/components/LikelyPath";
 import { Prose } from "@/components/Prose";
-import { ProbabilityBar } from "@/components/charts/ProbabilityBar";
 import {
   getArticle,
-  getScenarioFor,
+  getOfficialScenarioFor,
   getScenarioSlugs,
   getTeamById,
   getTeamBySlug,
 } from "@/lib/data";
-import { pct, stageLabel } from "@/lib/utils";
 
 export function generateStaticParams() {
   return getScenarioSlugs().map((slug) => ({ slug }));
@@ -31,7 +31,7 @@ export async function generateMetadata({
     title: article?.title ?? `Cenários · ${team.name}`,
     description:
       article?.summary ??
-      `Adversários mais prováveis e caminho até a final da seleção ${team.name}.`,
+      `Adversários mais prováveis e caminho até a final da seleção ${team.name} na Copa 2026.`,
   };
 }
 
@@ -44,9 +44,7 @@ export default async function ScenarioPage({
   const team = getTeamBySlug(slug);
   if (!team) notFound();
 
-  const scenario = getScenarioFor(team.id);
-  if (!scenario) notFound();
-
+  const scenario = getOfficialScenarioFor(team.id);
   const teamById = getTeamById();
   const article = getArticle("scenario", slug);
 
@@ -66,75 +64,34 @@ export default async function ScenarioPage({
             {team.name}
           </h1>
         </div>
-        <p className="mt-3 font-mono text-sm tabular-nums text-muted">
-          Dificuldade do caminho · Elo médio dos adversários {scenario.pathDifficulty}
-        </p>
+        {scenario && scenario.pathDifficulty > 0 && (
+          <p className="mt-3 font-mono text-sm tabular-nums text-muted">
+            Dificuldade do caminho · Elo médio dos adversários prováveis{" "}
+            {scenario.pathDifficulty}
+          </p>
+        )}
       </section>
 
-      {/* Caminho mais provável até a final */}
-      {scenario.likeliestPath.length > 0 && (
-        <section className="container-content py-6">
-          <h2 className="mb-4 font-display text-lg font-semibold tracking-tight">
-            Caminho mais provável até a final
-          </h2>
-          <ol className="relative space-y-3 border-l border-border pl-6">
-            {scenario.likeliestPath.map((step) => {
-              const opp = teamById.get(step.opponentId);
-              return (
-                <li key={step.stage} className="relative">
-                  <span className="absolute -left-[1.6rem] top-3 h-2 w-2 rounded-full bg-accent" />
-                  <div className="rounded-xl border border-border bg-surface p-4">
-                    <p className="text-xs uppercase tracking-wider text-muted">
-                      {stageLabel(step.stage)}
-                    </p>
-                    <div className="mt-2 flex items-center justify-between gap-3">
-                      <span className="flex items-center gap-2.5">
-                        {opp && <Flag team={opp} />}
-                        <span className="font-medium">{opp?.name ?? "—"}</span>
-                      </span>
-                      <span className="font-mono text-sm font-semibold tabular-nums text-accent">
-                        {pct(step.winProbability)}
-                      </span>
-                    </div>
-                    <ProbabilityBar value={step.winProbability} className="mt-3" />
-                  </div>
-                </li>
-              );
-            })}
-          </ol>
-        </section>
-      )}
-
-      {/* Adversários mais prováveis */}
-      {scenario.likelyOpponents.length > 0 && (
-        <section className="container-content py-6">
-          <h2 className="mb-3 font-display text-lg font-semibold tracking-tight">
-            Adversários mais prováveis
-          </h2>
-          <div className="divide-y divide-border/60 rounded-2xl border border-border bg-surface">
-            {scenario.likelyOpponents.map((o) => {
-              const opp = teamById.get(o.teamId);
-              return (
-                <div
-                  key={o.stage}
-                  className="flex items-center justify-between px-4 py-3 text-sm"
-                >
-                  <span className="text-xs uppercase tracking-wider text-muted">
-                    {stageLabel(o.stage)}
-                  </span>
-                  <span className="flex flex-1 items-center justify-center gap-2.5">
-                    {opp && <Flag team={opp} size="sm" />}
-                    <span className="font-medium">{opp?.name ?? "—"}</span>
-                  </span>
-                  <span className="font-mono text-sm tabular-nums text-muted">
-                    {pct(o.probability)}
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-        </section>
-      )}
+      {/* Adversários mais prováveis em cada fase, no chaveamento oficial */}
+      <section className="container-content py-6">
+        <h2 className="mb-2 font-display text-lg font-semibold tracking-tight">
+          Caminho até a final
+        </h2>
+        <p className="mb-4 max-w-xl text-sm text-muted">
+          Os adversários mais prováveis de cada fase no{" "}
+          <span className="text-foreground">chaveamento oficial</span> da Copa 2026,
+          com a chance de {team.name} chegar e de passar em cada uma.
+        </p>
+        <LikelyPath stages={scenario?.stages ?? []} teamById={teamById} />
+        <p className="mt-5 max-w-xl text-xs leading-relaxed text-muted">
+          O cruzamento de 1º × 2º colocados é o oficial da FIFA. A vaga exata de cada 3º
+          colocado é uma aproximação (a FIFA usa uma tabela fixa de combinações) e só
+          afeta as quartas em diante.{" "}
+          <Link href="/methodology/" className="text-accent hover:text-accent-strong">
+            Metodologia →
+          </Link>
+        </p>
+      </section>
 
       {article?.body && (
         <section className="container-content border-t border-border/50 py-10">

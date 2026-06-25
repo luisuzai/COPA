@@ -1,46 +1,6 @@
 {
-  "generatedAt": "2026-06-24T19:32:01Z",
+  "generatedAt": "2026-06-25T02:18:39Z",
   "matches": [
-    {
-      "matchSlug": "switzerland-vs-canada",
-      "homeId": "t-sui",
-      "awayId": "t-can",
-      "homeWin": 0.452,
-      "draw": 0.2538,
-      "awayWin": 0.2942,
-      "expectedHomeGoals": 1.52,
-      "expectedAwayGoals": 1.18
-    },
-    {
-      "matchSlug": "bosnia-herzegovina-vs-qatar",
-      "homeId": "t-bih",
-      "awayId": "t-qat",
-      "homeWin": 0.4294,
-      "draw": 0.2558,
-      "awayWin": 0.3147,
-      "expectedHomeGoals": 1.47,
-      "expectedAwayGoals": 1.23
-    },
-    {
-      "matchSlug": "morocco-vs-haiti",
-      "homeId": "t-mar",
-      "awayId": "t-hai",
-      "homeWin": 0.6867,
-      "draw": 0.1972,
-      "awayWin": 0.1161,
-      "expectedHomeGoals": 2.02,
-      "expectedAwayGoals": 0.68
-    },
-    {
-      "matchSlug": "scotland-vs-brazil",
-      "homeId": "t-sco",
-      "awayId": "t-bra",
-      "homeWin": 0.1405,
-      "draw": 0.2104,
-      "awayWin": 0.6491,
-      "expectedHomeGoals": 0.77,
-      "expectedAwayGoals": 1.93
-    },
     {
       "matchSlug": "czechia-vs-mexico",
       "homeId": "t-cze",

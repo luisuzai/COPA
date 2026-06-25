@@ -53,8 +53,13 @@ MAX_GOALS_GRID: int = 12
 # ──────────────────────────────────────────────────────────────
 #  Monte Carlo
 # ──────────────────────────────────────────────────────────────
-SIMULATIONS: int = 100_000
-RANDOM_SEED: int | None = None  # defina um int para resultados reproduzíveis
+# 1M simulações: erro estatístico ~0,03 pp nas chances de título, ~10s local.
+# O MC já converge bem antes disso (500k≈1M); a folga é barata e tira qualquer dúvida.
+SIMULATIONS: int = 1_000_000
+# Semente FIXA → resultado reprodutível. Sem isso, cada rodada tinha ruído de
+# Monte Carlo (~0,1–0,5 pp) que poluía o championChange ("variação da rodada").
+# Com semente fixa, a variação reflete só mudanças reais (novos resultados).
+RANDOM_SEED: int | None = 2026
 
 # ──────────────────────────────────────────────────────────────
 #  Ingestão (football-data.org)

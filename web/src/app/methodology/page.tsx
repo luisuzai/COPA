@@ -221,8 +221,10 @@ export default function MethodologyPage() {
               finalizações, xG real) — trabalhamos com resultados, classificação e forma.
             </li>
             <li>
-              O chaveamento dos melhores terceiros usa um seeding aproximado, não o
-              template oficial da FIFA (refinamento previsto).
+              O chaveamento segue o template oficial da FIFA (os cruzamentos de 1º e 2º
+              colocados são exatos). A única aproximação é a vaga específica de cada
+              melhor 3º colocado — resolvida por emparelhamento respeitando os grupos
+              permitidos de cada chave, e só influencia as quartas em diante.
             </li>
             <li>
               Os ratings iniciais são estimativas; o modelo se corrige ao longo da Copa.

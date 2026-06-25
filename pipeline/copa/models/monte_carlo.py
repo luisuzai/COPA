@@ -35,6 +35,136 @@ STAGE_BY_SIZE: dict[int, str] = {
 }
 KNOCKOUT_STAGES: tuple[str, ...] = ("round_of_16", "quarter", "semi", "final")
 
+# ──────────────────────────────────────────────────────────────
+#  Chaveamento OFICIAL da Copa 2026 (jogos 73–104)
+# ──────────────────────────────────────────────────────────────
+# Fonte: chave oficial da FIFA. As 16-avos cruzam 1º × 2º × 3º colocados de
+# forma fixa (ex.: jogo 76 = 1ºC × 2ºF). Espelha web/src/lib/bracket.ts —
+# as duas implementações descrevem a MESMA chave, em linguagens diferentes.
+
+# As 8 vagas das 16-avos que recebem um 3º colocado, e os grupos permitidos.
+_THIRD_SLOT_ORDER: tuple[int, ...] = (74, 77, 79, 80, 81, 82, 85, 87)
+_THIRD_ALLOWED: dict[int, str] = {
+    74: "abcdf", 77: "cdfgh", 79: "cefhi", 80: "ehijk",
+    81: "befij", 82: "aehij", 85: "efgij", 87: "deijl",
+}
+
+# Os dois lados de cada jogo das 16-avos: ("w"|"r", grupo) ou ("t", vaga de 3º).
+_MATCH_SIDES: dict[int, tuple[tuple[str, object], tuple[str, object]]] = {
+    73: (("r", "a"), ("r", "b")),
+    74: (("w", "e"), ("t", 74)),
+    75: (("w", "f"), ("r", "c")),
+    76: (("w", "c"), ("r", "f")),
+    77: (("w", "i"), ("t", 77)),
+    78: (("r", "e"), ("r", "i")),
+    79: (("w", "a"), ("t", 79)),
+    80: (("w", "l"), ("t", 80)),
+    81: (("w", "d"), ("t", 81)),
+    82: (("w", "g"), ("t", 82)),
+    83: (("r", "k"), ("r", "l")),
+    84: (("w", "h"), ("r", "j")),
+    85: (("w", "b"), ("t", 85)),
+    86: (("w", "j"), ("r", "h")),
+    87: (("w", "k"), ("t", 87)),
+    88: (("r", "d"), ("r", "g")),
+}
+
+# Ordem dos jogos tal que o dobramento sequencial (adjacentes) reproduz a árvore
+# oficial: R16 = (74,77),(73,75),(83,84),(81,82),(76,78),(79,80),(86,88),(85,87)
+# → quartas → semis → final batem com o chaveamento publicado.
+_LEAF_ORDER: tuple[int, ...] = (
+    74, 77, 73, 75, 83, 84, 81, 82, 76, 78, 79, 80, 86, 88, 85, 87,
+)
+
+_THIRDS_TABLE: np.ndarray | None = None
+
+
+def _thirds_slot_table() -> np.ndarray:
+    """Tabela (4096, 8): para cada máscara de 8 grupos com 3º classificado,
+    qual índice de grupo ocupa cada vaga (posição em _THIRD_SLOT_ORDER), ou -1.
+
+    A FIFA usa uma tabela fixa de combinações; aqui resolvemos por emparelhamento
+    (Kuhn) respeitando os grupos permitidos de cada vaga — fiel e válido. Toda
+    combinação de 8 entre 12 grupos admite alocação perfeita (verificado).
+    """
+    global _THIRDS_TABLE
+    if _THIRDS_TABLE is not None:
+        return _THIRDS_TABLE
+
+    from itertools import combinations
+
+    allowed = [{ord(c) - 97 for c in _THIRD_ALLOWED[s]} for s in _THIRD_SLOT_ORDER]
+    table = np.full((4096, 8), -1, dtype=np.int64)
+
+    for combo in combinations(range(12), 8):
+        slot_of: dict[int, int] = {}  # posição de vaga → índice de grupo
+
+        def augment(group: int, seen: set[int]) -> bool:
+            for si in range(8):
+                if group in allowed[si] and si not in seen:
+                    seen.add(si)
+                    if si not in slot_of or augment(slot_of[si], seen):
+                        slot_of[si] = group
+                        return True
+            return False
+
+        if not all(augment(g, set()) for g in combo):
+            continue  # combinação sem alocação (não deve ocorrer p/ a chave da FIFA)
+        mask = 0
+        for g in combo:
+            mask |= 1 << g
+        for si, g in slot_of.items():
+            table[mask, si] = g
+
+    _THIRDS_TABLE = table
+    return table
+
+
+def _official_2026_bracket(
+    winners: np.ndarray,
+    runners: np.ndarray,
+    third_global: np.ndarray,
+    third_score: np.ndarray,
+    group_ids: list[str],
+    qualified: np.ndarray,
+    rng: np.random.Generator,
+) -> np.ndarray:
+    """Monta a chave (n_sims, 32) no chaveamento oficial, em ordem de dobramento."""
+    n_sims = winners.shape[0]
+    gi = {g: group_ids.index(g) for g in "abcdefghijkl"}
+
+    # 8 melhores 3º colocados (índices de grupo) + os times correspondentes.
+    order_thirds = np.argsort(-third_score, axis=1)[:, :8]  # (n_sims, 8) índice de grupo
+    chosen_thirds = np.take_along_axis(third_global, order_thirds, axis=1)
+    np.add.at(qualified, chosen_thirds.flatten(), 1)
+
+    # Máscara de grupos com 3º classificado → alocação às vagas (vetorizada).
+    table = _thirds_slot_table()
+    mask = np.zeros(n_sims, dtype=np.int64)
+    for k in range(8):
+        mask |= 1 << order_thirds[:, k]
+    slot_groups = table[mask]  # (n_sims, 8) índice de grupo por posição de vaga
+    rows = np.arange(n_sims)
+    slot_team = {
+        slot: third_global[rows, slot_groups[:, p]]
+        for p, slot in enumerate(_THIRD_SLOT_ORDER)
+    }
+
+    def side(ref: tuple[str, object]) -> np.ndarray:
+        kind, val = ref
+        if kind == "w":
+            return winners[:, gi[val]]
+        if kind == "r":
+            return runners[:, gi[val]]
+        return slot_team[val]
+
+    cols: list[np.ndarray] = []
+    for match in _LEAF_ORDER:
+        a, b = _MATCH_SIDES[match]
+        cols.append(side(a))
+        cols.append(side(b))
+    return np.stack(cols, axis=1)
+
 
 @dataclass
 class SimulationResult:
@@ -117,7 +247,9 @@ def simulate(
             if m.get("group") != gid or m["stage"] != "group":
                 continue
             h, a = idx_of[m["homeId"]], idx_of[m["awayId"]]
-            if m["status"] == "finished":
+            # Um jogo "finished" sem placar (recém-encerrado/dado ainda não
+            # propagado) ainda não decide nada → trata como a disputar.
+            if m["status"] == "finished" and m.get("homeScore") is not None:
                 gh, ga = int(m["homeScore"]), int(m["awayScore"])
                 hl, al = local_of[h], local_of[a]
                 base_gf[hl] += gh; base_gf[al] += ga
@@ -171,7 +303,12 @@ def simulate(
     bracket_size = _next_power_of_two(base_q)
     needed_thirds = bracket_size - base_q
 
-    if needed_thirds == 0:
+    if n_groups == 12 and needed_thirds == 8 and set(group_ids) == set("abcdefghijkl"):
+        # Copa 2026: chaveamento OFICIAL da FIFA (1º × 2º × 3º colocados fixos).
+        bracket = _official_2026_bracket(
+            winners, runners, third_global, third_score, group_ids, qualified, rng
+        )
+    elif needed_thirds == 0:
         # Cruzamento padrão: vencedor[g] x vice[(g+1)%G] (evita mesmo grupo na 1ª fase).
         cols = []
         for g in range(n_groups):
@@ -179,7 +316,7 @@ def simulate(
             cols.append(runners[:, (g + 1) % n_groups])
         bracket = np.stack(cols, axis=1)
     else:
-        # Fallback de MVP: melhores terceiros completam a chave (seeding aproximado).
+        # Fallback genérico: melhores terceiros completam a chave (seeding aproximado).
         order_thirds = np.argsort(-third_score, axis=1)[:, :needed_thirds]
         chosen_thirds = np.take_along_axis(third_global, order_thirds, axis=1)
         np.add.at(qualified, chosen_thirds.flatten(), 1)

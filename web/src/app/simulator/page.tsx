@@ -4,6 +4,8 @@ import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
 import { Flag } from "@/components/Flag";
+import { LikelyPath } from "@/components/LikelyPath";
+import { simulateScenarios } from "@/lib/scenarios";
 import type { Match, MatchPrediction, Predictions, Team } from "@/lib/types";
 import { cn, withBasePath } from "@/lib/utils";
 
@@ -63,26 +65,18 @@ function computeStandings(
   );
 }
 
-/** Hash determinístico de string → [0,1). Mesmo jogo, mesmo número sempre. */
-function hash01(s: string): number {
-  let h = 2166136261;
-  for (let i = 0; i < s.length; i++) {
-    h ^= s.charCodeAt(i);
-    h = Math.imul(h, 16777619);
-  }
-  return ((h >>> 0) % 100000) / 100000;
-}
-
 /**
- * Resultado de um jogo SORTEADO pela distribuição do modelo
- * (vitória/empate/derrota), não o argmax. Assim o palpite do modelo tem
- * empates e zebras na proporção real — e é determinístico (estável a cada load).
+ * Resultado MAIS PROVÁVEL do jogo segundo o modelo (argmax da distribuição).
+ *
+ * Antes era um sorteio pela distribuição, mas isso fazia ~14% dos favoritos
+ * claros aparecerem perdendo no "palpite do modelo" — contradizendo as
+ * previsões mostradas no resto do site. Usar o resultado mais provável mantém
+ * o simulador coerente: o favorito de cada jogo vence.
  */
-function sampledOutcome(p: MatchPrediction): Outcome {
-  const r = hash01(p.matchSlug);
-  if (r < p.homeWin) return "home";
-  if (r < p.homeWin + p.draw) return "draw";
-  return "away";
+function likeliestOutcome(p: MatchPrediction): Outcome {
+  if (p.homeWin >= p.draw && p.homeWin >= p.awayWin) return "home";
+  if (p.awayWin >= p.draw && p.awayWin >= p.homeWin) return "away";
+  return "draw";
 }
 
 export default function SimulatorPage() {
@@ -126,7 +120,7 @@ export default function SimulatorPage() {
     const def: Record<string, Outcome> = {};
     for (const m of scheduledGroup) {
       const pr = preds[m.slug];
-      def[m.slug] = pr ? sampledOutcome(pr) : "draw";
+      def[m.slug] = pr ? likeliestOutcome(pr) : "draw";
     }
     return def;
   }, [scheduledGroup, preds]);
@@ -156,6 +150,25 @@ export default function SimulatorPage() {
     );
     return new Set(ranked.slice(0, 8).map((r) => r.team.id));
   }, [standingsByGroup, groups]);
+
+  /**
+   * Cenários do mata-mata por simulação Monte Carlo sobre o chaveamento OFICIAL,
+   * reagindo aos palpites: jogos finalizados e palpites entram fixos, o resto é
+   * sorteado. Menos simulações que no build (custo de interatividade), mas estável
+   * (semente fixa) — recalcula só quando os palpites mudam.
+   */
+  const scenarios = useMemo(
+    () =>
+      teams.length
+        ? simulateScenarios(teams, matches, { picks, nSims: 3000, seed: 0x00c0_0a26 })
+        : new Map(),
+    [teams, matches, picks],
+  );
+
+  /** Seleção em foco no "Caminho até a final" (padrão: Brasil, se existir). */
+  const [focusTeam, setFocusTeam] = useState("t-bra");
+  const focusScenario = scenarios.get(focusTeam);
+  const focusTeamObj = teamById.get(focusTeam);
 
   const predictedCount = Object.keys(picks).length;
   const remaining = scheduledGroup.length - predictedCount;
@@ -233,6 +246,61 @@ export default function SimulatorPage() {
           Como funciona →
         </Link>
       </p>
+
+      {/* Caminho até a final — chaveamento oficial 2026, reagindo aos palpites */}
+      <section className="mt-12 rounded-2xl border border-border bg-surface p-5 sm:p-6">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <div>
+            <h2 className="font-display text-xl font-semibold tracking-tight">
+              Caminho até a final
+            </h2>
+            <p className="mt-1 max-w-xl text-sm text-muted">
+              O adversário mais provável de cada fase no{" "}
+              <span className="text-foreground">chaveamento oficial</span> da Copa 2026,
+              a partir da classificação atual e dos seus palpites. Em cada confronto,
+              avança o favorito.
+            </p>
+          </div>
+          <label className="flex items-center gap-2 text-sm">
+            <span className="text-muted">Seleção</span>
+            <select
+              value={focusTeam}
+              onChange={(e) => setFocusTeam(e.target.value)}
+              className="rounded-lg border border-border bg-bg px-3 py-2 text-sm text-foreground transition-colors hover:border-accent/40 focus:border-accent focus:outline-none"
+            >
+              {[...teams]
+                .sort((a, b) => a.name.localeCompare(b.name, "pt-BR"))
+                .map((t) => (
+                  <option key={t.id} value={t.id}>
+                    {t.name}
+                  </option>
+                ))}
+            </select>
+          </label>
+        </div>
+
+        <div className="mt-6">
+          <div className="mb-4 flex items-center gap-2.5">
+            {focusTeamObj && <Flag team={focusTeamObj} />}
+            <span className="font-medium">{focusTeamObj?.name}</span>
+            {focusScenario && focusScenario.champion > 0 && (
+              <span className="font-mono text-xs tabular-nums text-muted">
+                · título {(focusScenario.champion * 100).toFixed(1)}%
+              </span>
+            )}
+          </div>
+          <LikelyPath stages={focusScenario?.stages ?? []} teamById={teamById} />
+        </div>
+
+        <p className="mt-5 text-xs leading-relaxed text-muted">
+          O cruzamento de 1º × 2º colocados é o oficial da FIFA. A vaga exata de cada
+          3º colocado é uma aproximação (a FIFA usa uma tabela fixa de combinações) e só
+          afeta as quartas em diante.{" "}
+          <Link href="/methodology/" className="text-accent hover:text-accent-strong">
+            Metodologia →
+          </Link>
+        </p>
+      </section>
 
       <div className="mt-10 space-y-12">
         {groups.map((g) => {

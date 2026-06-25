@@ -6,7 +6,7 @@ import { Breadcrumb } from "@/components/Breadcrumb";
 import { Delta } from "@/components/Delta";
 import { Flag } from "@/components/Flag";
 import { JsonLd } from "@/components/JsonLd";
-import { PathToFinal } from "@/components/PathToFinal";
+import { LikelyPath } from "@/components/LikelyPath";
 import { Prose } from "@/components/Prose";
 import { SectionHeading } from "@/components/SectionHeading";
 import { TitleEvolutionChart } from "@/components/charts/TitleEvolutionChart";
@@ -19,7 +19,7 @@ import {
   getPredictionForMatch,
   getProbabilitiesFor,
   getRankFor,
-  getScenarioFor,
+  getOfficialScenarioFor,
   getTeamById,
   getTeamBySlug,
   getTeams,
@@ -60,7 +60,7 @@ export default async function TeamPage({
   const prob = getProbabilitiesFor(team.id);
   const rank = getRankFor(team.id);
   const article = getArticle("team", slug);
-  const scenario = getScenarioFor(team.id);
+  const scenario = getOfficialScenarioFor(team.id);
   const history = getHistory(team.id);
   const lastResult = getLastResultForTeam(team.id);
   const teamById = getTeamById();
@@ -175,14 +175,20 @@ export default async function TeamPage({
       )}
 
       {/* ── Caminho até a final ────────────────────────────── */}
-      {scenario && scenario.likeliestPath.length > 0 && (
+      {scenario && scenario.stages.length > 0 && (
         <section className="container-content py-6">
           <SectionHeading
             eyebrow="Cenário"
             title="Caminho até a final"
-            subtitle="Adversário mais provável e chance de avançar em cada fase."
+            subtitle="Adversários mais prováveis e chance de avançar em cada fase, no chaveamento oficial."
           />
-          <PathToFinal steps={scenario.likeliestPath} teamById={teamById} />
+          <LikelyPath stages={scenario.stages} teamById={teamById} />
+          <Link
+            href={`/scenarios/${team.slug}/`}
+            className="mt-4 inline-block text-sm text-accent transition-colors hover:text-accent-strong"
+          >
+            Ver cenário completo →
+          </Link>
         </section>
       )}
 

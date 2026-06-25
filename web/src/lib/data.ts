@@ -27,6 +27,10 @@ import type {
   TeamProbabilities,
   TeamScenario,
 } from "./types";
+import {
+  simulateScenarios,
+  type TeamScenario as OfficialScenario,
+} from "./scenarios";
 
 // Procura primeiro em /data (raiz, completo) e depois em /public/data (subset).
 const DATA_DIRS = [
@@ -268,12 +272,30 @@ export function getScenarioFor(teamId: string): TeamScenario | undefined {
   return getScenarios().teams.find((s) => s.teamId === teamId);
 }
 
-/** Seleções que possuem página de cenário (têm dados de cenário). */
+/**
+ * Cenários OFICIAIS (chaveamento real da FIFA), por simulação Monte Carlo a
+ * partir da situação atual dos grupos. Roda UMA vez por build e fica em cache
+ * para servir todas as páginas de seleção e /scenarios. Mais sims que o cliente
+ * (o simulador) porque aqui não há custo de interatividade.
+ */
+let _officialScenarios: Map<string, OfficialScenario> | null = null;
+export function getOfficialScenarios(): Map<string, OfficialScenario> {
+  if (!_officialScenarios) {
+    _officialScenarios = simulateScenarios(getTeams(), getMatches(), {
+      nSims: 20000,
+      seed: 0x00c0_0a26,
+    });
+  }
+  return _officialScenarios;
+}
+
+export function getOfficialScenarioFor(teamId: string): OfficialScenario | undefined {
+  return getOfficialScenarios().get(teamId);
+}
+
+/** Toda seleção tem página de cenário (o caminho até a final é gerado p/ todas). */
 export function getScenarioSlugs(): string[] {
-  const teamById = getTeamById();
-  return getScenarios()
-    .teams.map((s) => teamById.get(s.teamId)?.slug)
-    .filter((slug): slug is string => Boolean(slug));
+  return getTeams().map((t) => t.slug);
 }
 
 // ── Líder & histórico ─────────────────────────────────────────
