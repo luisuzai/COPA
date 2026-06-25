@@ -1,26 +1,6 @@
 {
-  "generatedAt": "2026-06-25T02:18:39Z",
+  "generatedAt": "2026-06-25T11:33:45Z",
   "matches": [
-    {
-      "matchSlug": "czechia-vs-mexico",
-      "homeId": "t-cze",
-      "awayId": "t-mex",
-      "homeWin": 0.254,
-      "draw": 0.2475,
-      "awayWin": 0.4985,
-      "expectedHomeGoals": 1.08,
-      "expectedAwayGoals": 1.62
-    },
-    {
-      "matchSlug": "south-africa-vs-south-korea",
-      "homeId": "t-rsa",
-      "awayId": "t-kor",
-      "homeWin": 0.2526,
-      "draw": 0.2472,
-      "awayWin": 0.5002,
-      "expectedHomeGoals": 1.08,
-      "expectedAwayGoals": 1.62
-    },
     {
       "matchSlug": "ecuador-vs-germany",
       "homeId": "t-ecu",

@@ -629,11 +629,11 @@
     "stage": "group",
     "homeId": "t-cze",
     "awayId": "t-mex",
-    "status": "live",
+    "status": "finished",
     "kickoff": "2026-06-25T01:00:00Z",
     "group": "a",
     "homeScore": 0,
-    "awayScore": 0
+    "awayScore": 3
   },
   {
     "id": "m-537332",
@@ -641,10 +641,10 @@
     "stage": "group",
     "homeId": "t-rsa",
     "awayId": "t-kor",
-    "status": "live",
+    "status": "finished",
     "kickoff": "2026-06-25T01:00:00Z",
     "group": "a",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0
   },
   {

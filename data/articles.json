@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-06-25T02:35:35Z",
+  "generatedAt": "2026-06-25T11:38:08Z",
   "items": [
     {
       "id": "a-home-home",
       "slug": "home",
       "type": "home",
-      "title": "Espanha e Argentina seguem na ponta; Croácia ganha força",
-      "summary": "Espanha (12%) e Argentina (10,9%) lideram a corrida ao título; nos gramados, Croácia e Colômbia venceram e encaminharam vaga.",
-      "body": "No topo da corrida pelo título seguem **Espanha** (**12%**) e **Argentina** (**10,9%**), separadas por pouco e ambas em leve recuo na última rodada. Logo atrás vêm **França** (**9,9%**), **Brasil** (**8,7%**) e **Inglaterra** (**6,5%**), num pelotão de elite que continua embolado e sem um favorito destacado.\n\nNos gramados, a rodada ajudou os times médios a encaminharem suas vagas. A **Croácia** venceu o **Panamá por 1 a 0**, reabilitou-se após a estreia ruim e foi a que mais cresceu nas projeções. A **Colômbia** bateu o **Congo (RD) por 1 a 0** e assumiu a liderança do seu grupo, firmando-se como candidata a surpreender.\n\nOs resultados recentes — **Argélia 2 a 1 sobre a Jordânia**, **Portugal 5 a 0 no Uzbequistão**, **Inglaterra 0 a 0 com Gana**, além das vitórias de Croácia e Colômbia — mostram a fase de grupos entrando na reta final, com vagas se definindo a cada jogo.",
-      "generatedAt": "2026-06-24T19:34:54Z",
-      "inputHash": "c12a5ac5d1b6b599"
+      "title": "Argentina segue na ponta com a fase de grupos quase definida",
+      "summary": "Argentina (16,9%) lidera a corrida ao título, seguida por França (12,6%) e Espanha (11,8%); o Grupo A já está encerrado.",
+      "body": "A **Argentina** mantém a liderança na corrida pelo título, com **16,9%** de chance de conquistar a Copa, à frente de **França** (**12,6%**) e **Espanha** (**11,8%**). Logo atrás vêm **Brasil** (**8,4%**) e **Inglaterra** (**7,4%**), num bloco de elite que persegue os primeiros colocados.\n\nNos gramados, o **Grupo A** foi o primeiro a se definir por completo: o **México** fechou com **100% de aproveitamento** ao golear a **Tchéquia (3 a 0)**, enquanto a **África do Sul** surpreendeu, bateu a **Coreia do Sul (1 a 0)** e garantiu uma vaga inesperada. A Tchéquia foi eliminada.\n\nCom a maioria dos grupos encaminhada, a fase de grupos entra na reta final: as últimas vagas — e as posições que definem o chaveamento — serão decididas a cada jogo da rodada derradeira.",
+      "generatedAt": "2026-06-25T11:38:08Z",
+      "inputHash": "0e3cb2bba5d7ed8b"
     },
     {
       "id": "a-team-uruguay",
@@ -105,11 +105,11 @@
       "id": "a-team-mexico",
       "slug": "mexico",
       "type": "team",
-      "title": "México lidera o Grupo A com campanha perfeita",
-      "summary": "Primeiro do grupo com 6 pontos e 1,7% de título; fecha a fase diante da Tchéquia.",
-      "body": "O **México** fez o dever de casa e lidera o **Grupo A** com **campanha perfeita** — **6 pontos**, saldo de **+3**, vitórias sobre **África do Sul (2 a 0)** e **Coreia do Sul (1 a 0)**. O anfitrião chega firme ao mata-mata, com **1,7%** de chance de título.\n\nO encerramento contra a **Tchéquia** é equilibrado (**49,9%**), mas com a vaga já assegurada (**100%**).\n\nApoiado pela torcida, o México sonha em ir além da fase de grupos: **10,9%** de semifinal mostram que a seleção tem chance real de fazer uma campanha de destaque em casa.",
-      "generatedAt": "2026-06-25T02:35:35Z",
-      "inputHash": "e316ef237cdb942b"
+      "title": "México fecha o Grupo A com 100% de aproveitamento",
+      "summary": "Três vitórias em três jogos e 9 pontos: o México lidera o Grupo A com folga e chega ao mata-mata embalado (2,3% de título).",
+      "body": "O **México** fez uma primeira fase impecável e fechou o **Grupo A** com **100% de aproveitamento** — **9 pontos**, saldo de **+6**, vitórias sobre **África do Sul (2 a 0)**, **Coreia do Sul (1 a 0)** e **Tchéquia (3 a 0)**. O anfitrião chega ao mata-mata embalado, com **2,3%** de chance de título.\n\nCom a liderança garantida (**100%**), a seleção evita os primeiros colocados mais fortes no cruzamento inicial e ganha confiança para sonhar mais alto em casa.\n\nApoiado pela torcida, o México mira uma campanha de destaque: **12,6%** de semifinal mostram que o time pode ir longe se mantiver o nível da fase de grupos.",
+      "generatedAt": "2026-06-25T11:38:08Z",
+      "inputHash": "8ce9b7f8a428f981"
     },
     {
       "id": "a-team-england",
@@ -135,11 +135,11 @@
       "id": "a-team-south-korea",
       "slug": "south-korea",
       "type": "team",
-      "title": "Coreia do Sul reage e encaminha a classificação",
-      "summary": "Segunda do Grupo A com 91,2% de classificação; decide a vaga contra a África do Sul.",
-      "body": "A **Coreia do Sul** se recuperou da derrota para o **México (1 a 0)** ao bater a **Tchéquia (2 a 1)** e subiu para **91,2%** de chance de classificação no **Grupo A**. A reação deixou a seleção asiática muito perto das oitavas.\n\nO duelo final com a **África do Sul** é equilibrado (**50%**), mas pode confirmar a vaga em caso de resultado positivo.\n\nCom ambições modestas no topo (**0,7%** de título), a Coreia foca no objetivo imediato: garantir a classificação e levar seu futebol intenso ao mata-mata.",
-      "generatedAt": "2026-06-25T02:35:35Z",
-      "inputHash": "1d000016f8e19a66"
+      "title": "Coreia do Sul cai para terceiro, mas segue viva",
+      "summary": "Derrota para a África do Sul deixa a Coreia em 3º no Grupo A; com 93,2%, depende de ser um dos melhores terceiros.",
+      "body": "A **Coreia do Sul** terminou o **Grupo A** em terceiro, com **3 pontos**: depois de bater a **Tchéquia (2 a 1)**, perdeu para **México (1 a 0)** e, na decisão, para a **África do Sul (1 a 0)**, ficando atrás na briga direta pela vaga.\n\nAinda assim, a seleção segue viva: com **93,2%** de chance de avançar como um dos melhores terceiros colocados, a Coreia depende agora dos resultados dos outros grupos.\n\nA ambição maior é modesta (**0,5%** de título), mas a forte probabilidade de classificação mantém viva a expectativa de levar o futebol coreano ao mata-mata.",
+      "generatedAt": "2026-06-25T11:38:08Z",
+      "inputHash": "6774185460af03cc"
     },
     {
       "id": "a-team-france",
@@ -155,11 +155,11 @@
       "id": "a-team-south-africa",
       "slug": "south-africa",
       "type": "team",
-      "title": "África do Sul luta contra a eliminação no Grupo",
-      "summary": "Em 4º com 25,2% de classificação, a seleção depende de combinações para seguir viva.",
-      "body": "A **África do Sul** está em situação difícil no **Grupo A**: a derrota para o **México (2 a 0)** e o **empate com a Tchéquia (1 a 1)** deixaram a seleção com apenas **1 ponto** e **25,2%** de chance de classificação.\n\nA decisão vem no confronto direto com a **Coreia do Sul** (**25,3%** de vitória), que se tornou uma final antecipada pela sobrevivência.\n\nPara seguir viva, a seleção terá de vencer e contar com resultados favoráveis — um cenário improvável, mas ainda matematicamente aberto.",
-      "generatedAt": "2026-06-25T02:35:35Z",
-      "inputHash": "0ee51bd04fd4d4d1"
+      "title": "África do Sul surpreende e se classifica no Grupo",
+      "summary": "Vitória decisiva sobre a Coreia do Sul garante a vaga (100%) e completa uma virada inesperada na reta final.",
+      "body": "A **África do Sul** protagonizou uma reviravolta e garantiu a classificação no **Grupo A**. Após começar com derrota para o **México (2 a 0)** e empate com a **Tchéquia (1 a 1)**, a seleção venceu a **Coreia do Sul por 1 a 0** na rodada decisiva e assegurou a segunda vaga (**100%**), com **4 pontos**.\n\nO triunfo no momento certo virou a chave de um grupo que parecia escapar — poucos dias antes, a vaga era improvável.\n\nA ambição maior é modesta (**0,2%** de título), mas a classificação representa um avanço importante e coloca a seleção, contra todas as expectativas, na fase eliminatória.",
+      "generatedAt": "2026-06-25T11:38:08Z",
+      "inputHash": "b9f12e08270448e2"
     },
     {
       "id": "a-team-algeria",
@@ -185,11 +185,11 @@
       "id": "a-team-new-zealand",
       "slug": "new-zealand",
       "type": "team",
-      "title": "Nova Zelândia precisa de milagre diante da Bélgica",
-      "summary": "Última do Grupo G com 1 ponto, a Nova Zelândia tem só 12,7% de vaga e ainda enfrenta a favorita Bélgica.",
-      "body": "A campanha da **Nova Zelândia** ficou perto do fim: lanterna do **Grupo G** com **1 ponto**, depois do empate com o **Irã (2 a 2)** e da derrota para o **Egito (3 a 1)**. A chance de avançar despencou para **12,7%**.\n\nE o adversário final não poderia ser mais difícil: a **Bélgica**, com apenas **12,7%** a favor da Nova Zelândia. Para seguir viva, a seleção precisaria de uma vitória improvável e de uma combinação de resultados. O título é estatisticamente nulo; resta jogar pela honra e por um último vislumbre de classificação.",
-      "generatedAt": "2026-06-24T14:53:44Z",
-      "inputHash": "8996ebca2effcc75"
+      "title": "Nova Zelândia luta contra a eliminação no Grupo G",
+      "summary": "Com 1 ponto e 12,7% de classificação, a Nova Zelândia precisa surpreender a Bélgica para seguir viva.",
+      "body": "A **Nova Zelândia** vive situação difícil no **Grupo G**: o **empate em 2 a 2 com o Irã** e a derrota para o **Egito (3 a 1)** deixaram a seleção da Oceania com apenas **1 ponto** e **12,7%** de chance de classificação.\n\nO desafio final é dos maiores: enfrentar a **Bélgica** (**12,7%** de vitória) precisando vencer para manter alguma esperança.\n\nPara seguir viva, a seleção dependeria de uma vitória surpreendente e de uma combinação favorável de resultados — cenário improvável, mas que a mantém matematicamente na disputa até a última rodada.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "dbfba30909fa8339"
     },
     {
       "id": "a-team-switzerland",
@@ -225,11 +225,11 @@
       "id": "a-team-czechia",
       "slug": "czechia",
       "type": "team",
-      "title": "Tchéquia luta para sobreviver no Grupo",
-      "summary": "Em 3º com 26,3% de classificação, a Tchéquia precisa surpreender o México.",
-      "body": "A **Tchéquia** está em situação delicada no **Grupo A**: a derrota para a **Coreia do Sul (2 a 1)** e o **empate com a África do Sul (1 a 1)** deixaram a seleção com apenas **1 ponto** e **26,3%** de chance de classificação.\n\nO desafio final é dos maiores: enfrentar o líder **México** (**25,4%** de vitória) precisando vencer para sonhar com a vaga.\n\nA seleção terá de superar o favoritismo dos anfitriões e ainda torcer por combinações — um cenário difícil, mas que mantém a Tchéquia viva até a última rodada.",
-      "generatedAt": "2026-06-25T02:35:35Z",
-      "inputHash": "1875c51cf88eb10c"
+      "title": "Tchéquia se despede após campanha difícil no Grupo",
+      "summary": "Apenas 1 ponto em três jogos: a Tchéquia está eliminada após a derrota por 3 a 0 para o México.",
+      "body": "A **Tchéquia** encerrou sua participação no **Grupo A** com apenas **1 ponto**: a derrota para a **Coreia do Sul (2 a 1)** e o **empate com a África do Sul (1 a 1)** foram seguidos do **3 a 0 sofrido diante do México**, que confirmou a eliminação (**0%**).\n\nO saldo de **-4** resume as dificuldades de uma campanha em que a seleção pouco conseguiu impor seu jogo diante dos anfitriões e dos rivais diretos.\n\nA eliminação precoce frustra as expectativas e serve de ponto de partida para a reconstrução visando os próximos ciclos.",
+      "generatedAt": "2026-06-25T11:38:08Z",
+      "inputHash": "f2aab21330ff6ac1"
     },
     {
       "id": "a-team-croatia",
@@ -675,41 +675,41 @@
       "id": "a-match-panama-vs-england",
       "slug": "panama-vs-england",
       "type": "match",
-      "title": "Panamá x Inglaterra: líder amplo favorito no Grupo L",
-      "summary": "A líder Inglaterra é amplo favorita (73,2%) sobre o pressionado Panamá; placar provável de 2 a 1.",
-      "body": "A **Inglaterra** é amplo favorita (**73,2%**) diante de um **Panamá** que perdeu a estreia e luta para sobreviver no **Grupo L**. O empate vale **17,9%** e a vitória panamenha, apenas **8,9%**.\n\nApós o decepcionante **0 a 0 com Gana**, a Inglaterra quer reencontrar o ataque que goleou a Croácia. O Panamá, com a vaga distante, joga por orgulho e por um improvável. O placar provável é de **2 a 1** inglês.",
-      "generatedAt": "2026-06-24T15:03:56Z",
-      "inputHash": "2d3567068e266493"
+      "title": "Inglaterra é ampla favorita diante do Panamá",
+      "summary": "Líder do Grupo L, a Inglaterra encara o Panamá como favorita (74,1%); placar provável de 2 a 1.",
+      "body": "A **Inglaterra** entra em campo como ampla favorita contra o **Panamá**, pela última rodada do **Grupo L**. Líder da chave, a seleção inglesa tem **74,1%** de chance de vitória, contra apenas **8,4%** do adversário, com **17,6%** de empate.\n\nO modelo projeta um placar de **2 a 1** para os ingleses, que querem fechar a fase de grupos confirmando a liderança. Já o **Panamá**, sem pontos e com **2%** de chance de classificação, tenta ao menos deixar uma boa atuação antes da despedida.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "bb8ed2156f3e1f1c"
     },
     {
       "id": "a-match-croatia-vs-ghana",
       "slug": "croatia-vs-ghana",
       "type": "match",
-      "title": "Croácia x Gana: vaga em disputa no Grupo L",
-      "summary": "A Croácia é favorita (49%) diante de Gana, que está perto da classificação; placar provável de 2 a 1.",
-      "body": "A **Croácia** é favorita (**49%**) num confronto valioso do **Grupo L** contra **Gana**, que praticamente garantiu a vaga ao segurar a Inglaterra. O empate vale **24,9%** e a vitória ganesa, **26,1%**.\n\nA Croácia, que tropeçou na estreia, precisa do resultado para não se complicar; Gana joga mais aliviada. O placar provável é de **2 a 1** croata, em jogo no qual a tradição europeia pesa, mas a solidez ganesa promete dificultar.",
-      "generatedAt": "2026-06-24T15:03:56Z",
-      "inputHash": "d2edd0618b3d4357"
+      "title": "Croácia e Gana decidem a segunda vaga do Grupo L",
+      "summary": "Confronto direto entre classificados: a Croácia é leve favorita (50%) contra Gana; placar provável de 2 a 1.",
+      "body": "**Croácia** e **Gana** fazem um confronto direto pela segunda posição do **Grupo L**, com as duas já praticamente classificadas. A experiência croata pesa no favoritismo: **50%** de chance de vitória, contra **25,3%** de Gana, com **24,7%** de empate.\n\nO modelo aponta um **2 a 1** para os croatas, mas o equilíbrio é grande num duelo que pode definir o lado do chaveamento. Gana aposta na solidez que segurou a Inglaterra para surpreender e terminar à frente.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "50fb41eda590b0dc"
     },
     {
       "id": "a-match-colombia-vs-portugal",
       "slug": "colombia-vs-portugal",
       "type": "match",
-      "title": "Colômbia x Portugal: ponta do Grupo K em disputa",
-      "summary": "Portugal, vindo de goleada, é favorito (46,4%) sobre a Colômbia; o jogo vale a liderança; placar de 2 a 1.",
-      "body": "**Colômbia** e **Portugal** se enfrentam valendo a liderança do **Grupo K**. Portugal, embalado pelo **5 a 0 no Uzbequistão**, é favorito (**46,4%**), contra **28,4%** da Colômbia e **25,2%** de empate.\n\nOs dois venceram o Uzbequistão e chegam com confiança; a Colômbia, porém, terá de superar o melhor momento português na competição. O placar provável é de **2 a 1** para Portugal, num confronto equilibrado que pode definir quem avança em primeiro.",
-      "generatedAt": "2026-06-24T15:03:56Z",
-      "inputHash": "085178925753cc88"
+      "title": "Colômbia e Portugal duelam pela ponta do Grupo K",
+      "summary": "Jogo grande do Grupo K: Portugal é leve favorito (45,1%) contra a líder Colômbia; placar provável de 2 a 1.",
+      "body": "**Colômbia** e **Portugal** protagonizam o jogo grande da última rodada do **Grupo K**, com a liderança em disputa. Apesar de a Colômbia chegar na ponta, o favoritismo é luso: **45,1%** de chance de vitória, contra **29,5%** dos colombianos, com **25,4%** de empate.\n\nO modelo projeta um **2 a 1** para Portugal, mas a Colômbia vem embalada por duas vitórias e quer confirmar a ótima campanha terminando em primeiro. É um duelo que define quem leva vantagem no chaveamento.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "3588e57299522c33"
     },
     {
       "id": "a-match-congo-dr-vs-uzbekistan",
       "slug": "congo-dr-vs-uzbekistan",
       "type": "match",
-      "title": "Congo (RD) x Uzbequistão: vaga em jogo no Grupo K",
-      "summary": "O Congo (RD) é favorito (44%) sobre o quase eliminado Uzbequistão; placar provável de 2 a 1.",
-      "body": "O **Congo (RD)** é favorito (**44%**) diante de um **Uzbequistão** que chega praticamente eliminado no **Grupo K**. O empate vale **25,5%** e a vitória uzbeque, **30,5%**.\n\nO Congo, que surpreendeu ao segurar Portugal, busca o resultado que pode garantir a vaga; o Uzbequistão, após duas derrotas duras, joga por uma reação tardia. O placar provável é de **2 a 1** congolês, num jogo em que o lado africano depende de si para avançar.",
-      "generatedAt": "2026-06-24T15:03:56Z",
-      "inputHash": "9875798a79232294"
+      "title": "Congo e Uzbequistão jogam por sobrevivência no Grupo K",
+      "summary": "Confronto decisivo: o Congo (RD) é leve favorito (42,8%) contra o Uzbequistão; placar provável de 1 a 1.",
+      "body": "**Congo (RD)** e **Uzbequistão** fazem um confronto de vida ou morte na última rodada do **Grupo K**. O Congo chega em leve vantagem, com **42,8%** de chance de vitória, contra **31,6%** do Uzbequistão, num jogo de **25,6%** de empate.\n\nO modelo prevê equilíbrio total, com placar provável de **1 a 1** — resultado que pouco ajudaria os congoleses, que precisam vencer para seguir vivos. Para o Uzbequistão, sem pontos, só a vitória, somada a outros resultados, mantém uma chance remota.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "8000d7065651dbd6"
     },
     {
       "id": "a-match-jordan-vs-argentina",
@@ -735,21 +735,21 @@
       "id": "a-recap-mexico-vs-south-africa",
       "slug": "mexico-vs-south-africa",
       "type": "recap",
-      "title": "México vence a África do Sul e assume o Grupo",
-      "summary": "Triunfo por 2 a 0 deixa o México com a classificação encaminhada (100%); a África do Sul cai para 25,2%.",
-      "body": "Com autoridade, o **México** superou a **África do Sul por 2 a 0** e tomou conta do **Grupo A**. A vitória deixou os mexicanos com a vaga praticamente assegurada (**100%**) e os mantém vivos na disputa maior, ainda que com modestos **1,7%** de título.\n\nPara a **África do Sul**, o tropeço pesou: a chance de avançar caiu para **25,2%**, e agora a seleção depende de combinações para seguir na competição.",
-      "generatedAt": "2026-06-25T02:27:17Z",
-      "inputHash": "922a202146ee2b4f"
+      "title": "México estreia com vitória sobre a África do Sul",
+      "summary": "Triunfo por 2 a 0 iniciou a caminhada perfeita do México no Grupo A; a África do Sul reagiria depois.",
+      "body": "O **México** começou bem o **Grupo A**: venceu a **África do Sul por 2 a 0** e deu o primeiro passo de uma campanha que terminaria com 100% de aproveitamento. Sólido e eficiente, o anfitrião assumiu o controle do grupo desde o início.\n\nA **África do Sul** começou com o pé esquerdo, mas reagiria na sequência: a seleção se recuperaria do revés para, mais tarde, garantir uma classificação surpreendente.",
+      "generatedAt": "2026-06-25T11:38:08Z",
+      "inputHash": "258556be8f6d104a"
     },
     {
       "id": "a-recap-south-korea-vs-czechia",
       "slug": "south-korea-vs-czechia",
       "type": "recap",
-      "title": "Coreia do Sul bate a Tchéquia e respira no Grupo",
-      "summary": "Vitória por 2 a 1 eleva a Coreia a 91,2% de classificação; a Tchéquia fica pressionada, em 26,3%.",
-      "body": "A **Coreia do Sul** levou a melhor sobre a **Tchéquia por 2 a 1** e deu um passo decisivo no **Grupo A**. O resultado elevou a chance coreana de classificação para **91,2%** e manteve viva, ainda que remota, a ambição maior (**0,7%**).\n\nA **Tchéquia** sai bastante pressionada: a probabilidade de avançar despencou para **26,3%**, e o time precisará pontuar na rodada final para não ficar pelo caminho.",
-      "generatedAt": "2026-06-25T02:27:17Z",
-      "inputHash": "42b2894b67fb04df"
+      "title": "Coreia do Sul vence a Tchéquia na estreia do Grupo",
+      "summary": "Vitória por 2 a 1 deu fôlego à Coreia do Sul; a Tchéquia acabaria eliminada na primeira fase.",
+      "body": "A **Coreia do Sul** levou a melhor sobre a **Tchéquia por 2 a 1** na abertura do **Grupo A** e somou três pontos importantes. A vitória deu fôlego à seleção asiática na briga por uma vaga no mata-mata.\n\nA **Tchéquia**, por sua vez, não conseguiu engrenar na sequência e terminaria a fase de grupos eliminada — o tropeço na estreia pesou no desfecho do grupo.",
+      "generatedAt": "2026-06-25T11:38:08Z",
+      "inputHash": "6fb9bc3e971042b7"
     },
     {
       "id": "a-recap-canada-vs-bosnia-herzegovina",
@@ -975,11 +975,11 @@
       "id": "a-recap-czechia-vs-south-africa",
       "slug": "czechia-vs-south-africa",
       "type": "recap",
-      "title": "Tchéquia e África do Sul empatam e seguem na corda bamba",
-      "summary": "1 a 1 não resolve a vida de ninguém no Grupo A: Tchéquia em 26,3% e África do Sul em 25,2%.",
-      "body": "Em jogo de seis pontos, **Tchéquia** e **África do Sul** ficaram no **1 a 1** e adiaram a decisão sobre a segunda vaga do **Grupo A**. O empate manteve as duas em situação delicada: a Tchéquia com **26,3%** de classificação e os sul-africanos logo atrás, com **25,2%**.\n\nNenhuma das seleções aparece como ameaça ao título — ambas zeradas nesse recorte —, mas a briga pela sobrevivência no grupo segue aberta até a última rodada.",
-      "generatedAt": "2026-06-25T02:27:17Z",
-      "inputHash": "27ee46d19a436eec"
+      "title": "Tchéquia e África do Sul empatam em jogo apertado",
+      "summary": "1 a 1 em duelo direto; a África do Sul avançaria, enquanto a Tchéquia ficaria pelo caminho.",
+      "body": "**Tchéquia** e **África do Sul** ficaram no **1 a 1** num confronto direto pela sobrevivência no **Grupo A**. O ponto seria mais valioso para os sul-africanos, que ainda teriam a chance de garantir a vaga na rodada final.\n\nA **Tchéquia**, que precisava de mais, acabaria eliminada — o empate não foi suficiente para a seleção europeia escapar de uma primeira fase frustrante.",
+      "generatedAt": "2026-06-25T11:38:08Z",
+      "inputHash": "d83ce4fbeb9ab742"
     },
     {
       "id": "a-recap-switzerland-vs-bosnia-herzegovina",
@@ -1005,11 +1005,11 @@
       "id": "a-recap-mexico-vs-south-korea",
       "slug": "mexico-vs-south-korea",
       "type": "recap",
-      "title": "México vence a Coreia do Sul e fecha o Grupo A na ponta",
-      "summary": "1 a 0 confirma o México líder (100%); a Coreia do Sul avança mesmo derrotada, com 91,2%.",
-      "body": "O **México** superou a **Coreia do Sul por 1 a 0** num jogo decidido nos detalhes e confirmou a liderança do **Grupo A**. A vitória manteve os anfitriões com a vaga assegurada (**100%**) e vivos na disputa maior, com **1,7%** de chance de título.\n\nMesmo derrotada, a **Coreia do Sul** segue muito perto da classificação (**91,2%**): o resultado define a ponta para o México, mas não tira os coreanos da rota das oitavas.",
-      "generatedAt": "2026-06-25T02:28:00Z",
-      "inputHash": "4b6d24f4d19e72e2"
+      "title": "México bate a Coreia do Sul e encaminha a liderança",
+      "summary": "Vitória por 1 a 0 manteve o México 100% no Grupo A; a Coreia terminaria em terceiro.",
+      "body": "O **México** superou a **Coreia do Sul por 1 a 0** num jogo decidido nos detalhes e seguiu firme rumo ao aproveitamento perfeito no **Grupo A**. A vitória manteve o anfitrião na liderança isolada do grupo.\n\nA **Coreia do Sul** sentiu o revés e acabaria em terceiro, dependente de uma vaga entre os melhores terceiros colocados para seguir na competição.",
+      "generatedAt": "2026-06-25T11:38:08Z",
+      "inputHash": "7f8bc92f1418ab8b"
     },
     {
       "id": "a-recap-united-states-vs-australia",
@@ -1195,111 +1195,111 @@
       "id": "a-scenario-spain",
       "slug": "spain",
       "type": "scenario",
-      "title": "O caminho da Espanha: rota acessível, gigantes no fim",
-      "summary": "Apesar de classificado como tranquilo, o trajeto da Espanha pode ter Brasil nas quartas e Argentina na semifinal.",
-      "body": "O caminho projetado para a **Espanha** no mata-mata é avaliado como **relativamente tranquilo** — coerente com o favoritismo da seleção. A jornada provável começa com o **Egito nos 16-avos** (**50,7%** de ser o adversário) e segue com a **Alemanha nas oitavas** (**43%**).\n\nO peso vem nas fases finais: o **Brasil** desponta como provável rival nas **quartas** (**23,3%**) e a **Argentina** na **semifinal** (**20,4%**), antes de uma possível decisão com a **Bélgica** (**7,6%**). É uma rota em que a Espanha é favorita em cada passo, mas que reúne, no fim, os adversários mais temidos do torneio.",
-      "generatedAt": "2026-06-24T15:12:30Z",
-      "inputHash": "b8ca40242efa92ef"
+      "title": "O caminho da Espanha: equilíbrio crescente até a final",
+      "summary": "Começo acessível, mas com França na semifinal e Argentina como possível adversária na decisão.",
+      "body": "A **Espanha** tem um caminho de dificuldade crescente. O início é favorável, com **Áustria** e **Portugal** como prováveis adversários nas primeiras fases — este último, um clássico ibérico de peso.\n\nA partir das quartas, o nível sobe: **Estados Unidos**, depois uma semifinal de gigantes com a **França** e uma possível final diante da **Argentina**. É um percurso equilibrado, à altura de uma das três maiores forças do torneio.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "5f08dfd83c261c43"
     },
     {
       "id": "a-scenario-argentina",
       "slug": "argentina",
       "type": "scenario",
-      "title": "O caminho da Argentina: França logo na estreia do mata-mata",
-      "summary": "O trajeto da Argentina é equilibrado, mas começa duríssimo: a França é a rival quase certa nos 16-avos (82,8%).",
-      "body": "O caminho da **Argentina** no mata-mata é classificado como **equilibrado**, mas tem um detalhe brutal logo na largada: a **França** é a adversária mais provável nos **16-avos** (**82,8%**), por estarem do mesmo lado da chave. Um confronto de gigantes já no primeiro jogo eliminatório.\n\nSuperado esse degrau, viriam **Inglaterra nas oitavas** (**46,7%**) e um caminho mais leve nas **quartas** — o **Japão** aparece como provável rival (**9%**). A **Espanha** desponta na **semifinal** (**23,8%**) como o grande teste antes de uma possível final com a **Bélgica** (**7,8%**).",
-      "generatedAt": "2026-06-24T15:12:30Z",
-      "inputHash": "aafa7e236cac3b83"
+      "title": "O caminho da Argentina: chave favorável rumo à decisão",
+      "summary": "A favorita ao título tem um caminho relativamente tranquilo até as semis, onde pode reencontrar o Brasil.",
+      "body": "A **Argentina** tirou um chaveamento favorável. O caminho mais provável começa de forma acessível: **Cabo Verde** nas 16-avos e a **Bélgica** nas oitavas, dois adversários que a seleção encara como favorita.\n\nO peso aumenta na reta final: uma possível semifinal com o **Brasil** e uma decisão diante da **Espanha**. Mesmo assim, é um percurso relativamente tranquilo para a maior força do torneio — o que ajuda a explicar por que a Argentina lidera as projeções de título.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "1a25acec5e7734b7"
     },
     {
       "id": "a-scenario-france",
       "slug": "france",
       "type": "scenario",
-      "title": "O caminho da França: classificado como difícil, e com razão",
-      "summary": "A França pode cruzar com a Argentina logo nos 16-avos (82,8%) e tem a Espanha como obstáculo nas fases finais.",
-      "body": "O trajeto projetado para a **França** é o mais espinhoso entre os favoritos — **caminho difícil**. Tudo começa com o provável duelo contra a **Argentina nos 16-avos** (**82,8%**), um mata-mata de campeões já no primeiro jogo eliminatório.\n\nNa sequência, a **Inglaterra** surge nas **oitavas** (**38,1%**) e, mais à frente, a **Espanha** aparece como obstáculo recorrente nas fases finais (**18,9%** na semifinal). É uma rota que cobra a França cedo e não dá trégua — só passa quem vencer os melhores.",
-      "generatedAt": "2026-06-24T15:12:30Z",
-      "inputHash": "147d31f97b36b847"
+      "title": "O caminho da França: a Espanha como grande obstáculo",
+      "summary": "Caminho relativamente tranquilo até esbarrar em Alemanha, Espanha e, possivelmente, na Argentina.",
+      "body": "A **França** tem um início de mata-mata acessível, com a **Escócia** como provável adversária nas 16-avos. A dificuldade aparece em seguida: a **Alemanha**, possível obstáculo nas oitavas, num confronto de tradição.\n\nNa reta final, o roteiro reserva pesos-pesados: o **Marrocos** nas quartas e a **Espanha** na semifinal, antes de uma eventual decisão com a **Argentina**. É um caminho considerado relativamente tranquilo até as quartas, quando o torneio fica realmente difícil.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "9877409ea8645a68"
     },
     {
       "id": "a-scenario-brazil",
       "slug": "brazil",
       "type": "scenario",
-      "title": "O caminho do Brasil: começo acessível, fim de altíssimo nível",
-      "summary": "O trajeto do Brasil é equilibrado: Estados Unidos e México no início, mas Espanha e Argentina nas fases decisivas.",
-      "body": "O caminho do **Brasil** no mata-mata é avaliado como **equilibrado**, com um começo favorável: **Estados Unidos nos 16-avos** (**66,2%**) e **México nas oitavas** (**32,1%**) são adversários ao alcance.\n\nA dificuldade explode nas fases decisivas: a **Espanha** desponta nas **quartas** (**23,9%**) e a **Argentina** na **semifinal** (**15,9%**). Para chegar a uma possível final — provavelmente contra a Espanha de novo —, o Brasil teria de superar as duas seleções mais cotadas do torneio em sequência.",
-      "generatedAt": "2026-06-24T15:12:30Z",
-      "inputHash": "3d339889a3f6b11c"
+      "title": "O caminho do Brasil: um dos mais duros entre os favoritos",
+      "summary": "Chave difícil: Japão e Inglaterra antes de um possível clássico com a Argentina na semifinal.",
+      "body": "O **Brasil** tirou um dos caminhos mais duros entre os favoritos. Logo nas 16-avos, o provável adversário é o **Japão**, seguido pela **Noruega** nas oitavas — pedras no sapato antes do bloco mais pesado.\n\nA partir das quartas, o roteiro cobra caro: a **Inglaterra**, depois um clássico com a **Argentina** na semifinal e uma possível final contra a **França**. É um percurso difícil, que exige bater vários gigantes na reta final para a seleção voltar a levantar a taça.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "6755b1dedcf4c6ba"
     },
     {
       "id": "a-scenario-england",
       "slug": "england",
       "type": "scenario",
-      "title": "O caminho da Inglaterra: clássico com Portugal na largada",
-      "summary": "O trajeto inglês é equilibrado, mas abre com Portugal nos 16-avos (51,4%) e tem a Argentina logo depois.",
-      "body": "O caminho da **Inglaterra** é classificado como **equilibrado**, mas começa quente: **Portugal** é o adversário mais provável nos **16-avos** (**51,4%**), um clássico europeu logo na abertura do mata-mata.\n\nNa sequência, a **Argentina** aparece nas **oitavas** (**44%**) como um teste duríssimo, e a **Espanha** desponta na **semifinal** (**18,7%**). Para sonhar com a final, a Inglaterra precisaria superar uma sequência de potências — rota que mede bem o tamanho do desafio inglês.",
-      "generatedAt": "2026-06-24T15:12:30Z",
-      "inputHash": "357e71ace6aa3e0e"
+      "title": "O caminho da Inglaterra: gigantes já a partir das quartas",
+      "summary": "Início acessível, mas com Brasil, Argentina e França à frente na reta final.",
+      "body": "A **Inglaterra** tem um começo de mata-mata relativamente tranquilo, com **Congo (RD)** e **México** como prováveis adversários nas primeiras fases eliminatórias.\n\nO problema vem nas quartas: um possível confronto com o **Brasil**, seguido de **Argentina** na semifinal e **França** numa eventual decisão. É um chaveamento que concentra os gigantes na reta final — a Inglaterra terá de superar pelo menos dois deles para chegar ao título.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "ad128933035b8485"
     },
     {
       "id": "a-scenario-netherlands",
       "slug": "netherlands",
       "type": "scenario",
-      "title": "O caminho da Holanda: duríssimo, com Alemanha logo de cara",
-      "summary": "Classificado como difícil, o trajeto holandês abre com a Alemanha nos 16-avos (63,5%) e segue com Espanha e Brasil.",
-      "body": "O trajeto projetado para a **Holanda** é dos mais duros — **caminho difícil**. A jornada começa com um clássico: a **Alemanha** é a rival mais provável nos **16-avos** (**63,5%**), confronto de peso já na primeira fase eliminatória.\n\nDepois, o nível só sobe: **Espanha nas oitavas** (**37%**), **Brasil nas quartas** (**19,3%**) e **Argentina na semifinal** (**12,3%**). A Holanda tem qualidade para ir longe, mas o sorteio reservou praticamente todas as potências em seu caminho.",
-      "generatedAt": "2026-06-24T15:12:30Z",
-      "inputHash": "a69cc9ab3cc4e5b6"
+      "title": "O caminho da Holanda: começo duro contra o Marrocos",
+      "summary": "Caminho difícil já nas 16-avos, com Marrocos, França e Espanha pela frente.",
+      "body": "A **Holanda** tirou um chaveamento exigente desde cedo. O provável adversário das 16-avos é o **Marrocos**, um dos azarões mais perigosos do torneio — um teste duro logo na estreia do mata-mata.\n\nO percurso segue pesado: **Canadá** nas oitavas e, depois, **França** e **Espanha**, dois gigantes que aparecem nas quartas e na semifinal. É um caminho difícil, que cobra alto nível da seleção laranja desde o primeiro jogo eliminatório.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "5493208210e0a9ae"
     },
     {
       "id": "a-scenario-portugal",
       "slug": "portugal",
       "type": "scenario",
-      "title": "O caminho de Portugal: clássico inglês e Argentina à frente",
-      "summary": "O trajeto português é difícil: abre com Inglaterra nos 16-avos (51,4%) e pode ter a Argentina nas oitavas.",
-      "body": "O caminho de **Portugal** no mata-mata é avaliado como **difícil**, e a largada explica por quê: a **Inglaterra** é a adversária mais provável nos **16-avos** (**51,4%**), um clássico europeu em pé de igualdade.\n\nNa sequência, a **Argentina** aparece nas **oitavas** (**27,7%**) e a **Espanha** ronda as fases finais (**13,4%** na semifinal). Embalado pela goleada na fase de grupos, Portugal tem moral para encarar a rota — mas precisará bater gigantes desde o primeiro jogo eliminatório.",
-      "generatedAt": "2026-06-24T15:12:30Z",
-      "inputHash": "ee0204bd43880971"
+      "title": "O caminho de Portugal: clássico ibérico logo nas oitavas",
+      "summary": "Caminho difícil: a Espanha aparece já nas oitavas, com Argentina e França na sequência.",
+      "body": "**Portugal** tirou um dos caminhos mais ingratos. Depois de um provável duelo com **Gana** nas 16-avos, o clássico ibérico com a **Espanha** surge já nas oitavas — um obstáculo de peso logo no início do mata-mata.\n\nNa sequência, o roteiro não alivia: **Argentina** nas quartas e **França** na semifinal. É um chaveamento difícil, que exige de Portugal superar potências em sequência para sonhar com a decisão.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "5c3a00a2645fc10b"
     },
     {
       "id": "a-scenario-germany",
       "slug": "germany",
       "type": "scenario",
-      "title": "O caminho da Alemanha: clássico holandês e Espanha em seguida",
-      "summary": "O trajeto alemão é difícil: Holanda nos 16-avos (63,5%) e, muito provavelmente, a Espanha nas oitavas (60,1%).",
-      "body": "O caminho da **Alemanha** é classificado como **difícil**, e os números confirmam. Começa com o clássico contra a **Holanda nos 16-avos** (**63,5%**) e, logo depois, um dos confrontos mais prováveis do mata-mata: a **Espanha nas oitavas** (**60,1%**).\n\nMais à frente, **Brasil nas quartas** (**28,1%**) e **Argentina na semifinal** (**24,5%**) completam um percurso de respeito. A Alemanha vem embalada da fase de grupos, mas terá de superar potências em sequência praticamente desde o início.",
-      "generatedAt": "2026-06-24T15:12:30Z",
-      "inputHash": "f123a61185ae4109"
+      "title": "O caminho da Alemanha: a França como obstáculo precoce",
+      "summary": "Caminho equilibrado, mas com a França provável já nas oitavas e Espanha na semifinal.",
+      "body": "A **Alemanha** tem um caminho equilibrado, com o **Paraguai** como provável adversário das 16-avos. A dificuldade aparece cedo: a **França** desponta como obstáculo já nas oitavas, num confronto entre potências.\n\nPassando por ele, o roteiro reserva **Marrocos** nas quartas e **Espanha** na semifinal, antes de uma eventual final com a **Argentina**. É um percurso que cobra a melhor versão alemã desde as primeiras eliminatórias.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "b73f5e2dc7c90eab"
     },
     {
       "id": "a-scenario-belgium",
       "slug": "belgium",
       "type": "scenario",
-      "title": "O caminho da Bélgica: dos mais amigáveis entre os candidatos",
-      "summary": "Classificado como tranquilo, o trajeto belga evita os gigantes até o fim: Cabo Verde e Holanda nas primeiras fases.",
-      "body": "O caminho projetado para a **Bélgica** é um dos mais favoráveis entre as candidatas — **relativamente tranquilo**. A jornada provável começa com **Cabo Verde nos 16-avos** (**34,7%**) e segue com a **Holanda nas oitavas** (**23,4%**).\n\nNas fases seguintes, **Marrocos nas quartas** (**19,8%**) e **Noruega na semifinal** (**9,1%**) são adversários batíveis, antes de uma possível final contra a **Espanha** (**15,7%**). É a rota que ajuda a explicar por que a Bélgica, mesmo sem brilhar, mantém boas chances de ir longe.",
-      "generatedAt": "2026-06-24T15:12:30Z",
-      "inputHash": "5ba30d353ea67c3a"
+      "title": "O caminho da Bélgica: a Argentina logo nas oitavas",
+      "summary": "Caminho com obstáculo precoce: a Argentina aparece já nas oitavas, e o Brasil na semifinal.",
+      "body": "A **Bélgica** tirou um chaveamento que cobra cedo. Depois de um provável duelo com a **Austrália** nas 16-avos, a **Argentina** surge já nas oitavas — um obstáculo de primeira grandeza logo no início do mata-mata.\n\nCaso supere a favorita, o roteiro ainda reserva **Suíça** e um possível **Brasil** na semifinal. É um caminho que exige da Bélgica superar os maiores favoritos em sequência para chegar longe.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "b9f0221446ec13c8"
     },
     {
       "id": "a-scenario-morocco",
       "slug": "morocco",
       "type": "scenario",
-      "title": "O caminho do Marrocos: rota viável para o azarão da vez",
-      "summary": "Classificado como tranquilo, o trajeto marroquino tem Austrália e Suíça no início, evitando os gigantes cedo.",
-      "body": "O caminho do **Marrocos** é avaliado como **relativamente tranquilo**, reforçando o status de azarão mais credenciado do torneio. A jornada provável abre com **Austrália nos 16-avos** (**43%**) e **Suíça nas oitavas** (**29,1%**) — adversários ao alcance.\n\nO nível sobe nas fases finais: **Bélgica nas quartas** (**17,1%**) e **Portugal na semifinal** (**9,9%**), antes de uma possível final contra a **Argentina** (**13,2%**). É um percurso que dá ao Marrocos a chance real de repetir, ou superar, suas melhores campanhas.",
-      "generatedAt": "2026-06-24T15:12:30Z",
-      "inputHash": "88c697c3df6860f7"
+      "title": "O caminho do Marrocos: duelo de peso já nas 16-avos",
+      "summary": "Caminho difícil: Holanda logo na estreia do mata-mata, com França e Espanha na sequência.",
+      "body": "O **Marrocos** tirou um chaveamento duro à altura de seu status de azarão perigoso. O provável adversário das 16-avos é a **Holanda**, um duelo de peso logo na estreia do mata-mata.\n\nO percurso segue exigente: **Canadá** nas oitavas e, depois, **França** e **Espanha**, dois gigantes nas quartas e na semifinal. É um caminho difícil, mas o Marrocos já mostrou que pode incomodar qualquer adversário na fase eliminatória.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "8207fb29407944cc"
     },
     {
       "id": "a-scenario-colombia",
       "slug": "colombia",
       "type": "scenario",
-      "title": "O caminho da Colômbia: Inglaterra cedo, mas rota acessível",
-      "summary": "Classificado como tranquilo, o trajeto colombiano abre com a Inglaterra nos 16-avos (39,2%), mas alivia depois.",
-      "body": "O caminho da **Colômbia** é classificado como **relativamente tranquilo**, embora comece com um teste duro: a **Inglaterra** é a adversária mais provável nos **16-avos** (**39,2%**).\n\nSuperado esse obstáculo, a rota alivia: **Noruega nas oitavas** (**21,6%**) e **Suécia nas quartas** (**6,5%**) são adversários batíveis. A **Espanha** só aparece nas fases finais (**11,5%** na semifinal). É um trajeto que dá à Colômbia a chance de surpreender, desde que passe pelo primeiro grande teste.",
-      "generatedAt": "2026-06-24T15:12:30Z",
-      "inputHash": "457bf2bd53fe5bb6"
+      "title": "O caminho da Colômbia: a Argentina como barreira nas quartas",
+      "summary": "Caminho equilibrado, com Gana e Suíça antes de um provável obstáculo argentino.",
+      "body": "A **Colômbia** tem um caminho equilibrado para uma seleção que surpreende. Os prováveis adversários iniciais — **Gana** e **Suíça** — estão ao alcance dos colombianos, que vêm embalados pela boa fase de grupos.\n\nA barreira aparece nas quartas: a **Argentina**, seguida da **França** numa possível semifinal. É um percurso que dá à Colômbia chances reais de avançar até as quartas, quando enfrentaria os gigantes do torneio.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "819d6f8fc94800f1"
     },
     {
       "id": "a-scenario-japan",
@@ -1370,6 +1370,36 @@
       "body": "Em jogo movimentado, o **Marrocos** bateu o **Haiti por 4 a 2** e seguiu firme no **Grupo C**. A vitória manteve a seleção africana com a classificação assegurada (**100%**) e em alta nas projeções de título (**2,5%**), confirmando o status de azarão perigoso.\n\nO **Haiti** se despede da primeira fase sem chances de avançar (**0%**): mesmo marcando dois gols, a seleção caribenha não conseguiu segurar o ímpeto marroquino.",
       "generatedAt": "2026-06-25T02:28:00Z",
       "inputHash": "724278cf6261eb7d"
+    },
+    {
+      "id": "a-scenario-united-states",
+      "slug": "united-states",
+      "type": "scenario",
+      "title": "O caminho dos Estados Unidos: janela aberta até as quartas",
+      "summary": "Caminho acessível no início, mas com Espanha, França e Argentina à frente na reta final.",
+      "body": "Os **Estados Unidos** tiraram um começo de mata-mata acessível. Os prováveis adversários das primeiras fases — **Bósnia e Herzegovina** e **Egito** — estão ao alcance do anfitrião, que pode sonhar com uma boa campanha em casa.\n\nO degrau aparece nas quartas: a **Espanha**, seguida de **França** na semifinal e **Argentina** numa eventual decisão. É um caminho relativamente tranquilo até as quartas, quando o torneio fica realmente difícil para a seleção da casa.",
+      "generatedAt": "2026-06-25T11:32:35Z",
+      "inputHash": "6e58a29e72e6a52f"
+    },
+    {
+      "id": "a-recap-czechia-vs-mexico",
+      "slug": "czechia-vs-mexico",
+      "type": "recap",
+      "title": "México goleia a Tchéquia e fecha o grupo com 100%",
+      "summary": "Vitória por 3 a 0 confirma o México líder absoluto do Grupo A; a Tchéquia se despede sem chances.",
+      "body": "O **México** encerrou a fase de grupos em grande estilo: goleou a **Tchéquia por 3 a 0** e fechou o **Grupo A** com aproveitamento perfeito (**9 pontos**). A vitória consolidou a liderança (**100%**) e manteve o anfitrião vivo na disputa maior, com **2,3%** de título.\n\nPara a **Tchéquia**, o revés selou a eliminação (**0%**). A seleção europeia não conseguiu reagir e se despede da Copa na primeira fase, com apenas um ponto somado.",
+      "generatedAt": "2026-06-25T11:38:08Z",
+      "inputHash": "10a9cb47e07072fb"
+    },
+    {
+      "id": "a-recap-south-africa-vs-south-korea",
+      "slug": "south-africa-vs-south-korea",
+      "type": "recap",
+      "title": "África do Sul vence a Coreia e garante vaga surpreendente",
+      "summary": "Triunfo por 1 a 0 classifica a África do Sul (100%) e empurra a Coreia do Sul para a repescagem dos terceiros.",
+      "body": "Num confronto direto pela vaga, a **África do Sul** superou a **Coreia do Sul por 1 a 0** e completou uma classificação surpreendente no **Grupo A**. O resultado garantiu a seleção sul-africana na próxima fase (**100%**), num desfecho que parecia improvável dias antes.\n\nA **Coreia do Sul** caiu para o terceiro lugar, mas segue viva: com **93,2%** de chance de avançar como um dos melhores terceiros, a seleção asiática agora torce pelos resultados dos outros grupos.",
+      "generatedAt": "2026-06-25T11:38:08Z",
+      "inputHash": "59a7a42b973026d0"
     }
   ]
 }
