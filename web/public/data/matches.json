@@ -653,9 +653,11 @@
     "stage": "group",
     "homeId": "t-ecu",
     "awayId": "t-ger",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-25T20:00:00Z",
-    "group": "e"
+    "group": "e",
+    "homeScore": 2,
+    "awayScore": 1
   },
   {
     "id": "m-537356",
@@ -663,9 +665,11 @@
     "stage": "group",
     "homeId": "t-cuw",
     "awayId": "t-civ",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-25T20:00:00Z",
-    "group": "e"
+    "group": "e",
+    "homeScore": 0,
+    "awayScore": 2
   },
   {
     "id": "m-537361",
@@ -673,9 +677,11 @@
     "stage": "group",
     "homeId": "t-tun",
     "awayId": "t-ned",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-25T23:00:00Z",
-    "group": "f"
+    "group": "f",
+    "homeScore": 1,
+    "awayScore": 3
   },
   {
     "id": "m-537362",
@@ -683,9 +689,11 @@
     "stage": "group",
     "homeId": "t-jpn",
     "awayId": "t-swe",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-25T23:00:00Z",
-    "group": "f"
+    "group": "f",
+    "homeScore": 1,
+    "awayScore": 1
   },
   {
     "id": "m-537349",
@@ -693,9 +701,11 @@
     "stage": "group",
     "homeId": "t-tur",
     "awayId": "t-usa",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-26T02:00:00Z",
-    "group": "d"
+    "group": "d",
+    "homeScore": 3,
+    "awayScore": 2
   },
   {
     "id": "m-537350",
@@ -703,9 +713,11 @@
     "stage": "group",
     "homeId": "t-par",
     "awayId": "t-aus",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-26T02:00:00Z",
-    "group": "d"
+    "group": "d",
+    "homeScore": 0,
+    "awayScore": 0
   },
   {
     "id": "m-537395",
@@ -826,5 +838,41 @@
     "status": "scheduled",
     "kickoff": "2026-06-28T02:00:00Z",
     "group": "j"
+  },
+  {
+    "id": "m-537417",
+    "slug": "south-africa-vs-canada",
+    "stage": "round_of_32",
+    "homeId": "t-rsa",
+    "awayId": "t-can",
+    "status": "scheduled",
+    "kickoff": "2026-06-28T19:00:00Z"
+  },
+  {
+    "id": "m-537423",
+    "slug": "brazil-vs-japan",
+    "stage": "round_of_32",
+    "homeId": "t-bra",
+    "awayId": "t-jpn",
+    "status": "scheduled",
+    "kickoff": "2026-06-29T17:00:00Z"
+  },
+  {
+    "id": "m-537418",
+    "slug": "netherlands-vs-morocco",
+    "stage": "round_of_32",
+    "homeId": "t-ned",
+    "awayId": "t-mar",
+    "status": "scheduled",
+    "kickoff": "2026-06-30T01:00:00Z"
+  },
+  {
+    "id": "m-537421",
+    "slug": "united-states-vs-bosnia-herzegovina",
+    "stage": "round_of_32",
+    "homeId": "t-usa",
+    "awayId": "t-bih",
+    "status": "scheduled",
+    "kickoff": "2026-07-02T00:00:00Z"
   }
 ]
