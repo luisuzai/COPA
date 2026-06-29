@@ -8,7 +8,7 @@
     "flag": "🏳️",
     "confederation": "CONMEBOL",
     "group": "h",
-    "elo": 1864.7,
+    "elo": 1853.8,
     "eloBase": 1895.0
   },
   {
@@ -32,7 +32,7 @@
     "flag": "🇪🇸",
     "confederation": "UEFA",
     "group": "h",
-    "elo": 2085.9,
+    "elo": 2096.8,
     "eloBase": 2100.0
   },
   {
@@ -56,7 +56,7 @@
     "flag": "🇦🇷",
     "confederation": "CONMEBOL",
     "group": "j",
-    "elo": 2110.4,
+    "elo": 2114.5,
     "eloBase": 2085.0
   },
   {
@@ -68,7 +68,7 @@
     "flag": "🏳️",
     "confederation": "CAF",
     "group": "l",
-    "elo": 1749.2,
+    "elo": 1733.5,
     "eloBase": 1710.0
   },
   {
@@ -80,7 +80,7 @@
     "flag": "🇧🇷",
     "confederation": "CONMEBOL",
     "group": "c",
-    "elo": 2048.3,
+    "elo": 2061.2,
     "eloBase": 2040.0
   },
   {
@@ -92,7 +92,7 @@
     "flag": "🏳️",
     "confederation": "UEFA",
     "group": "k",
-    "elo": 1991.4,
+    "elo": 1985.4,
     "eloBase": 1995.0
   },
   {
@@ -104,7 +104,7 @@
     "flag": "🇯🇵",
     "confederation": "AFC",
     "group": "f",
-    "elo": 1865.1,
+    "elo": 1852.2,
     "eloBase": 1835.0
   },
   {
@@ -128,7 +128,7 @@
     "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
     "confederation": "UEFA",
     "group": "l",
-    "elo": 2022.7,
+    "elo": 2029.8,
     "eloBase": 2015.0
   },
   {
@@ -164,7 +164,7 @@
     "flag": "🇫🇷",
     "confederation": "UEFA",
     "group": "i",
-    "elo": 2090.1,
+    "elo": 2107.3,
     "eloBase": 2070.0
   },
   {
@@ -176,7 +176,7 @@
     "flag": "🏳️",
     "confederation": "CAF",
     "group": "a",
-    "elo": 1688.4,
+    "elo": 1668.5,
     "eloBase": 1670.0
   },
   {
@@ -188,7 +188,7 @@
     "flag": "🏳️",
     "confederation": "CAF",
     "group": "j",
-    "elo": 1769.7,
+    "elo": 1773.2,
     "eloBase": 1765.0
   },
   {
@@ -212,7 +212,7 @@
     "flag": "🏳️",
     "confederation": "OFC",
     "group": "g",
-    "elo": 1606.2,
+    "elo": 1593.0,
     "eloBase": 1620.0
   },
   {
@@ -272,7 +272,7 @@
     "flag": "🏳️",
     "confederation": "UEFA",
     "group": "l",
-    "elo": 1884.7,
+    "elo": 1900.4,
     "eloBase": 1900.0
   },
   {
@@ -284,7 +284,7 @@
     "flag": "🏳️",
     "confederation": "AFC",
     "group": "h",
-    "elo": 1657.2,
+    "elo": 1656.9,
     "eloBase": 1650.0
   },
   {
@@ -320,7 +320,7 @@
     "flag": "🏳️",
     "confederation": "CAF",
     "group": "i",
-    "elo": 1777.5,
+    "elo": 1807.0,
     "eloBase": 1815.0
   },
   {
@@ -332,7 +332,7 @@
     "flag": "🏳️",
     "confederation": "UEFA",
     "group": "g",
-    "elo": 1920.5,
+    "elo": 1933.7,
     "eloBase": 1945.0
   },
   {
@@ -356,7 +356,7 @@
     "flag": "🏳️",
     "confederation": "UEFA",
     "group": "j",
-    "elo": 1818.4,
+    "elo": 1814.9,
     "eloBase": 1810.0
   },
   {
@@ -368,7 +368,7 @@
     "flag": "🏳️",
     "confederation": "CONMEBOL",
     "group": "k",
-    "elo": 1906.4,
+    "elo": 1912.3,
     "eloBase": 1875.0
   },
   {
@@ -380,7 +380,7 @@
     "flag": "🏳️",
     "confederation": "CAF",
     "group": "g",
-    "elo": 1790.8,
+    "elo": 1788.8,
     "eloBase": 1755.0
   },
   {
@@ -392,7 +392,7 @@
     "flag": "🏳️",
     "confederation": "CONCACAF",
     "group": "b",
-    "elo": 1760.8,
+    "elo": 1780.6,
     "eloBase": 1740.0
   },
   {
@@ -416,7 +416,7 @@
     "flag": "🏳️",
     "confederation": "AFC",
     "group": "g",
-    "elo": 1762.5,
+    "elo": 1764.5,
     "eloBase": 1760.0
   },
   {
@@ -440,7 +440,7 @@
     "flag": "🏳️",
     "confederation": "CONCACAF",
     "group": "l",
-    "elo": 1628.3,
+    "elo": 1621.3,
     "eloBase": 1660.0
   },
   {
@@ -452,7 +452,7 @@
     "flag": "🏳️",
     "confederation": "CAF",
     "group": "h",
-    "elo": 1652.2,
+    "elo": 1652.6,
     "eloBase": 1615.0
   },
   {
@@ -464,7 +464,7 @@
     "flag": "🏳️",
     "confederation": "CAF",
     "group": "k",
-    "elo": 1703.9,
+    "elo": 1735.0,
     "eloBase": 1700.0
   },
   {
@@ -500,7 +500,7 @@
     "flag": "🏳️",
     "confederation": "AFC",
     "group": "j",
-    "elo": 1616.5,
+    "elo": 1612.4,
     "eloBase": 1655.0
   },
   {
@@ -512,7 +512,7 @@
     "flag": "🏳️",
     "confederation": "AFC",
     "group": "i",
-    "elo": 1626.4,
+    "elo": 1596.9,
     "eloBase": 1660.0
   },
   {
@@ -524,7 +524,7 @@
     "flag": "🏳️",
     "confederation": "AFC",
     "group": "k",
-    "elo": 1643.4,
+    "elo": 1612.3,
     "eloBase": 1675.0
   },
   {
@@ -548,7 +548,7 @@
     "flag": "🏳️",
     "confederation": "UEFA",
     "group": "i",
-    "elo": 1846.0,
+    "elo": 1828.8,
     "eloBase": 1795.0
   },
   {

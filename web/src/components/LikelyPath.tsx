@@ -20,7 +20,7 @@ export function LikelyPath({
   if (stages.length === 0) {
     return (
       <p className="text-sm text-muted">
-        Improvável de se classificar ao mata-mata no cenário atual.
+        Não se classificou ao mata-mata.
       </p>
     );
   }

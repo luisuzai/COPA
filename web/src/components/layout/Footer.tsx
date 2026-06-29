@@ -6,7 +6,7 @@ import { formatDate } from "@/lib/utils";
 
 const NAV = [
   { href: "/calendar/", label: "Calendário" },
-  { href: "/groups/", label: "Grupos" },
+  { href: "/groups/", label: "Chaveamento" },
   { href: "/rankings/title/", label: "Ranking de título" },
   { href: "/compare/", label: "Comparador" },
   { href: "/simulator/", label: "Simulador" },

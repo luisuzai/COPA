@@ -3,88 +3,98 @@
 import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
+import { Bracket, type BracketGameView } from "@/components/Bracket";
 import { Flag } from "@/components/Flag";
-import { LikelyPath } from "@/components/LikelyPath";
+import { BRACKET, KO_MATCHES, advanceProbability } from "@/lib/bracket";
+import {
+  childGames,
+  mapRoundOf32,
+  realWinners,
+  resolveBracket,
+  type KnockoutMapping,
+} from "@/lib/knockout";
 import { simulateScenarios } from "@/lib/scenarios";
-import type { Match, MatchPrediction, Predictions, Team } from "@/lib/types";
-import { cn, withBasePath } from "@/lib/utils";
+import type { Match, Team } from "@/lib/types";
+import { cn, pct, withBasePath } from "@/lib/utils";
 
-type Outcome = "home" | "draw" | "away";
-
-interface Row {
-  team: Team;
-  played: number;
-  gf: number;
-  ga: number;
-  gd: number;
-  points: number;
-}
+/** Vencedores forçados (palpites do usuário): número do jogo → id da seleção. */
+type Picks = Map<number, string>;
 
 /**
- * Classificação recalculada a partir de jogos finalizados + palpites do usuário.
- *
- * Mesma lógica e mesmos critérios de desempate de `getStandings` (lib/data.ts),
- * para que a tabela CONVERSE com as páginas de grupo:
- *   pontos → saldo de gols → gols pró.
- * Jogos sem palpite simplesmente não contam (a tabela começa igual à real).
+ * Resolve a chave pra frente a partir dos resultados reais + palpites, PODANDO
+ * em cascata qualquer palpite que deixou de ser válido (ex.: o usuário trocou o
+ * vencedor de um jogo anterior, e o palpite seguinte apontava para quem caiu).
+ * Retorna os palpites limpos e o vencedor de cada jogo.
  */
-function computeStandings(
-  teams: Team[],
-  matches: Match[],
-  picks: Record<string, Outcome>,
-): Row[] {
-  const rows = new Map<string, Row>(
-    teams.map((t) => [t.id, { team: t, played: 0, gf: 0, ga: 0, gd: 0, points: 0 }]),
-  );
+function forwardResolve(
+  mapping: KnockoutMapping,
+  real: Map<number, string>,
+  picks: Picks,
+): { cleaned: Picks; winner: Map<number, string> } {
+  const cleaned: Picks = new Map(picks);
+  const winner = new Map<number, string>();
 
-  for (const m of matches) {
-    const home = rows.get(m.homeId);
-    const away = rows.get(m.awayId);
-    if (!home || !away) continue;
-
-    if (m.status === "finished" && m.homeScore != null && m.awayScore != null) {
-      home.played++; away.played++;
-      home.gf += m.homeScore; home.ga += m.awayScore;
-      away.gf += m.awayScore; away.ga += m.homeScore;
-      if (m.homeScore > m.awayScore) home.points += 3;
-      else if (m.homeScore < m.awayScore) away.points += 3;
-      else { home.points++; away.points++; }
-    } else if (picks[m.slug]) {
-      // Palpite só tem vencedor/empate (sem placar) → soma pontos, não gols.
-      home.played++; away.played++;
-      const o = picks[m.slug];
-      if (o === "home") home.points += 3;
-      else if (o === "away") away.points += 3;
-      else { home.points++; away.points++; }
+  for (const num of KO_MATCHES) {
+    const stage = BRACKET[num].stage;
+    let a: string | undefined;
+    let b: string | undefined;
+    if (stage === "round_of_32") {
+      const m = mapping.matchByGame.get(num);
+      a = m?.homeId;
+      b = m?.awayId;
+    } else {
+      const c = childGames(num)!;
+      a = winner.get(c[0]);
+      b = winner.get(c[1]);
     }
+
+    if (real.has(num)) {
+      winner.set(num, real.get(num)!);
+      continue;
+    }
+    const p = cleaned.get(num);
+    if (p != null && (p === a || p === b)) winner.set(num, p);
+    else if (p != null) cleaned.delete(num); // palpite virou inválido → some
   }
 
-  for (const r of rows.values()) r.gd = r.gf - r.ga;
-  return [...rows.values()].sort(
-    (a, b) => b.points - a.points || b.gd - a.gd || b.gf - a.gf,
-  );
+  return { cleaned, winner };
 }
 
-/**
- * Resultado MAIS PROVÁVEL do jogo segundo o modelo (argmax da distribuição).
- *
- * Antes era um sorteio pela distribuição, mas isso fazia ~14% dos favoritos
- * claros aparecerem perdendo no "palpite do modelo" — contradizendo as
- * previsões mostradas no resto do site. Usar o resultado mais provável mantém
- * o simulador coerente: o favorito de cada jogo vence.
- */
-function likeliestOutcome(p: MatchPrediction): Outcome {
-  if (p.homeWin >= p.draw && p.homeWin >= p.awayWin) return "home";
-  if (p.awayWin >= p.draw && p.awayWin >= p.homeWin) return "away";
-  return "draw";
+/** Preenche todos os jogos em aberto com o favorito do modelo (forward). */
+function fillFavorites(
+  mapping: KnockoutMapping,
+  real: Map<number, string>,
+  eloById: Map<string, number>,
+): Picks {
+  const picks: Picks = new Map();
+  const winner = new Map<number, string>(real);
+
+  for (const num of KO_MATCHES) {
+    if (real.has(num)) continue;
+    const stage = BRACKET[num].stage;
+    let a: string | undefined;
+    let b: string | undefined;
+    if (stage === "round_of_32") {
+      const m = mapping.matchByGame.get(num);
+      a = m?.homeId;
+      b = m?.awayId;
+    } else {
+      const c = childGames(num)!;
+      a = winner.get(c[0]);
+      b = winner.get(c[1]);
+    }
+    if (a == null || b == null) continue;
+    const fav = advanceProbability(eloById.get(a)!, eloById.get(b)!) >= 0.5 ? a : b;
+    picks.set(num, fav);
+    winner.set(num, fav);
+  }
+  return picks;
 }
 
 export default function SimulatorPage() {
   const [teams, setTeams] = useState<Team[]>([]);
   const [matches, setMatches] = useState<Match[]>([]);
-  const [preds, setPreds] = useState<Record<string, MatchPrediction>>({});
-  // Começa VAZIO → tabela inicial = classificação real (igual às páginas de grupo).
-  const [picks, setPicks] = useState<Record<string, Outcome>>({});
+  const [picks, setPicks] = useState<Picks>(new Map());
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
@@ -92,86 +102,98 @@ export default function SimulatorPage() {
     Promise.all([
       fetch(withBasePath("/data/teams.json")).then((r) => r.json()),
       fetch(withBasePath("/data/matches.json")).then((r) => r.json()),
-      fetch(withBasePath("/data/predictions.json")).then((r) => r.json()),
     ])
-      .then(([t, m, p]: [Team[], Match[], Predictions]) => {
-        const prMap: Record<string, MatchPrediction> = {};
-        p.matches.forEach((x) => (prMap[x.matchSlug] = x));
-        setTeams(t); setMatches(m); setPreds(prMap);
+      .then(([t, m]: [Team[], Match[]]) => {
+        setTeams(t);
+        setMatches(m);
         setLoading(false);
       })
-      .catch(() => { setError(true); setLoading(false); });
+      .catch(() => {
+        setError(true);
+        setLoading(false);
+      });
   }, []);
 
   const teamById = useMemo(() => new Map(teams.map((t) => [t.id, t])), [teams]);
-  const groups = useMemo(
-    () => [...new Set(teams.map((t) => t.group))].sort(),
-    [teams],
+  const eloById = useMemo(() => new Map(teams.map((t) => [t.id, t.elo])), [teams]);
+
+  const mapping = useMemo(
+    () => (teams.length ? mapRoundOf32(teams, matches) : null),
+    [teams, matches],
+  );
+  const real = useMemo(
+    () => (mapping ? realWinners(mapping) : new Map<number, string>()),
+    [mapping],
+  );
+  const realSet = useMemo(() => new Set(real.keys()), [real]);
+
+  const { winner } = useMemo(
+    () =>
+      mapping
+        ? forwardResolve(mapping, real, picks)
+        : { cleaned: new Map(), winner: new Map<number, string>() },
+    [mapping, real, picks],
   );
 
-  /** Jogos de grupo ainda não disputados (os que o usuário pode projetar). */
-  const scheduledGroup = useMemo(
-    () => matches.filter((m) => m.stage === "group" && m.status !== "finished"),
-    [matches],
-  );
+  /** Visão do quadro: pares resolvidos + jogos abertos marcados como clicáveis. */
+  const games: BracketGameView[] = useMemo(() => {
+    if (!mapping) return [];
+    const slots = resolveBracket(mapping, winner);
+    return [...slots.values()].map((s) => {
+      const m = mapping.matchByGame.get(s.game);
+      return {
+        game: s.game,
+        stage: s.stage,
+        aId: s.a,
+        bId: s.b,
+        winnerId: s.winner,
+        slug: m?.slug,
+        status: m?.status,
+        homeScore: m?.homeScore,
+        awayScore: m?.awayScore,
+        kickoff: m?.kickoff,
+        pickable: !realSet.has(s.game) && s.a != null && s.b != null,
+      };
+    });
+  }, [mapping, winner, realSet]);
 
-  /** Cenário do modelo: palpite sorteado para cada jogo que falta. */
-  const modelScenario = useMemo(() => {
-    const def: Record<string, Outcome> = {};
-    for (const m of scheduledGroup) {
-      const pr = preds[m.slug];
-      def[m.slug] = pr ? likeliestOutcome(pr) : "draw";
-    }
-    return def;
-  }, [scheduledGroup, preds]);
-
-  /** Classificação de cada grupo (recalculada com os palpites atuais). */
-  const standingsByGroup = useMemo(() => {
-    const map: Record<string, Row[]> = {};
-    for (const g of groups) {
-      const gt = teams.filter((t) => t.group === g);
-      const gm = matches.filter((m) => m.stage === "group" && m.group === g);
-      map[g] = computeStandings(gt, gm, picks);
-    }
-    return map;
-  }, [groups, teams, matches, picks]);
-
-  /**
-   * Os 8 melhores 3º colocados entre os 12 grupos também avançam (formato 2026:
-   * 32 de 48). Ranqueados por pontos → saldo → gols pró, como manda o regulamento.
-   * Sem isso, o simulador contradiz o modelo (um 3º forte avança na vida real).
-   */
-  const qualifiedThirds = useMemo(() => {
-    const thirds = groups
-      .map((g) => standingsByGroup[g]?.[2])
-      .filter((r): r is Row => Boolean(r));
-    const ranked = [...thirds].sort(
-      (a, b) => b.points - a.points || b.gd - a.gd || b.gf - a.gf,
-    );
-    return new Set(ranked.slice(0, 8).map((r) => r.team.id));
-  }, [standingsByGroup, groups]);
-
-  /**
-   * Cenários do mata-mata por simulação Monte Carlo sobre o chaveamento OFICIAL,
-   * reagindo aos palpites: jogos finalizados e palpites entram fixos, o resto é
-   * sorteado. Menos simulações que no build (custo de interatividade), mas estável
-   * (semente fixa) — recalcula só quando os palpites mudam.
-   */
+  /** Sua chance de título por seleção (Monte Carlo reagindo aos palpites). */
   const scenarios = useMemo(
     () =>
       teams.length
-        ? simulateScenarios(teams, matches, { picks, nSims: 3000, seed: 0x00c0_0a26 })
+        ? simulateScenarios(teams, matches, {
+            forcedWinners: picks,
+            nSims: 2000,
+            seed: 0x00c0_0a26,
+          })
         : new Map(),
     [teams, matches, picks],
   );
 
-  /** Seleção em foco no "Caminho até a final" (padrão: Brasil, se existir). */
-  const [focusTeam, setFocusTeam] = useState("t-bra");
-  const focusScenario = scenarios.get(focusTeam);
-  const focusTeamObj = teamById.get(focusTeam);
+  const titleChances = useMemo(
+    () =>
+      teams
+        .map((t) => ({ team: t, champion: scenarios.get(t.id)?.champion ?? 0 }))
+        .filter((x) => x.champion > 0)
+        .sort((a, b) => b.champion - a.champion)
+        .slice(0, 8),
+    [teams, scenarios],
+  );
 
-  const predictedCount = Object.keys(picks).length;
-  const remaining = scheduledGroup.length - predictedCount;
+  const championId = winner.get(104);
+  const champion = championId ? teamById.get(championId) : undefined;
+  const pickCount = picks.size;
+
+  const onPick = (game: number, teamId: string) => {
+    setPicks((prev) => {
+      if (!mapping) return prev;
+      const next = new Map(prev);
+      // Clicar de novo no mesmo vencedor desfaz o palpite.
+      if (next.get(game) === teamId) next.delete(game);
+      else next.set(game, teamId);
+      return forwardResolve(mapping, real, next).cleaned;
+    });
+  };
 
   if (error) {
     return (
@@ -193,11 +215,7 @@ export default function SimulatorPage() {
         <div className="h-3 w-24 animate-pulse rounded bg-surface-2" />
         <div className="mt-4 h-10 w-2/3 max-w-lg animate-pulse rounded bg-surface-2" />
         <div className="mt-4 h-4 w-full max-w-xl animate-pulse rounded bg-surface-2" />
-        <div className="mt-10 grid gap-6 lg:grid-cols-2">
-          {Array.from({ length: 4 }).map((_, i) => (
-            <div key={i} className="h-48 animate-pulse rounded-xl bg-surface" />
-          ))}
-        </div>
+        <div className="mt-10 h-72 animate-pulse rounded-xl bg-surface" />
         <span className="sr-only">Carregando simulador…</span>
       </div>
     );
@@ -207,264 +225,101 @@ export default function SimulatorPage() {
     <div className="container-content animate-fade-up py-12">
       <p className="text-xs uppercase tracking-eyebrow text-muted">Simulador</p>
       <h1 className="mt-3 max-w-2xl font-display text-3xl font-bold tracking-tight sm:text-5xl">
-        E se o resultado fosse outro?
+        Monte o seu mata-mata
       </h1>
       <p className="mt-4 max-w-xl text-muted">
-        A tabela começa exatamente como está hoje — só os jogos já disputados contam,
-        igual às páginas de grupo. Clique na bandeira de quem vence (ou em{" "}
-        <span className="text-foreground">Empate</span>) para projetar os jogos que faltam
-        e ver a classificação reagir. Tudo recalculado no seu navegador.
+        Clique no vencedor de cada jogo e a chave avança até a final. Os resultados
+        já decididos vêm travados. A cada palpite, a chance de título de cada
+        seleção é recalculada no seu navegador.
       </p>
 
       <div className="mt-5 flex flex-wrap items-center gap-3">
         <button
-          onClick={() => setPicks(modelScenario)}
+          onClick={() => mapping && setPicks(fillFavorites(mapping, real, eloById))}
           className="rounded-lg border border-accent/40 bg-accent/10 px-3 py-1.5 text-sm font-medium text-accent transition-colors hover:bg-accent/15"
         >
-          Preencher com o palpite do modelo
+          Preencher com o favorito do modelo
         </button>
-        {predictedCount > 0 && (
+        {pickCount > 0 && (
           <button
-            onClick={() => setPicks({})}
+            onClick={() => setPicks(new Map())}
             className="rounded-lg border border-border px-3 py-1.5 text-sm text-muted transition-colors hover:bg-surface-2 hover:text-foreground"
           >
             Limpar palpites
           </button>
         )}
         <p className="font-mono text-xs tabular-nums text-muted">
-          {predictedCount > 0
-            ? `${predictedCount} de ${scheduledGroup.length} jogos projetados · ${remaining} em aberto`
-            : `${scheduledGroup.length} jogos em aberto para projetar`}
+          {pickCount > 0 ? `${pickCount} jogo(s) projetado(s)` : "nenhum palpite ainda"}
         </p>
       </div>
 
-      <p className="mt-4 max-w-xl text-xs leading-relaxed text-muted">
-        Avançam os <span className="text-foreground">2 primeiros</span> de cada grupo (em
-        azul) mais os <span className="text-foreground">8 melhores 3º colocados</span> entre
-        os 12 grupos — 32 de 48 seleções.{" "}
-        <Link href="/methodology/" className="text-accent hover:text-accent-strong">
-          Como funciona →
-        </Link>
-      </p>
+      {/* Seu campeão */}
+      <div
+        className={cn(
+          "mt-6 flex items-center gap-3 rounded-2xl border p-4 transition-colors",
+          champion ? "border-accent/40 bg-accent/5" : "border-dashed border-border",
+        )}
+      >
+        {champion ? (
+          <>
+            <Flag team={champion} size="lg" />
+            <div>
+              <p className="text-xs uppercase tracking-wider text-muted">Seu campeão</p>
+              <p className="font-display text-xl font-bold tracking-tight">
+                {champion.name}
+              </p>
+            </div>
+          </>
+        ) : (
+          <p className="text-sm text-muted">
+            Preencha o quadro até a final para coroar o seu campeão.
+          </p>
+        )}
+      </div>
 
-      {/* Caminho até a final — chaveamento oficial 2026, reagindo aos palpites */}
-      <section className="mt-12 rounded-2xl border border-border bg-surface p-5 sm:p-6">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <h2 className="font-display text-xl font-semibold tracking-tight">
-              Caminho até a final
-            </h2>
-            <p className="mt-1 max-w-xl text-sm text-muted">
-              O adversário mais provável de cada fase no{" "}
-              <span className="text-foreground">chaveamento oficial</span> da Copa 2026,
-              a partir da classificação atual e dos seus palpites. Em cada confronto,
-              avança o favorito.
-            </p>
-          </div>
-          <label className="flex items-center gap-2 text-sm">
-            <span className="text-muted">Seleção</span>
-            <select
-              value={focusTeam}
-              onChange={(e) => setFocusTeam(e.target.value)}
-              className="rounded-lg border border-border bg-bg px-3 py-2 text-sm text-foreground transition-colors hover:border-accent/40 focus:border-accent focus:outline-none"
-            >
-              {[...teams]
-                .sort((a, b) => a.name.localeCompare(b.name, "pt-BR"))
-                .map((t) => (
-                  <option key={t.id} value={t.id}>
-                    {t.name}
-                  </option>
-                ))}
-            </select>
-          </label>
-        </div>
-
-        <div className="mt-6">
-          <div className="mb-4 flex items-center gap-2.5">
-            {focusTeamObj && <Flag team={focusTeamObj} />}
-            <span className="font-medium">{focusTeamObj?.name}</span>
-            {focusScenario && focusScenario.champion > 0 && (
-              <span className="font-mono text-xs tabular-nums text-muted">
-                · título {(focusScenario.champion * 100).toFixed(1)}%
-              </span>
-            )}
-          </div>
-          <LikelyPath stages={focusScenario?.stages ?? []} teamById={teamById} />
-        </div>
-
-        <p className="mt-5 text-xs leading-relaxed text-muted">
-          O cruzamento de 1º × 2º colocados é o oficial da FIFA. A vaga exata de cada
-          3º colocado é uma aproximação (a FIFA usa uma tabela fixa de combinações) e só
-          afeta as quartas em diante.{" "}
+      {/* Quadro interativo */}
+      <section className="mt-10">
+        <Bracket games={games} teams={teams} onPick={onPick} />
+        <p className="mt-4 max-w-2xl text-xs leading-relaxed text-muted">
+          A porcentagem é a chance do modelo para cada lado avançar — útil para ver
+          quando você está cravando uma zebra. Clique de novo no mesmo time para
+          desfazer.{" "}
           <Link href="/methodology/" className="text-accent hover:text-accent-strong">
-            Metodologia →
+            Como funciona →
           </Link>
         </p>
       </section>
 
-      <div className="mt-10 space-y-12">
-        {groups.map((g) => {
-          const groupMatches = matches.filter(
-            (m) => m.stage === "group" && m.group === g,
-          );
-          const standings = standingsByGroup[g] ?? [];
-          const scheduled = groupMatches.filter((m) => m.status !== "finished");
-
-          return (
-            <section key={g} className="grid gap-6 lg:grid-cols-2">
-              {/* Jogos editáveis */}
-              <div>
-                <h2 className="mb-3 font-display text-lg font-semibold tracking-tight">
-                  Grupo {g.toUpperCase()} · jogos
-                </h2>
-                <div className="space-y-2">
-                  {scheduled.map((m) => {
-                    const home = teamById.get(m.homeId);
-                    const away = teamById.get(m.awayId);
-                    if (!home || !away) return null;
-                    return (
-                      <div
-                        key={m.id}
-                        className="flex items-center gap-3 rounded-xl border border-border bg-surface px-3 py-2.5"
-                      >
-                        <span className="flex-1 truncate text-right text-sm">{home.name}</span>
-                        <Picker
-                          value={picks[m.slug]}
-                          home={home}
-                          away={away}
-                          onChange={(o) => setPicks((prev) => ({ ...prev, [m.slug]: o }))}
-                        />
-                        <span className="flex-1 truncate text-sm">{away.name}</span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              {/* Classificação resultante — mesmas colunas das páginas de grupo */}
-              <div>
-                <h2 className="mb-3 font-display text-lg font-semibold tracking-tight">
-                  Classificação
-                </h2>
-                <div className="overflow-hidden rounded-xl border border-border bg-surface">
-                  <div className="flex items-center gap-3 border-b border-border px-4 py-2.5 text-[11px] uppercase tracking-wider text-muted">
-                    <span className="w-5">#</span>
-                    <span className="flex-1">Seleção</span>
-                    <span className="hidden w-8 text-center sm:inline">J</span>
-                    <span className="hidden w-8 text-center sm:inline">SG</span>
-                    <span className="w-8 text-center">P</span>
-                  </div>
-                  {standings.map((row, i) => {
-                    const bestThird = i === 2 && qualifiedThirds.has(row.team.id);
-                    const advances = i < 2 || bestThird;
-                    return (
-                    <div
-                      key={row.team.id}
-                      className={cn(
-                        "flex items-center gap-3 border-b border-border/50 px-4 py-2.5 text-sm last:border-0",
-                        i < 2 && "bg-accent/5",
-                        bestThird && "bg-accent/[0.03]",
-                      )}
-                    >
-                      <span
-                        className={cn(
-                          "w-5 font-mono tabular-nums",
-                          advances ? "text-accent" : "text-muted",
-                        )}
-                      >
-                        {i + 1}
-                      </span>
-                      <span className="flex flex-1 items-center gap-2.5 truncate">
-                        <Flag team={row.team} size="sm" />
-                        <span className="truncate font-medium">{row.team.name}</span>
-                        {i < 2 && (
-                          <span className="hidden rounded bg-accent/10 px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide text-accent sm:inline">
-                            Classificado
-                          </span>
-                        )}
-                        {bestThird && (
-                          <span className="hidden rounded bg-accent/10 px-1.5 py-0.5 text-[10px] font-medium uppercase tracking-wide text-accent sm:inline">
-                            Melhor 3º
-                          </span>
-                        )}
-                      </span>
-                      <span className="hidden w-8 text-center font-mono tabular-nums text-muted sm:inline">
-                        {row.played}
-                      </span>
-                      <span className="hidden w-8 text-center font-mono tabular-nums text-muted sm:inline">
-                        {row.gd > 0 ? `+${row.gd}` : row.gd}
-                      </span>
-                      <span className="w-8 text-center font-mono font-semibold tabular-nums">
-                        {row.points}
-                      </span>
-                    </div>
-                    );
-                  })}
-                </div>
-              </div>
-            </section>
-          );
-        })}
-      </div>
-    </div>
-  );
-}
-
-function Picker({
-  value,
-  home,
-  away,
-  onChange,
-}: {
-  value: Outcome | undefined;
-  home: Team;
-  away: Team;
-  onChange: (o: Outcome) => void;
-}) {
-  const base =
-    "flex h-8 items-center justify-center rounded-md border transition-colors";
-  return (
-    <div className="flex shrink-0 items-center gap-1">
-      <button
-        type="button"
-        title={`${home.name} vence`}
-        aria-label={`${home.name} vence`}
-        onClick={() => onChange("home")}
-        className={cn(
-          base,
-          "w-9",
-          value === "home" ? "border-accent bg-accent/15" : "border-border hover:bg-surface-2",
-        )}
-      >
-        <Flag team={home} size="sm" />
-      </button>
-      <button
-        type="button"
-        title="Empate"
-        onClick={() => onChange("draw")}
-        className={cn(
-          base,
-          "px-2 text-xs font-medium",
-          value === "draw"
-            ? "border-accent bg-accent/15 text-accent"
-            : "border-border text-muted hover:bg-surface-2",
-        )}
-      >
-        Empate
-      </button>
-      <button
-        type="button"
-        title={`${away.name} vence`}
-        aria-label={`${away.name} vence`}
-        onClick={() => onChange("away")}
-        className={cn(
-          base,
-          "w-9",
-          value === "away" ? "border-accent bg-accent/15" : "border-border hover:bg-surface-2",
-        )}
-      >
-        <Flag team={away} size="sm" />
-      </button>
+      {/* Chance de título sob seus palpites */}
+      <section className="mt-14">
+        <h2 className="font-display text-xl font-semibold tracking-tight">
+          Chance de título
+        </h2>
+        <p className="mt-2 max-w-xl text-sm text-muted">
+          Considerando os jogos já decididos e os seus palpites, com o resto do
+          mata-mata simulado milhares de vezes.
+        </p>
+        <div className="mt-4 grid gap-2 sm:grid-cols-2">
+          {titleChances.map(({ team, champion: c }, i) => (
+            <div
+              key={team.id}
+              className={cn(
+                "flex items-center gap-3 rounded-xl border bg-surface px-3.5 py-3",
+                team.id === championId ? "border-accent/40" : "border-border",
+              )}
+            >
+              <span className="w-4 shrink-0 font-mono text-xs tabular-nums text-muted">
+                {i + 1}
+              </span>
+              <Flag team={team} size="sm" />
+              <span className="flex-1 truncate text-sm">{team.name}</span>
+              <span className="shrink-0 font-mono text-sm font-semibold tabular-nums text-accent">
+                {pct(c, 1)}
+              </span>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

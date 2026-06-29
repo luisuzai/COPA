@@ -44,7 +44,7 @@ export default async function GroupPage({
         <Breadcrumb
           items={[
             { label: "Início", href: "/" },
-            { label: "Grupos", href: "/groups/" },
+            { label: "Chaveamento", href: "/groups/" },
             { label: `Grupo ${groupId.toUpperCase()}` },
           ]}
         />

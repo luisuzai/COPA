@@ -725,9 +725,11 @@
     "stage": "group",
     "homeId": "t-nor",
     "awayId": "t-fra",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-26T19:00:00Z",
-    "group": "i"
+    "group": "i",
+    "homeScore": 1,
+    "awayScore": 4
   },
   {
     "id": "m-537396",
@@ -735,9 +737,11 @@
     "stage": "group",
     "homeId": "t-sen",
     "awayId": "t-irq",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-26T19:00:00Z",
-    "group": "i"
+    "group": "i",
+    "homeScore": 5,
+    "awayScore": 0
   },
   {
     "id": "m-537373",
@@ -745,9 +749,11 @@
     "stage": "group",
     "homeId": "t-uru",
     "awayId": "t-esp",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-27T00:00:00Z",
-    "group": "h"
+    "group": "h",
+    "homeScore": 0,
+    "awayScore": 1
   },
   {
     "id": "m-537374",
@@ -755,9 +761,11 @@
     "stage": "group",
     "homeId": "t-cpv",
     "awayId": "t-ksa",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-27T00:00:00Z",
-    "group": "h"
+    "group": "h",
+    "homeScore": 0,
+    "awayScore": 0
   },
   {
     "id": "m-537367",
@@ -765,9 +773,11 @@
     "stage": "group",
     "homeId": "t-nzl",
     "awayId": "t-bel",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-27T03:00:00Z",
-    "group": "g"
+    "group": "g",
+    "homeScore": 1,
+    "awayScore": 5
   },
   {
     "id": "m-537368",
@@ -775,9 +785,11 @@
     "stage": "group",
     "homeId": "t-egy",
     "awayId": "t-irn",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-27T03:00:00Z",
-    "group": "g"
+    "group": "g",
+    "homeScore": 1,
+    "awayScore": 1
   },
   {
     "id": "m-537413",
@@ -785,9 +797,11 @@
     "stage": "group",
     "homeId": "t-pan",
     "awayId": "t-eng",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-27T21:00:00Z",
-    "group": "l"
+    "group": "l",
+    "homeScore": 0,
+    "awayScore": 2
   },
   {
     "id": "m-537414",
@@ -795,9 +809,11 @@
     "stage": "group",
     "homeId": "t-cro",
     "awayId": "t-gha",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-27T21:00:00Z",
-    "group": "l"
+    "group": "l",
+    "homeScore": 2,
+    "awayScore": 1
   },
   {
     "id": "m-537407",
@@ -805,9 +821,11 @@
     "stage": "group",
     "homeId": "t-col",
     "awayId": "t-por",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-27T23:30:00Z",
-    "group": "k"
+    "group": "k",
+    "homeScore": 0,
+    "awayScore": 0
   },
   {
     "id": "m-537408",
@@ -815,9 +833,11 @@
     "stage": "group",
     "homeId": "t-cod",
     "awayId": "t-uzb",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-27T23:30:00Z",
-    "group": "k"
+    "group": "k",
+    "homeScore": 3,
+    "awayScore": 1
   },
   {
     "id": "m-537401",
@@ -825,9 +845,11 @@
     "stage": "group",
     "homeId": "t-jor",
     "awayId": "t-arg",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-28T02:00:00Z",
-    "group": "j"
+    "group": "j",
+    "homeScore": 1,
+    "awayScore": 3
   },
   {
     "id": "m-537402",
@@ -835,9 +857,11 @@
     "stage": "group",
     "homeId": "t-alg",
     "awayId": "t-aut",
-    "status": "scheduled",
+    "status": "finished",
     "kickoff": "2026-06-28T02:00:00Z",
-    "group": "j"
+    "group": "j",
+    "homeScore": 3,
+    "awayScore": 3
   },
   {
     "id": "m-537417",
@@ -845,8 +869,10 @@
     "stage": "round_of_32",
     "homeId": "t-rsa",
     "awayId": "t-can",
-    "status": "scheduled",
-    "kickoff": "2026-06-28T19:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-06-28T19:00:00Z",
+    "homeScore": 0,
+    "awayScore": 1
   },
   {
     "id": "m-537423",
@@ -854,8 +880,21 @@
     "stage": "round_of_32",
     "homeId": "t-bra",
     "awayId": "t-jpn",
-    "status": "scheduled",
-    "kickoff": "2026-06-29T17:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-06-29T17:00:00Z",
+    "homeScore": 2,
+    "awayScore": 1
+  },
+  {
+    "id": "m-537415",
+    "slug": "germany-vs-paraguay",
+    "stage": "round_of_32",
+    "homeId": "t-ger",
+    "awayId": "t-par",
+    "status": "live",
+    "kickoff": "2026-06-29T20:30:00Z",
+    "homeScore": 1,
+    "awayScore": 1
   },
   {
     "id": "m-537418",
@@ -867,6 +906,51 @@
     "kickoff": "2026-06-30T01:00:00Z"
   },
   {
+    "id": "m-537424",
+    "slug": "ivory-coast-vs-norway",
+    "stage": "round_of_32",
+    "homeId": "t-civ",
+    "awayId": "t-nor",
+    "status": "scheduled",
+    "kickoff": "2026-06-30T17:00:00Z"
+  },
+  {
+    "id": "m-537416",
+    "slug": "france-vs-sweden",
+    "stage": "round_of_32",
+    "homeId": "t-fra",
+    "awayId": "t-swe",
+    "status": "scheduled",
+    "kickoff": "2026-06-30T21:00:00Z"
+  },
+  {
+    "id": "m-537425",
+    "slug": "mexico-vs-ecuador",
+    "stage": "round_of_32",
+    "homeId": "t-mex",
+    "awayId": "t-ecu",
+    "status": "scheduled",
+    "kickoff": "2026-07-01T01:00:00Z"
+  },
+  {
+    "id": "m-537426",
+    "slug": "england-vs-congo-dr",
+    "stage": "round_of_32",
+    "homeId": "t-eng",
+    "awayId": "t-cod",
+    "status": "scheduled",
+    "kickoff": "2026-07-01T16:00:00Z"
+  },
+  {
+    "id": "m-537422",
+    "slug": "belgium-vs-senegal",
+    "stage": "round_of_32",
+    "homeId": "t-bel",
+    "awayId": "t-sen",
+    "status": "scheduled",
+    "kickoff": "2026-07-01T20:00:00Z"
+  },
+  {
     "id": "m-537421",
     "slug": "united-states-vs-bosnia-herzegovina",
     "stage": "round_of_32",
@@ -874,5 +958,59 @@
     "awayId": "t-bih",
     "status": "scheduled",
     "kickoff": "2026-07-02T00:00:00Z"
+  },
+  {
+    "id": "m-537420",
+    "slug": "spain-vs-austria",
+    "stage": "round_of_32",
+    "homeId": "t-esp",
+    "awayId": "t-aut",
+    "status": "scheduled",
+    "kickoff": "2026-07-02T19:00:00Z"
+  },
+  {
+    "id": "m-537419",
+    "slug": "portugal-vs-croatia",
+    "stage": "round_of_32",
+    "homeId": "t-por",
+    "awayId": "t-cro",
+    "status": "scheduled",
+    "kickoff": "2026-07-02T23:00:00Z"
+  },
+  {
+    "id": "m-537429",
+    "slug": "switzerland-vs-algeria",
+    "stage": "round_of_32",
+    "homeId": "t-sui",
+    "awayId": "t-alg",
+    "status": "scheduled",
+    "kickoff": "2026-07-03T03:00:00Z"
+  },
+  {
+    "id": "m-537428",
+    "slug": "australia-vs-egypt",
+    "stage": "round_of_32",
+    "homeId": "t-aus",
+    "awayId": "t-egy",
+    "status": "scheduled",
+    "kickoff": "2026-07-03T18:00:00Z"
+  },
+  {
+    "id": "m-537427",
+    "slug": "argentina-vs-cape-verde-islands",
+    "stage": "round_of_32",
+    "homeId": "t-arg",
+    "awayId": "t-cpv",
+    "status": "scheduled",
+    "kickoff": "2026-07-03T22:00:00Z"
+  },
+  {
+    "id": "m-537430",
+    "slug": "colombia-vs-ghana",
+    "stage": "round_of_32",
+    "homeId": "t-col",
+    "awayId": "t-gha",
+    "status": "scheduled",
+    "kickoff": "2026-07-04T01:30:00Z"
   }
 ]

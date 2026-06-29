@@ -1,15 +1,15 @@
 /**
- * Cenários por simulação Monte Carlo sobre o chaveamento OFICIAL da Copa 2026.
+ * Cenários por simulação Monte Carlo sobre o chaveamento REAL da Copa 2026.
  *
- * Roda o torneio N vezes a partir da situação atual (jogos finalizados + palpites
- * do usuário, no simulador) e conta, para cada seleção, com que frequência ela
- * encontra cada adversário em cada fase do mata-mata. Em cada confronto o
- * vencedor é SORTEADO pela probabilidade de avanço (Elo/Poisson) — então zebras
- * acontecem na proporção certa, o que dá adversários prováveis muito mais
- * realistas do que escolher sempre o favorito.
+ * A fase de grupos acabou: as 16-avos já têm confrontos concretos. A simulação
+ * parte desses pares reais (via lib/knockout) em vez de re-derivar a chave dos
+ * grupos, FORÇA os resultados já decididos e, opcionalmente, os palpites do
+ * usuário (no simulador). Cada confronto em aberto é SORTEADO pela probabilidade
+ * de avanço (Elo/Poisson) — zebras na proporção certa.
  *
- * Mesmo motor usado em dois lugares:
- *  - build-time (lib/data.ts) → páginas de seleção e /scenarios (sem palpites);
+ * Conta, para cada seleção, com que frequência alcança cada fase, vence cada
+ * fase e encontra cada adversário. Mesmo motor em dois lugares:
+ *  - build-time (lib/data.ts) → páginas de seleção e /scenarios (estado real);
  *  - cliente (simulador) → reage aos palpites do usuário.
  */
 
@@ -17,14 +17,11 @@ import {
   BRACKET,
   KO_MATCHES,
   KO_STAGES,
-  type Source,
+  ROUND_OF_32,
   advanceProbability,
-  assignThirds,
-  expectedGoals,
 } from "@/lib/bracket";
-import type { GroupId, Match, Stage, Team } from "@/lib/types";
-
-export type Outcome = "home" | "draw" | "away";
+import { childGames, mapRoundOf32, realWinners } from "@/lib/knockout";
+import type { Match, Stage, Team } from "@/lib/types";
 
 /** Panorama de uma seleção numa fase do mata-mata. */
 export interface StageOutlook {
@@ -50,8 +47,13 @@ export interface TeamScenario {
 export interface SimOptions {
   nSims?: number;
   seed?: number;
-  /** Palpites de jogos de grupo (slug → resultado). Usado no simulador. */
-  picks?: Record<string, Outcome>;
+  /**
+   * Vencedores FORÇADOS por número do jogo (73…104) — os palpites do usuário no
+   * simulador. Os resultados reais já decididos entram automaticamente; estes se
+   * somam a eles. Cada jogo só deve ser fixado quando seus dois participantes já
+   * estão definidos, então o vencedor forçado é sempre um deles.
+   */
+  forcedWinners?: Map<number, string>;
   /** Quantos adversários listar por fase. */
   topPerStage?: Partial<Record<Stage, number>>;
 }
@@ -67,7 +69,7 @@ const DEFAULT_TOP: Record<Stage, number> = {
 };
 
 // ──────────────────────────────────────────────────────────────
-//  RNG e amostragem
+//  RNG
 // ──────────────────────────────────────────────────────────────
 
 /** PRNG determinístico (mulberry32) — mesma semente, mesmo resultado. */
@@ -82,18 +84,6 @@ function mulberry32(seed: number): () => number {
   };
 }
 
-/** Amostra de uma Poisson de média lam (algoritmo de Knuth; lam pequeno). */
-function samplePoisson(rng: () => number, lam: number): number {
-  const L = Math.exp(-lam);
-  let k = 0;
-  let p = 1;
-  do {
-    k++;
-    p *= rng();
-  } while (p > L);
-  return k - 1;
-}
-
 // ──────────────────────────────────────────────────────────────
 //  Simulação
 // ──────────────────────────────────────────────────────────────
@@ -104,7 +94,6 @@ export function simulateScenarios(
   opts: SimOptions = {},
 ): Map<string, TeamScenario> {
   const nSims = opts.nSims ?? 10000;
-  const picks = opts.picks ?? {};
   const top = { ...DEFAULT_TOP, ...opts.topPerStage };
   const rng = mulberry32(opts.seed ?? 0x00c0_0a26);
 
@@ -112,49 +101,38 @@ export function simulateScenarios(
   const idx = new Map(teams.map((t, i) => [t.id, i]));
   const elo = teams.map((t) => t.elo);
 
-  // Grupos → índices dos membros, em ordem estável.
-  const groupIds = [...new Set(teams.map((t) => t.group))].sort() as GroupId[];
-  const groupMembers = new Map<GroupId, number[]>();
-  for (const g of groupIds) {
-    groupMembers.set(
-      g,
-      teams.map((t, i) => (t.group === g ? i : -1)).filter((i) => i >= 0),
-    );
+  // Chave real: pares das 16-avos + vencedores já conhecidos.
+  const mapping = mapRoundOf32(teams, matches);
+  const real = realWinners(mapping);
+
+  // Vencedores forçados (reais têm precedência sobre palpites, mas em jogos já
+  // decididos o usuário não palpita → não há conflito de fato).
+  const forcedIdx = new Int32Array(110).fill(-1);
+  for (const [game, teamId] of opts.forcedWinners ?? new Map()) {
+    const i = idx.get(teamId);
+    if (i != null) forcedIdx[game] = i;
+  }
+  for (const [game, teamId] of real) {
+    const i = idx.get(teamId);
+    if (i != null) forcedIdx[game] = i;
   }
 
-  // Jogos de grupo por grupo: base fixa (finalizados + palpites) e a simular.
-  interface GroupGame {
-    h: number;
-    a: number;
-    lamH: number;
-    lamA: number;
+  // Pares das 16-avos (índices de time por jogo). Sem par real → fora da chave.
+  const leafA = new Int32Array(110).fill(-1);
+  const leafB = new Int32Array(110).fill(-1);
+  for (const num of ROUND_OF_32) {
+    const m = mapping.matchByGame.get(num);
+    if (!m) continue;
+    leafA[num] = idx.get(m.homeId) ?? -1;
+    leafB[num] = idx.get(m.awayId) ?? -1;
   }
-  const basePts = new Float64Array(T);
-  const baseGd = new Float64Array(T);
-  const baseGf = new Float64Array(T);
-  const toSim = new Map<GroupId, GroupGame[]>(groupIds.map((g) => [g, []]));
 
-  for (const mt of matches) {
-    if (mt.stage !== "group" || !mt.group) continue;
-    const h = idx.get(mt.homeId);
-    const a = idx.get(mt.awayId);
-    if (h == null || a == null) continue;
-
-    if (mt.status === "finished" && mt.homeScore != null && mt.awayScore != null) {
-      basePts[h] += mt.homeScore > mt.awayScore ? 3 : mt.homeScore === mt.awayScore ? 1 : 0;
-      basePts[a] += mt.awayScore > mt.homeScore ? 3 : mt.homeScore === mt.awayScore ? 1 : 0;
-      baseGf[h] += mt.homeScore; baseGf[a] += mt.awayScore;
-      baseGd[h] += mt.homeScore - mt.awayScore;
-      baseGd[a] += mt.awayScore - mt.homeScore;
-    } else if (picks[mt.slug]) {
-      // Palpite só tem vencedor/empate (sem placar) → pontos, sem gols.
-      const o = picks[mt.slug];
-      basePts[h] += o === "home" ? 3 : o === "draw" ? 1 : 0;
-      basePts[a] += o === "away" ? 3 : o === "draw" ? 1 : 0;
-    } else {
-      const [lamH, lamA] = expectedGoals(elo[h], elo[a]);
-      toSim.get(mt.group)!.push({ h, a, lamH, lamA });
-    }
+  // Filhos de cada jogo R16+ (pré-resolvidos).
+  const kids = new Map<number, [number, number]>();
+  for (const num of KO_MATCHES) {
+    if (BRACKET[num].stage === "round_of_32") continue;
+    const c = childGames(num);
+    if (c) kids.set(num, c);
   }
 
   // Matriz de avanço pré-computada (depende só do par de Elos).
@@ -162,7 +140,7 @@ export function simulateScenarios(
   for (let i = 0; i < T; i++)
     for (let j = 0; j < T; j++) if (i !== j) adv[i][j] = advanceProbability(elo[i], elo[j]);
 
-  // Acumuladores por fase: contagens (T) e confrontos (T×T).
+  // Acumuladores por fase.
   const reach: Record<Stage, Int32Array> = {} as Record<Stage, Int32Array>;
   const wins: Record<Stage, Int32Array> = {} as Record<Stage, Int32Array>;
   const oppCount: Record<Stage, Int32Array> = {} as Record<Stage, Int32Array>;
@@ -172,73 +150,36 @@ export function simulateScenarios(
     oppCount[s] = new Int32Array(T * T);
   }
   const championCount = new Int32Array(T);
-
-  // Buffers reutilizados a cada simulação.
-  const pts = new Float64Array(T);
-  const gd = new Float64Array(T);
-  const gf = new Float64Array(T);
   const winnerOf = new Int32Array(110); // nº do jogo → índice do vencedor
-  const thirdBySlot: Record<number, number> = {};
 
   for (let s = 0; s < nSims; s++) {
-    pts.set(basePts); gd.set(baseGd); gf.set(baseGf);
-
-    // ── Fase de grupos ──
-    for (const g of groupIds) {
-      for (const game of toSim.get(g)!) {
-        const gh = samplePoisson(rng, game.lamH);
-        const ga = samplePoisson(rng, game.lamA);
-        pts[game.h] += gh > ga ? 3 : gh === ga ? 1 : 0;
-        pts[game.a] += ga > gh ? 3 : gh === ga ? 1 : 0;
-        gf[game.h] += gh; gf[game.a] += ga;
-        gd[game.h] += gh - ga; gd[game.a] += ga - gh;
-      }
-    }
-
-    // Classificação de cada grupo (pontos → saldo → gols pró → ruído estável).
-    const winners: Partial<Record<GroupId, number>> = {};
-    const runners: Partial<Record<GroupId, number>> = {};
-    const thirds: { team: number; group: GroupId; score: number }[] = [];
-    const scoreOf = (t: number) => pts[t] * 1e9 + (gd[t] + 500) * 1e4 + gf[t] * 10 + rng();
-    for (const g of groupIds) {
-      const ranked = [...groupMembers.get(g)!].sort((x, y) => scoreOf(y) - scoreOf(x));
-      winners[g] = ranked[0];
-      runners[g] = ranked[1];
-      thirds.push({ team: ranked[2], group: g, score: scoreOf(ranked[2]) });
-    }
-
-    // 8 melhores 3º colocados → alocação às vagas pelas regras de grupo.
-    thirds.sort((x, y) => y.score - x.score);
-    const qualified = thirds.slice(0, 8);
-    const slotIndex = assignThirds(qualified.map((q) => q.group));
-    for (const slot in slotIndex) thirdBySlot[slot] = qualified[slotIndex[slot]].team;
-
-    const resolveSrc = (src: Source): number => {
-      switch (src.kind) {
-        case "winner": return winners[src.group] ?? -1;
-        case "runner": return runners[src.group] ?? -1;
-        case "third": return thirdBySlot[src.slot] ?? -1;
-        case "match": return winnerOf[src.match];
-      }
-    };
-
-    // ── Mata-mata ──
     for (const num of KO_MATCHES) {
       const bm = BRACKET[num];
-      const a = resolveSrc(bm.a);
-      const b = resolveSrc(bm.b);
       const stage = bm.stage;
+      let a: number;
+      let b: number;
+      if (stage === "round_of_32") {
+        a = leafA[num];
+        b = leafB[num];
+      } else {
+        const c = kids.get(num)!;
+        a = winnerOf[c[0]];
+        b = winnerOf[c[1]];
+      }
 
       if (a < 0 || b < 0) {
-        winnerOf[num] = a < 0 ? b : a; // bye defensivo (não deve ocorrer)
+        winnerOf[num] = a < 0 ? b : a; // defensivo (não deve ocorrer)
         continue;
       }
-      // Os dois jogam esta fase e são adversários um do outro.
+
+      // Os dois disputam esta fase e são adversários um do outro.
       reach[stage][a]++; reach[stage][b]++;
       oppCount[stage][a * T + b]++; oppCount[stage][b * T + a]++;
 
-      const aWins = rng() < adv[a][b];
-      const winner = aWins ? a : b;
+      // Vencedor forçado (real/palpite), desde que seja um dos participantes;
+      // senão sorteia pela probabilidade de avanço.
+      const f = forcedIdx[num];
+      const winner = f === a || f === b ? f : rng() < adv[a][b] ? a : b;
       wins[stage][winner]++;
       winnerOf[num] = winner;
     }
@@ -256,7 +197,6 @@ export function simulateScenarios(
       const reached = reach[stage][t];
       if (reached === 0) continue;
 
-      // Adversários ordenados por frequência.
       const counts: { teamId: string; probability: number }[] = [];
       let expectedOppElo = 0;
       const baseRow = t * T;
