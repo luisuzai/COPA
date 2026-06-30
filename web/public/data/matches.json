@@ -891,10 +891,10 @@
     "stage": "round_of_32",
     "homeId": "t-ger",
     "awayId": "t-par",
-    "status": "live",
+    "status": "finished",
     "kickoff": "2026-06-29T20:30:00Z",
-    "homeScore": 1,
-    "awayScore": 1
+    "homeScore": 4,
+    "awayScore": 5
   },
   {
     "id": "m-537418",
@@ -902,8 +902,10 @@
     "stage": "round_of_32",
     "homeId": "t-ned",
     "awayId": "t-mar",
-    "status": "scheduled",
-    "kickoff": "2026-06-30T01:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-06-30T01:00:00Z",
+    "homeScore": 3,
+    "awayScore": 4
   },
   {
     "id": "m-537424",
@@ -1012,5 +1014,14 @@
     "awayId": "t-gha",
     "status": "scheduled",
     "kickoff": "2026-07-04T01:30:00Z"
+  },
+  {
+    "id": "m-537376",
+    "slug": "canada-vs-morocco",
+    "stage": "round_of_16",
+    "homeId": "t-can",
+    "awayId": "t-mar",
+    "status": "scheduled",
+    "kickoff": "2026-07-04T17:00:00Z"
   }
 ]

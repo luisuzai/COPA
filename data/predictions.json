@@ -1,26 +1,6 @@
 {
-  "generatedAt": "2026-06-29T22:12:41Z",
+  "generatedAt": "2026-06-30T12:28:14Z",
   "matches": [
-    {
-      "matchSlug": "germany-vs-paraguay",
-      "homeId": "t-ger",
-      "awayId": "t-par",
-      "homeWin": 0.5601,
-      "draw": 0.2354,
-      "awayWin": 0.2046,
-      "expectedHomeGoals": 1.75,
-      "expectedAwayGoals": 0.95
-    },
-    {
-      "matchSlug": "netherlands-vs-morocco",
-      "homeId": "t-ned",
-      "awayId": "t-mar",
-      "homeWin": 0.4679,
-      "draw": 0.2519,
-      "awayWin": 0.2802,
-      "expectedHomeGoals": 1.56,
-      "expectedAwayGoals": 1.15
-    },
     {
       "matchSlug": "ivory-coast-vs-norway",
       "homeId": "t-civ",
@@ -140,6 +120,16 @@
       "awayWin": 0.2189,
       "expectedHomeGoals": 1.71,
       "expectedAwayGoals": 0.99
+    },
+    {
+      "matchSlug": "canada-vs-morocco",
+      "homeId": "t-can",
+      "awayId": "t-mar",
+      "homeWin": 0.2342,
+      "draw": 0.2433,
+      "awayWin": 0.5226,
+      "expectedHomeGoals": 1.03,
+      "expectedAwayGoals": 1.67
     }
   ]
 }

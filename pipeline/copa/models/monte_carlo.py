@@ -166,6 +166,127 @@ def _official_2026_bracket(
     return np.stack(cols, axis=1)
 
 
+def _real_standings(
+    matches: list[dict], idx_of: dict[str, int]
+) -> tuple[dict[str, str], dict[str, str], dict[str, str]]:
+    """Classificação determinística dos grupos a partir dos resultados reais.
+
+    Critérios: pontos » saldo » gols pró (os primeiros da regra da FIFA, que
+    bastam aqui). Devolve (winner, runner, third) por letra de grupo.
+    """
+    from collections import defaultdict
+
+    agg: dict[str, dict[str, list[int]]] = defaultdict(
+        lambda: defaultdict(lambda: [0, 0, 0])  # tid -> [pts, saldo, gp]
+    )
+    for m in matches:
+        if m.get("stage") != "group" or m.get("homeScore") is None:
+            continue
+        g, h, a = m["group"], m["homeId"], m["awayId"]
+        gh, ga = int(m["homeScore"]), int(m["awayScore"])
+        agg[g][h][1] += gh - ga; agg[g][a][1] += ga - gh
+        agg[g][h][2] += gh; agg[g][a][2] += ga
+        if gh > ga:
+            agg[g][h][0] += 3
+        elif ga > gh:
+            agg[g][a][0] += 3
+        else:
+            agg[g][h][0] += 1; agg[g][a][0] += 1
+
+    winner: dict[str, str] = {}
+    runner: dict[str, str] = {}
+    third: dict[str, str] = {}
+    for g, d in agg.items():
+        order = sorted(d.items(), key=lambda kv: (-kv[1][0], -kv[1][1], -kv[1][2]))
+        winner[g] = order[0][0]
+        runner[g] = order[1][0]
+        if len(order) >= 3:
+            third[g] = order[2][0]
+    return winner, runner, third
+
+
+def _bracket_from_real_fixtures(
+    matches: list[dict], idx_of: dict[str, int]
+) -> tuple[list[int], list[tuple[int, int, int]], set[int]] | None:
+    """Monta a chave a partir das 16-avos REAIS (uma vez sorteadas), em vez de
+    reconstruí-la dos grupos.
+
+    Vantagens sobre a simulação a partir dos grupos:
+      - o seeding dos 8 melhores 3º colocados é o REAL (resolve a aproximação
+        do emparelhamento de Kuhn);
+      - permite FIXAR os jogos de mata-mata já encerrados (um time que perdeu
+        está eliminado de fato, não segue com chance de título).
+
+    Devolve (leaf_global, pins, qualified_ids) ou None se as 16-avos ainda não
+    foram sorteadas (aí o pipeline segue simulando a partir dos grupos).
+
+    - leaf_global: 32 índices globais na ordem de dobramento (_LEAF_ORDER).
+    - pins: (u, v, w) por jogo de mata-mata encerrado — w venceu u×v.
+    - qualified_ids: os 32 índices que avançaram da fase de grupos.
+    """
+    r32 = [
+        m for m in matches
+        if m.get("stage") == "round_of_32"
+        and m.get("homeId") in idx_of and m.get("awayId") in idx_of
+    ]
+    if len(r32) < 16:
+        return None
+
+    winner, runner, third = _real_standings(matches, idx_of)
+
+    def resolve(ref: tuple[str, object]) -> str | None:
+        kind, val = ref
+        if kind == "w":
+            return winner.get(str(val))
+        if kind == "r":
+            return runner.get(str(val))
+        return None  # 3º colocado — vem do confronto real
+
+    # Confronto real que contém cada time (cada classificado joga exatamente uma 16-avo).
+    fixture_of: dict[str, tuple[str, str]] = {}
+    for m in r32:
+        h, a = m["homeId"], m["awayId"]
+        fixture_of[h] = (h, a)
+        fixture_of[a] = (h, a)
+
+    match_pair: dict[int, tuple[str, str]] = {}
+    for num, (sa, sb) in _MATCH_SIDES.items():
+        ta, tb = resolve(sa), resolve(sb)
+        known = ta if ta is not None else tb
+        if known is None or known not in fixture_of:
+            return None  # estrutura inesperada → não arrisca, volta a simular
+        h, a = fixture_of[known]
+        other = a if h == known else h
+        if ta is not None and tb is not None:
+            match_pair[num] = (ta, tb)
+        elif ta is not None:        # sb é o 3º colocado
+            match_pair[num] = (ta, other)
+        else:                        # sa é o 3º colocado
+            match_pair[num] = (other, tb)
+
+    leaf: list[int] = []
+    for num in _LEAF_ORDER:
+        ha, hb = match_pair[num]
+        leaf.append(idx_of[ha]); leaf.append(idx_of[hb])
+
+    pins: list[tuple[int, int, int]] = []
+    for m in matches:
+        if m.get("stage") not in KNOCKOUT_STAGES and m.get("stage") != "round_of_32":
+            continue
+        if m.get("status") != "finished" or m.get("homeScore") is None:
+            continue
+        h, a = m.get("homeId"), m.get("awayId")
+        if h not in idx_of or a not in idx_of:
+            continue
+        gh, ga = int(m["homeScore"]), int(m["awayScore"])
+        if gh == ga:
+            continue  # empate sem desempate nos dados → deixa simular
+        w = h if gh > ga else a
+        pins.append((idx_of[h], idx_of[a], idx_of[w]))
+
+    return leaf, pins, set(leaf)
+
+
 @dataclass
 class SimulationResult:
     """Saída bruta da simulação — contagens, não probabilidades ainda."""
@@ -324,6 +445,20 @@ def simulate(
             [winners, chosen_thirds, runners[:, ::-1]], axis=1
         )
 
+    # ── Chave REAL + jogos já encerrados ──────────────────────
+    # Se as 16-avos já foram sorteadas, descarta a chave simulada acima e usa a
+    # REAL (seeding correto dos 3º) + FIXA os jogos de mata-mata já disputados,
+    # para que a simulação parta do estado atual do torneio.
+    pins: list[tuple[int, int, int]] = []
+    real = _bracket_from_real_fixtures(matches, idx_of)
+    if real is not None:
+        leaf_global, pins, qualified_ids = real
+        bracket = np.tile(np.asarray(leaf_global, dtype=np.int64), (n_sims, 1))
+        bracket_size = bracket.shape[1]
+        qualified[:] = 0
+        for q in qualified_ids:
+            qualified[q] = n_sims
+
     # ── Mata-mata ─────────────────────────────────────────────
     # Matriz de avanço: adv[i, j] = P(i passa por j) num jogo único.
     # Pré-computada (depende só do par de Elos) p/ lookup vetorizado e exato.
@@ -350,6 +485,12 @@ def simulate(
         p_a = adv[a, b]
         a_wins = rng.random((n_sims, size // 2)) < p_a
         win = np.where(a_wins, a, b)
+
+        # Fixa o resultado dos jogos já encerrados (vencedor real, sem sortear).
+        for u, v, w in pins:
+            played = ((a == u) & (b == v)) | ((a == v) & (b == u))
+            if played.any():
+                win = np.where(played, w, win)
 
         # Confrontos desta fase (simétrico).
         opp = np.zeros((n_teams, n_teams), dtype=np.int64)
