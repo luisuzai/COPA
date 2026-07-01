@@ -913,8 +913,10 @@
     "stage": "round_of_32",
     "homeId": "t-civ",
     "awayId": "t-nor",
-    "status": "scheduled",
-    "kickoff": "2026-06-30T17:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-06-30T17:00:00Z",
+    "homeScore": 1,
+    "awayScore": 2
   },
   {
     "id": "m-537416",
@@ -922,8 +924,10 @@
     "stage": "round_of_32",
     "homeId": "t-fra",
     "awayId": "t-swe",
-    "status": "scheduled",
-    "kickoff": "2026-06-30T21:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-06-30T21:00:00Z",
+    "homeScore": 3,
+    "awayScore": 0
   },
   {
     "id": "m-537425",
@@ -931,8 +935,10 @@
     "stage": "round_of_32",
     "homeId": "t-mex",
     "awayId": "t-ecu",
-    "status": "scheduled",
-    "kickoff": "2026-07-01T01:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-01T01:00:00Z",
+    "homeScore": 2,
+    "awayScore": 0
   },
   {
     "id": "m-537426",
@@ -1023,5 +1029,23 @@
     "awayId": "t-mar",
     "status": "scheduled",
     "kickoff": "2026-07-04T17:00:00Z"
+  },
+  {
+    "id": "m-537375",
+    "slug": "paraguay-vs-france",
+    "stage": "round_of_16",
+    "homeId": "t-par",
+    "awayId": "t-fra",
+    "status": "scheduled",
+    "kickoff": "2026-07-04T21:00:00Z"
+  },
+  {
+    "id": "m-537377",
+    "slug": "brazil-vs-norway",
+    "stage": "round_of_16",
+    "homeId": "t-bra",
+    "awayId": "t-nor",
+    "status": "scheduled",
+    "kickoff": "2026-07-05T20:00:00Z"
   }
 ]

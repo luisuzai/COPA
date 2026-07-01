@@ -1,36 +1,6 @@
 {
-  "generatedAt": "2026-06-30T12:28:14Z",
+  "generatedAt": "2026-07-01T10:38:56Z",
   "matches": [
-    {
-      "matchSlug": "ivory-coast-vs-norway",
-      "homeId": "t-civ",
-      "awayId": "t-nor",
-      "homeWin": 0.3382,
-      "draw": 0.2574,
-      "awayWin": 0.4044,
-      "expectedHomeGoals": 1.28,
-      "expectedAwayGoals": 1.42
-    },
-    {
-      "matchSlug": "france-vs-sweden",
-      "homeId": "t-fra",
-      "awayId": "t-swe",
-      "homeWin": 0.6724,
-      "draw": 0.2024,
-      "awayWin": 0.1252,
-      "expectedHomeGoals": 1.98,
-      "expectedAwayGoals": 0.72
-    },
-    {
-      "matchSlug": "mexico-vs-ecuador",
-      "homeId": "t-mex",
-      "awayId": "t-ecu",
-      "homeWin": 0.4606,
-      "draw": 0.2528,
-      "awayWin": 0.2866,
-      "expectedHomeGoals": 1.54,
-      "expectedAwayGoals": 1.16
-    },
     {
       "matchSlug": "england-vs-congo-dr",
       "homeId": "t-eng",
@@ -130,6 +100,26 @@
       "awayWin": 0.5226,
       "expectedHomeGoals": 1.03,
       "expectedAwayGoals": 1.67
+    },
+    {
+      "matchSlug": "paraguay-vs-france",
+      "homeId": "t-par",
+      "awayId": "t-fra",
+      "homeWin": 0.1123,
+      "draw": 0.1949,
+      "awayWin": 0.6928,
+      "expectedHomeGoals": 0.67,
+      "expectedAwayGoals": 2.03
+    },
+    {
+      "matchSlug": "brazil-vs-norway",
+      "homeId": "t-bra",
+      "awayId": "t-nor",
+      "homeWin": 0.5717,
+      "draw": 0.2326,
+      "awayWin": 0.1957,
+      "expectedHomeGoals": 1.77,
+      "expectedAwayGoals": 0.93
     }
   ]
 }
