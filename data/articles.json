@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-07-01T10:44:17Z",
+  "generatedAt": "2026-07-02T11:40:11Z",
   "items": [
     {
       "id": "a-home-home",
       "slug": "home",
       "type": "home",
-      "title": "França dispara à liderança do torneio",
-      "summary": "Após golear a Suécia, a França salta a 21,2% e assume a ponta; Argentina (18%) e Brasil (12,7%) vêm atrás.",
-      "body": "A **França** assumiu a liderança na corrida pelo título. A goleada por **3 a 0 sobre a Suécia** nas 16-avos, somada a um chaveamento aberto pelas zebras, levou a seleção a **21,2%** de chance — a maior do torneio, em forte alta.\n\nA **Argentina** caiu para o segundo posto, com **18%**, seguida por **Brasil** (**12,7%**), **Espanha** (**11,1%**), **Inglaterra** (**6,7%**) e **Marrocos** (**5,3%**). A rodada ainda teve zebra: a **Noruega** eliminou a **Costa do Marfim (2 a 1)** e o **México** passou pelo **Equador (2 a 0)**.\n\nAs oitavas de final já começam a se desenhar, com duelos como **Brasil x Noruega**, **Paraguai x França** e **Canadá x Marrocos**. Na fase em que cada erro custa a vaga, o torneio ganha contornos cada vez mais definidos.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "51c5cb7622ca43d3"
+      "title": "França lidera e favoritos avançam nas 16-avos",
+      "summary": "França (20,7%) segue na ponta; Inglaterra, Bélgica e EUA passam sem sustos e completam o quadro das oitavas.",
+      "body": "A **França** segue na liderança das projeções de título, com **20,7%**, à frente da **Argentina** (**17,6%**) e do **Brasil** (**12%**). Logo atrás vêm **Espanha** (**10,2%**), **Inglaterra** (**9,3%**, em alta) e **Marrocos** (**5,1%**).\n\nDiferente das rodadas anteriores, as 16-avos não tiveram zebra: os favoritos cumpriram tabela. A **Inglaterra** bateu o **Congo (RD) (2 a 1)**, a **Bélgica** superou o **Senegal (3 a 2)** e os **Estados Unidos** passaram pela **Bósnia (2 a 0)**, todos avançando às oitavas.\n\nO quadro do mata-mata vai se fechando: já estão definidos duelos como **México x Inglaterra** e **Estados Unidos x Bélgica**, ao lado de Brasil x Noruega, Paraguai x França e Canadá x Marrocos. Faltam poucos jogos para completar as oitavas de final.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "15751e78b6f04653"
     },
     {
       "id": "a-team-uruguay",
@@ -36,10 +36,10 @@
       "slug": "spain",
       "type": "team",
       "title": "Espanha avança líder e segue no grupo de elite",
-      "summary": "Primeira do Grupo H e 11,1% de título; o caminho traz clássico ibérico com Portugal e França na semi.",
-      "body": "A **Espanha** venceu o Grupo H com **7 pontos** e chega ao mata-mata com **11,1%** de chance de título, entre as principais candidatas. A campanha teve o **4 a 0 sobre a Arábia Saudita** como ponto alto.\n\nNas 16-avos vem a **Áustria**, adversário em que a seleção é favorita. O caminho esquenta nas oitavas, com um possível clássico ibérico contra **Portugal**, seguido da **Bélgica** nas quartas e de uma semifinal contra a **França**. Com **33,4%** de semifinal, a Espanha mantém o status de candidata numa chave cheia de tradição.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "8a898caf987f899d"
+      "summary": "Primeira do Grupo H e 10,2% de título; o caminho traz clássico ibérico com Portugal e França na semi.",
+      "body": "A **Espanha** venceu o Grupo H com **7 pontos** e chega ao mata-mata com **10,2%** de chance de título, entre as principais candidatas. A campanha teve o **4 a 0 sobre a Arábia Saudita** como ponto alto.\n\nNas 16-avos vem a **Áustria**, adversário em que a seleção é favorita. O caminho esquenta nas oitavas, com um possível clássico ibérico contra **Portugal**, seguido da **Bélgica** nas quartas e de uma semifinal contra a **França**. Com **31%** de semifinal, a Espanha mantém o status de candidata numa chave cheia de tradição.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "c584626cc0b50f00"
     },
     {
       "id": "a-team-paraguay",
@@ -48,18 +48,18 @@
       "title": "Paraguai desafia a França nas oitavas após eliminar a Alemanha",
       "summary": "A sensação que derrubou a Alemanha agora encara a França nas oitavas; o Paraguai soma 0,9% de título.",
       "body": "O **Paraguai** vive um mata-mata de sonho: depois de eliminar a **Alemanha por 5 a 4** nas 16-avos, avançou às oitavas de final e já tem definido o próximo desafio. A vaga entre os melhores terceiros virou uma campanha para a história.\n\nO adversário, porém, é dos mais duros: a **França** (**11,2%** de chance de vitória paraguaia), líder das projeções de título. Para seguir surpreendendo, o Paraguai terá de repetir — e superar — a atuação heroica que derrubou a Alemanha.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "13cdf0f1bcc8b7f5"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "88f35542e4cc1779"
     },
     {
       "id": "a-team-argentina",
       "slug": "argentina",
       "type": "team",
-      "title": "Argentina cai para segunda na disputa pelo título",
-      "summary": "Com 18%, a Argentina foi superada pela França na ponta, mas segue firme; o mata-mata começa contra Cabo Verde.",
-      "body": "A **Argentina** perdeu a liderança das projeções para a França, mas segue como forte candidata, com **18%** de chance de título — a segunda maior do torneio. A campanha perfeita no Grupo J sustenta o favoritismo.\n\nO mata-mata começa de forma acessível, contra **Cabo Verde** (**79,6%**), e o caminho segue favorável até a reta final, quando podem surgir a **Colômbia**, um clássico com o **Brasil** na semifinal e a **França** numa possível decisão. Com **50,1%** de chance de semifinal, a Argentina chega ao mata-mata entre as favoritas ao título.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "2882002d2da0f67b"
+      "title": "Argentina segue firme como vice-favorita ao título",
+      "summary": "Com 17,6%, a Argentina é a segunda maior chance de título, atrás da França; começa contra Cabo Verde.",
+      "body": "A **Argentina** segue como forte candidata ao título, com **17,6%** de chance — a segunda maior do torneio, atrás apenas da França. A campanha perfeita no Grupo J sustenta o favoritismo.\n\nO mata-mata começa de forma acessível, contra **Cabo Verde** (**79,6%**), e o caminho segue favorável até a reta final, quando podem surgir a **Colômbia**, um clássico com o **Brasil** na semifinal e a **França** numa possível decisão. Com **50,1%** de chance de semifinal, a Argentina chega ao mata-mata entre as favoritas.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "116cf48cddc7d426"
     },
     {
       "id": "a-team-ghana",
@@ -68,18 +68,18 @@
       "title": "Gana avança entre os melhores terceiros do torneio",
       "summary": "Terceiro do Grupo L, Gana garantiu a vaga e encara a Colômbia nas 16-avos.",
       "body": "**Gana** garantiu vaga entre os melhores terceiros do Grupo L, com **4 pontos**, em campanha oscilante: venceu o **Panamá (1 a 0)**, empatou com a **Inglaterra (0 a 0)** e perdeu para a **Croácia (2 a 1)**. A chance de título é de **0,3%**.\n\nO mata-mata reserva a **Colômbia** nas 16-avos (**21,9%** de chance de vitória). Para surpreender, a seleção ganesa terá de furar um sistema colombiano que sofreu poucos gols na fase de grupos.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "5b19e81b8db93e0f"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "798542555c56238e"
     },
     {
       "id": "a-team-brazil",
       "slug": "brazil",
       "type": "team",
-      "title": "Brasil garante lugar nas oitavas e encara a Noruega",
-      "summary": "Já classificado, o Brasil (12,7% de título) enfrenta a Noruega nas oitavas; o caminho segue com México e Argentina.",
-      "body": "O **Brasil** está nas oitavas de final após bater o **Japão** nas 16-avos, e já conhece o próximo adversário: a **Noruega** (**57,2%**), que surpreendeu ao eliminar a Costa do Marfim. A chance de título é de **12,7%**, a terceira maior do torneio.\n\nSe avançar, o caminho reserva o **México** nas quartas e um possível clássico com a **Argentina** na semifinal, antes de uma eventual final contra a **França**. Com **41%** de chance de semifinal, o Brasil segue entre os favoritos — mas terá de manter a regularidade diante de adversários que já mostraram poder de surpresa.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "39167c540eea100c"
+      "title": "Brasil foca na Noruega com chave dura",
+      "summary": "Já nas oitavas, o Brasil (12% de título) enfrenta a Noruega; Inglaterra e Argentina podem vir na sequência.",
+      "body": "O **Brasil** está nas oitavas de final e tem a **Noruega** (**57,2%**) pela frente, adversário que surpreendeu ao eliminar a Costa do Marfim. A chance de título é de **12%**, a terceira maior do torneio.\n\nO caminho, porém, ficou mais duro: a **Inglaterra**, embalada, surge como provável adversária nas quartas, antes de um possível clássico com a **Argentina** na semifinal e de uma eventual final contra a **França**. Com **38,9%** de chance de semifinal, o Brasil segue entre os favoritos, mas terá de superar gigantes na reta final.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "37ba768f28ff5f64"
     },
     {
       "id": "a-team-portugal",
@@ -88,8 +88,8 @@
       "title": "Portugal avança em segundo, mas em chave dura",
       "summary": "Vice do Grupo K e 4% de título; o caminho traz Croácia e um clássico ibérico com a Espanha.",
       "body": "**Portugal** avançou em segundo no Grupo K, com **5 pontos** e saldo de **+5**, somando dois empates — com **Congo (RD)** e **Colômbia** — e a goleada de **5 a 0 sobre o Uzbequistão**. A chance de título caiu para **4%**, em queda acentuada após o vice de grupo.\n\nO mata-mata já começa exigente: a **Croácia** nas 16-avos, duelo de tradição, e um possível clássico ibérico contra a **Espanha** nas oitavas. Mais adiante, **Bélgica** e **França** completam um roteiro pesado.\n\nCom **16,4%** de semifinal, Portugal tem qualidade para surpreender — mas tirou uma das chaves mais duras entre os classificados.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "b70c9da3468077ed"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "45b2c9ffc2d718ae"
     },
     {
       "id": "a-team-japan",
@@ -105,31 +105,31 @@
       "id": "a-team-mexico",
       "slug": "mexico",
       "type": "team",
-      "title": "México supera o Equador e avança às oitavas",
-      "summary": "Vitória por 2 a 0 leva o México às oitavas e a 3,8% de título; o adversário sai de Inglaterra x Congo (RD).",
-      "body": "O **México** confirmou o favoritismo diante de sua torcida e bateu o **Equador por 2 a 0** nas 16-avos, avançando às oitavas de final. A campanha segue perfeita, e a chance de título subiu para **3,8%**, em alta.\n\nNas oitavas, o anfitrião espera o vencedor de **Inglaterra x Congo (RD)** — provavelmente a **Inglaterra** (**40%** de chance de vitória mexicana). O caminho fica duro, mas o México chega embalado e com o apoio da casa para tentar surpreender.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "9bcbb5a5a0c83a5b"
+      "title": "México aguarda a Inglaterra nas oitavas de final",
+      "summary": "Após bater o Equador, o México (3,2% de título) tem a Inglaterra como adversária nas oitavas.",
+      "body": "O **México** segue firme no mata-mata após bater o **Equador** nas 16-avos, e já conhece o próximo desafio: a **Inglaterra**, nas oitavas de final. A chance de título é de **3,2%**, com o anfitrião como ligeiro azarão (**26,8%** de chance de vitória).\n\nApesar do favoritismo inglês, o México aposta no aproveitamento perfeito até aqui e no apoio da torcida para surpreender. Se avançar, o caminho reserva o **Brasil** nas quartas — um roteiro duro, mas que a seleção da casa encara com confiança.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "bdf6d3dd9d591178"
     },
     {
       "id": "a-team-england",
       "slug": "england",
       "type": "team",
-      "title": "Inglaterra avança líder, mas com chave dura",
-      "summary": "Primeira do Grupo L e 6,7% de título; depois do Congo (RD), México, Brasil e Argentina no caminho.",
-      "body": "A **Inglaterra** terminou o Grupo L na ponta, com **7 pontos**, e chega ao mata-mata com **6,7%** de chance de título. A campanha alternou contundência — **4 a 2 sobre a Croácia** — com um **0 a 0 diante de Gana**.\n\nO mata-mata começa favorável, com o **Congo (RD)** nas 16-avos e o **México** projetado para as oitavas. A dificuldade aparece nas quartas: o **Brasil**, seguido de uma possível semifinal contra a **Argentina**. Para ir longe, os ingleses precisarão superar as maiores forças do torneio na reta final.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "2607f575c56ec6d7"
+      "title": "Inglaterra bate o Congo e sobe às oitavas embalada",
+      "summary": "Vitória por 2 a 1 leva a Inglaterra às oitavas e a 9,3% de título; o próximo é o México.",
+      "body": "A **Inglaterra** venceu o **Congo (RD) por 2 a 1** nas 16-avos e avançou às oitavas de final, subindo nas projeções: a chance de título saltou para **9,3%**, em forte alta. A seleção confirmou o favoritismo sem sustos maiores.\n\nNas oitavas, o adversário é o anfitrião **México** (**48,2%** de chance de vitória inglesa), num duelo equilibrado. Mais adiante, o caminho pode esbarrar no **Brasil** nas quartas e na **Argentina** numa possível semifinal. Com **32,6%** de chance de semifinal, a Inglaterra se firma entre as candidatas.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "fe2290314b606712"
     },
     {
       "id": "a-team-united-states",
       "slug": "united-states",
       "type": "team",
-      "title": "Estados Unidos avançam líderes, mas levam alerta",
-      "summary": "Primeiro do Grupo D apesar da derrota para a Turquia; o anfitrião pega a Bósnia nas 16-avos.",
-      "body": "Os **Estados Unidos** terminaram o Grupo D na ponta, com **6 pontos** e saldo de **+4**, após golear o **Paraguai (4 a 1)** e bater a **Austrália (2 a 0)**. O fechamento, porém, acendeu o alerta: derrota de **3 a 2 para a Turquia**, já eliminada. A chance de título é de **1,8%**.\n\nNas 16-avos, o anfitrião encara a **Bósnia e Herzegovina** (**51,6%**), num confronto em que leva ligeira vantagem. Para ir longe, precisará corrigir as falhas defensivas que apareceram na última rodada.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "c9be693bf055a18c"
+      "title": "Estados Unidos batem a Bósnia e vão às oitavas",
+      "summary": "Vitória por 2 a 0 leva o anfitrião EUA às oitavas e a 2,6% de título; o próximo é a Bélgica.",
+      "body": "Os **Estados Unidos** bateram a **Bósnia e Herzegovina por 2 a 0** nas 16-avos e avançaram às oitavas de final, diante de sua torcida. A vitória sólida elevou a chance de título para **2,6%**, em alta.\n\nNas oitavas, o adversário é a **Bélgica** (**31,6%** de chance de vitória americana), num confronto em que o anfitrião é ligeiro azarão. Com o apoio da casa, os EUA apostam na intensidade para superar um rival de mais tradição e seguir sonhando.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "71c49ee1962bbb59"
     },
     {
       "id": "a-team-south-korea",
@@ -145,11 +145,11 @@
       "id": "a-team-france",
       "slug": "france",
       "type": "team",
-      "title": "França assume a liderança das projeções de título",
-      "summary": "Goleada por 3 a 0 na Suécia leva a França a 21,2%, a maior chance do torneio; o próximo é o Paraguai.",
-      "body": "A **França** assumiu a ponta das projeções ao golear a **Suécia por 3 a 0** nas 16-avos e avançar às oitavas. A chance de título saltou para **21,2%**, a maior do torneio, impulsionada por uma campanha impecável e por um chaveamento que se abriu com a queda de Alemanha e Holanda.\n\nNas oitavas, o adversário é o **Paraguai** (**69,3%**), a sensação que eliminou a Alemanha. Se avançar, o caminho reserva o **Marrocos** nas quartas e a **Espanha** numa possível semifinal. Com **55,9%** de chance de semifinal, a França chega à reta final como a grande favorita ao título.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "cba98a90d760c1a2"
+      "title": "França lidera as projeções e mira o Paraguai",
+      "summary": "Com 20,7%, a França segue na ponta das projeções de título; o próximo adversário é o Paraguai nas oitavas.",
+      "body": "A **França** mantém a liderança das projeções de título, com **20,7%** de chance — a maior do torneio. A goleada sobre a **Suécia (3 a 0)** confirmou o favoritismo, sustentado por uma campanha impecável e por um chaveamento aberto pelas zebras.\n\nNas oitavas, o adversário é o **Paraguai** (**69,3%**), a sensação que eliminou a Alemanha. Se avançar, o caminho reserva o **Marrocos** nas quartas e a **Espanha** numa possível semifinal. Com **55,9%** de chance de semifinal, a França chega à reta final como a grande favorita ao título.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "55fb49001c15218a"
     },
     {
       "id": "a-team-south-africa",
@@ -178,8 +178,8 @@
       "title": "Austrália garante a classificação no Grupo D",
       "summary": "Segunda do grupo com 4 pontos, a Austrália avança e pega o Egito nas 16-avos.",
       "body": "A **Austrália** avançou em segundo no Grupo D, com **4 pontos**, alternando a vitória sobre a **Turquia (2 a 0)** com a derrota para os **Estados Unidos (2 a 0)** e o **0 a 0 com o Paraguai**. A chance de título é de **0,4%**.\n\nO mata-mata começa em duelo equilibrado contra o **Egito** (**33,4%**). É um confronto aberto, em que a seleção australiana aposta na organização para superar um rival de força semelhante.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "82c6a36ee3d1cefd"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "2d29c6ab3bd78fe7"
     },
     {
       "id": "a-team-new-zealand",
@@ -198,8 +198,8 @@
       "title": "Suíça faz campanha cheia e lidera o Grupo B",
       "summary": "Primeira do grupo com 7 pontos e 2,1% de título; o mata-mata começa contra a Argélia.",
       "body": "A **Suíça** terminou o Grupo B na liderança, com **7 pontos** e saldo de **+4**. Depois do empate em 1 a 1 com o **Catar**, engatou vitórias sobre **Bósnia e Herzegovina (4 a 1)** e **Canadá (2 a 1)**, fechando a fase em ritmo crescente. A chance de título é de **2,1%**.\n\nO mata-mata começa diante da **Argélia** (**47,6%**), num confronto equilibrado em que a Suíça leva leve vantagem. Mais adiante, o caminho reserva a **Colômbia** nas oitavas e a **Argentina** projetada para as quartas.\n\nCom **12%** de semifinal, a seleção suíça pode sonhar até as fases intermediárias — antes de esbarrar nas maiores forças do torneio.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "61231412573077c3"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "5d37a1208b87c736"
     },
     {
       "id": "a-team-ecuador",
@@ -208,8 +208,8 @@
       "title": "Equador cai para o México e encerra boa campanha",
       "summary": "Depois de eliminar a Alemanha na fase de grupos, o Equador perdeu para o México por 2 a 0 nas 16-avos.",
       "body": "A campanha do **Equador** terminou nas 16-avos: a seleção perdeu para o anfitrião **México por 2 a 0** e se despede da Copa. Faltou repetir a inspiração que havia derrubado a Alemanha na fase de grupos.\n\nMesmo eliminado, o Equador deixa boa impressão. Classificou-se entre os melhores terceiros com uma virada histórica sobre uma favorita, e só parou diante do embalo mexicano, com o apoio da torcida da casa.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "1eb1b40f0774a717"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "9d3c5ee3b4362eb7"
     },
     {
       "id": "a-team-sweden",
@@ -218,8 +218,8 @@
       "title": "Suécia é goleada pela França e se despede nas 16-avos",
       "summary": "Uma das melhores terceiras, a Suécia perdeu para a França por 3 a 0 e está eliminada da Copa.",
       "body": "A **Suécia** não resistiu ao favoritismo da **França**: perdeu por **3 a 0** nas 16-avos e encerrou sua participação na Copa. Diante de uma das candidatas ao título, a seleção sueca pouco pôde fazer.\n\nA campanha foi marcada por extremos — a goleada sobre a **Tunísia (5 a 1)** convivendo com o mesmo placar sofrido diante da Holanda. Classificada entre os melhores terceiros, a Suécia cumpriu tabela no mata-mata e se despede na primeira eliminatória.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "7ad6d1099f2e8c51"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "b1dfa55c8b7a9b58"
     },
     {
       "id": "a-team-czechia",
@@ -238,8 +238,8 @@
       "title": "Croácia se recupera e avança em segundo no Grupo L",
       "summary": "Vice do Grupo L com 6 pontos e 1,5% de título; o mata-mata começa contra Portugal.",
       "body": "A **Croácia** se recuperou de uma estreia ruim e avançou em segundo no Grupo L, com **6 pontos**. Após levar **4 a 2 da Inglaterra**, reagiu com vitórias sobre **Panamá (1 a 0)** e **Gana (2 a 1)**, mostrando a resiliência de sempre. A chance de título é de **1,5%**.\n\nO mata-mata reserva um duelo de tradição: **Portugal** nas 16-avos. É um confronto parelho, em que a experiência da seleção croata em fases decisivas pode pesar a favor.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "a8f39ebe265b117b"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "7dba287a0bd48281"
     },
     {
       "id": "a-team-saudi-arabia",
@@ -275,31 +275,31 @@
       "id": "a-team-senegal",
       "slug": "senegal",
       "type": "team",
-      "title": "Senegal avança entre os melhores terceiros",
-      "summary": "Terceiro do Grupo I, o Senegal garantiu vaga no fôlego final e encara a Bélgica.",
-      "body": "O **Senegal** garantiu vaga entre os melhores terceiros do Grupo I após uma campanha de altos e baixos. Depois de perder para **França (3 a 1)** e **Noruega (3 a 2)**, goleou o **Iraque por 5 a 0** e assegurou a classificação. A chance de título é de **0,8%**, em alta.\n\nO mata-mata começa contra a **Bélgica** (**26%**), líder de grupo. O bom poder ofensivo é a arma da seleção senegalesa, mas a fragilidade defensiva terá de ser corrigida para incomodar um adversário de mais tradição.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "7f4573b406cfbeca"
+      "title": "Senegal cai para a Bélgica e se despede da Copa",
+      "summary": "Um dos melhores terceiros, o Senegal perdeu para a Bélgica por 3 a 2 e está eliminado nas 16-avos.",
+      "body": "O **Senegal** deu adeus à Copa nas 16-avos, ao perder para a **Bélgica por 3 a 2** num duelo de muitos gols. A seleção lutou até o fim, mas não conseguiu segurar o poder ofensivo belga.\n\nClassificado entre os melhores terceiros do Grupo I, o Senegal fez uma campanha de altos e baixos e se despede na primeira eliminatória, com a sensação de que poderia ter ido além diante de um adversário ao seu alcance.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "155aaf00cfab39d5"
     },
     {
       "id": "a-team-belgium",
       "slug": "belgium",
       "type": "team",
-      "title": "Bélgica vence o grupo após início travado",
-      "summary": "Líder do Grupo G com 5 pontos e 3,4% de título; o mata-mata começa contra o Senegal.",
-      "body": "A **Bélgica** terminou o Grupo G na ponta, mas só deslanchou no fim. Depois de empatar com **Egito (1 a 1)** e **Irã (0 a 0)**, goleou a **Nova Zelândia por 5 a 1** e garantiu a liderança com **5 pontos** e saldo de **+4**. A chance de título subiu para **3,4%**, em alta.\n\nO mata-mata começa contra o **Senegal** (**49,1%**), num confronto em que a Bélgica é ligeira favorita. Mais adiante, o caminho reserva os **Estados Unidos** nas oitavas e a **Espanha** projetada para as quartas.\n\nCom **17,1%** de semifinal, a seleção belga tem potencial — mas precisará repetir no mata-mata a contundência que só apareceu na última rodada da fase de grupos.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "03353e76f618484f"
+      "title": "Bélgica supera o Senegal e avança às oitavas",
+      "summary": "Vitória por 3 a 2 leva a Bélgica às oitavas e a 4,9% de título; o próximo são os Estados Unidos.",
+      "body": "A **Bélgica** superou o **Senegal por 3 a 2** num jogo movimentado das 16-avos e avançou às oitavas de final. A vitória elevou a chance de título para **4,9%**, em alta, confirmando a evolução da seleção no mata-mata.\n\nNas oitavas, o adversário são os **Estados Unidos** (**42,8%** de chance de vitória belga), num confronto equilibrado. Mais adiante, o caminho pode esbarrar na **Espanha** nas quartas e na **França** numa possível semifinal. Com **25%** de chance de semifinal, a Bélgica mira voos altos.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "3f336012d7a527b5"
     },
     {
       "id": "a-team-morocco",
       "slug": "morocco",
       "type": "team",
       "title": "Marrocos encara o Canadá nas oitavas como favorito",
-      "summary": "Após derrubar a Holanda, o Marrocos (5,3% de título) é favorito diante do Canadá nas oitavas de final.",
-      "body": "O **Marrocos** segue como a sensação do mata-mata. Depois de eliminar a **Holanda por 4 a 3** nas 16-avos, a seleção chega às oitavas com **5,3%** de chance de título e o favoritismo diante do **Canadá** (**52,3%**).\n\nSe avançar, o caminho pode esbarrar na **França** nas quartas e na **Espanha** numa possível semifinal. Com **25,9%** de chance de semifinal, o Marrocos mira voos altos — mas primeiro precisa confirmar o favoritismo contra um Canadá que também vem surpreendendo.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "9e4f62979e1320f1"
+      "summary": "Após derrubar a Holanda, o Marrocos (5,1% de título) é favorito diante do Canadá nas oitavas de final.",
+      "body": "O **Marrocos** segue como a sensação do mata-mata. Depois de eliminar a **Holanda por 4 a 3** nas 16-avos, a seleção chega às oitavas com **5,1%** de chance de título e o favoritismo diante do **Canadá** (**52,3%**).\n\nSe avançar, o caminho pode esbarrar na favorita **França** nas quartas e na **Espanha** numa possível semifinal. Com **25,9%** de chance de semifinal, o Marrocos mira voos altos — mas primeiro precisa confirmar o favoritismo contra um Canadá que também vem surpreendendo.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "33ca1baccc4eb3ec"
     },
     {
       "id": "a-team-austria",
@@ -308,8 +308,8 @@
       "title": "Áustria avança em segundo no Grupo J",
       "summary": "Vice do Grupo J com 4 pontos, a Áustria terá a Espanha como desafio nas 16-avos.",
       "body": "A **Áustria** avançou em segundo no Grupo J, com **4 pontos**, em campanha de altos e baixos: venceu a **Jordânia (3 a 1)**, perdeu para a **Argentina (2 a 0)** e cedeu um eletrizante **3 a 3 à Argélia**. A chance de título é de **0,5%**.\n\nO mata-mata reserva um teste duríssimo: a **Espanha** nas 16-avos (**14,7%** de chance de vitória). Para surpreender uma das candidatas ao título, a seleção austríaca precisará de uma noite muito acima da média.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "43bcf81718802c26"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "1dc243b80e6464a1"
     },
     {
       "id": "a-team-colombia",
@@ -318,8 +318,8 @@
       "title": "Colômbia surpreende, lidera o grupo e sonha alto",
       "summary": "Primeira do Grupo K com 7 pontos e 3% de título; depois de Gana, a Argentina surge no caminho.",
       "body": "A **Colômbia** fez uma campanha sólida e venceu o Grupo K com **7 pontos** e saldo de **+3**. Bateu **Uzbequistão (3 a 1)** e **Congo (RD) (1 a 0)** e segurou um **0 a 0 diante de Portugal**, exibindo consistência defensiva. A chance de título subiu para **3%**, em alta.\n\nO mata-mata começa contra **Gana** (**54,2%**), adversário em que a seleção é favorita, seguida da **Suíça** projetada para as oitavas. O grande obstáculo aparece nas quartas: a **Argentina**, favorita ao título.\n\nCom **15,4%** de semifinal, a Colômbia chega embalada — mas precisará derrubar uma potência para sonhar com algo maior.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "781e5503a3b6ba3d"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "a4be8ecfd35b9fa9"
     },
     {
       "id": "a-team-egypt",
@@ -328,8 +328,8 @@
       "title": "Egito faz boa campanha e avança no Grupo G",
       "summary": "Segundo do Grupo G com 5 pontos; o mata-mata começa em duelo aberto com a Austrália.",
       "body": "O **Egito** fez campanha consistente no Grupo G e avançou em segundo, com **5 pontos** e saldo de **+2**, sem perder: empates com **Bélgica (1 a 1)** e **Irã (1 a 1)** e a vitória de **3 a 1 sobre a Nova Zelândia**. A chance de título é de **0,7%**.\n\nO mata-mata começa em duelo aberto contra a **Austrália** (**40,9%**), em que o Egito é ligeiro favorito. É o tipo de jogo equilibrado que tende a se decidir nos detalhes.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "5d0a97ebd9b8652b"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "2f56ffdbaf7f3362"
     },
     {
       "id": "a-team-canada",
@@ -338,8 +338,8 @@
       "title": "Canadá supera a África do Sul e vai às oitavas",
       "summary": "Vitória por 1 a 0 leva o Canadá às oitavas, onde encara o Marrocos; a seleção soma 1,2% de título.",
       "body": "O **Canadá** deu mais um passo em sua campanha: bateu a **África do Sul por 1 a 0** nas 16-avos e avançou às oitavas de final. O gol decisivo coroou a regularidade canadense no momento mais importante.\n\nO desafio agora cresce: nas oitavas, o adversário é o **Marrocos** (**23,4%** de chance de vitória), embalado após eliminar a Holanda. Para seguir surpreendendo, o Canadá terá de superar uma das sensações do mata-mata.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "206abb8badd70a6e"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "70ea97bd699a61d8"
     },
     {
       "id": "a-team-haiti",
@@ -365,11 +365,11 @@
       "id": "a-team-bosnia-herzegovina",
       "slug": "bosnia-herzegovina",
       "type": "team",
-      "title": "Bósnia avança entre os melhores terceiros",
-      "summary": "Terceira do Grupo B, a Bósnia superou as expectativas e terá os Estados Unidos pela frente.",
-      "body": "A **Bósnia e Herzegovina** superou as expectativas e garantiu vaga entre os melhores terceiros do Grupo B, com **4 pontos**. Depois do empate com o **Canadá (1 a 1)** e da derrota para a **Suíça (4 a 1)**, reagiu com o **3 a 1 sobre o Catar** que assegurou a classificação. A chance de título é de **0,2%**.\n\nO mata-mata reserva o anfitrião **Estados Unidos** nas 16-avos (**23,9%** de chance de vitória). É um desafio grande, mas a seleção bósnia já mostrou que sabe reagir sob pressão.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "2ecac19a9c8662dd"
+      "title": "Bósnia cai para os Estados Unidos nas 16-avos",
+      "summary": "Surpresa entre os melhores terceiros, a Bósnia perdeu para os EUA por 2 a 0 e está eliminada.",
+      "body": "A **Bósnia e Herzegovina** encerrou sua campanha nas 16-avos, ao perder para os anfitriões **Estados Unidos por 2 a 0**. Diante do apoio da torcida americana, a seleção pouco pôde fazer para reverter o placar.\n\nMesmo eliminada, a Bósnia deixa boa impressão: superou as expectativas ao se classificar entre os melhores terceiros do Grupo B. Encerra a participação de cabeça erguida, após uma campanha acima do previsto.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "59096b27331df8b9"
     },
     {
       "id": "a-team-panama",
@@ -395,11 +395,11 @@
       "id": "a-team-congo-dr",
       "slug": "congo-dr",
       "type": "team",
-      "title": "Congo (RD) avança entre os melhores terceiros",
-      "summary": "Terceiro do Grupo K, o Congo (RD) garantiu vaga e terá a Inglaterra pela frente.",
-      "body": "O **Congo (RD)** garantiu vaga entre os melhores terceiros do Grupo K ao fechar a fase com **vitória de 3 a 1 sobre o Uzbequistão**. Antes, havia empatado com **Portugal (1 a 1)** e perdido para a **Colômbia (1 a 0)**. A chance de título é de **0,2%**, em alta.\n\nO mata-mata reserva um desafio duríssimo: a **Inglaterra** nas 16-avos (**13,9%** de chance de vitória). Para seguir vivo, terá de superar a diferença técnica e segurar o poder ofensivo inglês.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "5f73c41064657711"
+      "title": "Congo (RD) cai para a Inglaterra e se despede",
+      "summary": "Um dos melhores terceiros, o Congo (RD) perdeu para a Inglaterra por 2 a 1 e está eliminado nas 16-avos.",
+      "body": "A campanha do **Congo (RD)** chegou ao fim nas 16-avos: a seleção perdeu para a **Inglaterra por 2 a 1** num jogo em que vendeu caro a derrota. Diante de uma das candidatas ao título, faltou pouco para levar o duelo aos pênaltis.\n\nO Congo (RD) havia se classificado entre os melhores terceiros do Grupo K, numa campanha acima do esperado. Encerra a participação com a sensação de dever cumprido, tendo incomodado adversários de mais tradição.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "342cb1ab8bdf373f"
     },
     {
       "id": "a-team-ivory-coast",
@@ -408,8 +408,8 @@
       "title": "Costa do Marfim cai para a Noruega nas 16-avos",
       "summary": "Vice do Grupo E, a Costa do Marfim perdeu para a Noruega por 2 a 1 e foi eliminada nas 16-avos.",
       "body": "A campanha da **Costa do Marfim** chegou ao fim nas 16-avos: a seleção perdeu para a **Noruega por 2 a 1** e se despede da Copa. Depois de uma fase de grupos sólida, faltou eficiência para superar um adversário de bom poder ofensivo.\n\nA seleção marfinense havia avançado em segundo no Grupo E, à frente do Equador, mas não conseguiu repetir a consistência no mata-mata. Encerra a participação com a sensação de que poderia ter ido além.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "72257ff84bc7d579"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "ff2cb74174477580"
     },
     {
       "id": "a-team-qatar",
@@ -468,8 +468,8 @@
       "title": "Noruega surpreende, elimina a Costa do Marfim e pega o Brasil",
       "summary": "Vitória por 2 a 1 leva a Noruega às oitavas, onde terá o Brasil pela frente; a seleção soma 1,7% de título.",
       "body": "A **Noruega** deu mais um passo em sua campanha ao bater a **Costa do Marfim por 2 a 1** nas 16-avos e avançar às oitavas de final. O bom poder ofensivo, que já rendera goleadas na fase de grupos, decidiu novamente.\n\nO desafio agora é gigante: nas oitavas, o adversário é o **Brasil** (**19,6%** de chance de vitória), um dos favoritos ao título. Para seguir surpreendendo, a seleção norueguesa terá de superar uma das maiores forças do torneio.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "2a252f53228bb3f2"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "837424457aa637f8"
     },
     {
       "id": "a-team-scotland",
@@ -738,8 +738,8 @@
       "title": "México estreia com vitória sobre a África do Sul",
       "summary": "Triunfo por 2 a 0 abriu a campanha perfeita do México no Grupo A; a África do Sul ainda se classificaria.",
       "body": "Com autoridade diante de sua torcida, o **México** estreou batendo a **África do Sul por 2 a 0** e deu o primeiro passo rumo ao aproveitamento perfeito no **Grupo A**.\n\nA **África do Sul** sentiu o revés, mas se recuperaria ao longo da fase e terminaria em segundo, numa classificação acima do esperado.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "6f10c8c832f44663"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "5536c0f42694d6b0"
     },
     {
       "id": "a-recap-south-korea-vs-czechia",
@@ -758,8 +758,8 @@
       "title": "Canadá e Bósnia empatam na abertura do Grupo B",
       "summary": "O 1 a 1 abriu de forma equilibrada um grupo em que as duas seleções acabariam classificadas.",
       "body": "Num duelo parelho, **Canadá** e **Bósnia e Herzegovina** ficaram no **1 a 1** e dividiram pontos na estreia do **Grupo B**.\n\nO resultado se mostraria valioso para ambos: o Canadá avançaria em segundo e a Bósnia garantiria vaga entre os melhores terceiros, numa campanha que superou as expectativas.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "e9c8a3aee39ae79f"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "7b78eb32c6e1c052"
     },
     {
       "id": "a-recap-united-states-vs-paraguay",
@@ -768,8 +768,8 @@
       "title": "Estados Unidos atropelam o Paraguai na estreia",
       "summary": "Goleada por 4 a 1 lançou os EUA na liderança do Grupo D; o Paraguai se classificaria como terceiro.",
       "body": "Os **Estados Unidos** não tomaram conhecimento do **Paraguai** e golearam por **4 a 1** na estreia, mostrando força ofensiva diante da torcida no **Grupo D**.\n\nApesar do tropeço inicial, o **Paraguai** se reorganizaria e terminaria classificado entre os melhores terceiros, garantindo presença no mata-mata.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "b5b9c5e9b3326013"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "baa3d2b23a2afb75"
     },
     {
       "id": "a-recap-qatar-vs-switzerland",
@@ -788,8 +788,8 @@
       "title": "Brasil e Marrocos empatam em duelo de líderes do Grupo C",
       "summary": "O 1 a 1 entre os favoritos manteve os dois invictos rumo à classificação no Grupo C.",
       "body": "Num confronto de forças, **Brasil** e **Marrocos** ficaram no **1 a 1** e mostraram por que dominariam o **Grupo C**.\n\nO equilíbrio se confirmaria até o fim: o Brasil terminaria líder e o Marrocos em segundo, ambos classificados e confirmando o favoritismo da chave.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "7738137f451969c4"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "7d24e2e02b68919e"
     },
     {
       "id": "a-recap-haiti-vs-scotland",
@@ -838,8 +838,8 @@
       "title": "Costa do Marfim vence o Equador em jogo truncado",
       "summary": "O 1 a 0 deu vantagem à Costa do Marfim; o Equador se classificaria só na rodada final.",
       "body": "Num jogo de poucas chances, a **Costa do Marfim** bateu o **Equador por 1 a 0** e largou bem no **Grupo E**.\n\nA derrota complicou as contas equatorianas, mas o Equador daria a volta por cima ao bater a Alemanha na rodada final e avançar entre os melhores terceiros.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "ce3c95c9885919e1"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "3d9beb432b9e8c53"
     },
     {
       "id": "a-recap-sweden-vs-tunisia",
@@ -848,8 +848,8 @@
       "title": "Suécia goleia a Tunísia e larga na frente no Grupo F",
       "summary": "O 5 a 1 lançou a Suécia rumo à classificação; a Tunísia acabaria eliminada.",
       "body": "Avassaladora, a **Suécia** goleou a **Tunísia por 5 a 1** e abriu sua campanha no **Grupo F** com autoridade.\n\nO resultado ajudaria a seleção sueca a avançar entre os melhores terceiros, ao passo que a **Tunísia** terminaria sem vaga, na lanterna do grupo.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "4cb30f571070d731"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "341e140fcbbf64db"
     },
     {
       "id": "a-recap-spain-vs-cape-verde-islands",
@@ -858,8 +858,8 @@
       "title": "Cabo Verde segura a Espanha em empate histórico",
       "summary": "O 0 a 0 surpreendente rendeu um ponto valioso a Cabo Verde, que se classificaria.",
       "body": "Numa exibição defensiva de gala, **Cabo Verde** segurou a **Espanha num 0 a 0** e arrancou um ponto histórico no **Grupo H**.\n\nO empate seria o alicerce da campanha cabo-verdiana, que avançaria em segundo sem vencer nenhum jogo. A Espanha, mesmo tropeçando, terminaria líder do grupo.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "663c7753460afa45"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "99e2935d7f86ebc9"
     },
     {
       "id": "a-recap-belgium-vs-egypt",
@@ -868,8 +868,8 @@
       "title": "Bélgica e Egito empatam e deixam o Grupo G aberto",
       "summary": "O 1 a 1 manteve o grupo equilibrado; ao fim, as duas avançariam ao mata-mata.",
       "body": "Em duelo parelho, **Bélgica** e **Egito** ficaram no **1 a 1** e mantiveram o **Grupo G** em aberto após a estreia.\n\nO equilíbrio percorreria toda a fase: a Bélgica terminaria líder e o Egito em segundo, com as duas seleções carimbando vaga no mata-mata.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "3029433d7592a6b4"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "9512ba6e46e1cd1e"
     },
     {
       "id": "a-recap-saudi-arabia-vs-uruguay",
@@ -898,8 +898,8 @@
       "title": "França vence o Senegal e assume a ponta do Grupo I",
       "summary": "O 3 a 1 confirmou o favoritismo francês; o Senegal se classificaria como terceiro.",
       "body": "Mostrando categoria, a **França** bateu o **Senegal por 3 a 1** e assumiu a liderança do **Grupo I** logo na estreia.\n\nApesar da derrota, o **Senegal** se recuperaria e garantiria vaga entre os melhores terceiros, enquanto os franceses seguiriam rumo à campanha perfeita no grupo.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "ac48f7296c4e5455"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "b05ca608f6db6036"
     },
     {
       "id": "a-recap-iraq-vs-norway",
@@ -908,8 +908,8 @@
       "title": "Noruega goleia o Iraque e larga forte no Grupo I",
       "summary": "O 4 a 1 lançou a Noruega rumo à classificação; o Iraque se despediria sem pontos.",
       "body": "Com facilidade, a **Noruega** goleou o **Iraque por 4 a 1** e abriu sua campanha no **Grupo I** exibindo poder ofensivo.\n\nO resultado encaminharia a vaga norueguesa em segundo, ao passo que o **Iraque** amargaria três derrotas e fecharia o grupo na lanterna.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "ab8b2be87d9928bb"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "33e2cf88dd2a517b"
     },
     {
       "id": "a-recap-argentina-vs-algeria",
@@ -918,8 +918,8 @@
       "title": "Argentina atropela a Argélia e assume a liderança",
       "summary": "O 3 a 0 lançou a Argentina rumo à campanha perfeita; a Argélia se classificaria como terceiro.",
       "body": "Dominante, a **Argentina** atropelou a **Argélia por 3 a 0** e deu o tom de sua campanha no **Grupo J**.\n\nA goleada reforçou o status de favorita ao título, enquanto a **Argélia**, apesar do revés, terminaria classificada entre os melhores terceiros.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "68409d1d199a0be4"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "47e6591a1e886339"
     },
     {
       "id": "a-recap-austria-vs-jordan",
@@ -928,8 +928,8 @@
       "title": "Áustria vence a Jordânia e larga bem no Grupo J",
       "summary": "O 3 a 1 encaminhou a vaga austríaca; a Jordânia se despediria sem pontos.",
       "body": "Eficiente, a **Áustria** bateu a **Jordânia por 3 a 1** e deu o primeiro passo rumo ao mata-mata no **Grupo J**.\n\nA vitória ajudaria a seleção austríaca a avançar em segundo, ao passo que a **Jordânia** encerraria sua estreia em Copas sem somar pontos.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "e0ff16ebeade20d2"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "b6a5bfc055f3f0b4"
     },
     {
       "id": "a-recap-portugal-vs-congo-dr",
@@ -938,8 +938,8 @@
       "title": "Congo (RD) surpreende e arranca empate com Portugal",
       "summary": "O 1 a 1 custou pontos a Portugal; ainda assim, as duas seleções se classificariam.",
       "body": "Numa zebra parcial, o **Congo (RD)** segurou **Portugal num 1 a 1** e abriu o **Grupo K** com surpresa.\n\nO tropeço complicaria a vida portuguesa na briga pela liderança, mas tanto Portugal quanto o Congo (RD) terminariam classificados, este último entre os melhores terceiros.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "ec4236a65512825c"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "f918a88fd856accc"
     },
     {
       "id": "a-recap-england-vs-croatia",
@@ -948,8 +948,8 @@
       "title": "Inglaterra vence a Croácia em jogo de seis gols",
       "summary": "O 4 a 2 lançou a Inglaterra na liderança do Grupo L; a Croácia se recuperaria depois.",
       "body": "Em partida de muitos gols, a **Inglaterra** superou a **Croácia por 4 a 2** e largou na frente no **Grupo L**.\n\nA derrota não abateu os croatas, que reagiriam e terminariam em segundo, enquanto os ingleses seguiriam firmes rumo à liderança do grupo.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "2e7a0c931222e6f7"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "0d47fe339e03af18"
     },
     {
       "id": "a-recap-ghana-vs-panama",
@@ -958,8 +958,8 @@
       "title": "Gana vence o Panamá e dá passo rumo à classificação",
       "summary": "O 1 a 0 encaminhou a vaga de Gana entre os melhores terceiros; o Panamá ficaria de fora.",
       "body": "Num jogo apertado, **Gana** bateu o **Panamá por 1 a 0** e deu um passo importante no **Grupo L**.\n\nA vitória ajudaria a seleção ganesa a avançar entre os melhores terceiros, ao passo que o **Panamá** terminaria sem pontos, eliminado.",
-      "generatedAt": "2026-06-30T12:37:19Z",
-      "inputHash": "0d7a05745f91121f"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "4c5f7fec4b557a06"
     },
     {
       "id": "a-recap-uzbekistan-vs-colombia",
@@ -968,8 +968,8 @@
       "title": "Colômbia vence o Uzbequistão e larga",
       "summary": "O 3 a 1 lançou a Colômbia rumo à liderança do Grupo K; o Uzbequistão se despediria sem pontos.",
       "body": "Com tranquilidade, a **Colômbia** bateu o **Uzbequistão por 3 a 1** e abriu sua campanha no **Grupo K** na liderança.\n\nO resultado anteciparia o domínio colombiano no grupo, enquanto o **Uzbequistão** somaria três derrotas e fecharia a chave na lanterna.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "f6386f69724a02e4"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "53001c44e629af50"
     },
     {
       "id": "a-recap-czechia-vs-south-africa",
@@ -988,8 +988,8 @@
       "title": "Suíça atropela a Bósnia e confirma força no Grupo B",
       "summary": "O 4 a 1 firmou a Suíça como líder; a Bósnia ainda assim avançaria como terceiro.",
       "body": "Em grande atuação, a **Suíça** goleou a **Bósnia e Herzegovina por 4 a 1** e assumiu o controle do **Grupo B**.\n\nO revés não tirou a Bósnia da disputa: a seleção se reabilitaria e garantiria vaga entre os melhores terceiros, enquanto a Suíça caminharia rumo à liderança.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "a6f96b8d2a020f43"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "6563f78ace0f2496"
     },
     {
       "id": "a-recap-canada-vs-qatar",
@@ -998,8 +998,8 @@
       "title": "Canadá goleia o Catar e encaminha a classificação",
       "summary": "O 6 a 0 turbinou o saldo canadense e ajudou a garantir a vaga no Grupo B.",
       "body": "Com show ofensivo, o **Canadá** goleou o **Catar por 6 a 0** e deu um salto no saldo de gols do **Grupo B**.\n\nA vantagem seria decisiva nas contas finais, ajudando o Canadá a avançar em segundo. O **Catar**, anfitrião, se despediria sem vencer.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "8f668936f9be1b00"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "33c747211af87379"
     },
     {
       "id": "a-recap-mexico-vs-south-korea",
@@ -1008,8 +1008,8 @@
       "title": "México bate a Coreia do Sul e segue 100% no Grupo",
       "summary": "O 1 a 0 manteve o México perfeito; a Coreia terminaria em terceiro, fora do mata-mata.",
       "body": "Num jogo decidido nos detalhes, o **México** superou a **Coreia do Sul por 1 a 0** e seguiu firme rumo ao aproveitamento perfeito no **Grupo A**.\n\nA derrota empurraria a **Coreia** para o terceiro lugar, e a seleção acabaria fora da disputa pelas vagas dos melhores terceiros.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "fffd40472a71429c"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "26580688dcd2a633"
     },
     {
       "id": "a-recap-united-states-vs-australia",
@@ -1018,8 +1018,8 @@
       "title": "Estados Unidos batem a Austrália e seguem na ponta",
       "summary": "O 2 a 0 manteve os EUA líderes do Grupo D; a Austrália avançaria em segundo.",
       "body": "Sólidos, os **Estados Unidos** bateram a **Austrália por 2 a 0** e mantiveram a liderança do **Grupo D**.\n\nApesar da derrota, a **Austrália** se garantiria no mata-mata em segundo, enquanto o anfitrião confirmava boa fase antes de um tropeço no encerramento.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "b0372c5d2dd2ad9a"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "ab68d7e7f95ed370"
     },
     {
       "id": "a-recap-scotland-vs-morocco",
@@ -1028,8 +1028,8 @@
       "title": "Marrocos vence a Escócia e dá passo rumo à vaga",
       "summary": "O 1 a 0 encaminhou a classificação marroquina; a Escócia ficaria de fora.",
       "body": "Num jogo equilibrado, o **Marrocos** bateu a **Escócia por 1 a 0** e deu um passo importante no **Grupo C**.\n\nA vitória ajudaria os marroquinos a avançar em segundo, ao passo que a **Escócia** terminaria em terceiro, sem força para brigar entre os melhores terceiros.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "b370c2c26fa6352d"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "0645197d0057f4d3"
     },
     {
       "id": "a-recap-brazil-vs-haiti",
@@ -1038,8 +1038,8 @@
       "title": "Brasil goleia o Haiti e segue invicto no Grupo C",
       "summary": "O 3 a 0 manteve o Brasil na liderança; o Haiti se despediria sem pontos.",
       "body": "Com autoridade, o **Brasil** goleou o **Haiti por 3 a 0** e seguiu invicto na ponta do **Grupo C**.\n\nA vitória reforçou o favoritismo brasileiro na chave, enquanto o **Haiti** caminhava para a eliminação, sem somar pontos na primeira fase.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "4a49f84dfc8d6f56"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "0e8fd7bd465a1369"
     },
     {
       "id": "a-recap-turkey-vs-paraguay",
@@ -1048,8 +1048,8 @@
       "title": "Paraguai vence a Turquia e respira no Grupo D",
       "summary": "O 1 a 0 manteve o Paraguai vivo; a vaga viria como melhor terceiro.",
       "body": "Num jogo tenso, o **Paraguai** superou a **Turquia por 1 a 0** e recuperou o fôlego na briga por vaga no **Grupo D**.\n\nO resultado seria peça-chave da classificação paraguaia entre os melhores terceiros, enquanto a **Turquia** complicava de vez suas contas no grupo.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "6ecf6a2c5b0c93f8"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "4b455900edeb3dde"
     },
     {
       "id": "a-recap-netherlands-vs-sweden",
@@ -1058,8 +1058,8 @@
       "title": "Holanda goleia a Suécia e assume a ponta do Grupo F",
       "summary": "O 5 a 1 firmou a Holanda na liderança; a Suécia avançaria como terceiro.",
       "body": "Em exibição de gala, a **Holanda** goleou a **Suécia por 5 a 1** e assumiu o controle do **Grupo F**.\n\nMesmo com a derrota dura, a **Suécia** terminaria classificada entre os melhores terceiros, enquanto os holandeses seguiam rumo à liderança da chave.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "aa4cbe3daa76b8fb"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "05fac35f06d18ef6"
     },
     {
       "id": "a-recap-germany-vs-ivory-coast",
@@ -1068,8 +1068,8 @@
       "title": "Alemanha bate a Costa do Marfim e segue na ponta",
       "summary": "O 2 a 1 manteve a Alemanha líder do Grupo E; a Costa do Marfim avançaria em segundo.",
       "body": "Num duelo equilibrado, a **Alemanha** superou a **Costa do Marfim por 2 a 1** e manteve a liderança do **Grupo E**.\n\nA derrota não tirou a Costa do Marfim do mata-mata: a seleção avançaria em segundo, enquanto a Alemanha caminhava para terminar em primeiro, apesar do susto na rodada final.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "204c8aa9f8a0120d"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "8c3ec53423ee4e64"
     },
     {
       "id": "a-recap-ecuador-vs-curacao",
@@ -1078,8 +1078,8 @@
       "title": "Equador e Curaçao empatam e adiam decisão no Grupo",
       "summary": "O 0 a 0 complicou as contas das duas; só o Equador se classificaria depois.",
       "body": "Num jogo truncado, **Equador** e **Curaçao** ficaram no **0 a 0** e deixaram a definição do **Grupo E** para a rodada final.\n\nO ponto pareceria insuficiente para o Equador, que, no entanto, derrubaria a Alemanha no encerramento e avançaria como terceiro. O **Curaçao** se despediria sem vaga.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "6c3670d757f718a8"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "1a199d4e0ee41345"
     },
     {
       "id": "a-recap-tunisia-vs-japan",
@@ -1098,8 +1098,8 @@
       "title": "Espanha goleia a Arábia Saudita e retoma o controle",
       "summary": "O 4 a 0 recolocou a Espanha na liderança; a Arábia ficaria de fora.",
       "body": "Reagindo ao tropeço inicial, a **Espanha** goleou a **Arábia Saudita por 4 a 0** e retomou o controle do **Grupo H**.\n\nO resultado encaminharia a liderança espanhola, enquanto a **Arábia Saudita** afundava nas contas do grupo e terminaria eliminada.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "0be5d714c5eab3fc"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "04ac2b2500bdd1da"
     },
     {
       "id": "a-recap-belgium-vs-iran",
@@ -1108,8 +1108,8 @@
       "title": "Bélgica e Irã ficam no zero no Grupo G",
       "summary": "O 0 a 0 manteve a Bélgica na ponta; o Irã seguiria vivo por mais uma rodada.",
       "body": "Em jogo de poucas chances, **Bélgica** e **Irã** ficaram no **0 a 0** num duelo travado do **Grupo G**.\n\nO ponto manteria a Bélgica no rumo da liderança, que só seria confirmada na rodada final. O **Irã** seguiria vivo por algum tempo, mas terminaria fora do mata-mata.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "ba92cf66f215bb42"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "b415ef9579dc08cb"
     },
     {
       "id": "a-recap-uruguay-vs-cape-verde-islands",
@@ -1128,8 +1128,8 @@
       "title": "Egito vence a Nova Zelândia e encaminha a vaga",
       "summary": "O 3 a 1 deu passo decisivo ao Egito no Grupo G; a Nova Zelândia ficaria de fora.",
       "body": "Eficiente, o **Egito** bateu a **Nova Zelândia por 3 a 1** e deu um passo importante rumo ao mata-mata no **Grupo G**.\n\nA vitória ajudaria a seleção egípcia a avançar em segundo, ao passo que a **Nova Zelândia** somaria mais uma derrota e terminaria na lanterna.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "3ea2334c9512af52"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "840d66c20bbdb9a8"
     },
     {
       "id": "a-recap-argentina-vs-austria",
@@ -1138,8 +1138,8 @@
       "title": "Argentina vence a Áustria e segue 100% no Grupo J",
       "summary": "O 2 a 0 manteve a Argentina perfeita e líder isolada do título.",
       "body": "Mais uma vez segura, a **Argentina** bateu a **Áustria por 2 a 0** e seguiu com aproveitamento perfeito no **Grupo J**.\n\nO resultado reforçou o favoritismo argentino na corrida pelo título, enquanto a **Áustria**, mesmo derrotada, encaminhava a classificação em segundo.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "a7e5ab1acf9ffc1f"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "a296897f52507941"
     },
     {
       "id": "a-recap-france-vs-iraq",
@@ -1148,8 +1148,8 @@
       "title": "França bate o Iraque e segue invicta no Grupo I",
       "summary": "O 3 a 0 manteve a França na ponta; o Iraque seguiria sem pontuar.",
       "body": "Com tranquilidade, a **França** bateu o **Iraque por 3 a 0** e manteve o passo perfeito no **Grupo I**.\n\nA vitória encaminhava a liderança francesa, enquanto o **Iraque** somava mais um revés e caminhava para fechar o grupo sem pontos.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "ce8f6835b38d8aad"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "3e11cbe48e598364"
     },
     {
       "id": "a-recap-norway-vs-senegal",
@@ -1158,8 +1158,8 @@
       "title": "Noruega vence o Senegal em duelo de seis pontos",
       "summary": "O 3 a 2 garantiu a Noruega no mata-mata; o Senegal avançaria como terceiro.",
       "body": "Em jogo eletrizante, a **Noruega** superou o **Senegal por 3 a 2** num confronto direto por vaga no **Grupo I**.\n\nA vitória asseguraria a Noruega em segundo, mas o **Senegal** ainda daria a volta por cima na rodada final e se classificaria entre os melhores terceiros.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "cffe330668874a97"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "8cd9319d3987a1e8"
     },
     {
       "id": "a-recap-jordan-vs-algeria",
@@ -1178,8 +1178,8 @@
       "title": "Portugal goleia o Uzbequistão e retoma o controle",
       "summary": "O 5 a 0 recolocou Portugal entre os líderes; o Uzbequistão seguiria sem pontos.",
       "body": "Reagindo ao empate inicial, **Portugal** goleou o **Uzbequistão por 5 a 0** e turbinou seu saldo no **Grupo K**.\n\nO resultado ajudaria os portugueses a avançar em segundo, ao passo que o **Uzbequistão** somava mais uma derrota e terminaria na lanterna.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "3c86826fc1066e47"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "9d6dc8446fccbdcf"
     },
     {
       "id": "a-recap-england-vs-ghana",
@@ -1188,8 +1188,8 @@
       "title": "Inglaterra empata com Gana e segue líder do Grupo L",
       "summary": "O 0 a 0 manteve as duas classificadas, com a ponta ainda em disputa.",
       "body": "Em jogo truncado, **Inglaterra** e **Gana** ficaram no **0 a 0** num duelo equilibrado do **Grupo L**.\n\nO ponto manteria a Inglaterra na liderança e seria útil a Gana, que terminaria classificada entre os melhores terceiros.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "0d8f6690d9426354"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "aa60803d6d299ea7"
     },
     {
       "id": "a-scenario-spain",
@@ -1198,8 +1198,8 @@
       "title": "O caminho da Espanha: clássico ibérico e França pela",
       "summary": "Começo acessível, mas com Portugal nas oitavas, França na semifinal e Argentina como possível adversária na decisão.",
       "body": "A **Espanha** tirou um caminho equilibrado. A largada é acessível, com a **Áustria** nas 16-avos, mas as oitavas já reservam um clássico ibérico contra **Portugal** (**57,8%**), sempre carregado de história.\n\nA partir das quartas, o roteiro endurece: a **Bélgica** pode aparecer (**37,6%**), seguida de uma semifinal contra a favorita **França** (**55,8%**) e de uma decisão diante da **Argentina** (**30,7%**). Para voltar a levantar a taça, a seleção espanhola precisará superar uma sequência de potências na reta final.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "c06d88268eb8d906"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "d97eaf0b0580e247"
     },
     {
       "id": "a-scenario-argentina",
@@ -1208,8 +1208,8 @@
       "title": "O caminho da Argentina: chave favorável rumo à decisão",
       "summary": "Trajeto acessível no início, com Brasil na semifinal e a favorita França como provável adversária na final.",
       "body": "A **Argentina** tirou um chaveamento favorável. O caminho mais provável começa de forma acessível, com **Cabo Verde** nas 16-avos e o **Egito** nas oitavas (**53,8%**), dois adversários que a seleção encara como ampla favorita.\n\nO peso aumenta na reta final: a **Colômbia** pode aparecer nas quartas (**37,4%**), seguida de uma semifinal contra o **Brasil** (**41%**) e de uma possível decisão diante da **França** (**35,4%**), hoje a favorita ao título. É um percurso tranquilo até as quartas, mas que reserva confrontos de peso na reta final.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "628c8f6e7d3edca0"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "5530f8910dd83cad"
     },
     {
       "id": "a-scenario-france",
@@ -1218,18 +1218,18 @@
       "title": "O caminho da França: a favorita com chave aliviada",
       "summary": "Líder das projeções, a França tem Paraguai e Marrocos antes de Espanha na semi e Argentina numa possível final.",
       "body": "A **França** virou a favorita ao título e ainda tirou um caminho aliviado pelas zebras. A trajetória mais provável passa pela **Suécia** — já superada — e pelo **Paraguai** nas oitavas (**100%**), adversário bem mais acessível do que se esperava daquele lado da chave.\n\nA dificuldade cresce adiante: o **Marrocos** pode surgir nas quartas (**64,5%**), antes de uma semifinal contra a **Espanha** (**33,3%**) e de uma possível final diante da **Argentina** (**30,5%**). No papel, é um percurso favorável para quem já lidera as projeções.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "2d9bc7c18b08239a"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "93660a81ebe9e150"
     },
     {
       "id": "a-scenario-brazil",
       "slug": "brazil",
       "type": "scenario",
-      "title": "O caminho do Brasil: Noruega e México antes dos gigantes",
-      "summary": "Já nas oitavas, o Brasil tem a Noruega pela frente, com México nas quartas e um possível clássico com a Argentina.",
-      "body": "O **Brasil** já garantiu presença nas oitavas ao superar o **Japão** nas 16-avos, e o próximo adversário está definido: a **Noruega** (**100%**), surpresa que eliminou a Costa do Marfim.\n\nO caminho segue exigente: o **México** pode aparecer nas quartas (**46,6%**), antes de um clássico com a **Argentina** na semifinal (**50,2%**) e de uma possível final contra a **França** (**35,6%**). É um roteiro que, embora acessível no início, cobra caro na reta final para a seleção voltar a decidir o título.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "dc5dc67a1e82fe02"
+      "title": "O caminho do Brasil: Noruega e Inglaterra pela",
+      "summary": "Já nas oitavas, o Brasil tem a Noruega, com a Inglaterra provável nas quartas e um clássico com a Argentina na semi.",
+      "body": "O **Brasil** já garantiu presença nas oitavas ao superar o **Japão** nas 16-avos, e o próximo adversário está definido: a **Noruega** (**100%**), surpresa que eliminou a Costa do Marfim.\n\nO caminho ficou mais duro adiante: a **Inglaterra**, embalada, aparece como provável adversária nas quartas (**60,6%**), antes de um clássico com a **Argentina** na semifinal (**50,1%**) e de uma possível final contra a **França** (**34,9%**). É um roteiro que cobra caro na reta final para a seleção voltar a decidir o título.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "dce88bd720e885cb"
     },
     {
       "id": "a-scenario-england",
@@ -1238,8 +1238,8 @@
       "title": "O caminho da Inglaterra: gigantes a partir das quartas",
       "summary": "Início acessível, com Congo (RD) e México, antes de Brasil, Argentina e França na reta final.",
       "body": "A **Inglaterra** tirou um caminho favorável no início. A trajetória mais provável passa pelo **Congo (RD)** nas 16-avos e pelo **México** nas oitavas (**100%**), dois confrontos em que a seleção entra como favorita.\n\nA dificuldade aparece de uma vez nas quartas: o **Brasil** (**68,8%**), seguido de uma semifinal contra a **Argentina** (**50,1%**) e de uma possível final diante da **França** (**35,6%**). Para chegar à decisão, os ingleses teriam de superar três das maiores forças do torneio em sequência.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "a3dff38a261f375d"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "89e401aa5d606495"
     },
     {
       "id": "a-scenario-netherlands",
@@ -1258,8 +1258,8 @@
       "title": "O caminho de Portugal: clássico ibérico já nas oitavas",
       "summary": "Caminho difícil: a Espanha aparece já nas oitavas, com Bélgica, França e Argentina na sequência.",
       "body": "**Portugal** tirou um caminho difícil. Depois da **Croácia** nas 16-avos — duelo de tradição —, as oitavas reservam o clássico ibérico contra a **Espanha** (**74,6%**), um dos confrontos mais aguardados do torneio.\n\nSe avançar, o roteiro segue pesado: a **Bélgica** nas quartas (**37,7%**), a favorita **França** na semifinal (**56,1%**) e uma possível final diante da **Argentina** (**30,5%**). É uma chave que cobra um desempenho de altíssimo nível desde as primeiras fases do mata-mata.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "03f65512718ffd6c"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "bb103a640a6a3f8c"
     },
     {
       "id": "a-scenario-germany",
@@ -1275,11 +1275,11 @@
       "id": "a-scenario-belgium",
       "slug": "belgium",
       "type": "scenario",
-      "title": "O caminho da Bélgica: Espanha e França na reta final",
-      "summary": "Caminho difícil: Senegal e Estados Unidos no início, antes de Espanha nas quartas e França na semifinal.",
-      "body": "A **Bélgica** tirou um caminho exigente. O início é acessível, com o **Senegal** nas 16-avos e os **Estados Unidos** projetados para as oitavas (**63,8%**), confrontos em que a seleção leva vantagem.\n\nA dificuldade cresce na reta final: a **Espanha** pode aparecer nas quartas (**47,3%**), seguida de uma semifinal contra a favorita **França** (**56%**) e de uma possível decisão diante da **Argentina** (**30,6%**). É um percurso viável até certo ponto, mas que esbarra nas maiores forças do torneio quando o mata-mata aperta.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "727a315752799386"
+      "title": "O caminho da Bélgica: Estados Unidos e depois os gigantes",
+      "summary": "Nas oitavas, a Bélgica pega os Estados Unidos; Espanha e França aparecem na reta final.",
+      "body": "A **Bélgica** avançou às oitavas ao superar o **Senegal**, e agora tem os **Estados Unidos** pela frente (**100%**), num duelo em que leva ligeira vantagem.\n\nA dificuldade cresce depois: a **Espanha** pode aparecer nas quartas (**47,2%**), seguida de uma semifinal contra a favorita **França** (**56%**) e de uma possível decisão diante da **Argentina** (**30%**). É um caminho que fica muito duro a partir das quartas, quando a Bélgica esbarra nas maiores forças do torneio.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "dafa1aa1b6b35cc6"
     },
     {
       "id": "a-scenario-morocco",
@@ -1288,8 +1288,8 @@
       "title": "O caminho do Marrocos: sensação do mata-mata mira longe",
       "summary": "Após eliminar a Holanda, o Marrocos pega o Canadá nas oitavas, com a favorita França possível nas quartas.",
       "body": "O **Marrocos** virou a sensação do mata-mata ao eliminar a **Holanda** nas 16-avos, e agora tem pela frente o **Canadá** nas oitavas (**100%**), confronto em que é favorito.\n\nA dificuldade cresce adiante: a **França**, líder das projeções, pode aparecer nas quartas (**79%**), seguida de uma semifinal contra a **Espanha** (**33,4%**) e de uma possível final diante da **Argentina** (**30,6%**). É um caminho difícil, mas o Marrocos já mostrou que sabe derrubar gigantes — e chega embalado para tentar de novo.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "cb2d75a8ebadf987"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "26024327c6bb18cf"
     },
     {
       "id": "a-scenario-colombia",
@@ -1298,8 +1298,8 @@
       "title": "O caminho da Colômbia: a Argentina como barreira nas quartas",
       "summary": "Trajeto acessível no início, com Gana e Suíça, antes de um provável obstáculo argentino nas quartas.",
       "body": "A **Colômbia** tirou um caminho relativamente tranquilo no início. A trajetória mais provável passa por **Gana** nas 16-avos e pela **Suíça** nas oitavas (**60,2%**), adversários que a seleção encara como favorita.\n\nO grande obstáculo aparece nas quartas: a **Argentina** (**69%**). Se passar por ela, o roteiro reserva ainda uma semifinal contra o **Brasil** (**41%**) e uma possível final diante da **França** (**35,7%**). Para ir longe, a Colômbia terá de derrubar pelo menos uma das principais potências da competição.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "c7c9d2557a71a5e0"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "f07caa324a68a5b2"
     },
     {
       "id": "a-scenario-japan",
@@ -1318,8 +1318,8 @@
       "title": "Croácia vence o Panamá e se recupera no Grupo L",
       "summary": "O 1 a 0 recolocou a Croácia na disputa; o Panamá ficaria de fora.",
       "body": "Num jogo apertado, a **Croácia** bateu o **Panamá por 1 a 0** e se reabilitou na briga por vaga no **Grupo L**.\n\nA vitória seria parte da recuperação croata rumo ao segundo lugar, enquanto o **Panamá** seguia sem pontuar, caminhando para a eliminação.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "deb5160351d64670"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "95cc29a0af31baed"
     },
     {
       "id": "a-recap-colombia-vs-congo-dr",
@@ -1328,8 +1328,8 @@
       "title": "Colômbia bate o Congo (RD) e assume a ponta",
       "summary": "O 1 a 0 levou a Colômbia à liderança do Grupo K; o Congo avançaria como terceiro.",
       "body": "Sólida na defesa, a **Colômbia** superou o **Congo (RD) por 1 a 0** e assumiu a liderança do **Grupo K**.\n\nA derrota não tirou o Congo (RD) do mata-mata: a seleção garantiria vaga entre os melhores terceiros, enquanto a Colômbia confirmava uma campanha surpreendente na ponta.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "7dab586f2b1c2363"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "da779f0c9aa9ebc7"
     },
     {
       "id": "a-recap-switzerland-vs-canada",
@@ -1338,8 +1338,8 @@
       "title": "Suíça vence o Canadá e fecha o Grupo B na liderança",
       "summary": "O 2 a 1 garantiu a Suíça em primeiro; o Canadá avançaria mesmo derrotado.",
       "body": "Num duelo direto pela ponta, a **Suíça** bateu o **Canadá por 2 a 1** e fechou o **Grupo B** na liderança.\n\nO Canadá, mesmo derrotado, já tinha vaga assegurada em segundo, e as duas seleções confirmaram presença no mata-mata.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "4b1eec65cbee50ed"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "38056ef839a63523"
     },
     {
       "id": "a-recap-bosnia-herzegovina-vs-qatar",
@@ -1348,8 +1348,8 @@
       "title": "Bósnia bate o Catar e garante vaga no mata-mata",
       "summary": "O 3 a 1 confirmou a Bósnia entre os melhores terceiros; o Catar se despediria sem vaga.",
       "body": "Precisando vencer, a **Bósnia e Herzegovina** bateu o **Catar por 3 a 1** e assegurou sua classificação no **Grupo B**.\n\nO triunfo colocou a seleção bósnia entre os melhores terceiros, superando as expectativas, enquanto o anfitrião **Catar** encerrava sua campanha sem vencer.",
-      "generatedAt": "2026-06-30T12:37:19Z",
-      "inputHash": "2a72c2f8dd60a8fa"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "332a60a7cc1b1c99"
     },
     {
       "id": "a-recap-scotland-vs-brazil",
@@ -1358,8 +1358,8 @@
       "title": "Brasil goleia a Escócia e fecha o grupo em alta",
       "summary": "O 3 a 0 confirmou o Brasil líder do Grupo C e invicto na fase de grupos.",
       "body": "Confirmando o favoritismo, o **Brasil** goleou a **Escócia por 3 a 0** e fechou o **Grupo C** com autoridade, invicto.\n\nO triunfo manteve a seleção na liderança e em alta na corrida pelo título, enquanto a **Escócia** se despedia em terceiro, sem vaga entre os melhores terceiros.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "9946a1ea47819672"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "f08ce0a0a5d06fa8"
     },
     {
       "id": "a-recap-morocco-vs-haiti",
@@ -1368,18 +1368,18 @@
       "title": "Marrocos vence o Haiti em jogo de seis gols",
       "summary": "O 4 a 2 confirmou o Marrocos em segundo; o Haiti se despediria sem pontos.",
       "body": "Em partida movimentada, o **Marrocos** superou o **Haiti por 4 a 2** e fechou sua participação no **Grupo C** entre os classificados.\n\nO resultado confirmou os marroquinos em segundo, atrás do Brasil, enquanto o **Haiti** encerrava a campanha sem somar pontos.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "59ffcf3ea7654fbb"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "a17e05005313d1c8"
     },
     {
       "id": "a-scenario-united-states",
       "slug": "united-states",
       "type": "scenario",
-      "title": "O caminho dos Estados Unidos: janela aberta até as quartas",
-      "summary": "Caminho equilibrado no início, com Bósnia e Bélgica, antes de Espanha, França e Argentina na reta final.",
-      "body": "Os **Estados Unidos** tiraram um caminho equilibrado. O início é acessível, com a **Bósnia e Herzegovina** nas 16-avos e a **Bélgica** projetada para as oitavas (**61,6%**), confrontos em que o anfitrião pode brigar de igual para igual.\n\nA dificuldade cresce na reta final: a **Espanha** pode aparecer nas quartas (**47,2%**), seguida de uma semifinal contra a **França** (**42,2%**) e de uma possível decisão diante da **Argentina** (**30,7%**). É uma janela aberta até as quartas, antes de o caminho esbarrar nas maiores forças do torneio.",
-      "generatedAt": "2026-06-30T12:37:00Z",
-      "inputHash": "6f68145d7e3da004"
+      "title": "O caminho dos Estados Unidos: Bélgica logo nas oitavas",
+      "summary": "O anfitrião pega a Bélgica nas oitavas, com Espanha e França possíveis na reta final.",
+      "body": "Os **Estados Unidos** avançaram às oitavas ao bater a **Bósnia**, e agora encaram a **Bélgica** (**100%**), num confronto equilibrado em que o anfitrião é ligeiro azarão.\n\nSe passar, o caminho reserva a **Espanha** nas quartas (**47,3%**), uma semifinal contra a favorita **França** (**56%**) e uma possível final diante da **Argentina** (**30%**). Com o apoio da torcida, os EUA sonham em ir longe, mas terão de superar potências a partir das quartas.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "6ab95323fc9e8142"
     },
     {
       "id": "a-recap-czechia-vs-mexico",
@@ -1388,8 +1388,8 @@
       "title": "México goleia a Tchéquia e fecha o Grupo A com 100%",
       "summary": "O 3 a 0 confirmou o aproveitamento perfeito do México; a Tchéquia se despediria sem chances.",
       "body": "Implacável, o **México** goleou a **Tchéquia por 3 a 0** e fechou o **Grupo A** com aproveitamento perfeito.\n\nO anfitrião chegou ao mata-mata embalado, com três vitórias em três jogos, enquanto a **Tchéquia** encerrava a campanha na lanterna, eliminada.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "48e847bc349411ed"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "a39bded69a49e316"
     },
     {
       "id": "a-recap-south-africa-vs-south-korea",
@@ -1448,8 +1448,8 @@
       "title": "Equador surpreende a Alemanha e se classifica",
       "summary": "O 2 a 1 garantiu o Equador no mata-mata e tirou a invencibilidade alemã; ambos avançaram.",
       "body": "Numa das zebras da fase de grupos, o **Equador** bateu a **Alemanha por 2 a 1** e carimbou sua vaga no **Grupo E**.\n\nO resultado garantiu o Equador entre os melhores terceiros e deu um susto na Alemanha, que mesmo derrotada terminaria líder do grupo.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "13613c1290bb61ed"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "4e1b65246ffe1933"
     },
     {
       "id": "a-recap-turkey-vs-united-states",
@@ -1458,8 +1458,8 @@
       "title": "Turquia vence os EUA, mas se despede da Copa",
       "summary": "O 3 a 2 não evitou a eliminação turca; os Estados Unidos avançaram em primeiro.",
       "body": "Em jogo de muitos gols, a **Turquia** bateu os **Estados Unidos por 3 a 2** num duelo que coroou sua despedida com dignidade no **Grupo D**.\n\nApesar da vitória, a **Turquia** não somou o suficiente e ficou de fora, enquanto os **Estados Unidos**, mesmo derrotados, terminaram líderes do grupo.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "ac51ca0c3447b058"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "86f8a32b3cb4a23f"
     },
     {
       "id": "a-recap-tunisia-vs-netherlands",
@@ -1478,8 +1478,8 @@
       "title": "Japão e Suécia empatam e confirmam classificação",
       "summary": "O 1 a 1 garantiu o Japão em segundo e a Suécia entre os melhores terceiros.",
       "body": "Num jogo equilibrado, **Japão** e **Suécia** ficaram no **1 a 1** e seguraram suas posições no **Grupo F**.\n\nO empate confirmou o Japão em segundo e ajudou a Suécia a avançar entre os melhores terceiros, com as duas garantindo vaga no mata-mata.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "2d63f72a40595265"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "f077d421ea77f8e7"
     },
     {
       "id": "a-recap-curacao-vs-ivory-coast",
@@ -1488,8 +1488,8 @@
       "title": "Costa do Marfim vence o Curaçao e confirma a vaga",
       "summary": "O 2 a 0 garantiu a Costa do Marfim em segundo no Grupo E; o Curaçao se despediria.",
       "body": "Cumprindo o favoritismo, a **Costa do Marfim** bateu o **Curaçao por 2 a 0** e assegurou sua classificação no **Grupo E**.\n\nO triunfo confirmou os marfinenses em segundo, garantindo presença no mata-mata, enquanto o **Curaçao** encerrava sua participação sem vaga.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "03a109232cf82549"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "9c5e7d217d314601"
     },
     {
       "id": "a-recap-paraguay-vs-australia",
@@ -1498,8 +1498,8 @@
       "title": "Paraguai e Austrália empatam e garantem a classificação",
       "summary": "O 0 a 0 confirmou a Austrália em segundo e o Paraguai entre os melhores terceiros.",
       "body": "Num jogo de marcação, **Paraguai** e **Austrália** ficaram no **0 a 0** num resultado que serviu bem aos dois no **Grupo D**.\n\nO ponto confirmou a Austrália em segundo e encaminhou o Paraguai entre os melhores terceiros, com as duas seleções no mata-mata.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "850dc255515e8df1"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "c9ecbfdaf0e81426"
     },
     {
       "id": "a-match-germany-vs-paraguay",
@@ -1628,8 +1628,8 @@
       "title": "O caminho da Suíça: Argentina como barreira nas quartas",
       "summary": "Caminho equilibrado no início, com Argélia e Colômbia, antes de um provável obstáculo argentino nas quartas.",
       "body": "A **Suíça** tirou um caminho equilibrado. A trajetória mais provável começa com a **Argélia** nas 16-avos e a **Colômbia** nas oitavas (**66,1%**), confrontos em que a seleção pode brigar de igual para igual.\n\nO grande teste vem nas quartas, com a **Argentina** (**69,1%**). Mais adiante, o roteiro reserva uma semifinal contra o **Brasil** (**41,1%**) e uma possível final diante da **França** (**35,6%**). É uma chave em que a Suíça pode sonhar até as quartas, mas que esbarra nas maiores forças do torneio na reta final.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "dbe7a31c5ebf9d91"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "eb7cd83cb2809035"
     },
     {
       "id": "a-recap-norway-vs-france",
@@ -1638,8 +1638,8 @@
       "title": "França goleia a Noruega e fecha o Grupo I com 100%",
       "summary": "O 4 a 1 confirmou a campanha perfeita francesa; a Noruega avançou em segundo.",
       "body": "Em grande exibição, a **França** goleou a **Noruega por 4 a 1** e fechou o **Grupo I** com aproveitamento perfeito.\n\nO resultado reforçou o status francês de candidata ao título, enquanto a **Noruega**, mesmo derrotada, garantiu vaga no mata-mata em segundo lugar.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "3ad9e028a31a7a4e"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "36c1246b19b96d41"
     },
     {
       "id": "a-recap-senegal-vs-iraq",
@@ -1648,8 +1648,8 @@
       "title": "Senegal goleia o Iraque e garante vaga no mata-mata",
       "summary": "O 5 a 0 colocou o Senegal entre os melhores terceiros; o Iraque fechou sem pontos.",
       "body": "Precisando golear, o **Senegal** atropelou o **Iraque por 5 a 0** e assegurou sua classificação no **Grupo I**.\n\nO placar elástico foi decisivo para colocar a seleção senegalesa entre os melhores terceiros, enquanto o **Iraque** encerrou a campanha na lanterna, sem pontuar.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "433de883b170e2bd"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "1dd502b96890451a"
     },
     {
       "id": "a-recap-uruguay-vs-spain",
@@ -1658,8 +1658,8 @@
       "title": "Espanha vence o Uruguai e fecha o Grupo H na ponta",
       "summary": "O 1 a 0 confirmou a Espanha líder e eliminou o Uruguai na fase de grupos.",
       "body": "Num jogo decidido nos detalhes, a **Espanha** superou o **Uruguai por 1 a 0** e fechou o **Grupo H** na liderança.\n\nO resultado confirmou a Espanha entre as forças do torneio e selou a queda do **Uruguai**, que decepcionou e terminou eliminado ainda na primeira fase.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "5047dabebaf3b112"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "f4ec606ed9aef640"
     },
     {
       "id": "a-recap-cape-verde-islands-vs-saudi-arabia",
@@ -1678,8 +1678,8 @@
       "title": "Bélgica goleia a Nova Zelândia e fecha o Grupo G líder",
       "summary": "O 5 a 1 garantiu a Bélgica na ponta; a Nova Zelândia terminou na lanterna.",
       "body": "Deslanchando no momento certo, a **Bélgica** goleou a **Nova Zelândia por 5 a 1** e assegurou a liderança do **Grupo G**.\n\nA goleada, que contrastou com os empates anteriores, levou os belgas ao primeiro lugar, enquanto a **Nova Zelândia** encerrou a campanha sem vaga, na lanterna do grupo.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "fbe7aa6b125fa7df"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "a344d72a596990b5"
     },
     {
       "id": "a-recap-egypt-vs-iran",
@@ -1688,8 +1688,8 @@
       "title": "Egito empata com o Irã e confirma vaga no Grupo G",
       "summary": "O 1 a 1 garantiu o Egito em segundo; o Irã terminou eliminado sem vencer.",
       "body": "Num jogo equilibrado, **Egito** e **Irã** ficaram no **1 a 1**, resultado que serviu bem aos egípcios no **Grupo G**.\n\nO ponto confirmou o Egito em segundo e no mata-mata, enquanto o **Irã** encerrou a fase de grupos com três empates e sem vitórias, fora da disputa pelas vagas.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "de2aee1da71e9e07"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "4fc7165bfbfd49ae"
     },
     {
       "id": "a-recap-panama-vs-england",
@@ -1698,8 +1698,8 @@
       "title": "Inglaterra vence o Panamá e fecha o Grupo L na ponta",
       "summary": "O 2 a 0 confirmou a Inglaterra líder; o Panamá se despediu sem pontos.",
       "body": "Cumprindo o favoritismo, a **Inglaterra** bateu o **Panamá por 2 a 0** e fechou o **Grupo L** na liderança.\n\nO resultado manteve os ingleses em alta rumo ao mata-mata, enquanto o **Panamá** encerrou sua participação sem somar pontos, na lanterna do grupo.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "84ce50dcc4eb1fc4"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "9161481cbe6e318b"
     },
     {
       "id": "a-recap-croatia-vs-ghana",
@@ -1708,8 +1708,8 @@
       "title": "Croácia vence Gana e completa a recuperação no Grupo L",
       "summary": "O 2 a 1 garantiu a Croácia em segundo; Gana avançou entre os melhores terceiros.",
       "body": "Confirmando a reação, a **Croácia** superou **Gana por 2 a 1** e completou sua recuperação no **Grupo L**.\n\nA vitória assegurou os croatas em segundo, enquanto **Gana**, mesmo derrotada, terminou com pontos suficientes para avançar entre os melhores terceiros.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "7adc023f8bf1d7f4"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "6edcdfba605adc35"
     },
     {
       "id": "a-recap-colombia-vs-portugal",
@@ -1718,8 +1718,8 @@
       "title": "Colômbia segura Portugal e fecha o Grupo K na liderança",
       "summary": "O 0 a 0 garantiu a Colômbia em primeiro; Portugal avançou em segundo.",
       "body": "Num duelo de classificados, **Colômbia** e **Portugal** ficaram no **0 a 0** num jogo de poucas chances no **Grupo K**.\n\nO empate confirmou a Colômbia na liderança, numa campanha surpreendente, enquanto Portugal garantiu o segundo lugar e a vaga no mata-mata.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "29db0bd88a39a9b3"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "4e5a97a85671605c"
     },
     {
       "id": "a-recap-congo-dr-vs-uzbekistan",
@@ -1728,8 +1728,8 @@
       "title": "Congo (RD) vence o Uzbequistão e garante a vaga",
       "summary": "O 3 a 1 colocou o Congo (RD) entre os melhores terceiros; o Uzbequistão fechou sem pontos.",
       "body": "Precisando vencer, o **Congo (RD)** bateu o **Uzbequistão por 3 a 1** e assegurou sua classificação no **Grupo K**.\n\nO triunfo garantiu a seleção congolesa entre os melhores terceiros, enquanto o **Uzbequistão** encerrou sua estreia em Copas na lanterna, sem pontuar.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "2a825db2ceeca648"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "20ef77073f77c26e"
     },
     {
       "id": "a-recap-jordan-vs-argentina",
@@ -1738,8 +1738,8 @@
       "title": "Argentina vence a Jordânia e fecha o Grupo J com 100%",
       "summary": "O 3 a 1 confirmou a campanha perfeita argentina, a favorita ao título.",
       "body": "Mantendo o ritmo, a **Argentina** bateu a **Jordânia por 3 a 1** e fechou o **Grupo J** com aproveitamento perfeito.\n\nO resultado reforçou a Argentina como favorita ao título, com três vitórias em três jogos, enquanto a **Jordânia** se despediu de sua primeira Copa sem somar pontos.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "1e4348601e54da32"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "680388001047d5c1"
     },
     {
       "id": "a-recap-algeria-vs-austria",
@@ -1748,8 +1748,8 @@
       "title": "Argélia e Áustria empatam em jogo de seis gols",
       "summary": "O 3 a 3 eletrizante garantiu as duas no mata-mata, pelo segundo lugar e como terceiro.",
       "body": "Num duelo de muitos gols, **Argélia** e **Áustria** ficaram no **3 a 3** num dos jogos mais movimentados da rodada no **Grupo J**.\n\nO empate serviu às duas: a Áustria garantiu o segundo lugar e a Argélia avançou entre os melhores terceiros, ambas confirmando presença no mata-mata.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "ff6d461e7edd7acd"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "6ab1a9e5504ad45a"
     },
     {
       "id": "a-recap-south-africa-vs-canada",
@@ -1758,8 +1758,8 @@
       "title": "Canadá supera a África do Sul e avança às oitavas",
       "summary": "O 1 a 0 levou o Canadá às oitavas e encerrou a boa campanha sul-africana.",
       "body": "Em jogo apertado das 16-avos de final, o **Canadá** superou a **África do Sul por 1 a 0** e garantiu vaga nas oitavas.\n\nO gol decisivo coroou a regularidade canadense no mata-mata, enquanto a **África do Sul**, surpresa na fase de grupos, se despediu com a cabeça erguida após uma campanha acima do esperado.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "28a39dbd8ce345b1"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "8c0b5f7ff9eb62bc"
     },
     {
       "id": "a-recap-brazil-vs-japan",
@@ -1768,18 +1768,18 @@
       "title": "Brasil supera o Japão e avança às oitavas de final",
       "summary": "O 2 a 1 confirmou o favoritismo brasileiro e levou a seleção às oitavas.",
       "body": "Num jogo mais difícil do que o placar sugere, o **Brasil** superou o **Japão por 2 a 1** nas 16-avos de final e avançou às oitavas.\n\nA seleção precisou trabalhar diante de um adversário aguerrido, mas confirmou o favoritismo e seguiu viva na briga pelo título. O **Japão** se despediu após uma campanha consistente.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "b6240c3a3fd4f161"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "59d68544ac0e9598"
     },
     {
       "id": "a-scenario-mexico",
       "slug": "mexico",
       "type": "scenario",
-      "title": "O caminho do México: chave dura logo nas oitavas",
-      "summary": "Caminho difícil: depois do Equador, o anfitrião teria Inglaterra e Brasil pela frente na reta final.",
-      "body": "O **México** tirou um caminho difícil. Já superou o **Equador** nas 16-avos, mas as oitavas reservam um teste duro contra a **Inglaterra** (**75,7%**).\n\nSe avançar, o roteiro fica ainda mais pesado: o **Brasil** nas quartas (**68,8%**), uma semifinal contra a **Argentina** (**50,1%**) e uma possível final diante da **França** (**35,5%**). Para ir longe diante de sua torcida, o anfitrião teria de superar potências desde cedo no mata-mata.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "b11da8e987421f1e"
+      "title": "O caminho do México: Inglaterra e Brasil pela",
+      "summary": "O anfitrião pega a Inglaterra nas oitavas, com o Brasil provável nas quartas.",
+      "body": "O **México** avançou às oitavas ao bater o **Equador**, e agora tem um teste duro: a **Inglaterra** (**100%**), num duelo em que o anfitrião é ligeiro azarão.\n\nSe superar os ingleses, o caminho fica ainda mais pesado: o **Brasil** nas quartas (**68,8%**), uma semifinal contra a **Argentina** (**50,1%**) e uma possível final diante da **França** (**34,6%**). Para ir longe diante de sua torcida, o México teria de derrubar potências desde as oitavas.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "b6419acc7dee407c"
     },
     {
       "id": "a-recap-germany-vs-paraguay",
@@ -1788,8 +1788,8 @@
       "title": "Paraguai elimina a Alemanha em jogo de nove gols",
       "summary": "Em duelo alucinante, o Paraguai bateu a Alemanha por 5 a 4 e avançou às oitavas; a Alemanha está fora.",
       "body": "Numa das maiores zebras do torneio, o **Paraguai** derrubou a **Alemanha por 5 a 4** num jogo de nove gols e garantiu vaga nas oitavas de final. O duelo das 16-avos foi uma montanha-russa de emoções, decidida no fôlego ofensivo paraguaio.\n\nLíder de seu grupo, a **Alemanha** pagou caro pela fragilidade defensiva que já a havia atrapalhado diante do Equador, e se despede antes do esperado. O **Paraguai**, que se classificara entre os melhores terceiros, faz história e segue sonhando no mata-mata.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "c1b42a8a6815bef3"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "90dbe1c6ea0eebc9"
     },
     {
       "id": "a-recap-netherlands-vs-morocco",
@@ -1798,8 +1798,8 @@
       "title": "Marrocos derruba a Holanda em jogo eletrizante",
       "summary": "O Marrocos venceu a Holanda por 4 a 3 nas 16-avos e avançou às oitavas; a Holanda está eliminada.",
       "body": "O **Marrocos** confirmou seu favoritismo de azarão e eliminou a **Holanda por 4 a 3** num jogo eletrizante das 16-avos, avançando às oitavas de final. Foram sete gols num duelo aberto, decidido pela ousadia marroquina.\n\nLíder do Grupo F, a **Holanda** se despede precocemente após uma campanha que prometia mais. Já o **Marrocos** vira a grande sensação do mata-mata e, embalado, mira voos ainda mais altos na competição.",
-      "generatedAt": "2026-07-01T10:44:17Z",
-      "inputHash": "8583545eeac4fcaa"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "9f7683be49d09199"
     },
     {
       "id": "a-match-canada-vs-morocco",
@@ -1828,8 +1828,8 @@
       "title": "Noruega elimina a Costa do Marfim e vai às oitavas",
       "summary": "Vitória por 2 a 1 leva a Noruega às oitavas de final; a Costa do Marfim está eliminada.",
       "body": "A **Noruega** superou a **Costa do Marfim por 2 a 1** nas 16-avos e garantiu vaga nas oitavas de final. Fiel ao poder ofensivo que mostrou na fase de grupos, a seleção norueguesa levou a melhor num duelo equilibrado.\n\nA **Costa do Marfim**, que havia avançado em segundo no Grupo E, não conseguiu superar a eficiência norueguesa e se despede da Copa. A Noruega, embalada, terá pela frente um teste duríssimo contra o Brasil.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "fd850940b612bae0"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "a8c6c48f8b508766"
     },
     {
       "id": "a-recap-france-vs-sweden",
@@ -1838,8 +1838,8 @@
       "title": "França goleia a Suécia e avança com autoridade",
       "summary": "Vitória por 3 a 0 leva a França às oitavas e à liderança das projeções de título.",
       "body": "A **França** não deu chances à **Suécia**: goleou por **3 a 0** nas 16-avos e avançou às oitavas de final com autoridade. A atuação convincente reforçou o status de candidata — e levou a seleção à liderança das projeções de título.\n\nA **Suécia**, classificada entre os melhores terceiros, pouco pôde fazer diante de um adversário muito superior e se despede da Copa. A França segue embalada, agora com o Paraguai pela frente nas oitavas.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "65252263fbfe16a4"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "59c63c5e5925bf79"
     },
     {
       "id": "a-recap-mexico-vs-ecuador",
@@ -1848,8 +1848,8 @@
       "title": "México bate o Equador e avança às oitavas em casa",
       "summary": "Vitória por 2 a 0 leva o anfitrião México às oitavas de final; o Equador está eliminado.",
       "body": "O **México** confirmou o favoritismo diante de sua torcida e bateu o **Equador por 2 a 0** nas 16-avos, avançando às oitavas de final. O anfitrião seguiu firme, mantendo o aproveitamento perfeito na competição.\n\nO **Equador**, que havia surpreendido ao eliminar a Alemanha na fase de grupos, não repetiu a inspiração e se despede da Copa. O México, embalado, aguarda o vencedor de Inglaterra x Congo (RD) nas oitavas.",
-      "generatedAt": "2026-07-01T10:44:03Z",
-      "inputHash": "675361cdbe9df929"
+      "generatedAt": "2026-07-02T11:40:11Z",
+      "inputHash": "6244738955cb7acb"
     },
     {
       "id": "a-match-paraguay-vs-france",
@@ -1870,6 +1870,56 @@
       "body": "As oitavas de final colocam o **Brasil** diante da **Noruega**, uma das surpresas do mata-mata. O favoritismo é brasileiro, com **57,2%** de chance contra **19,6%**, e placar mais provável de **2 a 1**.\n\nO **Brasil** vem de vitória sobre o **Japão (2 a 1)** e mira a sequência rumo à reta final. A **Noruega**, que eliminou a **Costa do Marfim**, aposta no poder ofensivo que já rendeu goleadas na competição — mas terá pela frente um dos favoritos ao título.",
       "generatedAt": "2026-07-01T10:44:03Z",
       "inputHash": "3402affde9e2e646"
+    },
+    {
+      "id": "a-recap-england-vs-congo-dr",
+      "slug": "england-vs-congo-dr",
+      "type": "recap",
+      "title": "Inglaterra supera o Congo e avança às oitavas",
+      "summary": "Vitória por 2 a 1 leva a Inglaterra às oitavas de final; o Congo (RD) está eliminado.",
+      "body": "A **Inglaterra** confirmou o favoritismo e bateu o **Congo (RD) por 2 a 1** nas 16-avos, avançando às oitavas de final. A seleção controlou boa parte do jogo, ainda que o adversário tenha vendido caro a derrota.\n\nO **Congo (RD)**, classificado entre os melhores terceiros, se despede da Copa após uma campanha acima do esperado. A Inglaterra, embalada, terá o México pela frente na próxima fase.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "766b5b3d8126c7b8"
+    },
+    {
+      "id": "a-recap-belgium-vs-senegal",
+      "slug": "belgium-vs-senegal",
+      "type": "recap",
+      "title": "Bélgica vence o Senegal em jogo movimentado",
+      "summary": "Triunfo por 3 a 2 leva a Bélgica às oitavas de final; o Senegal está eliminado.",
+      "body": "Em duelo de muitos gols, a **Bélgica** superou o **Senegal por 3 a 2** nas 16-avos e garantiu vaga nas oitavas de final. A seleção belga levou a melhor num jogo aberto, decidido nos detalhes.\n\nO **Senegal**, um dos melhores terceiros, lutou até o fim, mas se despede da Copa. A Bélgica, que evoluiu no mata-mata, terá os Estados Unidos pela frente na próxima fase.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "9a1737ae5837395e"
+    },
+    {
+      "id": "a-recap-united-states-vs-bosnia-herzegovina",
+      "slug": "united-states-vs-bosnia-herzegovina",
+      "type": "recap",
+      "title": "Estados Unidos batem a Bósnia e vão às oitavas",
+      "summary": "Vitória por 2 a 0 leva o anfitrião EUA às oitavas de final; a Bósnia está eliminada.",
+      "body": "Os **Estados Unidos** contaram com o apoio da torcida e bateram a **Bósnia e Herzegovina por 2 a 0** nas 16-avos, avançando às oitavas de final. O anfitrião foi sólido e não deu chances ao adversário.\n\nA **Bósnia**, surpresa entre os melhores terceiros, se despede da Copa após uma campanha acima do esperado. Os EUA, embalados, terão a Bélgica pela frente na próxima fase.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "e4b1d9485e9d32d3"
+    },
+    {
+      "id": "a-match-mexico-vs-england",
+      "slug": "mexico-vs-england",
+      "type": "match",
+      "title": "Inglaterra favorita diante do México nas oitavas",
+      "summary": "A Inglaterra (48,2%) leva vantagem sobre o anfitrião México num duelo equilibrado nas oitavas.",
+      "body": "As oitavas de final trazem o anfitrião **México** contra a **Inglaterra**, num duelo entre dois times que venceram seus grupos. O favoritismo é inglês, com **48,2%** de chance contra **26,8%**, e placar mais provável de **2 a 1**.\n\nA **Inglaterra** vem embalada após superar o **Congo (RD)** e aposta no elenco para seguir adiante. O **México**, que fez campanha perfeita e conta com o apoio da torcida, tentará transformar a pressão da casa em vantagem para surpreender um dos favoritos ao título.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "f01f0e67ef89537d"
+    },
+    {
+      "id": "a-match-united-states-vs-belgium",
+      "slug": "united-states-vs-belgium",
+      "type": "match",
+      "title": "Bélgica leva vantagem sobre os EUA nas oitavas",
+      "summary": "A Bélgica (42,8%) é favorita diante do anfitrião Estados Unidos num confronto aberto nas oitavas.",
+      "body": "As oitavas de final colocam o anfitrião **Estados Unidos** diante da **Bélgica**, em um confronto equilibrado. A leve vantagem é belga, com **42,8%** de chance contra **31,6%**, e o placar mais provável é um **1 a 1** que pode levar a decisão aos pênaltis.\n\nA **Bélgica** vem de vitória sobre o **Senegal** e aposta no poder ofensivo. Os **Estados Unidos**, que bateram a **Bósnia**, contam com o apoio da torcida para superar um rival de mais tradição e seguir na competição.",
+      "generatedAt": "2026-07-02T11:39:59Z",
+      "inputHash": "78f807b5f77ff23b"
     }
   ]
 }

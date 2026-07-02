@@ -1,36 +1,6 @@
 {
-  "generatedAt": "2026-07-01T10:38:56Z",
+  "generatedAt": "2026-07-02T11:34:59Z",
   "matches": [
-    {
-      "matchSlug": "england-vs-congo-dr",
-      "homeId": "t-eng",
-      "awayId": "t-cod",
-      "homeWin": 0.6519,
-      "draw": 0.2094,
-      "awayWin": 0.1387,
-      "expectedHomeGoals": 1.94,
-      "expectedAwayGoals": 0.76
-    },
-    {
-      "matchSlug": "belgium-vs-senegal",
-      "homeId": "t-bel",
-      "awayId": "t-sen",
-      "homeWin": 0.4912,
-      "draw": 0.2487,
-      "awayWin": 0.2601,
-      "expectedHomeGoals": 1.6,
-      "expectedAwayGoals": 1.1
-    },
-    {
-      "matchSlug": "united-states-vs-bosnia-herzegovina",
-      "homeId": "t-usa",
-      "awayId": "t-bih",
-      "homeWin": 0.516,
-      "draw": 0.2445,
-      "awayWin": 0.2395,
-      "expectedHomeGoals": 1.65,
-      "expectedAwayGoals": 1.05
-    },
     {
       "matchSlug": "spain-vs-austria",
       "homeId": "t-esp",
@@ -120,6 +90,26 @@
       "awayWin": 0.1957,
       "expectedHomeGoals": 1.77,
       "expectedAwayGoals": 0.93
+    },
+    {
+      "matchSlug": "mexico-vs-england",
+      "homeId": "t-mex",
+      "awayId": "t-eng",
+      "homeWin": 0.2679,
+      "draw": 0.25,
+      "awayWin": 0.482,
+      "expectedHomeGoals": 1.12,
+      "expectedAwayGoals": 1.58
+    },
+    {
+      "matchSlug": "united-states-vs-belgium",
+      "homeId": "t-usa",
+      "awayId": "t-bel",
+      "homeWin": 0.3157,
+      "draw": 0.2559,
+      "awayWin": 0.4284,
+      "expectedHomeGoals": 1.23,
+      "expectedAwayGoals": 1.47
     }
   ]
 }

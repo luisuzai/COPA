@@ -128,7 +128,7 @@
     "flag": "🏴󠁧󠁢󠁥󠁮󠁧󠁿",
     "confederation": "UEFA",
     "group": "l",
-    "elo": 2029.8,
+    "elo": 2037.5,
     "eloBase": 2015.0
   },
   {
@@ -140,7 +140,7 @@
     "flag": "🏳️",
     "confederation": "CONCACAF",
     "group": "d",
-    "elo": 1866.6,
+    "elo": 1888.7,
     "eloBase": 1845.0
   },
   {
@@ -320,7 +320,7 @@
     "flag": "🏳️",
     "confederation": "CAF",
     "group": "i",
-    "elo": 1807.0,
+    "elo": 1790.8,
     "eloBase": 1815.0
   },
   {
@@ -332,7 +332,7 @@
     "flag": "🏳️",
     "confederation": "UEFA",
     "group": "g",
-    "elo": 1933.7,
+    "elo": 1950.0,
     "eloBase": 1945.0
   },
   {
@@ -428,7 +428,7 @@
     "flag": "🏳️",
     "confederation": "UEFA",
     "group": "b",
-    "elo": 1714.3,
+    "elo": 1692.3,
     "eloBase": 1710.0
   },
   {
@@ -464,7 +464,7 @@
     "flag": "🏳️",
     "confederation": "CAF",
     "group": "k",
-    "elo": 1735.0,
+    "elo": 1727.2,
     "eloBase": 1700.0
   },
   {
