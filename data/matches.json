@@ -979,8 +979,10 @@
     "stage": "round_of_32",
     "homeId": "t-esp",
     "awayId": "t-aut",
-    "status": "scheduled",
-    "kickoff": "2026-07-02T19:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-02T19:00:00Z",
+    "homeScore": 3,
+    "awayScore": 0
   },
   {
     "id": "m-537419",
@@ -988,8 +990,10 @@
     "stage": "round_of_32",
     "homeId": "t-por",
     "awayId": "t-cro",
-    "status": "scheduled",
-    "kickoff": "2026-07-02T23:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-02T23:00:00Z",
+    "homeScore": 2,
+    "awayScore": 1
   },
   {
     "id": "m-537429",
@@ -997,8 +1001,10 @@
     "stage": "round_of_32",
     "homeId": "t-sui",
     "awayId": "t-alg",
-    "status": "scheduled",
-    "kickoff": "2026-07-03T03:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-03T03:00:00Z",
+    "homeScore": 2,
+    "awayScore": 0
   },
   {
     "id": "m-537428",
@@ -1006,8 +1012,10 @@
     "stage": "round_of_32",
     "homeId": "t-aus",
     "awayId": "t-egy",
-    "status": "scheduled",
-    "kickoff": "2026-07-03T18:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-03T18:00:00Z",
+    "homeScore": 3,
+    "awayScore": 5
   },
   {
     "id": "m-537427",
@@ -1015,8 +1023,10 @@
     "stage": "round_of_32",
     "homeId": "t-arg",
     "awayId": "t-cpv",
-    "status": "scheduled",
-    "kickoff": "2026-07-03T22:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-03T22:00:00Z",
+    "homeScore": 3,
+    "awayScore": 2
   },
   {
     "id": "m-537430",
@@ -1024,8 +1034,10 @@
     "stage": "round_of_32",
     "homeId": "t-col",
     "awayId": "t-gha",
-    "status": "scheduled",
-    "kickoff": "2026-07-04T01:30:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-04T01:30:00Z",
+    "homeScore": 1,
+    "awayScore": 0
   },
   {
     "id": "m-537376",
@@ -1033,8 +1045,10 @@
     "stage": "round_of_16",
     "homeId": "t-can",
     "awayId": "t-mar",
-    "status": "scheduled",
-    "kickoff": "2026-07-04T17:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-04T17:00:00Z",
+    "homeScore": 0,
+    "awayScore": 3
   },
   {
     "id": "m-537375",
@@ -1042,8 +1056,10 @@
     "stage": "round_of_16",
     "homeId": "t-par",
     "awayId": "t-fra",
-    "status": "scheduled",
-    "kickoff": "2026-07-04T21:00:00Z"
+    "status": "live",
+    "kickoff": "2026-07-04T21:00:00Z",
+    "homeScore": 0,
+    "awayScore": 0
   },
   {
     "id": "m-537377",
@@ -1064,6 +1080,15 @@
     "kickoff": "2026-07-06T00:00:00Z"
   },
   {
+    "id": "m-537379",
+    "slug": "portugal-vs-spain",
+    "stage": "round_of_16",
+    "homeId": "t-por",
+    "awayId": "t-esp",
+    "status": "scheduled",
+    "kickoff": "2026-07-06T19:00:00Z"
+  },
+  {
     "id": "m-537380",
     "slug": "united-states-vs-belgium",
     "stage": "round_of_16",
@@ -1071,5 +1096,23 @@
     "awayId": "t-bel",
     "status": "scheduled",
     "kickoff": "2026-07-07T00:00:00Z"
+  },
+  {
+    "id": "m-537381",
+    "slug": "argentina-vs-egypt",
+    "stage": "round_of_16",
+    "homeId": "t-arg",
+    "awayId": "t-egy",
+    "status": "scheduled",
+    "kickoff": "2026-07-07T16:00:00Z"
+  },
+  {
+    "id": "m-537382",
+    "slug": "switzerland-vs-colombia",
+    "stage": "round_of_16",
+    "homeId": "t-sui",
+    "awayId": "t-col",
+    "status": "scheduled",
+    "kickoff": "2026-07-07T20:00:00Z"
   }
 ]

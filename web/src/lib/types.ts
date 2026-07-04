@@ -143,38 +143,6 @@ export interface Predictions {
 }
 
 // ──────────────────────────────────────────────────────────────
-//  Cenários (adversários e caminhos prováveis)
-// ──────────────────────────────────────────────────────────────
-
-export interface LikelyOpponent {
-  stage: Stage;
-  teamId: string;
-  /** Probabilidade de enfrentar este time nesta fase, em [0,1]. */
-  probability: number;
-}
-
-export interface PathStep {
-  stage: Stage;
-  /** Adversário mais provável nesta etapa do caminho. */
-  opponentId: string;
-  winProbability: number;
-}
-
-export interface TeamScenario {
-  teamId: string;
-  likelyOpponents: LikelyOpponent[];
-  /** Caminho mais provável até a final (uma etapa por fase). */
-  likeliestPath: PathStep[];
-  /** Dificuldade média do caminho (Elo médio dos adversários prováveis). */
-  pathDifficulty: number;
-}
-
-export interface Scenarios {
-  generatedAt: string;
-  teams: TeamScenario[];
-}
-
-// ──────────────────────────────────────────────────────────────
 //  Conteúdo gerado pela IA (OpenAI narra, nunca calcula)
 // ──────────────────────────────────────────────────────────────
 

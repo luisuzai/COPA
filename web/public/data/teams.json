@@ -32,7 +32,7 @@
     "flag": "🇪🇸",
     "confederation": "UEFA",
     "group": "h",
-    "elo": 2096.8,
+    "elo": 2111.2,
     "eloBase": 2100.0
   },
   {
@@ -56,7 +56,7 @@
     "flag": "🇦🇷",
     "confederation": "CONMEBOL",
     "group": "j",
-    "elo": 2114.5,
+    "elo": 2117.8,
     "eloBase": 2085.0
   },
   {
@@ -68,7 +68,7 @@
     "flag": "🏳️",
     "confederation": "CAF",
     "group": "l",
-    "elo": 1733.5,
+    "elo": 1720.3,
     "eloBase": 1710.0
   },
   {
@@ -92,7 +92,7 @@
     "flag": "🏳️",
     "confederation": "UEFA",
     "group": "k",
-    "elo": 1985.4,
+    "elo": 2004.4,
     "eloBase": 1995.0
   },
   {
@@ -188,7 +188,7 @@
     "flag": "🏳️",
     "confederation": "CAF",
     "group": "j",
-    "elo": 1773.2,
+    "elo": 1747.3,
     "eloBase": 1765.0
   },
   {
@@ -200,7 +200,7 @@
     "flag": "🏳️",
     "confederation": "AFC",
     "group": "d",
-    "elo": 1747.6,
+    "elo": 1714.6,
     "eloBase": 1730.0
   },
   {
@@ -224,7 +224,7 @@
     "flag": "🏳️",
     "confederation": "UEFA",
     "group": "b",
-    "elo": 1884.6,
+    "elo": 1910.5,
     "eloBase": 1850.0
   },
   {
@@ -272,7 +272,7 @@
     "flag": "🏳️",
     "confederation": "UEFA",
     "group": "l",
-    "elo": 1900.4,
+    "elo": 1881.4,
     "eloBase": 1900.0
   },
   {
@@ -344,7 +344,7 @@
     "flag": "🇲🇦",
     "confederation": "CAF",
     "group": "c",
-    "elo": 1939.7,
+    "elo": 1964.7,
     "eloBase": 1870.0
   },
   {
@@ -356,7 +356,7 @@
     "flag": "🏳️",
     "confederation": "UEFA",
     "group": "j",
-    "elo": 1814.9,
+    "elo": 1800.5,
     "eloBase": 1810.0
   },
   {
@@ -368,7 +368,7 @@
     "flag": "🏳️",
     "confederation": "CONMEBOL",
     "group": "k",
-    "elo": 1912.3,
+    "elo": 1925.5,
     "eloBase": 1875.0
   },
   {
@@ -380,7 +380,7 @@
     "flag": "🏳️",
     "confederation": "CAF",
     "group": "g",
-    "elo": 1788.8,
+    "elo": 1821.9,
     "eloBase": 1755.0
   },
   {
@@ -392,7 +392,7 @@
     "flag": "🏳️",
     "confederation": "CONCACAF",
     "group": "b",
-    "elo": 1780.6,
+    "elo": 1755.6,
     "eloBase": 1740.0
   },
   {
@@ -452,7 +452,7 @@
     "flag": "🏳️",
     "confederation": "CAF",
     "group": "h",
-    "elo": 1652.6,
+    "elo": 1649.3,
     "eloBase": 1615.0
   },
   {

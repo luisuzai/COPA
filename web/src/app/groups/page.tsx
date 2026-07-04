@@ -26,7 +26,7 @@ export default function BracketPage() {
 
   // Chave real: pares das 16-avos + vencedores já decididos → árvore resolvida.
   const mapping = mapRoundOf32(teams, matches);
-  const slots = resolveBracket(mapping, realWinners(mapping));
+  const slots = resolveBracket(mapping, realWinners(mapping, matches));
 
   const games: BracketGameView[] = [...slots.values()].map((s) => {
     const real = mapping.matchByGame.get(s.game);

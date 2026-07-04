@@ -212,16 +212,48 @@ export function resolveBracket(
   return slots;
 }
 
+/** Vencedor de um jogo já decidido; empate sem pênalti no JSON = indefinido. */
+function decidedWinner(m: Match): string | null {
+  if (m.status !== "finished" || m.homeScore == null || m.awayScore == null) return null;
+  if (m.homeScore === m.awayScore) return null;
+  return m.homeScore > m.awayScore ? m.homeId : m.awayId;
+}
+
+const pairKey = (a: string, b: string) => (a < b ? `${a}|${b}` : `${b}|${a}`);
+
 /**
- * Vencedores REAIS já conhecidos das 16-avos (jogos finalizados com placar).
- * Base para o estado inicial das duas telas — o que o usuário não pode mudar.
+ * Vencedores REAIS já conhecidos do mata-mata, das 16-avos em diante. Base do
+ * estado inicial das telas — o que o usuário não pode mudar.
+ *
+ * As 16-avos já vêm mapeadas por grupo em `mapping`. As fases seguintes não
+ * trazem o número do jogo no JSON, então resolvemos a árvore com os vencedores
+ * já conhecidos e casamos cada jogo real finalizado pelo par de times (nesse
+ * ponto os dois participantes já estão definidos). Sem isto, um time eliminado
+ * numa oitava seguiria "vivo" na simulação da web.
  */
-export function realWinners(mapping: KnockoutMapping): Map<number, string> {
+export function realWinners(mapping: KnockoutMapping, matches: Match[]): Map<number, string> {
   const winners = new Map<number, string>();
   for (const [game, m] of mapping.matchByGame) {
-    if (m.status !== "finished" || m.homeScore == null || m.awayScore == null) continue;
-    if (m.homeScore === m.awayScore) continue; // empate em mata-mata → decidido nos pênaltis; sem placar de pênalti no JSON, fica em aberto
-    winners.set(game, m.homeScore > m.awayScore ? m.homeId : m.awayId);
+    const w = decidedWinner(m);
+    if (w) winners.set(game, w);
+  }
+
+  const finishedByPair = new Map<string, Match>();
+  for (const m of matches) {
+    if (m.stage === "group" || m.stage === "round_of_32") continue;
+    if (decidedWinner(m)) finishedByPair.set(pairKey(m.homeId, m.awayId), m);
+  }
+
+  // Ordem crescente garante que os jogos-filhos já foram resolvidos.
+  for (const num of KO_MATCHES) {
+    if (BRACKET[num].stage === "round_of_32") continue;
+    const kids = childGames(num);
+    if (!kids) continue;
+    const a = winners.get(kids[0]);
+    const b = winners.get(kids[1]);
+    if (!a || !b) continue;
+    const real = finishedByPair.get(pairKey(a, b));
+    if (real) winners.set(num, decidedWinner(real)!);
   }
   return winners;
 }

@@ -103,7 +103,7 @@ export function simulateScenarios(
 
   // Chave real: pares das 16-avos + vencedores já conhecidos.
   const mapping = mapRoundOf32(teams, matches);
-  const real = realWinners(mapping);
+  const real = realWinners(mapping, matches);
 
   // Vencedores forçados (reais têm precedência sobre palpites, mas em jogos já
   // decididos o usuário não palpita → não há conflito de fato).

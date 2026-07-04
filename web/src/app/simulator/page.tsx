@@ -122,8 +122,8 @@ export default function SimulatorPage() {
     [teams, matches],
   );
   const real = useMemo(
-    () => (mapping ? realWinners(mapping) : new Map<number, string>()),
-    [mapping],
+    () => (mapping ? realWinners(mapping, matches) : new Map<number, string>()),
+    [mapping, matches],
   );
   const realSet = useMemo(() => new Set(real.keys()), [real]);
 

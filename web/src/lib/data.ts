@@ -22,15 +22,10 @@ import type {
   Predictions,
   Probabilities,
   Rankings,
-  Scenarios,
   Team,
   TeamProbabilities,
-  TeamScenario,
 } from "./types";
-import {
-  simulateScenarios,
-  type TeamScenario as OfficialScenario,
-} from "./scenarios";
+import { simulateScenarios, type TeamScenario as OfficialScenario } from "./scenarios";
 
 // Procura primeiro em /data (raiz, completo) e depois em /public/data (subset).
 const DATA_DIRS = [
@@ -59,7 +54,6 @@ export const getMatches = () => readJSON<Match[]>("matches.json");
 export const getRankings = () => readJSON<Rankings>("rankings.json");
 export const getProbabilities = () => readJSON<Probabilities>("probabilities.json");
 export const getPredictions = () => readJSON<Predictions>("predictions.json");
-export const getScenarios = () => readJSON<Scenarios>("scenarios.json");
 export const getArticles = () => readJSON<Articles>("articles.json");
 
 // ── Índices auxiliares ────────────────────────────────────────
@@ -106,14 +100,6 @@ export function getFavorites(): FavoriteRow[] {
 
   // rank = POSIÇÃO no favoritismo (1, 2, 3…), não o ranking de Elo.
   return rows.map((r, i) => ({ rank: i + 1, ...r }));
-}
-
-/** Seleções que mais mudaram de chance de título (|delta| desc). */
-export function getMovers(limit = 3): FavoriteRow[] {
-  return [...getFavorites()]
-    .filter((r) => Math.abs(r.championChange) > 0)
-    .sort((a, b) => Math.abs(b.championChange) - Math.abs(a.championChange))
-    .slice(0, limit);
 }
 
 // ── Confrontos ────────────────────────────────────────────────
@@ -268,10 +254,6 @@ export function getStandings(groupId: GroupId): StandingRow[] {
 }
 
 // ── Cenários ──────────────────────────────────────────────────
-export function getScenarioFor(teamId: string): TeamScenario | undefined {
-  return getScenarios().teams.find((s) => s.teamId === teamId);
-}
-
 /**
  * Cenários OFICIAIS (chaveamento real da FIFA), por simulação Monte Carlo a
  * partir da situação atual dos grupos. Roda UMA vez por build e fica em cache
