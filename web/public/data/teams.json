@@ -44,7 +44,7 @@
     "flag": "🏳️",
     "confederation": "CONMEBOL",
     "group": "d",
-    "elo": 1779.8,
+    "elo": 1773.6,
     "eloBase": 1745.0
   },
   {
@@ -80,7 +80,7 @@
     "flag": "🇧🇷",
     "confederation": "CONMEBOL",
     "group": "c",
-    "elo": 2061.2,
+    "elo": 2022.7,
     "eloBase": 2040.0
   },
   {
@@ -164,7 +164,7 @@
     "flag": "🇫🇷",
     "confederation": "UEFA",
     "group": "i",
-    "elo": 2119.5,
+    "elo": 2125.7,
     "eloBase": 2070.0
   },
   {
@@ -548,7 +548,7 @@
     "flag": "🏳️",
     "confederation": "UEFA",
     "group": "i",
-    "elo": 1851.2,
+    "elo": 1889.7,
     "eloBase": 1795.0
   },
   {

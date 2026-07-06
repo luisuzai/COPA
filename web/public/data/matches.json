@@ -1056,10 +1056,10 @@
     "stage": "round_of_16",
     "homeId": "t-par",
     "awayId": "t-fra",
-    "status": "live",
+    "status": "finished",
     "kickoff": "2026-07-04T21:00:00Z",
     "homeScore": 0,
-    "awayScore": 0
+    "awayScore": 1
   },
   {
     "id": "m-537377",
@@ -1067,8 +1067,10 @@
     "stage": "round_of_16",
     "homeId": "t-bra",
     "awayId": "t-nor",
-    "status": "scheduled",
-    "kickoff": "2026-07-05T20:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-05T20:00:00Z",
+    "homeScore": 1,
+    "awayScore": 2
   },
   {
     "id": "m-537378",
@@ -1076,8 +1078,10 @@
     "stage": "round_of_16",
     "homeId": "t-mex",
     "awayId": "t-eng",
-    "status": "scheduled",
-    "kickoff": "2026-07-06T00:00:00Z"
+    "status": "live",
+    "kickoff": "2026-07-06T01:00:00Z",
+    "homeScore": 0,
+    "awayScore": 0
   },
   {
     "id": "m-537379",
@@ -1114,5 +1118,14 @@
     "awayId": "t-col",
     "status": "scheduled",
     "kickoff": "2026-07-07T20:00:00Z"
+  },
+  {
+    "id": "m-537383",
+    "slug": "france-vs-morocco",
+    "stage": "quarter",
+    "homeId": "t-fra",
+    "awayId": "t-mar",
+    "status": "scheduled",
+    "kickoff": "2026-07-09T20:00:00Z"
   }
 ]
