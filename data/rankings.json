@@ -1,46 +1,46 @@
 {
-  "generatedAt": "2026-07-06T01:37:46Z",
+  "generatedAt": "2026-07-29T01:03:47Z",
   "entries": [
     {
-      "teamId": "t-fra",
+      "teamId": "t-esp",
       "rank": 1,
-      "elo": 2126,
-      "eloChange": 6,
-      "rankChange": 0
+      "elo": 2206,
+      "eloChange": 95,
+      "rankChange": 2
     },
     {
       "teamId": "t-arg",
       "rank": 2,
-      "elo": 2118,
-      "eloChange": 0,
-      "rankChange": 0
-    },
-    {
-      "teamId": "t-esp",
-      "rank": 3,
-      "elo": 2111,
-      "eloChange": 0,
+      "elo": 2140,
+      "eloChange": 22,
       "rankChange": 0
     },
     {
       "teamId": "t-eng",
-      "rank": 4,
-      "elo": 2038,
-      "eloChange": 0,
+      "rank": 3,
+      "elo": 2093,
+      "eloChange": 56,
       "rankChange": 1
+    },
+    {
+      "teamId": "t-fra",
+      "rank": 4,
+      "elo": 2065,
+      "eloChange": -61,
+      "rankChange": -3
     },
     {
       "teamId": "t-bra",
       "rank": 5,
       "elo": 2023,
-      "eloChange": -38,
-      "rankChange": -1
+      "eloChange": 0,
+      "rankChange": 0
     },
     {
       "teamId": "t-por",
       "rank": 6,
-      "elo": 2004,
-      "eloChange": 0,
+      "elo": 1987,
+      "eloChange": -17,
       "rankChange": 0
     },
     {
@@ -51,87 +51,87 @@
       "rankChange": 0
     },
     {
-      "teamId": "t-mar",
-      "rank": 8,
-      "elo": 1965,
-      "eloChange": 0,
-      "rankChange": 0
-    },
-    {
       "teamId": "t-bel",
-      "rank": 9,
-      "elo": 1950,
-      "eloChange": 0,
-      "rankChange": 0
+      "rank": 8,
+      "elo": 1971,
+      "eloChange": 21,
+      "rankChange": 1
     },
     {
-      "teamId": "t-col",
+      "teamId": "t-mar",
+      "rank": 9,
+      "elo": 1943,
+      "eloChange": -22,
+      "rankChange": -1
+    },
+    {
+      "teamId": "t-sui",
       "rank": 10,
-      "elo": 1926,
-      "eloChange": 0,
-      "rankChange": 0
+      "elo": 1918,
+      "eloChange": 8,
+      "rankChange": 2
     },
     {
       "teamId": "t-mex",
       "rank": 11,
-      "elo": 1920,
-      "eloChange": 0,
-      "rankChange": 0
-    },
-    {
-      "teamId": "t-sui",
-      "rank": 12,
-      "elo": 1910,
-      "eloChange": 0,
+      "elo": 1903,
+      "eloChange": -17,
       "rankChange": 0
     },
     {
       "teamId": "t-ger",
-      "rank": 13,
+      "rank": 12,
       "elo": 1902,
       "eloChange": 0,
-      "rankChange": 0
+      "rankChange": 1
     },
     {
-      "teamId": "t-nor",
-      "rank": 14,
-      "elo": 1890,
-      "eloChange": 39,
-      "rankChange": 4
-    },
-    {
-      "teamId": "t-usa",
-      "rank": 15,
-      "elo": 1889,
-      "eloChange": 0,
-      "rankChange": -1
+      "teamId": "t-col",
+      "rank": 13,
+      "elo": 1899,
+      "eloChange": -26,
+      "rankChange": -3
     },
     {
       "teamId": "t-cro",
-      "rank": 16,
+      "rank": 14,
       "elo": 1881,
       "eloChange": 0,
+      "rankChange": 2
+    },
+    {
+      "teamId": "t-nor",
+      "rank": 15,
+      "elo": 1876,
+      "eloChange": -14,
       "rankChange": -1
     },
     {
       "teamId": "t-uru",
-      "rank": 17,
+      "rank": 16,
       "elo": 1854,
       "eloChange": 0,
-      "rankChange": -1
+      "rankChange": 1
+    },
+    {
+      "teamId": "t-usa",
+      "rank": 17,
+      "elo": 1853,
+      "eloChange": -36,
+      "rankChange": -2
     },
     {
       "teamId": "t-jpn",
       "rank": 18,
       "elo": 1852,
       "eloChange": 0,
-      "rankChange": -1
+      "rankChange": 0
     },
     {
       "teamId": "t-egy",
       "rank": 19,
-      "elo": 1822,
-      "eloChange": 0,
+      "elo": 1814,
+      "eloChange": -8,
       "rankChange": 0
     },
     {
@@ -153,14 +153,14 @@
       "rank": 22,
       "elo": 1778,
       "eloChange": 0,
-      "rankChange": 1
+      "rankChange": 0
     },
     {
       "teamId": "t-par",
       "rank": 23,
       "elo": 1774,
-      "eloChange": -6,
-      "rankChange": -1
+      "eloChange": 0,
+      "rankChange": 0
     },
     {
       "teamId": "t-civ",

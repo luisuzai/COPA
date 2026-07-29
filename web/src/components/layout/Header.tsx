@@ -20,7 +20,7 @@ const NAV = [
 const norm = (s: string) => "/" + s.replace(/^\/+|\/+$/g, "");
 
 /** Header editorial PULSE: nav completa no desktop, drawer no mobile. */
-export function Header({ updatedLabel }: { updatedLabel?: string }) {
+export function Header({ updatedLabel, finished }: { updatedLabel?: string; finished?: boolean }) {
   const [open, setOpen] = useState(false);
   const pathname = usePathname();
   const isActive = (href: string) => norm(pathname) === norm(href);
@@ -36,14 +36,24 @@ export function Header({ updatedLabel }: { updatedLabel?: string }) {
           >
             PULSE<span className="text-accent">.</span>
           </Link>
-          {updatedLabel && (
+          {finished ? (
             <span
-              title={`Dados atualizados em ${updatedLabel}`}
-              className="hidden items-center gap-1.5 rounded-full border border-border/60 px-2 py-0.5 text-[11px] text-muted sm:inline-flex"
+              title="A Copa do Mundo 2026 foi concluída"
+              className="hidden items-center gap-1.5 rounded-full border border-amber-400/40 px-2 py-0.5 text-[11px] text-amber-400 sm:inline-flex"
             >
-              <span className="size-1.5 rounded-full bg-up" aria-hidden />
-              Atualizado {updatedLabel}
+              <span aria-hidden>🏆</span>
+              Copa encerrada
             </span>
+          ) : (
+            updatedLabel && (
+              <span
+                title={`Dados atualizados em ${updatedLabel}`}
+                className="hidden items-center gap-1.5 rounded-full border border-border/60 px-2 py-0.5 text-[11px] text-muted sm:inline-flex"
+              >
+                <span className="size-1.5 rounded-full bg-up" aria-hidden />
+                Atualizado {updatedLabel}
+              </span>
+            )
           )}
         </div>
 

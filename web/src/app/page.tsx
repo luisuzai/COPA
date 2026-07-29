@@ -16,6 +16,7 @@ import {
   getRecentResults,
   getRoundInsights,
   getUpcomingMatches,
+  isTournamentOver,
 } from "@/lib/data";
 import { formatDay, oneInPhrase, pct } from "@/lib/utils";
 
@@ -35,6 +36,7 @@ export default function HomePage() {
   const upcoming = getUpcomingMatches(6);
   const article = getArticle("home", "home");
   const { generatedAt } = getProbabilities();
+  const finished = isTournamentOver();
 
   return (
     <>
@@ -45,7 +47,9 @@ export default function HomePage() {
         <div className="grid gap-10 lg:grid-cols-[1.6fr_1fr] lg:items-center lg:gap-14">
           <div>
             <p className="animate-fade-up text-xs uppercase tracking-eyebrow text-muted">
-              Inteligência da Copa · atualizado em {formatDay(generatedAt)}
+              {finished
+                ? `Copa do Mundo 2026 · encerrada em ${formatDay(generatedAt)}`
+                : `Inteligência da Copa · atualizado em ${formatDay(generatedAt)}`}
             </p>
             <h1 className="animate-fade-up delay-1 mt-4 max-w-3xl font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl">
               {article?.title ?? "Quem vai levantar a taça?"}
@@ -61,13 +65,21 @@ export default function HomePage() {
           {leader && (
             <Link
               href={`/team/${leader.team.slug}/`}
-              className="animate-fade-up delay-2 group block overflow-hidden rounded-2xl border border-border bg-surface p-6 transition-colors hover:border-accent/40 sm:p-7"
+              className={`animate-fade-up delay-2 group block overflow-hidden rounded-2xl border bg-surface p-6 transition-colors sm:p-7 ${
+                finished
+                  ? "border-amber-400/40 hover:border-amber-400/70"
+                  : "border-border hover:border-accent/40"
+              }`}
             >
               <div className="flex items-center gap-2.5">
                 <Flag team={leader.team} size="lg" />
                 <div className="min-w-0">
-                  <p className="text-[11px] font-medium uppercase tracking-wider text-accent">
-                    Favorito ao título
+                  <p
+                    className={`text-[11px] font-medium uppercase tracking-wider ${
+                      finished ? "text-amber-400" : "text-accent"
+                    }`}
+                  >
+                    {finished ? "🏆 Campeã da Copa" : "Favorito ao título"}
                   </p>
                   <p className="truncate font-display text-lg font-bold tracking-tight">
                     {leader.team.name}
@@ -75,17 +87,32 @@ export default function HomePage() {
                 </div>
               </div>
               <p className="mt-6 text-xs uppercase tracking-wider text-muted">
-                Chance de conquistar a Copa
+                {finished ? "Título conquistado" : "Chance de conquistar a Copa"}
               </p>
-              <p className="font-mono text-6xl font-bold leading-none tracking-tighter tabular-nums text-accent">
+              <p
+                className={`font-mono text-6xl font-bold leading-none tracking-tighter tabular-nums ${
+                  finished ? "text-amber-400" : "text-accent"
+                }`}
+              >
                 {pct(leader.champion, 1)}
               </p>
               <p className="mt-3 text-sm text-muted">
-                Campeão em{" "}
-                <span className="text-foreground">{oneInPhrase(leader.champion)}</span>{" "}
-                Copas
+                {finished ? (
+                  <span className="text-foreground">Campeã mundial de 2026</span>
+                ) : (
+                  <>
+                    Campeão em{" "}
+                    <span className="text-foreground">{oneInPhrase(leader.champion)}</span> Copas
+                  </>
+                )}
               </p>
-              <span className="mt-6 inline-flex items-center gap-1.5 text-sm font-medium text-accent transition-colors group-hover:text-accent-strong">
+              <span
+                className={`mt-6 inline-flex items-center gap-1.5 text-sm font-medium transition-colors ${
+                  finished
+                    ? "text-amber-400 group-hover:text-amber-300"
+                    : "text-accent group-hover:text-accent-strong"
+                }`}
+              >
                 Ver análise da seleção <span aria-hidden>→</span>
               </span>
             </Link>
@@ -114,9 +141,13 @@ export default function HomePage() {
       <section id="favoritos" className="container-content border-t border-border/60 py-14">
         <SectionHeading
           variant="featured"
-          eyebrow="Quem vai ganhar"
-          title="Favoritos ao título"
-          subtitle="Probabilidade de cada seleção levantar a taça"
+          eyebrow={finished ? "Como terminou" : "Quem vai ganhar"}
+          title={finished ? "Classificação final" : "Favoritos ao título"}
+          subtitle={
+            finished
+              ? "A campanha de cada seleção no torneio"
+              : "Probabilidade de cada seleção levantar a taça"
+          }
           action={
             <HeadingLink href="/rankings/title/">Ranking das 48 →</HeadingLink>
           }
@@ -150,7 +181,7 @@ export default function HomePage() {
       )}
 
       {/* ── Insights da Rodada ─────────────────────────────── */}
-      {insights.length > 0 && (
+      {!finished && insights.length > 0 && (
         <section className="container-content py-12">
           <SectionHeading
             eyebrow="Por trás dos números"

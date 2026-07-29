@@ -78,29 +78,41 @@ export function getRankFor(teamId: string): number | undefined {
 }
 
 // ── Derivados p/ a UI ─────────────────────────────────────────
-/** Linhas da tabela de favoritos, já ordenadas por chance de título. */
+/** Linhas da tabela de favoritos, ordenadas por profundidade alcançada. */
 export function getFavorites(): FavoriteRow[] {
   const teamById = getTeamById();
 
-  // probabilities já vem ordenado por chance de título (desc).
-  const rows = getProbabilities()
-    .teams.map((p) => {
-      const team = teamById.get(p.teamId);
-      return team
-        ? {
-            team,
-            champion: p.champion,
-            championChange: p.championChange,
-            final: p.final,
-            semi: p.semi,
-          }
-        : null;
+  // Ordena por fase alcançada (título → final → semi → quartas → oitavas →
+  // grupos), com a ordem original (chance de título, depois Elo) como
+  // desempate. Durante a Copa a chance de título domina; com o torneio
+  // encerrado (tudo 0% ou 100%) é isto que dá a classificação final correta —
+  // campeã, vice, semifinalistas e quartas em ordem, em vez de times
+  // empatados em 0% ordenados só por Elo.
+  const depth = (p: TeamProbabilities) => [
+    p.champion, p.final, p.semi, p.quarter, p.roundOf16, p.advanceGroup,
+  ];
+  return getProbabilities()
+    .teams.map((p, i) => ({ p, i }))
+    .filter(({ p }) => teamById.has(p.teamId))
+    .sort((a, b) => {
+      const da = depth(a.p);
+      const db = depth(b.p);
+      for (let k = 0; k < da.length; k++) if (db[k] !== da[k]) return db[k] - da[k];
+      return a.i - b.i;
     })
-    .filter((r): r is Omit<FavoriteRow, "rank"> => r !== null);
-
-  // rank = POSIÇÃO no favoritismo (1, 2, 3…), não o ranking de Elo.
-  return rows.map((r, i) => ({ rank: i + 1, ...r }));
+    .map(({ p }, i) => ({
+      rank: i + 1,
+      team: teamById.get(p.teamId)!,
+      champion: p.champion,
+      championChange: p.championChange,
+      final: p.final,
+      semi: p.semi,
+    }));
 }
+
+/** True quando a final já foi disputada — o site entra em modo "encerrado". */
+export const isTournamentOver = (): boolean =>
+  getMatches().some((m) => m.stage === "final" && m.status === "finished");
 
 // ── Confrontos ────────────────────────────────────────────────
 export function getMatchBySlug(slug: string): Match | undefined {

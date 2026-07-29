@@ -6,7 +6,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
 import { JsonLd } from "@/components/JsonLd";
-import { getProbabilities } from "@/lib/data";
+import { getProbabilities, isTournamentOver } from "@/lib/data";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
 import { formatDay } from "@/lib/utils";
 
@@ -43,6 +43,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const updatedLabel = formatDay(getProbabilities().generatedAt);
+  const finished = isTournamentOver();
   return (
     <html lang="pt-BR" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <body className="min-h-dvh">
@@ -56,7 +57,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             inLanguage: "pt-BR",
           }}
         />
-        <Header updatedLabel={updatedLabel} />
+        <Header updatedLabel={updatedLabel} finished={finished} />
         <main>{children}</main>
         <Footer />
       </body>

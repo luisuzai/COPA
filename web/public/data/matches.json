@@ -1078,10 +1078,10 @@
     "stage": "round_of_16",
     "homeId": "t-mex",
     "awayId": "t-eng",
-    "status": "live",
+    "status": "finished",
     "kickoff": "2026-07-06T01:00:00Z",
-    "homeScore": 0,
-    "awayScore": 0
+    "homeScore": 2,
+    "awayScore": 3
   },
   {
     "id": "m-537379",
@@ -1089,8 +1089,10 @@
     "stage": "round_of_16",
     "homeId": "t-por",
     "awayId": "t-esp",
-    "status": "scheduled",
-    "kickoff": "2026-07-06T19:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-06T19:00:00Z",
+    "homeScore": 0,
+    "awayScore": 1
   },
   {
     "id": "m-537380",
@@ -1098,8 +1100,10 @@
     "stage": "round_of_16",
     "homeId": "t-usa",
     "awayId": "t-bel",
-    "status": "scheduled",
-    "kickoff": "2026-07-07T00:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-07T00:00:00Z",
+    "homeScore": 1,
+    "awayScore": 4
   },
   {
     "id": "m-537381",
@@ -1107,8 +1111,10 @@
     "stage": "round_of_16",
     "homeId": "t-arg",
     "awayId": "t-egy",
-    "status": "scheduled",
-    "kickoff": "2026-07-07T16:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-07T16:00:00Z",
+    "homeScore": 3,
+    "awayScore": 2
   },
   {
     "id": "m-537382",
@@ -1116,8 +1122,10 @@
     "stage": "round_of_16",
     "homeId": "t-sui",
     "awayId": "t-col",
-    "status": "scheduled",
-    "kickoff": "2026-07-07T20:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-07T20:00:00Z",
+    "homeScore": 4,
+    "awayScore": 3
   },
   {
     "id": "m-537383",
@@ -1125,7 +1133,86 @@
     "stage": "quarter",
     "homeId": "t-fra",
     "awayId": "t-mar",
-    "status": "scheduled",
-    "kickoff": "2026-07-09T20:00:00Z"
+    "status": "finished",
+    "kickoff": "2026-07-09T20:00:00Z",
+    "homeScore": 2,
+    "awayScore": 0
+  },
+  {
+    "id": "m-537384",
+    "slug": "spain-vs-belgium",
+    "stage": "quarter",
+    "homeId": "t-esp",
+    "awayId": "t-bel",
+    "status": "finished",
+    "kickoff": "2026-07-10T19:00:00Z",
+    "homeScore": 2,
+    "awayScore": 1
+  },
+  {
+    "id": "m-537385",
+    "slug": "norway-vs-england",
+    "stage": "quarter",
+    "homeId": "t-nor",
+    "awayId": "t-eng",
+    "status": "finished",
+    "kickoff": "2026-07-11T21:00:00Z",
+    "homeScore": 1,
+    "awayScore": 2
+  },
+  {
+    "id": "m-537386",
+    "slug": "argentina-vs-switzerland",
+    "stage": "quarter",
+    "homeId": "t-arg",
+    "awayId": "t-sui",
+    "status": "finished",
+    "kickoff": "2026-07-12T01:00:00Z",
+    "homeScore": 3,
+    "awayScore": 1
+  },
+  {
+    "id": "m-537387",
+    "slug": "france-vs-spain",
+    "stage": "semi",
+    "homeId": "t-fra",
+    "awayId": "t-esp",
+    "status": "finished",
+    "kickoff": "2026-07-14T19:00:00Z",
+    "homeScore": 0,
+    "awayScore": 2
+  },
+  {
+    "id": "m-537388",
+    "slug": "england-vs-argentina",
+    "stage": "semi",
+    "homeId": "t-eng",
+    "awayId": "t-arg",
+    "status": "finished",
+    "kickoff": "2026-07-15T19:00:00Z",
+    "homeScore": 1,
+    "awayScore": 2
+  },
+  {
+    "id": "m-537389",
+    "slug": "france-vs-england",
+    "stage": "third_place",
+    "homeId": "t-fra",
+    "awayId": "t-eng",
+    "status": "finished",
+    "kickoff": "2026-07-18T21:00:00Z",
+    "homeScore": 4,
+    "awayScore": 6
+  },
+  {
+    "id": "m-537390",
+    "slug": "spain-vs-argentina",
+    "stage": "final",
+    "homeId": "t-esp",
+    "awayId": "t-arg",
+    "status": "finished",
+    "kickoff": "2026-07-19T19:00:00Z",
+    "homeScore": 1,
+    "awayScore": 0
   }
 ]
